@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,19 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-
     <link rel="stylesheet" href="assets/css/app.css">
-
-    <style>
-        .row {
-            margin: 0 !important;
-        }
-    </style>
 </head>
 <title>Descargar Apps</title>
 </head>
 
 <body>
+    <style>
+        .row {
+            margin: 0 !important;
+        }
+         .social {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 2000;
+}
+    .social ul {
+        list-style: none;
+    }
+    .social ul li a {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    }
+    .social ul li .icon-down {background: transparent;}
+    .social ul li a:hover {
+        padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    </style>
+    <div class="social">
+        <ul>
+            <li><a href="https://megacursos.com/descargar-appwindows" target="_blank"><img src="assets/img/download-1459071_640.png" style="max-width: 50px"></a></li>
+        </ul>
+    </div>
+
+
     <div class="section-descargarapp">
         <div class="header">
             <div class="row mr-o pl-5 pt-5">
