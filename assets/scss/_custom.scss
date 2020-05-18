@@ -105,35 +105,35 @@ body {
 }
 
 .btn-warning {
-    background-color: $terciario;
+    background-color: $tertiary;
     color: $light;
     padding: .55rem .75rem;
     font-weight: 600;
-    border: 2px solid $terciario;
+    border: 2px solid $tertiary;
     @include extra-large {
         font-size: 1rem;
     }
     &:hover {
-        background-color: darken($terciario, 5);
+        background-color: darken($tertiary, 5);
         color: $light;
     }
     &:focus {
-        background-color: darken($terciario, 5);
+        background-color: darken($tertiary, 5);
         color: $light;
     }
 }
 
 .btn-lighter {
     padding: .55rem .75rem;
-    border: 2px solid $terciario;
-    color: $terciario;
+    border: 2px solid $tertiary;
+    color: $tertiary;
     font-weight: 600;
     @include extra-large {
         font-size: 1rem;
     }
     &:hover {
         background-color: darken($light, 5);
-        color: $terciario;
+        color: $tertiary;
     }
 }
 
@@ -172,13 +172,13 @@ body {
 }
 
 .btn-quaternary {
-    color: $negro;
+    color: $dark;
     background-color: $light;
     border: 1px solid #686f7a;
     font-weight: 600;
     &:hover {
         background-color: darken($light, 5);
-        color: $negro;
+        color: $dark;
     }
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 .general-info {
-    color: $secundario;
+    color: $secondary;
     text-align: justify;
     @include extra-large {
         margin-bottom: 2rem;
@@ -215,15 +215,15 @@ body {
         }
     }
     .note-block-info {
-        color: $secundario;
+        color: $secondary;
         position: relative;
         text-align: justify;
         b {
-            color: $negro;
+            color: $dark;
         }
         &:after {
             content: '';
-            background: $terciario;
+            background: $tertiary;
             position: absolute;
             width: 6px;
             height: 25px;
@@ -522,7 +522,7 @@ body {
     .form-control-lg {
         border-radius: 0rem;
         background-color: #eff4ff;
-        color: $negro;
+        color: $dark;
         border: 1px solid transparent;
         @include extra-large {
             font-size: 1rem;
@@ -848,7 +848,7 @@ body {
     .general-info {
         text-align: center;
         margin-top: .5rem !important;
-        color: $negro;
+        color: $dark;
         font-size: 0.8rem;
         a {
             color: #e56874;
@@ -955,7 +955,7 @@ body {
     padding-bottom: 69.23%;
     height: 0;
     max-width: 100%;
-    background: $negro;
+    background: $dark;
     margin: 5px;
     z-index: 0;
     .play {
