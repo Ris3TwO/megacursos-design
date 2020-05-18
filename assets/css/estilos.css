@@ -1,0 +1,21 @@
+/*Estilos Agregados por Joel Garcia*/
+.social {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 2000;
+}
+    .social ul {
+        list-style: none;
+    }
+    .social ul li a {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    }
+    .social ul li .icon-down {background: transparent;}
+    .social ul li a:hover {
+        padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
