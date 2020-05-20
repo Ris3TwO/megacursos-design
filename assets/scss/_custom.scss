@@ -1200,14 +1200,22 @@ body {
 
             // header text 
             .head-text{
-                margin-top: -30%;
+                margin-top: -50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 z-index: 2;
 
-                @media only screen and (min-width: 960px){
+                @media only screen and (min-width: 360px){
+                    margin-top: -30%;
+                }
+
+                @include medium {
+                    margin-top: -20%;
+                }
+
+                @include large {
                     margin-top: -15%;
                 }
 
@@ -1228,9 +1236,7 @@ body {
                         width: 500px;
                         margin: 10px  0 50px 0;
 
-                                -webkit-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
-                                    -moz-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
-                                    box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
+                        box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
                     }
 
                     .description{
@@ -1240,7 +1246,7 @@ body {
                         // background: red;
                     }
 
-                    @media only screen and (min-width: 960px){
+                    @include large{
                         width: 50%;
                     }
                 }
@@ -1276,7 +1282,6 @@ body {
             }
 
             .title-mega{
-                // background: red;
                 margin-bottom: 100px;
             }
 
@@ -1284,11 +1289,8 @@ body {
 
             .card{
                 position: relative;
-                // height: 490px;
                 border-style: none;
                 background: #F7F7F7;
-                -webkit-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
-                -moz-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
                 box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
 
                 img{
@@ -1361,12 +1363,7 @@ body {
                     }
 
                     .card-footer-enlace{
-                        // padding: 20px 100px;
-                        // position: absolute;
-                        // left: 0;
-                        // right: 0;
-                        // bottom: 0;
-                        // margin: auto;
+
                         a{
                             background: #FCC11C;
                             border-style: none !important;
@@ -1411,9 +1408,10 @@ body {
             .third-text{
                 padding-left: 10%;
                 padding-right: 10%;
-                @media only screen and (min-width: 960px){
-                padding-left: 1%;
-                padding-right: 10%;
+
+                 @include large {
+                    padding-left: 1%;
+                    padding-right: 10%;
                 }
             }
 
@@ -1426,7 +1424,7 @@ body {
                 width: 100%;
                 height: 200px;
             
-                @media only screen and (min-width: 960px){
+                 @include large {
                     margin-left: -30px !important;
                     width: 90%;
                     height: 400px;
@@ -1455,7 +1453,7 @@ body {
                         width: 60%;
                     }
 
-                    @media only screen and (min-width: 960px){
+                     @include large {
                         width: 70px;
                         height: 70px;
                     }
@@ -1497,7 +1495,6 @@ body {
             .with-image{
                 width: 100%;
                 height: 90%;
-                // background: #00004D;
                 background: url(../img/fifth-img.png);
                 background-repeat: no-repeat;
                 background-position: center;
@@ -1509,8 +1506,6 @@ body {
                 align-items: center;
                 z-index: 1;
 
-                -webkit-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
-                -moz-box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
                 box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
 
                 .title-mega{
@@ -1524,11 +1519,11 @@ body {
                 }
 
                 // Mediadas para ipad - pc 
-                @media only screen and (min-width: 768px){
+                 @include  medium {
                     height: 50%;
                 }
 
-                @media only screen and (min-width: 960px){
+                 @include large {
                     padding: 20px 100px;
                     height: 80%;
                     height: 200px;
@@ -1542,7 +1537,7 @@ body {
             padding-top: 30px;
             padding-bottom: 30px;
 
-            @media only screen and (min-width: 960px){
+             @include large {
                 padding-left: 5%;
                 padding-right: 5%;
             }
@@ -1568,7 +1563,7 @@ body {
                     text-align: justify;
                 }
 
-                @media only screen and (min-width: 960px){
+                 @include large {
                     flex-direction: row;
                     align-items: flex-start;
                 }
