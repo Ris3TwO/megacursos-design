@@ -1574,3 +1574,297 @@ body {
 
     }
 //  Termina acceso.hml 
+
+// Inicia checkout 
+.checkout-section{
+
+    // first-section 
+    .first-section{
+        padding-bottom: 30px;
+
+        .first-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include medium {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            p{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            
+        }
+
+        //table responsive inicia
+        .table{
+            border: 1px solid #707070;
+            margin: 0 !important;
+            text-align: center;
+
+            th{
+                background: #E1E1E1;
+                font-size: 1rem;
+                text-align: center;
+                padding: 10px 0 ;
+                border-bottom: 1px solid #707070;
+                border-top: 1px solid #707070;
+
+                @include large {
+                    font-size: 1.3rem;
+                }
+            }
+
+            td{
+                font-size: 1rem !important;
+                border-bottom: 1px solid #707070 !important;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            .body-table-total{
+                td{
+                    font-weight: 900;
+                }
+            }
+
+            .table-sub{
+                // font-weight: 600;
+                width: 75% !important;
+
+                @include large {
+                    width: 50% !important;
+                }
+            }
+
+            .col-table-1{
+                width: 50% !important;
+            }
+
+            .col-table-2{
+                width: 25%;
+            }
+
+            
+        }
+
+        .total-table{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            @include large{
+                flex-direction: row;
+            }
+
+            .content-info-table{
+                width: 100%;
+                float: left;
+                padding-top: 20px;
+                order: 2;
+
+                span{
+                    color: #DC3545;
+                }
+
+                p{
+                    font-size: 12px;
+                }
+
+                @include large{
+                    order: 1;
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+                    display: inline;
+                    padding-top: 20px;
+                }
+            }
+
+            .content-table-total{
+                order: 1;
+                width: 100%;
+                // background: chartreuse;
+
+                @include large{
+                    order: 2;
+                    width: 50%;
+                    // background: chartreuse;
+                    float: right;
+                    display: inline;
+                }
+            }
+        }
+        //table responsive termina
+    }
+
+    // second-section 
+    .second-section{
+        background: #F1F1F1;
+
+        .title-mega{
+            font-size: 1.8rem;
+        }
+
+        .card{
+
+            position: relative;
+            overflow: hidden;
+            
+            
+            border: 1px solid #707070;
+            background: #F7F7F7;
+            box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
+
+            @include large{
+                height: 500px;
+            }
+
+
+            .card-header{
+                position: relative !important;
+                background: #ffffff;
+                border-style: none;
+
+                .card-icon{
+                    background: #D2E5F4;
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+
+            .card-body{
+                background: #ffffff !important;
+
+                h5{
+                    font-weight: 900;
+                }
+
+                
+                .card-text-resaltar{
+                    font-weight: 900;
+                    color: #000000 !important;
+                }
+
+                .card-text{
+                    position: relative;
+                    overflow: hidden;
+                    color: #7b7b7b;
+
+                    p{
+                        span{
+                            font-weight: 900;
+                        }
+                    }
+
+                    button{
+                        border-style: none;
+                        background: #BFBFBF;
+                        width: 100%;
+                    }
+
+                }
+
+                .zoom-comprobante{
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 120px;
+                    // margin-top: 20px !important;
+                    img{
+                        width: 100% !important ;
+                        height: 100% !important;
+                        z-index: -1;
+                    }
+
+                    span{
+                        color: #ffff;
+                        background: #00000062;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 10;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+
+                .upload-image{
+                    border: 2px dashed  #A4A4A4;
+                    width: 100%;
+                    height: 120px;
+                    // margin-top: 20px !important;
+                    // margin-bottom: 53px !important;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    span{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            width: 30px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    // third-section
+    .third-section{
+
+        .third-section-info{
+            width: 100%;
+            margin: auto;
+            // background: red;
+            font-weight: 900;
+            display: flex;
+            flex-direction: column;
+
+            p{
+                font-size: 14px;
+            }
+
+            span{
+                color: #DC3545;
+            }
+
+            @include large {
+                width: 65%;
+                flex-direction: row;
+            }
+        }
+
+    }
+
+}
