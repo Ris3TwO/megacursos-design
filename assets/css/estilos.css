@@ -38,3 +38,15 @@
         .sombreado {box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.34);
         -webkit-box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.34);
         -moz-box-shadow: -1px 10px 21px 0px rgba(0,0,0,0.34);}
+        .transc {transition:all .5s ease-in-out;}
+        .ir-arriba {
+        display:none;
+        padding:20px;
+        background:#024959;
+        font-size:20px;
+        color:#fff;
+        cursor:pointer;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+}
