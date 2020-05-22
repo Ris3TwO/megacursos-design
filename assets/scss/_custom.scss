@@ -1578,6 +1578,14 @@ body {
 // Inicia checkout 
 .checkout-section{
 
+        .color-text-dark{
+            color: $dark
+        }
+
+        .row {
+            margin: 0;
+        }
+
     // first-section 
     .first-section{
         padding-bottom: 30px;
@@ -1772,10 +1780,11 @@ body {
                         }
                     }
 
-                    button{
+                    button, a{
                         border-style: none;
                         background: #BFBFBF;
                         width: 100%;
+                        color: #000000;
                     }
 
                 }
