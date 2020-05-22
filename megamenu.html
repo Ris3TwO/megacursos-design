@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso y Descarga</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://megacursos.com/themes/megacursos/estilos/sidebar.css" defer="">
+    <link rel="stylesheet" href="https://megacursos.com/themes/megacursos/estilos/index.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide" style="overflow: visible;">
+        <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: 640px;" tabindex="0">
+            <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: -100px; left: 0px;" dir="ltr">
+                <div id="dismiss" style="text-shadow: none">
+                    <i class="fa fa-times" style="font-size:25px;color:#0f7c90;"></i>
+                </div>
+                <div id="mega-back" onclick="megaBack()" style="display:none;text-shadow: none">
+                    <i class="fas fa-arrow-left" style="font-size:25px;color:#0f7c90;"></i>
+                </div>
+                <div class="sidebar-header">
+
+                    <div id="menu" style="font-size: 20px;font-weight: bold;">
+                        <!-- <h4 style="font-weight: bold">Megacursos</h4> -->
+                        <button class="btn btn-success font-weight-bold">Cuenta Gratis ¡y a aprender!</button>
+                        <span style="font-size: 13px;color: #f5c35d;">Domina lo que quierasde 0 a 100</span>
+                        <a href="https://megacursos.com/login" style="font-size: 14px;display: block;color: gray;">Login MC Player</a>
+                    </div>
+                </div>
+                <ul class="list-unstyled components" id="mega-sidebar">
+                    <li><a href="https://megacursos.com/planes">Planes Económicos</a></li>
+                    <li><a href="https://megacursos.com/pruebagratis" style="font-weight:bold">Prueba Gratis 24h</a></li>
+                    <hr>
+                    <li class="subtitle-sidebar"><a>Categorías</a></li>
+                    <li><a href="javascript:void(0)" onclick="newSidebar(1)" class="d-flex flex-row"><span class="col-11">Diseño</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;2&quot;)"><span class="col-11">Programación</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;4&quot;)"><span class="col-11">Internet</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;3&quot;)"><span class="col-11">Arte</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;25&quot;)"><span class="col-11">Música</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;22&quot;)"><span class="col-11">Dinero</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;39&quot;)"><span class="col-11">Ingeniería/arquitectura</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a href="javascript:void(0)" onclick="newSidebar(53)" class="d-flex flex-row"><span class="col-11">Idiomas</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;51&quot;)"><span class="col-11">Magia</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a class="d-flex flex-row" href="javascript:void(0)" onclick="newSidebar(&quot;61&quot;)"><span class="col-11">Criptodivisas</span><i class=" fas fa-angle-right"></i></a></li>
+                    <li><a href="#" style="color:#f5c35d;font-weight:bold">Todos los cursos de 0 a 100</a></li>
+                    <hr>
+                    <li><a href="#">Diploma Oficial para CV</a></li>
+                    <li class="pb-3"><a href="#">Asistencia Profesor 24h</a></li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+
+                </ul>
+            </div>
+        </div>
+        <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: block;">
+            <div class="mCSB_draggerContainer">
+                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 0px; display: block; height: 0px; top: 0px;">
+                    <div class="mCSB_dragger_bar" style="line-height: 0px;"></div>
+                </div>
+                <div class="mCSB_draggerRail"></div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand navbar-light  mega-divisa">
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav ml-auto" style="margin-top:0!important">
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle" href="/" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://megacursos.com/uploads/images/small/fbe90ce49ed0e55f6cf8c7b7c2965f11.jpg" alt=""> Otro
+                    </a>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdown03">
+                        <h5 class="dropdown-header mt-4 mb-4 ml-4">Elige tu país.Afectará a información como el teléfono de contacto, dirección, etc</h5>
+                        <div class="row">
+
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="5">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/517454db191e47798ba61adfda76cdde.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Argentina</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="6">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/0be8cc78e69b64564066a5690ee4f1de.gif" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Bolivia</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="7">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/f3b0054feb5fa69e5b5a6a63982de573.gif" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Brazil</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="8">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/b0af7cce8fb16676571dc8408431d0e2.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Chile</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="4">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/ffe5c1395d476c86118c116913680ea5.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Colombia</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="9">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/1d02984e5c5ac2616a66dc46181ea984.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Costa Rica</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="10">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/2146c904fedd7f6a97745d0bea715445.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Cuba</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="21">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/4fc7a6b6b900755844e82238b4e73cf9.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Dominican Republic</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="11">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/34de652f4dfb738e7c3fc7ed1b21cee2.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Ecuador</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="12">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/bc76b40cd8d224d28b0137a272f730d2.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">El Salvador</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="13">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/f57eef9a21318805690af4a27b11684f.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Guatemala</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="14">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/6f131115ddbd7e1b7d4156153f67f41a.jpg" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Honduras</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="16">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/281c609e44f39f2f9fdb9529d3883516.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">México</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="17">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/ae8e3189b9e0e432de8c76f6893a0819.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Nicaragua</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="25">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/fbe90ce49ed0e55f6cf8c7b7c2965f11.jpg" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Otro</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="19">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/6d4f065490ea0ed3491caaa94906ae95.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Panamá</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="18">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/89b1d45862228ce76a9e274b0b56c167.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Paraguay</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="20">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/599084511651a20f8459f54755488cf8.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Perú</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="22">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/061e529e65d7068593a6000184a88c59.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Puerto Rico</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="3">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/b82b1d5108e23e22e795dca92bd9ae75.jpg" alt=""></span>
+                                        <span style="margin-left:10px;font-weight:bold">España</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="26">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/0bebdf48ac515149f8ec865bee06d6f5.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">United Kingdom</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="2">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/536a5e20eb4f2b6625c215be3126e3ba.jpg" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">United States</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="23">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/0d0a00770402cd0ebb6b4a4a646f6bf9.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Uruguay</span></div>
+                                </a>
+                            </div>
+                            <div class="col col-sm-2 mb-3">
+                                <a href="javascript:void(0);" class="country-menu dropdown-item" data-id="24">
+                                    <div style="display:flex;align-items: center;padding:10px"><span><img class="img-currency" src="https://megacursos.com/uploads/images/thumbnails/b77e18f751f568827e28186c7c05e50d.png" alt=""></span>
+                                        <span style="margin-left:10px;line-height: normal; font-weight:bold">Venezuela</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+
+                    <a class="nav-link dropdown-toggle" href="/" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            $USD USD          </a>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdown03">
+                        <h5 class="dropdown-header">Elige la divisa en la que quieres que se vean los precios. También es la divisa en la que se cargará tu tarjeta en caso de querer pagar</h5>
+                        <div class="row">
+                            <div class="col col-sm-6"><a class="dropdown-item currency-menu" href="javascript:void(0);" data-id="1" data-code="EUR" data-symbol="€"><span><img class="img-fluid" src="https://megacursos.com/uploads/images/thumbnails/ad8a04d5f56922083ca2269af12b8358.png" alt=""></span>
+            <span>España/UE (€URO)</span></a></div>
+                            <div class="col col-sm-6"><a class="dropdown-item currency-menu" href="javascript:void(0);" data-id="19" data-code="USD" data-symbol="$USD"><span><img class="img-fluid" src="https://megacursos.com/uploads/images/thumbnails/2652415addbbff598cf83edb139ef666.png" alt=""></span>
+            <span>Otro ($ USD)</span></a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:+1 (917) 341 2153">
+                        <i class="fa fa-phone"></i>
+                        <!--
+                <img src="<? php // echo theme_images('callblack.png'); 
+                          ?>" alt="">
+                -->
+                        +1 (917) 341 2153
+                    </a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link" href="mailto:atencion@megacursos.com">atencion@megacursos.com</a>
+                </li>
+                <li class="nav-item mega-chat d-none d-md-block">
+                    <a id="livilyChatLink" class="nav-link status-icon ClickdeskChatLink" target="_blank" href="https://www.tidiochat.com/chat/60azmufq3r8t5vmahndtxni5zzv9omfy"><i class="fa fa-comments"></i>Chat 24h</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="mega-menu" style="background-color: #f1f0f0 !important;padding:0px 10px">
+        <button class="sidebarCollapse navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <!--
+  <button class="sidebarCollapse navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        -->
+        <a class="navbar-brand" href="/">
+            <img class="d-none d-md-block" src="https://megacursos.com/themes/megacursos/assets/images/logo1.png" alt="">
+            <img class="d-sm-block d-md-none" src="https://megacursos.com/themes/megacursos/assets/images/logo1.png" alt="" width="150px">
+        </a>
+        <div class=" d-sm-block d-md-none">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown position-static">
+                    <!--
+        <a class="mx-auto" href="javascript:void(0);" id="shoping-cartxx-mobile" data-placement="bottom" data-trigger="click" data-toggle="popover" title="" data-content="">
+            <i class="fa fa-shopping-cart" style="font-size:2rem;color:#ccc"></i>
+        </a>-->
+                    <a class="mx-auto dropdown-toggle" href="javascript:void(0);" id="mega04" onclick="return false;" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+                        <i class="fa fa-shopping-cart" style="font-size:2rem;color:#ccc"></i>
+                    </a>
+                    <div class="dropdown-menu w-100" aria-labelledby="mega04" id="super-shopping1">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto " style="height: 60px">
+                <li class="nav-item dropdown dropdown--open-on-hover dropdown--topics dropdown--open-on-hover dropdown open">
+                    <a class="nav-link  dropdown-toggle-category" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-list-ul"></i> Categorias </a>
+                    <ul class="dropdown-menu dropdown-menu-principal" aria-labelledby="navbarDropdownMenuLink" style="margin-top: -2px;padding:0px; font-size: 15px;width: 300px;">
+                        <li class="dropdown-submenu person-dropdown-item" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/4c8b8d51d0b6170e20657640b74f3acb.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Diseño
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/8a687b025e7bbfb1d9960b2a800b8e7b.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Video</a>
+
+                                    <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin: 0!important;padding:0!important">
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">After Effects</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/0384c6ed2b1c55ea3819ec331389b9bd.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nuke</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/1ff2ec9409554ca8e66f82d8ddfcbc06.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Premiere Pro</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/699a704a53eff92b9172d0bda2421afa.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">3D</a>
+
+                                    <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin: 0!important;padding:0!important">
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/81ddb5fe96b4d44c5015457586fdbcb4.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">3Ds Max</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/bc19cb2b68fb7074ed14f3ecb7c5ff8b.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Cinema 4D</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/27bc9a253ac6c7d84a239183bea2e3f8.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Maya</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/edc62bea4b0b9bf1e2e77693a4d5dba5.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">ZBrush</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/2767bd5e44bb4613dbb2f1e0e49dbbd9.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Blender</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/e3642046853b917786f571e6f7cae8b0.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Diseño gráfico</a>
+
+                                    <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin: 0!important;padding:0!important">
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/4f7411f47c246fa778fc8f241150a32d.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Illustrator</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/17b120215d661f7267477d104c8e2d17.png" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Photoshop</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/80366090c8c01d292f713cc6f9bc86d7.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Indesign</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/c26029a20b6e85c0736ae38198d8d494.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-del-diseno" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK DISEÑO</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios del Diseño en 375h </p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-del-diseno" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu person-dropdown-item" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/9ee43c5b09efcad7fb5461a057921264.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Programación
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu person-dropdown-item" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/a1600926ca15042296ebe56c1815d4cf.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">iOS con Swift</a>
+                                </li>
+                                <li class="dropdown-submenu person-dropdown-item" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/73ae6825f1f0c307b067274e01656fb0.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Java</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/f828772576439eb4ec74f58843a9b397.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">.Net con C#</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/b773023b5f6c11425efadf91b1820113.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Pascal</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/1318db2adbe17586e8b5d953c24505a0.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Hacking</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/d86768522e35c40694e76edc5991dfb6.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Python</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/123e08a8f7c9fd87928d207d18439ce8.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Angular</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/21c7c7fb1e793c18af15dc1379b46915.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-de-la-programacion" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK PROGRRAMACION</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios de la Programación en 265h </p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-de-la-programacion" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/c89d49d1f948960e99cae46790123a8c.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Internet
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/71948154debc367fdef1ae5931b5f361.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Márketing online</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/63076d98280f3cd18c12419b7c334773.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">WordPress</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/583804165168a309275ef104c3ded2f2.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Desarrollo Web (HTML5 + CSS3)</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/e891eea67e7714c9c7a379a9eb998758.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">SEO</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/0acfca056deb270b19a420448591b3a9.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">PHP y bases de datos</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/ce28d90258f3b63ab59fa98b317d4137.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Javascript (incluye jQuery y Ajax)</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/1062cecbf8284de13cb18b4b2a384698.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-del-internet" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK INTERNET</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios del Internet en 235h</p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-del-internet" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/702d6272b125dbd618b584680ba94037.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Arte
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/bcf8b6299ad2633309bbfb632a2d325c.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Dibujo digital con Photoshop</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/a0ee4d221d753fcc7c4d4507fb65de5a.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Dibujo y pintura</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/3f41a0cba3e57475f759a4381741a9ca.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Matte painting con Photoshop</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/b61405cce804fa8f548518c0725a5b3c.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-del-arte" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK ARTE</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios del Arte en 103h </p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-del-arte" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/036dde168f750eba1ce9cbec1a232294.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Música
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/56a1dc5ac48cab2ae9a4f9a65e3baa17.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Ableton Live</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/d8d4fd1417a6bfe785654c34501281e5.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Audition</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/d2dd0aeabc4b898d3701b2018f1ce17a.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Teoría musical</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/a373f89051119d22c18f6e8a434b08e5.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Guitarra</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/8a196b654dc9ed64c91a5ab3ccff2831.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Traktor</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/11e9fd3a24cc932084425055bb91d875.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-de-la-musica" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK MUSICA</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios de la Música en 140h</p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-de-la-musica" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/7360b8b4f057368dc0a01e554168373f.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Dinero
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/a80f25476c7dc01bc33df4cd6b236065.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Inversión en bolsa</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/87360cf85a11c39ef169351e9a0f8ade.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Negocios</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/f66412b77c5835eb43078f31472eea66.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-del-dinero" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK DINERO</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios del Dinero en 140h</p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-del-dinero" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/a11eeb6d057b9ae9db0f195815f16569.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Ingeniería/arquitectura
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/846e73b5c994976de37053af9c6526a6.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Catia</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/c37a5551b8ba1948b6ad32d233ce5c65.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Rhinoceros</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/c87f7fada0cb33c48d104fd5dcf62b67.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Revit</a>
+                                </li>
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/631a0a0f01301cc8f56e2f135f1afbd0.png" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">AutoCAD</a>
+                                </li>
+
+
+
+                                <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                                    <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://megacursos.com/uploads/images/medium/db8dee7859972755a10563f9f7ba2a81.png" alt="" width="60px">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="/megapack/dios-de-la-ingenieria-arquitectura" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                                <p style="font-size:12px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK INGENIERÍA <br>ARQUITECTURA</p>
+                                                <p style="font-size:11px;font-style:italic,line-height: 15px; color:black">Dios de la Ingeniería/Arquitectura en 215h </p>
+                                                <span style="font-size:10px;">Actualizado 2020.</span>
+                                            </a>
+                                        </div>
+                                        <a href="/megapack/dios-de-la-ingenieria-arquitectura" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/30e18c0e10f846d6630a77fc605fd358.jpg" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Idiomas
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/8ba5d24420090f2fe0a89dea062ce61a.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Inglés</a>
+
+                                    <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin: 0!important;padding:0!important">
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/cccc55d842ec8dd4e134ae3d92fe5ac7.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel A1+A2</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/8684dff289213b8896722e94d33a33cb.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel B1+B2</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/65a72b0984ac9d7b8a506643d8f52831.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel C1+C2</a>
+                                        </li>
+                                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/00340569bf4a5e091c052cf9c0a19002.jpg" alt="" class="img-mega-menu">
+
+                                            <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">TOELF</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
+                            <img src="https://megacursos.com/uploads/images/thumbnails/30d17c560c94b98e9102927642bc6ccf.png" alt="" style="display:block" class="img-mega-menu">
+                            <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
+                                <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
+                                    Magia
+                                </p>
+                            </a>
+
+                            <!--
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+               -->
+
+                            <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;padding: 5px 7px;">
+                                    <img src="https://megacursos.com/uploads/images/thumbnails/b233f6ec3bebafcdc37fa8cdb5bbe079.jpg" alt="" class="img-mega-menu">
+                                    <a class="person-dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Cartomagia</a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 15px 0px 15px;border-radius: 8px;margin-top: 20px;width:100%;">
+                            <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                                <div class="col-md-4">
+                                    <img src="https://megacursos.com/uploads/images/full/067ce75deedbdd271eb899430f3bebcd.png" alt="" width="60px">
+
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="https://megacursos.com/ultrapack/dios-del-universo" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                        <p style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">Ultrapack Dios del universo 2.000H</p>
+                                        <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Incluye todos los Megacursos</p>
+                                    </a>
+                                </div>
+                                <a href="" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--
+        <li class="nav-item dropdown dropdown--open-on-hover dropdown--topics dropdown--open-on-hover dropdown open">
+          <a class="nav-link  dropdown-toggle-category" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-list-ul"></i> Categorias </a>
+          <ul class="dropdown-menu dropdown-menu-principal" aria-labelledby="navbarDropdownMenuLink" style="margin-top: -2px;padding:0px; font-size: 15px;width: 300px;">
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/4c8b8d51d0b6170e20657640b74f3acb.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Diseño 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/8a687b025e7bbfb1d9960b2a800b8e7b.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Video</a>
+                                            
+                        <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin-left: 0px;">
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">After Effects</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/0384c6ed2b1c55ea3819ec331389b9bd.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nuke</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/1ff2ec9409554ca8e66f82d8ddfcbc06.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Premiere Pro</a>
+                            </li>
+                                                  </ul>
+                                          </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/699a704a53eff92b9172d0bda2421afa.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">3D</a>
+                                            
+                        <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin-left: 0px;">
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/81ddb5fe96b4d44c5015457586fdbcb4.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">3Ds Max</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/bc19cb2b68fb7074ed14f3ecb7c5ff8b.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Cinema 4D</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/27bc9a253ac6c7d84a239183bea2e3f8.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Maya</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/edc62bea4b0b9bf1e2e77693a4d5dba5.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">ZBrush</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/2767bd5e44bb4613dbb2f1e0e49dbbd9.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Blender</a>
+                            </li>
+                                                  </ul>
+                                          </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/e3642046853b917786f571e6f7cae8b0.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Diseño gráfico</a>
+                                            
+                        <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin-left: 0px;">
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/4f7411f47c246fa778fc8f241150a32d.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Illustrator</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/17b120215d661f7267477d104c8e2d17.png" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Photoshop</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/80366090c8c01d292f713cc6f9bc86d7.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Indesign</a>
+                            </li>
+                                                  </ul>
+                                          </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/c26029a20b6e85c0736ae38198d8d494.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-del-diseno" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK DISEÑO</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios del Diseño en 375h (actualizado 2020)</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-del-diseno" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/9ee43c5b09efcad7fb5461a057921264.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Programación 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/a1600926ca15042296ebe56c1815d4cf.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">iOS con Swift</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/73ae6825f1f0c307b067274e01656fb0.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Java</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/f828772576439eb4ec74f58843a9b397.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">.Net con C#</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/b773023b5f6c11425efadf91b1820113.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Pascal</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/1318db2adbe17586e8b5d953c24505a0.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Hacking</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/d86768522e35c40694e76edc5991dfb6.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Python</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/123e08a8f7c9fd87928d207d18439ce8.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Angular</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/21c7c7fb1e793c18af15dc1379b46915.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-de-la-programacion" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK PROGRRAMACION</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios de la Programación en 265h (actualizado 2020)</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-de-la-programacion" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/c89d49d1f948960e99cae46790123a8c.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Internet 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/71948154debc367fdef1ae5931b5f361.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Márketing online</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/63076d98280f3cd18c12419b7c334773.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">WordPress</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/583804165168a309275ef104c3ded2f2.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Desarrollo Web (HTML5 + CSS3)</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/e891eea67e7714c9c7a379a9eb998758.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">SEO</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/0acfca056deb270b19a420448591b3a9.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">PHP y bases de datos</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/ce28d90258f3b63ab59fa98b317d4137.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Javascript (incluye jQuery y Ajax)</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/1062cecbf8284de13cb18b4b2a384698.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-del-internet" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK INTERNET</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios del Internet en 235h (actualizado 2020</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-del-internet" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/702d6272b125dbd618b584680ba94037.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Arte 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/bcf8b6299ad2633309bbfb632a2d325c.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Dibujo digital con Photoshop</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/a0ee4d221d753fcc7c4d4507fb65de5a.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Dibujo y pintura</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/3f41a0cba3e57475f759a4381741a9ca.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Matte painting con Photoshop</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/b61405cce804fa8f548518c0725a5b3c.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-del-arte" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK ARTE</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios del Arte en 103h (actualizado 2020)</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-del-arte" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/036dde168f750eba1ce9cbec1a232294.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Música 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/56a1dc5ac48cab2ae9a4f9a65e3baa17.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Ableton Live</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/d8d4fd1417a6bfe785654c34501281e5.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Audition</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/d2dd0aeabc4b898d3701b2018f1ce17a.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Teoría musical</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/a373f89051119d22c18f6e8a434b08e5.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Guitarra</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/8a196b654dc9ed64c91a5ab3ccff2831.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Traktor</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/11e9fd3a24cc932084425055bb91d875.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-de-la-musica" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK MUSICA</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios de la Música en 140h (actualizado 2020</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-de-la-musica" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/7360b8b4f057368dc0a01e554168373f.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Dinero 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/a80f25476c7dc01bc33df4cd6b236065.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Inversión en bolsa</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/87360cf85a11c39ef169351e9a0f8ade.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Negocios</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/f66412b77c5835eb43078f31472eea66.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-del-dinero" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK DINERO</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios del Dinero en 140h (actualizado 2020</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-del-dinero" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/a11eeb6d057b9ae9db0f195815f16569.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Ingeniería/arquitectura 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/846e73b5c994976de37053af9c6526a6.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Catia</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/c37a5551b8ba1948b6ad32d233ce5c65.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Rhinoceros</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/c87f7fada0cb33c48d104fd5dcf62b67.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Revit</a>
+                                                                </li>
+                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/631a0a0f01301cc8f56e2f135f1afbd0.png" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">AutoCAD</a>
+                                                                </li>
+                  
+                                             
+                       
+                        <li id="reyuniverso" class="dropdownn" style="padding: 0px 20px 0px 20px;border-radius: 8px;margin-top: 20px;width:100%"> 
+                          <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                            <div class="col-md-4">
+                              <img src="http://code2.com/uploads/images/full/db8dee7859972755a10563f9f7ba2a81.png" alt="" width="60px">
+                              
+                            </div>
+                            <div class="col-md-8">
+                                <a href="/megapack/dios-de-la-ingenieria-arquitectura" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                                <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">MEGAPACK INGENIERÍA <br>ARQUITECTURA</p>
+                                <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Dios de la Ingeniería/Arquitectura en 215h (actualizado 2020)</p>
+                                </a>
+                            </div>
+                            <a href="/megapack/dios-de-la-ingenieria-arquitectura" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+                          </div>
+                        </li>
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/30e18c0e10f846d6630a77fc605fd358.jpg" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Idiomas 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/8ba5d24420090f2fe0a89dea062ce61a.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Inglés</a>
+                                            
+                        <ul class="dropdown-menu" style="font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);margin-left: 0px;">
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/cccc55d842ec8dd4e134ae3d92fe5ac7.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel A1+A2</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/8684dff289213b8896722e94d33a33cb.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel B1+B2</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/65a72b0984ac9d7b8a506643d8f52831.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Nivel C1+C2</a>
+                            </li>
+                                                      <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding:5px">
+                              <img src="https://megacursos.com/uploads/images/thumbnails/00340569bf4a5e091c052cf9c0a19002.jpg" alt="" width="30px">
+
+                              <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">TOELF</a>
+                            </li>
+                                                  </ul>
+                                          </li>
+                  
+                                             
+                       
+                </ul>
+              </li>
+                          <li class="dropdown-submenu" style="display: flex;margin:0px !important;align-items: center;padding:0px 10px">
+                <div class="elemet-item" style="display: flex;width: 100%; padding: 5px 10px;">
+                  <img src="https://megacursos.com/uploads/images/thumbnails/30d17c560c94b98e9102927642bc6ccf.png" alt="" width="30px">
+                  <a class="dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%"> 
+                    <p style="white-space: normal;margin-left:10px;    display: flex;align-self: center;">
+                      Magia 
+                    </p>
+                  </a>
+                  <svg id="icon-next" viewBox="0 0 24 24" width="20px"><title>next</title><path d="M8.59 7.41l4.58 4.59-4.58 4.59 1.41 1.41 6-6-6-6-1.41 1.41z"></path></svg>
+                </div>
+                <ul class="dropdown-menu" style="padding:0px;font-size: 15px;border: 1px solid #dcdacb;box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);width: 300px;margin-left: 0px;">
+                                                        <li class="dropdown-submenu my-2" style="display: flex;margin:0px !important;padding: 5px 10px;">
+                      <img src="https://megacursos.com/uploads/images/thumbnails/b233f6ec3bebafcdc37fa8cdb5bbe079.jpg" alt="" width="30px"> 
+                      <a class="dropdown-item dropdown-toggle-category" href="#" style="display: flex;align-items: center;margin-left: 5px;">Cartomagia</a>
+                                                                </li>
+                  
+                                             
+                       
+                </ul>
+              </li>
+                         <li id="reyuniverso" class="dropdownn" style="padding: 0px 25px 0px 25px;border-radius: 8px;margin-top: 20px;width:100%"> 
+              <div style="background-color: #efefef;padding:10px;border-radius: 0.5em" class="row">
+                <div class="col-md-4">
+                  <img src="https://megacursos.com/uploads/images/full/067ce75deedbdd271eb899430f3bebcd.png" alt="" width="60px">
+                  
+                </div>
+                <div class="col-md-8">
+                    <a href="https://megacursos.com/ultrapack/dios-del-universo" style="text-decoration: none;color:#353333;font-weight: bold;background-color: inherit;">
+                    <p  style="font-size:13px; line-height: 15px; color:black;margin-bottom:10px" class="font-weight-bold">Ultrapack Dios del universo 2.000H</p>
+                    <p style="font-size:10px;font-style:italic,line-height: 15px; color:black">Incluye todos los Megacursos</p>
+                    </a>
+                </div>
+                <a href="" class="btn btn-block" style="background-color: #fbba03;padding: 5px;margin-top: 10px;margin: 10px 10px 0px 10px;color:white">Ver Ultrapack</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        -->
+                <li class="nav-item ">
+                    <div class="input-group" style="margin-top:5px ; width: 400px;">
+                        <input type="text" class="form-control search-desktop" placeholder="Buscar cursos" aria-label="Input group example" aria-describedby="btnGroupAddon" id="product_search">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text" id="btnGroupAddon"><i class="fa fa-search"></i></div>
+                        </div>
+                        <div id="product_div">
+                            <ul id="product_list"></ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="nav-item dropdown--ufb zero-state dropdown--open-on-hover dropdown">
+                    <a class="nav-link  dropdown-toggle-category" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Planes </a>
+                    <ul class="dropdown-menu dropdown-menu-principal dropdown-menu-second" aria-labelledby="navbarDropdownMenuLink" style="margin-top:-2px;font-size: 15px;">
+                        <li style="justify-content:center; align-self:center">
+
+                            Planes (incluye TODO) <br> Acceso ilimitado a todos los Megacursos y cursos avanzados. Con Diploma Oficial Físico enviado gratis a tu domicilio. Asistencia Individual 24h. <br>
+
+                            <a href="https://megacursos.com/newplans" style="padding-left:0px !important">Ver Planes</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="cart">
+
+                <ul class="navbar-nav ml-auto cart-mega">
+                    <li class="nav-item nav-item dropdown d-none d-md-block" style="width:80px">
+                        <a class="nav-link notification" style="" onclick="return false;" role="button" data-toggle="dropdown" id="dropdownMenu1" data-target="#" aria-expanded="false">
+                            <i style="" class="fa fa-shopping-cart"></i>
+                            <span id="item-cart" class="badge">0</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-products dropdown-menu-right" aria-labelledby="mega03" id="super-shopping">
+                            <div id="cart-container" class="cart-container">
+                                <div class="cart-info">
+                                    <p>Cesta Vacia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item " style="display:none">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-cart"></i> </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary d-none d-md-block" id="login" href="https://megacursos.com/webapp/">
+              Iniciar Sesion
+            </a>
+                        <!--movil-->
+                        <a class="nav-link  d-sm-block d-md-none" href="https://megacursos.com/webapp/">
+              Iniciar Sesión
+            </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger d-none d-md-block" id="signup" href="https://megacursos.com/login">
+              Registrate
+            </a>
+                        <!--movil-->
+                        <a class="nav-link  d-sm-block d-md-none" href="https://megacursos.com/login">
+              Registrate
+            </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <script src="https://megacursos.com/themes/megacursos/estilos/owlcarousel/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer="defer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer="defer"></script>
+    <script src="https://megacursos.com/themes/megacursos/estilos/js/sidebar.js?a=1" defer="defer"></script>
+</body>
+
+</html>
