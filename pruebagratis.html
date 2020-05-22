@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba gratis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- Don't touch -->
+    <style>
+        .row {
+            margin: 0;
+        }
+    </style>
+
+    <!-- Migrate -->
+    <style>
+        .breadcrumb {
+            padding-left: 4%;
+            margin-bottom: 0px;
+        }
+        
+        .breadcrumb-item.active {
+            color: #6c757d;
+            font-size: 13px;
+        }
+        
+        .dropbtn-products.first {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .clientBannerContact {
+            width: 100%;
+            height: 552px;
+        }
+        
+        .slick-slide img {
+            border: 0px solid #fff;
+            min-width: 0px !important;
+        }
+        
+        .course-card-header {
+            padding: 10px;
+            display: flex;
+            justify-content: center
+        }
+        
+        .item.slick-slide {
+            width: auto !important;
+        }
+        
+        .mega-item-active {
+            border-color: #DC3545 !important;
+            color: #DC3545 !important;
+        }
+        
+        .course-card-item {
+            height: 370px !important;
+        }
+        
+        .price-text-container {
+            top: 322px !important;
+        }
+        /* Buttons */
+        
+        .btn-outline {
+            border: 1px solid #707070;
+            position: relative;
+            min-width: 93px;
+        }
+        
+        .btn-outline.active {
+            background-color: #e0f7eb;
+            color: #32CC7A;
+            border: 1px solid #32CC7A;
+        }
+        
+        .best-choice {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            z-index: 3;
+        }
+        
+        .best-choice span {
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            right: -22px;
+            top: 7px;
+            color: #fff;
+            font-size: .35em;
+            font-weight: 700;
+            width: 77px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #01ae43;
+            z-index: 2;
+            line-height: 18px;
+        }
+        
+        .best-choice:after,
+        .best-choice:before {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            content: '';
+            z-index: 1;
+        }
+        
+        .best-choice:before {
+            right: 0;
+            bottom: 12px;
+            background-color: #007a2d;
+            height: 7px;
+        }
+        
+        .best-choice:after {
+            left: 12px;
+            top: 0;
+            background-color: #007a2d;
+            width: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">
+                <a class="dropbtn-products first" href="https://megacursos.com/allcourses">/ Prueba Gratis</a>
+            </li>
+
+        </ol>
+    </nav>
+    <div class="container-fluid no-padding ">
+        <div class="d-flex clientBannerContact" style="background:url('https://megacursos.com/themes/megacursos/assets/img/fondo-pruebagratis.png'); background-repeat: no-repeat; background-size: cover;">
+            <div class="d-flex" style="flex-direction: column;justify-content: center;width: 100%;display: flex;align-self: center;align-items: center;">
+                <h1 class="font-weight-bold mb-4">Prueba gratis por 24h</h1>
+                <p class="font-weight-normal h3" style="color:black">Todos los Megacursos de 0 a 100</p>
+                <p class="font-weight-normal h3" style="color:black">(+1300h Full HD)</p>
+
+                <button class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</button>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #beb4de2b">
+        <div class="row mb-5">
+            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
+                <h3 class="mt-5 font-weight-bold mb-3">Nuestros planes Gratuitos</h3>
+                <!-- <p class="mt-3 h6 font-weight-normal" style="color:black">Elige tu divisa.</p>
+       <div class="row">
+
+         <div class="col-md-12">
+           <select id="slt-divisas" class="form-control"></select>
+         </div>
+       </div> -->
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-md-3 offset-3 card" style="padding:20px;box-shadow: 10px 10px 40px #00000029;">
+                <nav>
+                    <div class="nav nav-tabs mx-n2 justify-content-center" id="nav-tab" role="tablist" style="border-bottom: none;">
+                        <a class="nav-item btn btn-default btn-outline active" id="nav-mensual-tab" data-toggle="tab" href="#nav-mensual" role="tab" aria-controls="nav-mensual" aria-selected="true">Mensual</a>
+                        <a class="nav-item btn btn-default btn-outline ml-2" id="nav-trimestral-tab" data-toggle="tab" href="#nav-trimestral" role="tab" aria-controls="nav-trimestral" aria-selected="false">Trimestral <span class="best-choice"><span>Recomendado</span></span></a>
+                        <a class="nav-item btn btn-default btn-outline ml-2" id="nav-anual-tab" data-toggle="tab" href="#nav-anual" role="tab" aria-controls="nav-anual" aria-selected="false">Anual</a>
+                    </div>
+                </nav>
+                <div class="tab-content mt-2" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-mensual" role="tabpanel" aria-labelledby="nav-mensual-tab">
+                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                        <p class="font-weight-bold h5">31.28 USD/Mes</p>
+                        <div class="d-flex">
+                            <a href="https://megacursos.com/checkoutplans/52/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-trimestral" role="tabpanel" aria-labelledby="nav-trimestral-tab">
+                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                        <p class="font-weight-bold h5">24.53 USD/Mes</p>
+                        <div class="d-flex">
+                            <a href="https://megacursos.com/checkoutplans/54/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-anual" role="tabpanel" aria-labelledby="nav-anual-tab">
+                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                        <p class="font-weight-bold h5">15.37 USD/Mes</p>
+                        <div class="d-flex">
+                            <a href="https://megacursos.com/checkoutplans/56/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div syle="display:flex;margin-top:10px;" class="mb-4">
+         <button class="btn" style="background-color: #e0f7eb;color:#32CC7A;border: 1px solid #32CC7A;">Mensual</button>
+         <button class="btn btn-default btn-outline ml-2" style="border: 1px solid #707070;">Anual</button>
+       </div> -->
+
+            </div>
+            <div class="col-md-3 card" style="background-color: #F5F5F5;padding:20px 20px 30px 20px;;box-shadow: 10px 10px 40px #00000029;">
+                <p style="color:black;font-weight: bold" class="h6 mt-3 mb-2">Que obtendrás:</p>
+                <div class="row mb-1 mt-3">
+                    <div class="col-md-1">
+                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <span style="color:#999;font-size:15px">Acceso ilimitado a todos los Megacursos y Cursos Avanzados</span>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-md-1">
+                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <span style="color:#999;font-size:15px">Visualizacion FullHD desde la computadora y App IOS / Android</span>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-md-1">
+                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <span style="color:#999;font-size:15px">2 intentos para Megatest Oficial Online por Curso</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <span style="color:#999;font-size:15px">Diploma Oficial virtual (PDF)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
+                <h2 class="mt-5 font-weight-bold">Trailer</h2>
+                <p class="mt-3 h3 font-weight-normal" style="color:black">Todos los Megacursos de 0 a 100</p>
+                <p>(+1300h Full HD)</p>
+
+                <div style="text-align:center;padding: 20px 0px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AW91Y6W_xmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
+                <h3 class="mt-5 font-weight-bold">Prodras Tener acceso a todos estos cursos </h3>
+                <span><i class="fas fa-arrow-circle-down " style="font-size:30px;color:#DC3545"></i></span>
+            </div>
+        </div>
+        <div class="col col-8 offset-2">
+            <div class="mega-catego" style="display: flex;justify-content: center;border:0px !important">
+                <button type="button" class="maga-items mega-item-active btn btn-link btn-block" onclick="getMega(1)">Diseño</button>
+                <button type="button" class="maga-items btn btn-link btn-block" onclick="getMega(25)">Música</button>
+                <button type="button" class="maga-items  btn btn-link btn-block" onclick="getMega(4)">Internet</button>
+                <button type="button" class="maga-items  btn btn-link btn-block" onclick="getMega(2)">Programación</button>
+                <button type="button" class="maga-items btn btn-link btn-block" onclick="getMega(3)">Arte</button>
+                <button type="button" class="maga-items  btn btn-link btn-block" onclick="getMega(22)">Dinero</button>
+                <button type="button" class="maga-items  btn btn-link btn-block" onclick="getMega(39)">Ingeniería/arquitectura</button>
+            </div>
+            <div class="items slick-initialized slick-slider" style="border: 0px solid rgb(255, 255, 255); margin: 0px; padding: 0px; min-height: 0px;" id="supermega"><button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: inline-block;"></button>
+                <div class="slick-list draggable">
+                    <div class="slick-track" style="opacity: 1; width: 3036px; transform: translate3d(0px, 0px, 0px);">
+                        <div class="item slick-slide slick-current slick-active" style="width: 260px;" tabindex="0" data-slick-index="0" aria-hidden="false">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/3ds-max-maestro-en-50h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/3ds-max-maestro-en-50h&quot;>3Ds Max Maestro en 50h (actualizado 2020)</a><div class=&quot;hover-description&quot;>El software por excelencia para diseñar los mejores gráficos 3D, animaciones, modelados, texturizaciones, fluidos, arquitectura, personajes, autos… Diseña tus propios mundos sin ningún límite. Domina 3Ds Max de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=6 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="" aria-describedby="popover691128">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/28c5d94196cb682828492474e2190bbe.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">3Ds Max</h6>
+                                        <div class="course-card-title-mega">Maestro en 50h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(29)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/81ddb5fe96b4d44c5015457586fdbcb4.jpg" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 396 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">237.6 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide slick-active" style="width: 260px;" tabindex="0" data-slick-index="1" aria-hidden="false">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/blender-maestro-en-60h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/blender-maestro-en-60h&quot;>Blender Maestro en 60h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Blender es el software Open Source número uno para producción de contenido 3D a nivel mundial, con el podrás hacer producción 3D, modelado, texturizado, rigging, animación, además con sus funciones extras puedes hacer edición de video, composición, motion tracking y hasta videojuegos, todo en un mismo lugar. Domina Blender de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=67 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/bcd06ef7cce4109a13832fe4784a9bdf.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Blender</h6>
+                                        <div class="course-card-title-mega">Maestro en 60h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(45)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/2767bd5e44bb4613dbb2f1e0e49dbbd9.jpg" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 469.74 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">281.84 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide slick-active" style="width: 260px;" tabindex="0" data-slick-index="2" aria-hidden="false">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/cinema-4d-maestro-en-60h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/cinema-4d-maestro-en-60h&quot;>Cinema 4D Maestro en 60h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Diseña todo tipo de gráficos 3D, personajes, animaciones, fluidos, dibujos animados, etc con uno de los programas más versátiles y fáciles de aprender del mercado. Domina Cinema 4D de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=7 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/e8f857328d13305a6943d498a8a6bdf5.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Cinema 4D</h6>
+                                        <div class="course-card-title-mega">Maestro en 60h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(30)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/bc19cb2b68fb7074ed14f3ecb7c5ff8b.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 343.2 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">205.92 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="3" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/maya-maestro-en-35h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/maya-maestro-en-35h&quot;>Maya Maestro en 35h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Maya es el único software de 3D acreditado con un Oscar, usado en películas como Avatar, Transformers, Matrix o Spiderman. Ofrece herramientas de modelado, dinámica, animación y renderizado para la creación de videojuegos y efectos especiales. Construye tu propio mundo, dale vida a tus personajes. Domina Maya de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=66 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/1cc40d6f951d450e16d734913d6c5b9e.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Maya</h6>
+                                        <div class="course-card-title-mega">Maestro en 35h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(44)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/27bc9a253ac6c7d84a239183bea2e3f8.jpg" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 475.2 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">285.12 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="4" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/zbrush-maestro-en-35h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/zbrush-maestro-en-35h&quot;>ZBrush Maestro en 35h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Esculpe en 3D para crear modelos tridimensionales con un asombroso nivel de detalle y realismo. Añade arrugas a la cara, crea monstruos y personajes o diseña coches deportivos. Domina ZBrush de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=9 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/c08a65e13bdded6eb9293713d5b63904.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">ZBrush</h6>
+                                        <div class="course-card-title-mega">Maestro en 35h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(11)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/edc62bea4b0b9bf1e2e77693a4d5dba5.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 448.8 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">269.28 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="5" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/illustrator-maestro-en-70h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/illustrator-maestro-en-70h&quot;>Illustrator Maestro en 70h (actualizado 2020)</a><div class=&quot;hover-description&quot;>El más potente software de ilustración vectorial para crear todo tipo de personajes, diseños, logos, infografías, ilustraciones y cualquier otra necesidad visual que tengas. Domina Illustrator de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=20 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/a71a0419babd23b1705ceccce9d5d6bd.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Illustrator</h6>
+                                        <div class="course-card-title-mega">Maestro en 70h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(13)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/4f7411f47c246fa778fc8f241150a32d.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 369.6 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">221.76 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="6" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/indesign-maestro-en-35h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/indesign-maestro-en-35h&quot;>Indesign Maestro en 35h (actualizado al 2020)</a><div class=&quot;hover-description&quot;>Indesign es la aplicación número uno a nivel mundial para el diseño editorial, maquetación y diseño gráfico. Podrás crear todo tipo de proyectos para impresos, brindándonos un fácil uso tipográfico y de imágenes tanto bitmap como vectoriales, teniendo como resultado el diseño y diagramación de cualquier proyecto.&nbsp;Domina Indesign de 0 a 100.
+&nbsp;</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=69 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/3cf846eec169104c38074a485c63bda1.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Indesign</h6>
+                                        <div class="course-card-title-mega">Maestro en 35h (actualizado al 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(46)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/80366090c8c01d292f713cc6f9bc86d7.jpg" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 369.76 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">221.86 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="7" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/photoshop-maestro-en-35h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/photoshop-maestro-en-35h&quot;>Photoshop Maestro en 35h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Photoshop es el software más famoso y potente de edición de imagen y diseño gráfico. Utilizado por cientos de millones de profesionales, ofrece todas las herramientas de retoque fotográfico posible para que puedas crear cualquier tipo de imagen realista o de diseño sin ninguna limitación. Domina Photoshop de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=21 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/10d1b8bc4d16bc40636b93b3e6068b39.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Photoshop</h6>
+                                        <div class="course-card-title-mega">Maestro en 35h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(12)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/17b120215d661f7267477d104c8e2d17.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 343.2 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">205.92 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="8" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/after-effects-maestro-en-90h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/after-effects-maestro-en-90h&quot;>After Effects Maestro en 90h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Es el&nbsp; programa de postproducción y gráficos animados más famoso del mercado. Tras haberlo dominado, podrás crear una cabecera para televisión, efectos especiales en un vídeo,&nbsp; un anuncio promocional para una empresa, y una intro con hermosos gráficos 3D abstractos,Una de las grandes ventajas de After Effects es su inigualable biblioteca de plugins, que aportan al software una gran cantidad de potentes funciones adicionales de todas las áreas: partículas, manipulación de objetos 3D, colorizació. Domina&nbsp;After Effects de 0 a 100
+&nbsp;</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=2 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/08cb3fec9dfb2a75c35a68d9ef3d12ef.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">After Effects</h6>
+                                        <div class="course-card-title-mega">Maestro en 90h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(8)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 422.4 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">253.44 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="9" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/nuke-maestro-en-35h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/nuke-maestro-en-35h&quot;>Nuke Maestro en 35h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Crea efectos visuales extraordinarios con el mismo software usado en las grandes producciones de Hollywood, y da un paso a la verdadera postproducción con el software de composición nodal más popular y potente, utilizado para postproducción avanzada de todo tipo de proyectos cinematográficos y de publicidad. Domina Nuke de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=3 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/6822793c0fa2b2424144b8d9beb0b528.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Nuke</h6>
+                                        <div class="course-card-title-mega">Maestro en 35h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(10)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/0384c6ed2b1c55ea3819ec331389b9bd.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 475.2 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">285.12 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slick-slide" style="width: 260px;" tabindex="-1" data-slick-index="10" aria-hidden="true">
+                            <div class="course-card margin-item">
+                                <div class="course-card-item" onclick="enlacexx(&quot;https://megacursos.com/course/megacurso/premiere-pro-maestro-en-50h&quot;)" onmouseover="get($(this))" data-html="true" data-container="body" data-toggle="popover" data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;https://megacursos.com/course/megacurso/premiere-pro-maestro-en-50h&quot;>Premiere Pro Maestro en 50h (actualizado 2020)</a><div class=&quot;hover-description&quot;>Edita cualquier tipo de película, cortometraje, anuncio, vídeo musical o cualquier otro proyecto de vídeo desde el comienzo hasta el final. Corrección de color, de sonido, multicámara, efectos especiales, títulos… Domina Premiere Pro de 0 a 100.</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=4 ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>"
+                                    data-original-title="">
+                                    <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png"></div>
+                                    <div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">megacurso</span>
+                                        <h6 class="carou-title-sty">Premiere Pro</h6>
+                                        <div class="course-card-title-mega">Maestro en 50h (actualizado 2020)</div>
+                                    </div>
+                                    <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px">
+                                        <div class="price-text-container" onclick="buy(27)" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px">
+                                            <div style="display: flex;align-items: center;"><img class="course-card-img img-fluid" alt="" src="https://megacursos.com/uploads/images/thumbnails/1ff2ec9409554ca8e66f82d8ddfcbc06.png" style="width: 25px !important;min-width: 0px;"></div>
+                                            <div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> 396 $USD</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">237.6 $USD</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false"></button></div>
+        </div>
+
+        <div class="d-flex justify-content-center my-5">
+
+            <a href="/newplans" class="btn mt-2 font-weight-bold my-5 h4" style="background-color: #FCC11C;color:white">Conoce nuestros planes</a>
+        </div>
+
+    </div> -->
+
+    <script src="https://megacursos.com/themes/megacursos/estilos/owlcarousel/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://megacursos.com/themes/megacursos/estilos/slick.min.js"></script>
+    <script defer>
+        $('[data-toggle="tooltip"]').tooltip();
+
+        function dell() {
+            $('#popoverx').popover('show');
+            //alert("dell");
+            // $("#shopping").empty();
+
+        }
+        addCartSumary();
+
+        $('#diseño').on('show.bs.collapse', function() {
+            $("#logodiseño i").removeClass('fa-chevron-up');
+            $("#logodiseño i").addClass('fa-chevron-down');
+            getMegamovil(1, "diseñox");
+        });
+        $('#diseño').on('hidden.bs.collapse', function() {
+            //alert("sss");
+            $("#logodiseño i").removeClass('fa-chevron-down');
+            $("#logodiseño i").addClass('fa-chevron-up');
+
+        });
+        $('#music').on('show.bs.collapse', function() {
+            //alert("si");
+            $("#logomucic i").removeClass('fa-chevron-up');
+            $("#logomucic i").addClass('fa-chevron-down');
+            getMegamovil(25, "musicax");
+        });
+
+        $('#music').on('hidden.bs.collapse', function() {
+            //alert("sss");
+            $("#logomucic i").removeClass('fa-chevron-down');
+            $("#logomucic i").addClass('fa-chevron-up');
+
+        });
+        $('#inter').on('show.bs.collapse', function() {
+            $("#logointer i").removeClass('fa-chevron-up');
+            $("#logointer i").addClass('fa-chevron-down');
+            getMegamovil(4, "internetx");
+
+        });
+        $('#inter').on('hidden.bs.collapse', function() {
+            $("#logointer i").removeClass('fa-chevron-down');
+            $("#logointer i").addClass('fa-chevron-up');
+
+        });
+
+        $('#program').on('show.bs.collapse', function() {
+            $("#logoprogram i").removeClass('fa-chevron-up');
+            $("#logoprogram i").addClass('fa-chevron-down');
+            getMegamovil(2, "programacionx");
+
+        });
+        $('#program').on('hidden.bs.collapse', function() {
+            $("#logoprogram i").removeClass('fa-chevron-down');
+            $("#logoprogram i").addClass('fa-chevron-up');
+
+        });
+        $('#artesx').on('show.bs.collapse', function() {
+            $("#logoartesx i").removeClass('fa-chevron-up');
+            $("#logoartesx i").addClass('fa-chevron-down');
+            getMegamovil(3, "artex");
+
+        });
+        $('#artesx').on('hidden.bs.collapse', function() {
+            $("#logoartesx i").removeClass('fa-chevron-down');
+            $("#logoartesx i").addClass('fa-chevron-up');
+
+        });
+        $('#dinerosx').on('show.bs.collapse', function() {
+            $("#logodinero i").removeClass('fa-chevron-up');
+            $("#logodinero i").addClass('fa-chevron-down');
+            getMegamovil(22, "dinerox");
+
+        });
+        $('#dinerosx').on('hidden.bs.collapse', function() {
+            $("#logodinero i").removeClass('fa-chevron-down');
+            $("#logodinero i").addClass('fa-chevron-up');
+
+        });
+
+        $('#ingenieriasx').on('show.bs.collapse', function() {
+            $("#logoingenieriasx i").removeClass('fa-chevron-up');
+            $("#logoingenieriasx i").addClass('fa-chevron-down');
+            getMegamovil(39, "ingenieriax");
+
+        });
+        $('#ingenieriasx').on('hidden.bs.collapse', function() {
+            $("#logoingenieriasx i").removeClass('fa-chevron-down');
+            $("#logoingenieriasx i").addClass('fa-chevron-up');
+
+        });
+
+        function init() {
+            // return();
+            //add();//return;
+
+            getMegaIndex(1);
+
+            getPopulares();
+
+            getMegapack();
+            /*
+            opinion();
+            */
+
+        }
+        const URL = "https://megacursos.com";
+
+        //const URL="http://mega.com";
+
+        function getMegaIndex(id) {
+            var alto = $(".items").height();
+            $(".items").css("min-height", alto);
+            var margin = (alto / 2) - 20;
+            var jqxhr = $.get(URL + "/api/plan/categoriesx/" + id, function() {})
+                .done(function(data) {
+                    var response = (data["mega"][0]);
+                    //console.log(response.hijos);
+
+
+                    setTimeout(function() {
+
+                        $("#mega-spiner").remove();
+                        $("#megacursos").css("display", "block");
+                        cursos(response.hijos);
+                        //cursos();
+
+                    }, 1000);
+                })
+                .fail(function() {
+                    alert("error");
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+
+        function getPopulares() {
+            // var alto= $(".items").height();
+            var margin = 30; //(alto/2)-20;
+            $('.popular').slick('removeSlide', null, null, true);
+            $('.popular').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+            // var jqxhr = $.get( "https://megacursos.com/api/plan/categoriesx/"+id, function() {
+            var jqxhr = $.get(URL + "/api/plan/popularesx", function() {})
+                .done(function(data) {
+                    var response = (data["mega"]);
+                    //console.log(response);
+                    cursosPopulares(response);
+                })
+                .fail(function() {
+                    alert("error");
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+
+        function getMegamovil(id, item) {
+            var margin = 20; //(alto/2)-20;
+            $('.' + item + '').slick('removeSlide', null, null, true);
+            $('.' + item + '').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+            // var jqxhr = $.get( "https://megacursos.com/api/plan/categoriesx/"+id, function() {
+            var jqxhr = $.get("https://megacursos.com/api/plan/categoriesx/" + id, function() {})
+                .done(function(data) {
+                    var response = (data["mega"][0]);
+                    console.log(response.hijos);
+                    cursosmovil(response.hijos, item);
+                })
+                .fail(function() {
+                    alert("error");
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+
+
+
+        function getMegapack() {
+            // var alto= $(".items").height();
+            var margin = 30; //(alto/2)-20;
+            $('.megapack').slick('removeSlide', null, null, true);
+            $('.megapack').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+            // var jqxhr = $.get("https://megacursos.com/api/getallproducts", function() {  
+            var jqxhr = $.get(URL + "/api/plan/megapack", function() {})
+                .done(function(data) {
+                    var response = (data["mega"]);
+                    //cursosAll(response);
+                    cursosMegapack(response);
+                })
+                .fail(function() {
+                    // alert( "error" );
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+
+        function opinion() {
+            // var alto= $(".items").height();
+            var margin = 30; //(alto/2)-20;
+            $('.opinion').slick('removeSlide', null, null, true);
+            $('.opinion').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+            //return;
+            $('.studyx').slick('removeSlide', null, null, true);
+            $('.studyx').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+
+            var jqxhr = $.get("https://megacursos.com/api/plan/testimonial", function() {})
+                .done(function(data) {
+                    // alert("si");
+                    var testimonial = (data["mega"]);
+                    var study = (data["study"]);
+                    cursosOpinion(testimonial, "opinion");
+                    cursosStudy(study, "studyx");
+                })
+                .fail(function() {
+                    // alert( "error" );
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+
+        function cursosOpinion(item, carousel) {
+            setTimeout(function() {
+                $('.' + carousel + '').slick('removeSlide', null, null, true);
+                $.each(item, function(index, value) {
+                    $('.' + carousel + '').slick('slickAdd', '<div class="item"><div class="card testimonial" style="height:400px"><div class="d-flex flex-column content-testimonial mt-2"><div style="display:flex;justify-content:center"><img class="img-fluid rounded-circle" src="https://megacursos.com/uploads/images/small/' + value.image + '" style="width:60px;min-width:10px"></div><p class="name-testimonial font-weight-bold">' + value.cname + '</p></div><div class="card-body px-4"> <div class="card-texto">' + value.description + '</div></div></div></div>');
+                    //})
+                });
+            }, 1000);
+        }
+
+        function cursosStudy(item, carousel) {
+            setTimeout(function() {
+                $('.' + carousel + '').slick('removeSlide', null, null, true);
+                $.each(item, function(index, value) {
+                    $('.' + carousel + '').slick('slickAdd', '<div class="item"><div class="img"><img src="https://megacursos.com/uploads/images/full/' + value.image + '" class="img-fluid"></div></div>');
+                    //})
+                });
+            }, 1000);
+        }
+
+        function getMega(id) {
+            var alto = $(".items").height();
+            $(".items").css("min-height", alto);
+            var margin = (alto / 2) - 20;
+            $('.items').slick('removeSlide', null, null, true);
+            $('.items').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+
+            var jqxhr = $.get("https://megacursos.com/api/plan/categoriesx/" + id, function() {})
+                .done(function(data) {
+                    var response = (data["mega"][0]);
+                    //console.log(response.hijos);
+                    cursos(response.hijos);
+                })
+                .fail(function() {
+                    alert("error");
+                })
+                .always(function() {
+                    //alert( "finished" );
+                });
+        }
+        //init();
+        function enviar() {
+            var alto = $(".items").height();
+            $(".items").css("min-height", alto);
+            var margin = (alto / 2) - 20;
+            //$('.items').append("<div class='itemsx'><img src='https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/preview/02_o_car.jpg'></div>");
+            $('.items').slick('removeSlide', null, null, true);
+            $('.items').slick('slickAdd', '<div style="margin-top:' + margin + 'px" id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+
+            //$('.items').html('<div id="spinerx" class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>');
+            setTimeout(function() {
+                cursos();
+            }, 200);
+
+        };
+
+        function cursos(item) {
+
+            // return;
+            setTimeout(function() {
+                //posicion(); 
+                $('.items').slick('removeSlide', null, null, true);
+                $.each(item, function(index, value) {
+                    // $('.items').slick('slickAdd','<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;'+ value.produc.url +'&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;'+value.produc.url+'&quot;>'+value.name+' '+value.produc.name+'</a><div class=&quot;hover-description&quot;>'+value.produc.description+'</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id='+value.produc.id+' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""  > <div class="course-card-header" style="padding: 10px;"><img class="course-card-img img-fluid"  alt="" src="'+value.produc.packshot+'"></div><div class="course-card-body" style="padding: 10px;"> <div class="course-card-title">'+value.name+'</div><div class="course-card-subtitle text-truncate">'+value.produc.name+'</div></div> <div class="course-card-price"><div class="price-text-container" onClick="buy('+value.produc.id+')"><span class="pricenuevo" >'+value.produc.precio+'</span> <span class="priceoriginal"> '+value.produc.original +'</span></div></div></div></div></div></div>');
+
+                    // }); 
+                    $('.items').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;' + value.produc.url + '&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;' + value.produc.url + '&quot;>' + value.name + ' ' + value.produc.name + '</a><div class=&quot;hover-description&quot;>' + value.produc.description + '</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=' + value.produc.id + ' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""><div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid"  alt="" src="' + value.produc.packshot + '"></div><div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">' + value.produc.course_type + '</span><h6 class="carou-title-sty">' + value.name + '</h6><div class="course-card-title-mega">' + value.produc.name + '</div></div> <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px"><div class="price-text-container" onClick="buy(' + value.id + ')" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px"></span><div style="display: flex;align-items: center;"><img class="course-card-img img-fluid"  alt="" src="' + value.image + '" style="width: 25px !important;min-width: 0px;"></div><div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> ' + value.produc.original + '</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">' + value.produc.precio + '</span> </div></div></div></div></div></div></div>');
+
+                });
+            }, 1000);
+        }
+
+        function cursosPopulares(item) {
+            setTimeout(function() {
+                $('.popular').slick('removeSlide', null, null, true);
+                $.each(item, function(index, valuex) {
+                    $.each(valuex.hijos, function(index, value) {
+                        // $('.popular').slick('slickAdd','<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;'+ value.produc.url +'&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;'+value.produc.url+'&quot;>'+value.name+' '+value.produc.name+'</a><div class=&quot;hover-description&quot;>'+value.produc.description+'</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id='+value.produc.id+' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""  > <div class="course-card-header"><img class="course-card-img img-fluid"  alt="" src="'+value.produc.packshot+'"></div><div class="course-card-body"> <div class="course-card-title">'+value.name+'</div><div class="course-card-subtitle text-truncate">'+value.produc.name+'</div></div> <div class="course-card-price"><div class="price-text-container" onClick="buy('+value.produc.id+')"><span class="pricenuevo" >'+value.produc.precio+'</span> <span class="priceoriginal"> '+value.produc.original +'</span></div></div></div></div></div></div>');          
+
+                        $('.popular').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;' + value.produc.url + '&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;' + value.produc.url + '&quot;>' + value.name + ' ' + value.produc.name + '</a><div class=&quot;hover-description&quot;>' + value.produc.description + '</div><div id=&quot;buy3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=' + value.produc.id + ' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""> <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid"  alt="" src="' + value.produc.packshot + '"></div><div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span text-uppercase">' + value.produc.course_type + '</span><h6 class="carou-title-sty">' + value.name + '</h6><div class="course-card-title-mega">' + value.produc.name + '</div></div> <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px"><div class="price-text-container" onClick="buy(' + value.id + ')" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px"></span><div style="display: flex;align-items: center;"><img class="course-card-img img-fluid"  alt="" src="' + value.image + '" style="width: 25px !important;min-width: 0px;"></div><div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> ' + value.produc.original + '</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">' + value.produc.precio + '</span> </div></div></div></div></div></div></div>');
+
+                    })
+                });
+            }, 1000);
+        }
+
+        function enlacexx(id) {
+            window.location = id;
+        }
+
+        function cursosMegapack(item) {
+            /*
+            setTimeout(function() {
+              //posicion(); 
+              $('.megapack').slick('removeSlide', null, null, true);
+              $.each(item, function(index, value) {
+                $('.megapack').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;' + value.url + '&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;' + value.url + '&quot;>' + value.name + '</a><div class=&quot;hover-description-mega&quot;>' + value.description + '</div><div id=&quot;buymega3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=' + value.id + ' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""  > <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid"  alt="" src="' + value.packshot + '"></div>><div class="course-card-body" style="padding: 0px 10px 0px 10px"> <div class="course-card-title-mega">' + value.name + '</div></div> <div class="course-card-price" style="display: flex;justify-content: flex-end;padding-right: 10px;padding-bottom:4px"><div class="price-text-container" onClick="buy(' + value.id + ')"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> ' + value.original + '</span><span class="pricenuevo" style="font-weight:bold">' + value.price + '</span> </div></div></div></div></div></div>');
+              });
+            }, 1000);*/
+            setTimeout(function() {
+                //posicion(); 
+                $('.megapack').slick('removeSlide', null, null, true);
+                $.each(item, function(index, value) {
+
+
+                    $('.megapack').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;' + value.url + '&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p style=&quot;hover-title&quot;>' + value.type + '</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;' + value.url + '&quot;>' + value.name + '</a><div class=&quot;hover-description-mega&quot;>' + value.description + '</div><div id=&quot;buymega3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=' + value.id + ' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""> <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid"  alt="" src="' + value.packshot + '"></div><div class="course-card-body" style="padding: 0px 10px 0px 10px"><h6 class="carou-title-sty">' + value.type + '</h6><div class="course-card-title-mega">' + value.name + '</div></div> <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px"><div class="price-text-container" onClick="buyM(' + value.id + ')" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px"></span><div style="display: flex;align-items: center;"> </div><div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> ' + value.original + '</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">' + value.price + '</span> </div></div></div></div></div></div></div>');
+
+                });
+            }, 1000);
+        }
+
+        function cursosAll(item) {
+            setTimeout(function() {
+                //posicion(); 
+                $('.megapack').slick('removeSlide', null, null, true);
+                $.each(item, function(index, value) {
+
+
+                    $('.megapack').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item" onclick="enlacexx(&quot;' + value.url + '&quot;)" onmouseover="get($(this))" data-html="true"  data-container="body" data-toggle="popover"  data-content="<p class=&quot;hover-fecha&quot;>Última actualización 12-2019</p><p>' + value.type + '</p><p style=&quot;hover-title&quot;>' + value.categoria_name + '</p><p class=&quot;hover-title&quot;><a class=&quot; hover-link&quot; href=&quot;' + value.url + '&quot;>' + value.name + '</a><div class=&quot;hover-description-mega&quot;>' + value.description + '</div><div id=&quot;buymega3x&quot; class=&quot;btn hover-add btn-block buy3x&quot;><a id=' + value.id + ' ><i class=&quot;fa fa-shopping-cart&quot;></i>  Añadir al carrito</a></div>" data-original-title=""> <div class="course-card-header" style="padding:10px"><img class="course-card-img img-fluid"  alt="" src="' + value.packshot + '"></div><div class="course-card-body" style="padding: 0px 10px 0px 10px"> <span class="carou-title-sty-span">' + value.type + '</span><h6 class="carou-title-sty">' + value.categoria_name + '</h6><div class="course-card-title-mega">' + value.name + '</div></div> <div class="course-card-price" style="display: flex;justify-content: space-between;padding-bottom:7px"><div class="price-text-container" onClick="buy(' + value.id + ')" style="display: flex;width: 100%;justify-content: space-around;position: absolute;top: 370px"></span><div style="display: flex;align-items: center;"><img class="course-card-img img-fluid"  alt="" src="' + value.categoria_image + '" style="width: 25px !important;min-width: 0px;"></div><div style="display: flex;flex-direction: column;"><span class="priceoriginal" style="padding-right:5px;color: #9E9E9E;"> ' + value.original + '</span><span class="pricenuevo" style="font-weight:bold;font-size:15px">' + value.price + '</span> </div></div></div></div></div></div></div>');
+
+                });
+            }, 1000);
+        }
+
+        function buy(id) {
+            // alert(id);
+            $('#addToCartModal').modal('hide');
+            let items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+            itemsCart = null;
+            if (items) {
+                itemsCart = items.product.products;
+            }
+
+            data = {
+                id: id,
+                quanty: 1,
+                type: 'megacourse',
+                items: itemsCart,
+            };
+
+            $.ajax({
+                    type: "POST",
+                    url: "https://megacursos.com/cart/add-to-cart-new",
+                    data: JSON.stringify(data),
+                    dataType: 'json',
+                    contentType: 'application/json',
+                })
+                .done(function(response) {
+                    //alert("si");
+                    if (response.success == true) {
+                        window.localStorage.removeItem("shoppingCart");
+                        //window.localStorage.removeItem("shoppingItem");
+                        window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                        buildShoppingCart();
+                        // Active modal with items
+                        loadItemsModal();
+                        $('#addToCartModal').modal('show');
+
+                        //window.localStorage.setItem("shoppingItem", JSON.stringify(response.product.item));
+                    }
+                    if (response.success == 'cart') {
+                        alert(response.info);
+                    }
+                    if (response.success == 'nofound') {
+
+                    }
+
+
+
+                });
+
+        }
+
+        function loadItemsModal() {
+            const items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+            // console.log(items);
+
+            if (localStorage.getItem("shoppingCart")) {
+                //  Remove all items first
+                let list = document.getElementById('cart-items-added');
+                if (list.length !== 0) {
+                    list.textContent = '';
+                }
+                // Load cart items
+                items.product.products.forEach((product, index) => {
+                    myModalItems(product);
+                });
+
+                // Load cart info
+                document.getElementById("cart-quantity").innerHTML = items.product.count;
+                document.getElementById("cart-total-amount").innerHTML = items.product.total;
+            }
+        }
+
+        // Load data to modal
+        function myModalItems(item) {
+
+            let title, subtitle, type;
+            type = Ucfirst(item.course_type);
+
+            // Check type of course
+            if (item.course_type === "ultrapack") {
+                // Split name for estetic detail
+                title = item.detail.name + ' ' + item.name.split("en", 1);
+                subtitle = item.name;
+            } else if (item.course_type === "megapack") {
+                // Split name for estetic detail
+                title = type + ' ' + item.name.split("en", 1);
+                subtitle = item.name;
+            } else {
+                title = type + ' ' + item.detail.name;
+                subtitle = item.name;
+            }
+
+            // Create div of cart-item
+            var cartItem = document.createElement('div')
+            cartItem.setAttribute('class', 'cart-item mb-2 mb-md-3 mb-lg-4');
+            // Create div of cart-image
+            var divImage = document.createElement('div');
+            divImage.setAttribute('class', 'cart-item-img');
+            var image = document.createElement('img');
+            image.setAttribute('class', 'img-fluid')
+            image.setAttribute('src',
+                item.packshot);
+            divImage.appendChild(image);
+            // Add image to cart-item div
+            cartItem.appendChild(divImage);
+            // Create div of cart-item-details
+            var divData = document.createElement('div');
+            divData.setAttribute('class', 'cart-item-details');
+            // Create div of title
+            var divDataH5 = document.createElement('h5');
+            divDataH5.setAttribute('class', 'title');
+            divDataH5.appendChild(document.createTextNode(title));
+            // Add to cart-item-details
+            divData.appendChild(divDataH5);
+            // Create div of subtitle
+            var divDataP = document.createElement('p');
+            divDataP.setAttribute('class', 'subtitle');
+            divDataP.appendChild(document.createTextNode(subtitle));
+            // Add to cart-item-details
+            divData.appendChild(divDataP);
+            // Create div of price regular
+            var divDataPriceR = document.createElement('div');
+            divDataPriceR.setAttribute('class', 'price-regular');
+            divDataPriceR.appendChild(document.createTextNode(item.price));
+            divData.appendChild(divDataPriceR);
+            // Create div of price promo
+            var divDataPriceP = document.createElement('div');
+            divDataPriceP.setAttribute('class', 'price-promo');
+            divDataPriceP.appendChild(document.createTextNode(item.discount));
+            divData.appendChild(divDataPriceP);
+            // Add to cart-item-details
+            cartItem.appendChild(divData);
+
+            // Add to main div
+            document.getElementById('cart-items-added').appendChild(cartItem);
+        }
+
+        // Uppercase first letter function
+        function Ucfirst(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        function buildShoppingCart() {
+
+            $("#super-shopping").empty();
+
+            //$("#cart-items").remove();
+
+            let items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+
+            var all;
+            let textcart = "curso";
+
+            if (items.product.count > 1) {
+                textcart = "cursos";
+            }
+            all = '<div id="cart-container" class="cart-container">\
+        <div class="cart-info">\
+            <p>Tienes ' + items.product.count + ' ' + textcart + ' en tu carrito</p>\
+            <div class="btn btn-primary btn-block mt-2">Todos los cursos en ' + items.oferta + '</div>\
+        </div>';
+
+            var subitems = myCartItems(items.product.products);
+            /*
+            megacurso+=hijosx;
+            megacurso+="</ul>";
+            */
+            all += subitems;
+            all += '<div class="cart-footer">\
+            <div class="amount">\
+                <h3 class="title">subtotal: ' + items.product.subtotal + '</h3>\
+            </div>\
+            <div class="amount">\
+                <h3 class="title">descuento: ' + items.product.discount + '</h3>\
+            </div>\
+            <div class="amount">\
+                <h3 class="title">total: ' + items.product.total + '</h3>\
+            </div>\
+            <div class="buttons mt-3">\
+                <div class="row">\
+                    <div class="col-md-12col-12 px-1">\
+                        <a href="https://megacursos.com/newcheckout" class="btn btn-lighter btn-block">Pagar y recibir acceso a cursos</a>\
+                    </div>\
+                    <div class="col-md-6 col-12 px-1" style="display:none">\
+                        <a href="#" class="btn btn-warning btn-block">Comprar</a>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>';
+            all += "</div>";
+
+            // $("#mega-sidebar-all").append(all);
+            $("#item-cart").text(items.product.count);
+
+            $("#super-shopping").append(all);
+
+            $("#super-shopping").click();
+
+            //alert("producto agregado con exito");
+
+
+            //console.log(items);
+        }
+
+        function myCartItems(items) {
+            //return items;
+            var subitems = '<div id="cart-div" class="cart-items">';
+            items.forEach(function(item, index, arr) {
+                subitems += '<div class="cart-item mx-4" id="mega-' + item.id + '">\
+                <div class="image">\
+                    <img class="img-fluid" src="' + item.packshot + '" alt="">\
+                </div>\
+                <div class="data px-md-2">\
+                    <div class="header">\
+                        <h3 class="title">' + item.detail.name + '</h3>\
+                        <div class="subtitle">' + item.name + '</div>\
+                    </div>\
+                    <div class="prices">\
+                        <div class="d-flex align-items-center">\
+                            <h5 class="discount">' + item.discount + '</h5>\
+                            <h5 class="regular">' + item.price + ' </h5>\
+                        </div>\
+                    </div>\
+                </div>\
+                <div class="actions">\
+                    <button type="button" onclick="deleteItemCart(this)" data-id="' + item.id + '" data-type="' + item.product_type + '" class="btn btn-sm"><i class="fas fa-trash-alt"></i></button>\
+                </div>\
+            </div>';
+
+            })
+            subitems += '</div>';
+
+            return subitems;
+
+        }
+
+        function deleteItemCart(item) {
+            id = item.getAttribute('data-id');
+            type = item.getAttribute('data-type');
+
+            if (!confirm('Realmente desea eliminar?')) {
+                return;
+            }
+            let items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+            itemsCart = null;
+            if (items) {
+                itemsCart = items.product.products;
+            }
+
+            data = {
+                id: id,
+                type: type,
+                items: itemsCart,
+            };
+
+            $.ajax({
+                    type: "POST",
+                    url: "https://megacursos.com/cart/update-cart-new",
+                    data: JSON.stringify(data),
+                    dataType: 'json',
+                    contentType: 'application/json',
+                })
+                .done(function(response) {
+                    //alert("si");
+                    if (response.success == true) {
+                        window.localStorage.removeItem("shoppingCart");
+                        //window.localStorage.removeItem("shoppingItem");
+                        window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                        buildShoppingCart();
+                        //window.localStorage.setItem("shoppingItem", JSON.stringify(response.product.item));
+                    }
+
+                    if (response.success == 'nofound') {
+                        alert(response.info);
+                    }
+
+
+
+                });
+        }
+
+        function addCartSumary() {
+
+            let items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+            itemsCart = null;
+            if (items) {
+                itemsCart = items.product.products;
+                data = {
+                    items: itemsCart,
+                    coupon: items.product.coupon,
+                };
+
+                $.ajax({
+                        type: "POST",
+                        url: "https://megacursos.com/cart/summarymenunew",
+                        data: JSON.stringify(data),
+                        dataType: 'json',
+                        contentType: 'application/json',
+                    })
+                    .done(function(response) {
+                        //alert("si");
+                        if (response.success == true) {
+
+                            window.localStorage.removeItem("shoppingCart");
+                            //window.localStorage.removeItem("shoppingItem");
+                            window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                            buildShoppingCart();
+                            //window.localStorage.setItem("shoppingItem", JSON.stringify(response.product.item));
+                        }
+
+                        if (response.success == "nofound") {
+                            //alert(response.info);
+                            //alert("sss");
+                            window.localStorage.removeItem("shoppingCart");
+                            //window.localStorage.removeItem("shoppingItem");
+                            // window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                            $("#super-shopping").empty();
+                            all = '<div id="cart-container" class="cart-container">\
+        <div class="cart-info">\
+            <p>Cesta Vacia</p>\
+        </div>\
+        </div>';
+                            $("#super-shopping").append(all);
+
+                        }
+
+                    });
+            } else {
+                window.localStorage.removeItem("shoppingCart");
+                //window.localStorage.removeItem("shoppingItem");
+                // window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                $("#super-shopping").empty();
+                all = '<div id="cart-container" class="cart-container">\
+        <div class="cart-info">\
+            <p >Cesta Vacia</p>\
+        </div>\
+        </div>';
+                $("#super-shopping").append(all);
+            }
+
+
+
+        }
+
+        function buyM(id) {
+            $('#addToCartModal').modal('hide');
+            let items = JSON.parse(window.localStorage.getItem("shoppingCart"));
+            itemsCart = null;
+            if (items) {
+                itemsCart = items.product.products;
+            }
+
+            data = {
+                id: id,
+                quanty: 1,
+                type: 'megapack',
+                items: itemsCart,
+            };
+
+            $.ajax({
+                    type: "POST",
+                    url: "https://megacursos.com/cart/add-to-cart-new",
+                    data: JSON.stringify(data),
+                    dataType: 'json',
+                    contentType: 'application/json',
+                })
+                .done(function(response) {
+                    //alert("si");
+                    if (response.success == true) {
+                        window.localStorage.removeItem("shoppingCart");
+                        //window.localStorage.removeItem("shoppingItem");
+                        window.localStorage.setItem("shoppingCart", JSON.stringify(response));
+                        buildShoppingCart();
+                        // Active modal with items
+                        loadItemsModal();
+                        $('#addToCartModal').modal('show');
+
+                        //window.localStorage.setItem("shoppingItem", JSON.stringify(response.product.item));
+                    }
+                    if (response.success == 'cart') {
+                        alert(response.info);
+                    }
+                    if (response.success == 'nofound') {
+                        alert(response.info);
+                    }
+
+
+
+                });
+
+
+        }
+
+        function get(evn) {
+            $(evn).popover({
+                    trigger: "click",
+                    html: true,
+                    animation: false
+                })
+                .on("mouseover", function() {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(".popover").on("mouseleave", function() {
+                        //console.log("cerrar");
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function() {
+                    // console.log("mouseleave");
+                    var _this = this;
+                    setTimeout(function() {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide");
+                        }
+                    }, 200);
+                })
+                .on('show.bs.popover', function() {
+                    /*
+                    var popoverx = evn.data('bs.popover');
+                    //console.log(popoverx);
+                    var _this = this;
+                    var tip = popoverx.tip;
+                    //console.log(tip);
+                    var xx= $(tip).find('popover-body'); 
+                    */
+                })
+        }
+        $(document).on("click", "#buymega3x", function(e) {
+
+            var x = ($(this).find("a").attr("id"));
+            // alert(x);
+            buyM(x);
+        });
+        $(document).on("click", "#buy3x", function(e) {
+            var x = ($(this).find("a").attr("id"));
+            buy(x);
+        });
+
+        function cursosmovil(item, carousel) {
+            //numbers.forEach(myFunction)
+            setTimeout(function() {
+                //posicion(); 
+                z = '<div class="popx slick-slide slick-active" data-container="body" data-toggle="popover" data-placement="auto" data-content="Optional parameter: " data-original-title="" title="" tabindex="0" style="width: 179px;" data-slick-index="1" aria-hidden="false"><h1>hola</h1><p>sjhsjjssjsj</p>HOVER OVER ME</div>';
+                $('.' + carousel + '').slick('removeSlide', null, null, true);
+
+                $.each(item, function(index, value) {
+                    $('.' + carousel + '').slick('slickAdd', '<div class="item"><div class="course-card margin-item"><div class="course-card-item"> <div class="course-card-header"><img class="img-fluid" alt=""  src="' + value.produc.packshot + '"></div><div class="course-card-body"><div class="course-card-title">' + value.name + '</div><span class="course-card-subtitle">' + value.produc.name + '</span></div> <div class="course-card-price"><div class="price-text-container" onClick="buy(' + value.produc.id + ')"><span class="pricenuevo" >' + value.produc.precio + '</span> <span class="priceoriginal"> ' + value.produc.original + '</span></div></div></div></div></div></div>');
+
+                    // $('.'+carousel+'').slick('slickAdd','<div class="item"><div class="course-card margin-item"><a href="'+value.produc.url+'" class="text-decoration-none"><div class="course-card-item"> <div class="course-card-header"><img class="course-card-img" alt="" width="100%" src="'+value.produc.packshot+'"></div><div class="course-card-body"><div class="course-card-title">'+value.name+'</div><span class="course-card-subtitle">'+value.produc.name+'</span></div> <div class="course-card-price"><div class="price-text-container" onClick="buy('+value.produc.id+')"><span class="pricenuevo" >'+value.produc.precio+'</span> <span class="priceoriginal"> '+value.produc.original +'</span></div></div></div></div></a></div></div>');
+                });
+            }, 1000);
+        }
+
+        //  $(".maga-items").
+        $(".maga-items").click(function() {
+            //alert("si");
+
+            $(".maga-items").each(function() {
+                $(this).removeClass("mega-item-active");
+            });
+            $(this).addClass("mega-item-active");
+        });
+        $(document).ready(function() {
+
+            $('.studyx').slick({
+                dots: true,
+                infinite: true,
+                speed: 250,
+                autoplay: true,
+                autoplaySpeed: 900,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: false
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        arrows: false
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+            $('.opinion').slick({
+                dots: true,
+                arrows: false,
+                infinite: false,
+                speed: 250,
+                autoplay: true,
+                autoplaySpeed: 900,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        dots: true,
+                        arrows: false,
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        dots: true,
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        dots: true,
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.megapack', ).slick({
+                dots: false,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3.2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1.9,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.popular', ).slick({
+                dots: false,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3.2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1.9,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.items', ).slick({
+                dots: false,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2.5,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1.9,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+            $('.diseñox', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.musicax', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 2.3,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.internetx', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.programacionx', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.artex', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.dinerox', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+            $('.ingenieriax', ).slick({
+                dots: false,
+                mobileFirst: true,
+                infinite: false,
+                speed: 250,
+                autoplay: false,
+                autoplaySpeed: 250,
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3.3,
+                        slidesToScroll: 3
+                    }
+                }, {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1.8,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+            init();
+            $(window).scroll(function() {
+
+                var scroll = $(window).scrollTop();
+                if (scroll < 40) {
+                    $('#mega-menu').removeClass('fixed-top');
+                } else {
+                    //$('#mega-menu').removeClass('fixed-top');
+                    $('#mega-menu').addClass('fixed-top');
+                }
+
+            });
+
+
+            $(".popx").popover({
+                    trigger: "manual",
+                    html: true,
+                    animation: false
+                })
+                .on("mouseenter", function() {
+                    // console.log("yes");
+                    // console.log(this);
+                    var _this = this;
+                    $(this).popover("show");
+                    $(".popover").on("mouseleave", function() {
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function() {
+                    var _this = this;
+                    setTimeout(function() {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide");
+                        }
+                    }, 300);
+                });
+
+            $("#shoping-cartxx").popover({
+                    trigger: "manual",
+                    html: true,
+                    animation: false
+                })
+                .on("mouseenter", function() {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(".popover").on("mouseleave", function() {
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function() {
+                    var _this = this;
+                    setTimeout(function() {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide");
+                        }
+                    }, 300);
+                });
+            $("#shoping-cartxx-mobile").popover({
+                    trigger: "manual",
+                    html: true,
+                    animation: false
+                })
+                .on("mouseenter", function() {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(".popover").on("mouseleave", function() {
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function() {
+                    var _this = this;
+                    setTimeout(function() {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide");
+                        }
+                    }, 300);
+                });
+
+        });
+
+        $('.country-menu').click(function(e) {
+            var selcountry = $(this).attr('data-id');
+            //alert(selcountry);
+            $.post("https://megacursos.com/store_countryses", {
+                    selcountry: selcountry
+                })
+                .done(function(data) {
+                    window.location.reload();
+                });
+
+        });
+        $('.currency-menu').click(function(e) {
+            var selcurrency = $(this).attr('data-id');
+            var selcurrencyiso = $(this).attr('data-code');
+            var selsymbol = $(this).attr('data-symbol');
+            $.post("https://megacursos.com/store_currencyses", {
+                    selcurrency: selcurrency,
+                    selsymbol: selsymbol,
+                    selcurrencyiso: selcurrencyiso
+                })
+                .done(function(data) {
+                    window.location.reload();
+                });
+        });
+    </script>
+</body>
+
+</html>
