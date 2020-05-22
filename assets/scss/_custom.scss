@@ -1877,3 +1877,189 @@ body {
     }
 
 }
+
+
+// CORRECCIONES DEL MEGA MENÚ INCIO
+#sidebar{
+    // background: red;
+    height: 100vh;
+    overflow-y: scroll !important;
+}
+
+#mega-menu{
+
+    // Aplicando color al nav mega menu y flex para que no haga scroll horizontal
+    background: #f1f0f0 !important;
+    padding: 5px 10px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    // alineación de la notificación vertical
+    .notification{
+        // background: red;
+        // color: blue;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    // Modifcando propiedes de la cesta 
+    .dropdown-cesta {
+        position: absolute; 
+        width:  80%;
+        z-index: 30;
+        margin:  5px 0 20px 2px;
+        box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
+        
+        @include small{
+            width:  30%;
+        }
+
+        @include large {
+            width:  20vw;
+            margin: 20px  auto 20px auto;
+        }
+    }
+
+    // Modificando alineación de planes vertical
+    .dropdown-planes{
+        // background: red;
+        width: 30vw;
+        margin-top: -10px;
+    }
+
+    // alineación para los elementos del nav mega menu 
+    @include large {
+        
+        .alinear-nav{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+}
+
+
+
+.mega-divisa{
+
+    //Paises contenido
+    .dropdown-pais{
+        overflow: hidden;
+        // background: red !important;
+        width: 100%;
+        padding: 0;
+        
+        .row{
+            margin: 0;
+            // background: blue;
+            padding: 0 !important;
+        }
+
+        h5{
+            // background: blue;
+            color: #7b7b7b;
+            font-size: 15px !important;
+            overflow-wrap: break-word !important;
+        }
+
+        //Imagen del país y texto
+        .content-img-pais{
+            // background: chocolate;
+       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span{
+                font-weight: 600;
+                text-align: center;
+            }
+
+            @include large {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+
+    }
+
+    // tipo de cambio contenido
+    .dropdown-tipo-cambio-content{
+        overflow: hidden;
+        // background: red !important;
+        width: 100%;
+        padding: 0;
+
+        .row{
+            margin: 0;
+            // background: blue;
+            padding: 0 !important;
+        }
+
+        h5{
+            // background: blue;
+            color: #7b7b7b;
+            font-size: 15px !important;
+            overflow-wrap: break-word !important;
+        }
+
+         .content-img-tipo-cambio a{
+            // background: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span{
+                font-weight: 600;
+                text-align: center;
+            }
+
+            @include large {
+                flex-direction: row;
+            }
+        }
+
+    }
+
+    //  problemas con after  (iconos de flecha)
+    .dropdown-tipo-cambio{
+        position: relative;
+        
+
+        &::after{
+            // color: red;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-otro{
+
+        position: relative;
+        
+
+        &::after{
+            // color: red;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            transform: translateY(0);
+        }
+    }
+
+}
+// CORRECCIONES DEL MEGA MENÚ FIN
