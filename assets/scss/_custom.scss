@@ -2063,3 +2063,155 @@ body {
 
 }
 // CORRECCIONES DEL MEGA MENÚ FIN
+
+
+// pruebas-section 
+
+.pruebas-section{
+
+        
+        .row {
+                margin: 0;
+            }
+
+        .clientBannerContact {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background:url('https://megacursos.com/themes/megacursos/assets/img/fondo-pruebagratis.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .card-planes{
+            // background: red;
+
+            @include medium {
+                height: 380px;
+            }
+
+        }
+
+        .video-trailer{
+            width: 100%;
+            height: 300px;
+
+            @include medium {
+                width: 70%;
+                height: 400px;
+            }
+
+            @include large {
+                width: 60%;
+                height: 450px;
+            }
+        }
+
+        
+
+        // Codigo copiado del html 
+        .dropbtn-products.first {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .slick-slide img {
+            border: 0px solid #fff;
+            min-width: 0px !important;
+        }
+        
+        .course-card-header {
+            padding: 10px;
+            display: flex;
+            justify-content: center
+        }
+        
+        .item.slick-slide {
+            width: auto !important;
+        }
+        
+        .mega-item-active {
+            border-color: #DC3545 !important;
+            color: #DC3545 !important;
+        }
+        
+        .course-card-item {
+            height: 370px !important;
+        }
+        
+        .price-text-container {
+            top: 322px !important;
+        }
+        /* Buttons */
+        
+        .btn-outline {
+            border: 1px solid #707070;
+            position: relative;
+            min-width: 93px;
+        }
+        
+        .btn-outline.active {
+            background-color: #e0f7eb;
+            color: #32CC7A;
+            border: 1px solid #32CC7A;
+        }
+        
+        .best-choice {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            z-index: 3;
+        }
+        
+        .best-choice span {
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            right: -22px;
+            top: 7px;
+            color: #fff;
+            font-size: .35em;
+            font-weight: 700;
+            width: 77px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #01ae43;
+            z-index: 2;
+            line-height: 18px;
+        }
+        
+        .best-choice:after,
+        .best-choice:before {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            content: '';
+            z-index: 1;
+        }
+        
+        .best-choice:before {
+            right: 0;
+            bottom: 12px;
+            background-color: #007a2d;
+            height: 7px;
+        }
+        
+        .best-choice:after {
+            left: 12px;
+            top: 0;
+            background-color: #007a2d;
+            width: 7px;
+        }
+
+
+}

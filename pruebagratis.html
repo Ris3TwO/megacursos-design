@@ -12,265 +12,165 @@
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <!-- Don't touch -->
-    <style>
-        .row {
-            margin: 0;
-        }
-    </style>
-
-    <!-- Migrate -->
-    <style>
-        .breadcrumb {
-            padding-left: 4%;
-            margin-bottom: 0px;
-        }
-        
-        .breadcrumb-item.active {
-            color: #6c757d;
-            font-size: 13px;
-        }
-        
-        .dropbtn-products.first {
-            color: inherit;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        
-        .clientBannerContact {
-            width: 100%;
-            height: 552px;
-        }
-        
-        .slick-slide img {
-            border: 0px solid #fff;
-            min-width: 0px !important;
-        }
-        
-        .course-card-header {
-            padding: 10px;
-            display: flex;
-            justify-content: center
-        }
-        
-        .item.slick-slide {
-            width: auto !important;
-        }
-        
-        .mega-item-active {
-            border-color: #DC3545 !important;
-            color: #DC3545 !important;
-        }
-        
-        .course-card-item {
-            height: 370px !important;
-        }
-        
-        .price-text-container {
-            top: 322px !important;
-        }
-        /* Buttons */
-        
-        .btn-outline {
-            border: 1px solid #707070;
-            position: relative;
-            min-width: 93px;
-        }
-        
-        .btn-outline.active {
-            background-color: #e0f7eb;
-            color: #32CC7A;
-            border: 1px solid #32CC7A;
-        }
-        
-        .best-choice {
-            position: absolute;
-            right: -5px;
-            top: -5px;
-            overflow: hidden;
-            width: 60px;
-            height: 60px;
-            z-index: 3;
-        }
-        
-        .best-choice span {
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-            position: absolute;
-            right: -22px;
-            top: 7px;
-            color: #fff;
-            font-size: .35em;
-            font-weight: 700;
-            width: 77px;
-            text-align: center;
-            text-transform: uppercase;
-            background-color: #01ae43;
-            z-index: 2;
-            line-height: 18px;
-        }
-        
-        .best-choice:after,
-        .best-choice:before {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            content: '';
-            z-index: 1;
-        }
-        
-        .best-choice:before {
-            right: 0;
-            bottom: 12px;
-            background-color: #007a2d;
-            height: 7px;
-        }
-        
-        .best-choice:after {
-            left: 12px;
-            top: 0;
-            background-color: #007a2d;
-            width: 7px;
-        }
-    </style>
 </head>
-
 <body>
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active">
-                <a class="dropbtn-products first" href="https://megacursos.com/allcourses">/ Prueba Gratis</a>
-            </li>
+    <!-- Breadcrumb -->
+    <div class="container-fluid menu-bread">
+        <div class="megaBreadcrumb p-0 over">
+            <div class="text">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
 
-        </ol>
-    </nav>
-    <div class="container-fluid no-padding ">
-        <div class="d-flex clientBannerContact" style="background:url('https://megacursos.com/themes/megacursos/assets/img/fondo-pruebagratis.png'); background-repeat: no-repeat; background-size: cover;">
-            <div class="d-flex" style="flex-direction: column;justify-content: center;width: 100%;display: flex;align-self: center;align-items: center;">
-                <h1 class="font-weight-bold mb-4">Prueba gratis por 24h</h1>
-                <p class="font-weight-normal h3" style="color:black">Todos los Megacursos de 0 a 100</p>
-                <p class="font-weight-normal h3" style="color:black">(+1300h Full HD)</p>
+                        <li class="breadcrumb-item active">
+                            <a class="breadbtn">Inicio</a>
+                        </li>
 
-                <button class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</button>
-
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="background-color: #beb4de2b">
-        <div class="row mb-5">
-            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
-                <h3 class="mt-5 font-weight-bold mb-3">Nuestros planes Gratuitos</h3>
-                <!-- <p class="mt-3 h6 font-weight-normal" style="color:black">Elige tu divisa.</p>
-       <div class="row">
-
-         <div class="col-md-12">
-           <select id="slt-divisas" class="form-control"></select>
-         </div>
-       </div> -->
-            </div>
-        </div>
-        <div class="row pb-5">
-            <div class="col-md-3 offset-3 card" style="padding:20px;box-shadow: 10px 10px 40px #00000029;">
-                <nav>
-                    <div class="nav nav-tabs mx-n2 justify-content-center" id="nav-tab" role="tablist" style="border-bottom: none;">
-                        <a class="nav-item btn btn-default btn-outline active" id="nav-mensual-tab" data-toggle="tab" href="#nav-mensual" role="tab" aria-controls="nav-mensual" aria-selected="true">Mensual</a>
-                        <a class="nav-item btn btn-default btn-outline ml-2" id="nav-trimestral-tab" data-toggle="tab" href="#nav-trimestral" role="tab" aria-controls="nav-trimestral" aria-selected="false">Trimestral <span class="best-choice"><span>Recomendado</span></span></a>
-                        <a class="nav-item btn btn-default btn-outline ml-2" id="nav-anual-tab" data-toggle="tab" href="#nav-anual" role="tab" aria-controls="nav-anual" aria-selected="false">Anual</a>
-                    </div>
+                        <li class="breadcrumb-item">
+                            <a class="breadbtn" href="https://megacursos.com/allcourses">Prueba Gratis</a>
+                        </li>
+    
+                    </ol>
                 </nav>
-                <div class="tab-content mt-2" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-mensual" role="tabpanel" aria-labelledby="nav-mensual-tab">
-                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
-                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
-                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
-                        <p class="font-weight-bold h5">31.28 USD/Mes</p>
-                        <div class="d-flex">
-                            <a href="https://megacursos.com/checkoutplans/52/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show" id="nav-trimestral" role="tabpanel" aria-labelledby="nav-trimestral-tab">
-                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
-                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
-                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
-                        <p class="font-weight-bold h5">24.53 USD/Mes</p>
-                        <div class="d-flex">
-                            <a href="https://megacursos.com/checkoutplans/54/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-anual" role="tabpanel" aria-labelledby="nav-anual-tab">
-                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
-                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
-                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
-                        <p class="font-weight-bold h5">15.37 USD/Mes</p>
-                        <div class="d-flex">
-                            <a href="https://megacursos.com/checkoutplans/56/free" class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate gratis</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div syle="display:flex;margin-top:10px;" class="mb-4">
-         <button class="btn" style="background-color: #e0f7eb;color:#32CC7A;border: 1px solid #32CC7A;">Mensual</button>
-         <button class="btn btn-default btn-outline ml-2" style="border: 1px solid #707070;">Anual</button>
-       </div> -->
-
-            </div>
-            <div class="col-md-3 card" style="background-color: #F5F5F5;padding:20px 20px 30px 20px;;box-shadow: 10px 10px 40px #00000029;">
-                <p style="color:black;font-weight: bold" class="h6 mt-3 mb-2">Que obtendrás:</p>
-                <div class="row mb-1 mt-3">
-                    <div class="col-md-1">
-                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
-                    </div>
-                    <div class="col-md-10">
-                        <span style="color:#999;font-size:15px">Acceso ilimitado a todos los Megacursos y Cursos Avanzados</span>
-                    </div>
-                </div>
-
-                <div class="row mb-1">
-                    <div class="col-md-1">
-                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
-                    </div>
-                    <div class="col-md-10">
-                        <span style="color:#999;font-size:15px">Visualizacion FullHD desde la computadora y App IOS / Android</span>
-                    </div>
-                </div>
-
-                <div class="row mb-1">
-                    <div class="col-md-1">
-                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
-                    </div>
-                    <div class="col-md-10">
-                        <span style="color:#999;font-size:15px">2 intentos para Megatest Oficial Online por Curso</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-1">
-                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
-                    </div>
-                    <div class="col-md-10">
-                        <span style="color:#999;font-size:15px">Diploma Oficial virtual (PDF)</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
-                <h2 class="mt-5 font-weight-bold">Trailer</h2>
-                <p class="mt-3 h3 font-weight-normal" style="color:black">Todos los Megacursos de 0 a 100</p>
-                <p>(+1300h Full HD)</p>
 
-                <div style="text-align:center;padding: 20px 0px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AW91Y6W_xmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
+    <section class="pruebas-section">
+
+            <div class="container-fluid clientBannerContact">
+                    <div class="d-flex justify-content-center align-items-center flex-column text-center">
+                        <h1 class="font-weight-bold mb-4">Prueba gratis por 24h</h1>
+                        <p class="font-weight-normal h3" >Todos los Megacursos de 0 a 100</p>
+                        <p class="font-weight-normal h3" >(+1300h Full HD)</p>
+    
+                        <button class="btn mt-2 font-weight-bold" style="background-color: #FCC11C;color:white">Registrate
+                            gratis</button>
+                    </div>
+
+            </div>
+            
+            <div class="container-fluid py-5" style="background-color: #F4F2F9">
+               
+                    <h3 class=" font-weight-bold mb-4 text-center ">Nuestros planes Gratuitos</h3>
+                    
+                    <div class="row mx-lg-5">
+                    
+                        <div class="col-12 col-md-6  px-0 py-3 py-md-0 px-md-2 px-lg-5">
+                            <div class="card p-3  card-planes">
+                                <nav>
+                                    <div class="nav nav-tabs  d-flex justify-content-center" id="nav-tab" role="tablist"
+                                        style="border-bottom: none;">
+                                        <a class="nav-item btn btn-default btn-outline active m-2" id="nav-mensual-tab" data-toggle="tab"
+                                            href="#nav-mensual" role="tab" aria-controls="nav-mensual" aria-selected="true">Mensual</a>
+                                        <a class="nav-item btn btn-default btn-outline m-2" id="nav-trimestral-tab" data-toggle="tab"
+                                            href="#nav-trimestral" role="tab" aria-controls="nav-trimestral" aria-selected="false">Trimestral
+                                            <span class="best-choice"><span>Recomendado</span></span></a>
+                                        <a class="nav-item btn btn-default btn-outline m-2 " id="nav-anual-tab" data-toggle="tab"
+                                            href="#nav-anual" role="tab" aria-controls="nav-anual" aria-selected="false">Anual</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content mt-2" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-mensual" role="tabpanel" aria-labelledby="nav-mensual-tab">
+                                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                                        <p class="font-weight-bold h5">31.28 USD/Mes</p>
+                                        <div class="d-flex">
+                                            <a href="https://megacursos.com/checkoutplans/52/free" class="btn mt-2 font-weight-bold"
+                                                style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="nav-trimestral" role="tabpanel" aria-labelledby="nav-trimestral-tab">
+                                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                                        <p class="font-weight-bold h5">24.53 USD/Mes</p>
+                                        <div class="d-flex">
+                                            <a href="https://megacursos.com/checkoutplans/54/free" class="btn mt-2 font-weight-bold"
+                                                style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-anual" role="tabpanel" aria-labelledby="nav-anual-tab">
+                                        <p style="color:black;font-weight: bold" class="h4">Prueba gratis</p>
+                                        <p style="color:black">Todos los Megacursos de 0 a 100 <br> (+1800h Full HD) disponible por 24H</p>
+                                        <p style="font-size:12px" class="mt-2">1 día de prueba gratis y después</p>
+                                        <p class="font-weight-bold h5">15.37 USD/Mes</p>
+                                        <div class="d-flex">
+                                            <a href="https://megacursos.com/checkoutplans/56/free" class="btn mt-2 font-weight-bold"
+                                                style="background-color: #FCC11C;color:white">Registrate gratis</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-12 col-md-6  px-0 py-3 py-md-0 px-md-2 px-lg-5">
+                            <div class="card p-3 card-planes">
+                                <p style="color:black;font-weight: bold" class="h6 mt-3 mb-2">Que obtendrás:</p>
+                                <div class="row mb-1 mt-3">
+                                    <div class="col-md-1">
+                                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <span style="color:#999;font-size:15px">Acceso ilimitado a todos los Megacursos y Cursos
+                                            Avanzados</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col-md-1">
+                                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <span style="color:#999;font-size:15px">Visualizacion FullHD desde la computadora y App IOS /
+                                            Android</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col-md-1">
+                                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <span style="color:#999;font-size:15px">2 intentos para Megatest Oficial Online por Curso</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col-md-1">
+                                        <i class="far fa-check-circle mr-2" style="color:#00D13F"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <span style="color:#999;font-size:15px">Diploma Oficial virtual (PDF)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+
+            </div>
+            
+            <div class="container-fluid py-3">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+
+                    <h2 class="font-weight-bold">Trailer</h2>
+                    <p class="mt-2 h3 font-weight-normal" style="color:black">Todos los Megacursos de 0 a 100</p>
+                    <p class="mt-2">(+1300h Full HD)</p>
+        
+                    <iframe class="video-trailer mt-2" src="https://www.youtube.com/embed/AW91Y6W_xmc" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="">
+                    </iframe>
                 </div>
             </div>
-        </div>
-    </div>
+            
+    </section>
+
     <!-- <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
@@ -504,6 +404,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://megacursos.com/themes/megacursos/estilos/slick.min.js"></script>
+    
     <script defer>
         $('[data-toggle="tooltip"]').tooltip();
 
