@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide" style="overflow: visible;">
+    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide vh-100">
         <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: 640px;" tabindex="0">
             <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: -100px; left: 0px;" dir="ltr">
                 <div id="dismiss" style="text-shadow: none">
@@ -31,7 +31,16 @@
                         <!-- <h4 style="font-weight: bold">Megacursos</h4> -->
                         <button class="btn btn-success font-weight-bold">Cuenta Gratis ¡y a aprender!</button>
                         <span style="font-size: 13px;color: #f5c35d;">Domina lo que quierasde 0 a 100</span>
-                        <a href="https://megacursos.com/login" style="font-size: 14px;display: block;color: gray;">Descargar gratis MC Player</a>
+
+                        <a href="https://megacursos.com/login" class="btn btn-warning btn-descargar">
+                            <div class="btn-descarga-text">Descargar gratis MC Player®
+                                <span>Para Windows</span>
+                            </div>
+                            <div  class="btn-descarga-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
 
@@ -373,10 +382,10 @@
 
 
         <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto " style="height: 60px">
+            <ul class="navbar-nav mr-auto container-enlaces-navbar">
                 <li class="nav-item dropdown dropdown--open-on-hover dropdown--topics dropdown--open-on-hover dropdown open">
                     
-                    <a class="nav-link  dropdown-toggle-category alinear-nav" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-list-ul"></i> Categorias </a>
+                    <a class="nav-link  dropdown-toggle-category alinear-nav" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-list-ul mr-1"></i> Categorias </a>
 
                     <ul class="dropdown-menu dropdown-menu-principal" aria-labelledby="navbarDropdownMenuLink" style="margin-top: -2px;padding:0px; font-size: 15px;width: 300px;">
                         <li class="dropdown-submenu person-dropdown-item" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
@@ -809,7 +818,7 @@
                             </ul>
                         </li>
                         <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
-                            <img src="https://megacursos.com/uploads/images/thumbnails/30e18c0e10f846d6630a77fc605fd358.jpg" alt="" style="display:block" class="img-mega-menu">
+                            <img src="assets/img/Idiomas.png" alt="" style="display:block" class="img-mega-menu">
                             <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
                                 <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
                                     Idiomas
@@ -854,7 +863,7 @@
                             </ul>
                         </li>
                         <li class="dropdown-submenu" onmouseover="over(this)" onmouseout="delhover(this)" style="display: flex;margin:0px !important;align-items: center;padding: 5px 7px;">
-                            <img src="https://megacursos.com/uploads/images/thumbnails/30d17c560c94b98e9102927642bc6ccf.png" alt="" style="display:block" class="img-mega-menu">
+                            <img src="assets/img/Magic.png" alt="" style="display:block" class="img-mega-menu">
                             <a class="person-dropdown-item category dropdown-toggle-category" href="#" style="display:flex;align-self: center;display: flex;height: 100%">
                                 <p style="white-space: normal;margin-left:10px;display: flex;align-self: center;">
                                     Magia
@@ -1385,8 +1394,8 @@
           </ul>
         </li>
         -->
-                <li class="nav-item alinear-nav ">
-                    <div class="input-group" style="margin-top:5px ; width: 400px;">
+                <li class="nav-item alinear-nav container-input-buscar">
+                    <div class="input-group">
                         <input type="text" class="form-control search-desktop" placeholder="Buscar cursos" aria-label="Input group example" aria-describedby="btnGroupAddon" id="product_search">
                         <div class="input-group-prepend">
                             <div class="input-group-text" id="btnGroupAddon"><i class="fa fa-search"></i></div>
@@ -1409,15 +1418,38 @@
                         </li>
                     </ul>
                 </li>
-            </ul>
-            <div class="cart">
 
+                <li class="nav-item dropdown--ufb zero-state dropdown--open-on-hover dropdown content-btn-descarga">
+                    <a class="nav-link  dropdown-toggle-category  btn btn-warning btn-descargar" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            <div class="btn-descarga-text">Descargar gratis MC Player®
+                                <span>Para Windows</span>
+                            </div>
+                            <div class="btn-descarga-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-principal dropdown-menu-second dropdown-descarga"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <li style="justify-content:center; align-self:center">
+                                    Acceso 100% sin costo a todos
+                                    las clases gratis de todos
+                                    los cursos +2000H, Full HD.
+                                    Descárgala y comienza!
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="cart content-carrito-registro">
                 <ul class="navbar-nav ml-auto cart-mega">
                     <li class="nav-item nav-item dropdown d-none d-md-block" style="width:80px">
                         <a class="nav-link notification" style="" onclick="return false;" role="button" data-toggle="dropdown" id="dropdownMenu1" data-target="#" aria-expanded="false">
-                            <i style="" class="fa fa-shopping-cart"></i>
+                            <i  class="fa fa-shopping-cart"></i>
                             <span id="item-cart" class="badge">0</span>
                         </a>
+                        
                         <div class="dropdown-menu dropdown-products dropdown-menu-right dropdown-cesta " aria-labelledby="mega03" id="super-shopping">
                             <div id="cart-container" class="cart-container">
                                 <div class="cart-info">
@@ -1434,24 +1466,25 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-secondary d-none d-md-block" id="login" href="https://megacursos.com/webapp/">
-              Iniciar Sesion
-            </a>
+                            Iniciar Sesion
+                        </a>
                         <!--movil-->
                         <a class="nav-link  d-sm-block d-md-none" href="https://megacursos.com/webapp/">
-              Iniciar Sesión
-            </a>
+                            Iniciar Sesión
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-danger d-none d-md-block" id="signup" href="https://megacursos.com/login">
-              Registrate
-            </a>
+                            Registrate
+                        </a>
                         <!--movil-->
                         <a class="nav-link  d-sm-block d-md-none" href="https://megacursos.com/login">
-              Registrate
-            </a>
+                            Registrate
+                        </a>
                     </li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 

@@ -1880,10 +1880,57 @@ body {
 
 
 // CORRECCIONES DEL MEGA MENÚ INCIO
+
 #sidebar{
     // background: red;
-    height: 100vh;
+    // height: 100vh;
     overflow-y: scroll !important;
+
+    // btn descarga para moviles 
+    .btn-descargar{
+        position: relative;
+        overflow: hidden;
+        background: #F9C319 !important;
+        border-style: none;
+        height: 45px;
+        width: 82%;
+        padding: 0 !important;
+        display: flex;
+
+        .btn-descarga-text{
+            overflow: hidden;
+            // background: blue;
+            overflow-wrap: break-word;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 10px;
+            font-size: 12px;
+
+            span{
+                font-size: 8px;
+                margin-top: 2px;
+            }
+        }
+
+        .btn-descarga-icon{
+            // background: red;
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #ffffff;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+    }
+
+
 }
 
 #mega-menu{
@@ -1894,23 +1941,160 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    
+
+    // Contenedor de categorias , input text , planes y descarga gratis
+    .container-enlaces-navbar{
+        // background: chocolate;
+        height: 60px;
+        width: 70%;
+    }
+
+    // Contenedor Cesta , Incio de sesión y Registro
+    .content-carrito-registro{
+        // background: cornsilk;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: -1%;
+            top: 25%;
+            width: 1px;
+            height: 50%;
+            background: #CFCFCF;
+
+            @include extra-large {
+                left: -10%;
+            }
+
+        }
+
+    }
+
+    // btn descarga para pantallas grandes 
+    .content-btn-descarga{
+        width: 220px;
+        height: 100%;
+        // background: red !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        margin-left: 2%;
+    }
+
+     .btn-descargar{
+        position: relative;
+        overflow: hidden;
+        background: #F9C319 !important;
+        border-style: none;
+        height: 45px;
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+        color: #fff;
+
+    
+        .btn-descarga-text{
+            overflow: hidden;
+            // background: blue;
+            overflow-wrap: break-word;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 10px;
+            font-size: 12px;
+
+            span{
+                font-size: 8px;
+                margin-top: 2px;
+            }
+        }
+
+        .btn-descarga-icon{
+            // background: red;
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #ffffff;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+    }
+
+    .dropdown-descarga{
+        width: 18vw;
+        text-align: justify;
+    }
+
+
+    // content-input-buscar  contenedor de 
+    .container-input-buscar{
+        // background: red !important;
+        padding: 0;
+        width: 300px;
+
+        input{
+            border-radius: 2px 0 2px 0;
+        }
+    }
+
+
+
+    // Quitando color de fondo de etiquetas a 
+     .dropdown-menu-principal a{
+        background: transparent;
+    }
+    .dropdown-menu-principal ul li a{
+        background: transparent;
+    }
 
     // alineación de la notificación vertical
     .notification{
         // background: red;
         // color: blue;
+        width: 60px;
         height: 100%;
         display: flex;
         align-items: center;
+        position: relative;
+
+        #item-cart{
+            background: #D6374F;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            color: #fff;
+        }
 
     }
 
     // Modifcando propiedes de la cesta 
     .dropdown-cesta {
+        // background: red;
         position: absolute; 
         width:  80%;
         z-index: 30;
-        margin:  5px 0 20px 2px;
+        margin:  20px 0 20px 2px;
         box-shadow: 10px 17px 24px -6px rgba(0,0,0,0.11);
         
         @include small{
@@ -1919,15 +2103,20 @@ body {
 
         @include large {
             width:  20vw;
-            margin: 20px  auto 20px auto;
         }
     }
 
     // Modificando alineación de planes vertical
     .dropdown-planes{
         // background: red;
-        width: 30vw;
+        width: 18vw;
         margin-top: -10px;
+        text-align: justify;
+
+        @include large {
+            width: 23vw;
+        }
+
     }
 
     // alineación para los elementos del nav mega menu 
@@ -1936,7 +2125,7 @@ body {
         .alinear-nav{
             height: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
         }
@@ -1945,9 +2134,9 @@ body {
 
 }
 
-
-
 .mega-divisa{
+
+
 
     //Paises contenido
     .dropdown-pais{
@@ -2065,7 +2254,7 @@ body {
 // CORRECCIONES DEL MEGA MENÚ FIN
 
 
-// pruebas-section 
+// PRUEBAS SECTION INICIO
 
 .pruebas-section{
 
@@ -2215,3 +2404,5 @@ body {
 
 
 }
+
+//PRUEBAS SECTION FIN
