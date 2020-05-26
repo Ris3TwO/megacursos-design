@@ -239,7 +239,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #727272;
+    color: $dark_gray3;
     .mdi {
         font-size: 20px;
         color: $danger;
@@ -266,7 +266,7 @@ body {
     }
     .text {
         font-size: .85rem;
-        color: #7b7b7b;
+        color: $dark_gray;
         text-align: justify;
     }
 }
@@ -274,7 +274,7 @@ body {
 .card-tags {
     margin-bottom: 1rem;
     .card-tag {
-        background-color: #328ACC;
+        background-color: $blue;
         border-radius: 17px;
         margin-right: .75rem;
         font-size: .8rem;
@@ -285,7 +285,7 @@ body {
 
 .tag {
     color: $light;
-    background-color: #32CC7A;
+    background-color: $aquamarine;
     border-radius: 5px 16px 16px 5px;
     padding: .1rem;
     font-size: .85rem;
@@ -404,12 +404,12 @@ body {
 
 .packs_name a {
     font-size: 14px;
-    color: #707070;
+    color: $dark_gray2;
     transition: all 200ms ease;
 }
 
 .packs_name a:hover {
-    color: darken(#707070, 3);
+    color: darken($dark_gray2, 3);
 }
 
 .owl-dots {
@@ -424,7 +424,7 @@ body {
         width: 12px;
         height: 12px;
         margin: 0 10px;
-        border: 1px solid #7d7d7d;
+        border: 1px solid $dark_gray;
         border-radius: 8px;
         &.active {
             span {
@@ -444,8 +444,8 @@ body {
 
 .accordion-faq {
     .card {
-        border-left: solid thin #dcdacb;
-        border-right: solid thin #dcdacb;
+        border-left: solid thin $light_gray;
+        border-right: solid thin $light_gray;
         margin-bottom: 1rem;
         box-shadow: 0px 3px 7px -3px rgba(0, 0, 0, 0.45);
         @include medium {
@@ -1031,7 +1031,7 @@ body {
         margin-bottom: 1rem;
     }
 }
- 
+
 // Diploma Page
 .diploma-section {
     .container-fluid {
@@ -1039,7 +1039,7 @@ body {
         padding-right: 0 !important;
         overflow: hidden;
         .col-diploma {
-            background-color: #F4F2FA;
+            background-color: $light2;
             h1 {
                 font-weight: 600;
                 margin-top: 2rem;
@@ -1132,7 +1132,6 @@ body {
             p {
                 text-align: justify;
             }
-
         }
         @include extra-large {
             padding: 2.5rem 4rem;
@@ -1145,124 +1144,126 @@ body {
                 padding-right: 0;
             }
         }
-
     }
 }
-// Descargar App Section Fin
 
+// Descargar App Section Fin
 //  Inicia acceso.html 
-    .access-section{
-        font-family: 'Lato', sans-serif !important;
-        //    header 
-        header{
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-        .col-head {
-            display: flex !important;
-            flex-wrap: wrap;
-            justify-content: center;
-            h1 {
-                font-weight: 600;
-                flex-basis: 100%;
-                @include large {
-                    font-size: 2.4rem;
-                }
-            }
-            .lead {
-                color: $light !important;
-                flex-basis: 100%;
-                @include medium {
-                    flex-basis: 75%;
-                }
-                @include large {
-                    flex-basis: 42%;
-                }
-            }
-        }
+.access-section {
+    //    header 
+    header {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
     }
-    .first-section,
-    .second-section {
-        margin-top: 2rem;
-        @include extra-large {
-            margin-top: 7rem;
-        }
-    }
-    .third-section,
-    .four-section {
-        margin-top: 2rem;
-        @include extra-large {
-            margin-top: 5rem;
-        }
-    }
-    .first-section {
-        @include medium {
-            padding-right: 0;
-        }
-        .col-info {
-            @include extra-large {
-                padding-right: 5rem !important;
-                padding-left: 5rem !important;
-            }
-            .content-info {
-                @include extra-large {
-                    margin-right: -3.5rem;
-                }
-            }
-            .title-mega {
-                @include medium {
-                    margin-bottom: 0;
-                }
+    .col-head {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        h1 {
+            font-weight: 600;
+            flex-basis: 100%;
+            @include large {
+                font-size: 2.4rem;
             }
         }
-        .img-fixed {
-            display: flex;
+        .lead {
+            color: $light !important;
+            flex-basis: 100%;
             @include medium {
-                justify-content: flex-end;
-                padding-left: 3rem !important;
-                padding-right: 0 !important;
-                padding-top: 3rem !important;
-                padding-bottom: 3rem !important;
+                flex-basis: 75%;
             }
             @include large {
-                padding-left: 5rem !important;
-                padding-top: 0rem !important;
-                padding-bottom: 0rem !important;
-            }
-            img {
-                border-radius: 1rem !important;
-                @include medium {
-                    border-radius: 1rem 0 0 1rem !important;
-                }
+                flex-basis: 42%;
             }
         }
     }
-    .second-section {
-        &>div {
-            img {
-                @include large {
-                    margin: -4rem 0;
-                }
-            }
-        }
-    }
-    .third-section {
-        @include extra-large {
-            margin-top: 6rem;
-        }
-        .row {
-            background-color: #f2f0f7;
-            border-radius: 1rem;
-            img {
-                border-radius: 1.2rem !important;
-                @include medium {
-                    border-radius: 0rem !important;
-                }
-            }
-        }
-    }
+}
 
+.first-section,
+.second-section {
+    margin-top: 2rem;
+    @include extra-large {
+        margin-top: 7rem;
+    }
+}
+
+.third-section,
+.four-section {
+    margin-top: 2rem;
+    @include extra-large {
+        margin-top: 5rem;
+    }
+}
+
+.first-section {
+    @include medium {
+        padding-right: 0;
+    }
+    .col-info {
+        @include extra-large {
+            padding-right: 5rem !important;
+            padding-left: 5rem !important;
+        }
+        .content-info {
+            @include extra-large {
+                margin-right: -3.5rem;
+            }
+        }
+        .title-mega {
+            @include medium {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .img-fixed {
+        display: flex;
+        @include medium {
+            justify-content: flex-end;
+            padding-left: 3rem !important;
+            padding-right: 0 !important;
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+        @include large {
+            padding-left: 5rem !important;
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+        }
+        img {
+            border-radius: 1rem !important;
+            @include medium {
+                border-radius: 1rem 0 0 1rem !important;
+            }
+        }
+    }
+}
+
+.second-section {
+    &>div {
+        img {
+            @include large {
+                margin: -4rem 0;
+            }
+        }
+    }
+}
+
+.third-section {
+    @include extra-large {
+        margin-top: 6rem;
+    }
+    .row {
+        background-color: $light2;
+        border-radius: 1rem;
+        img {
+            border-radius: 1.2rem !important;
+            @include medium {
+                border-radius: 0rem !important;
+            }
+        }
+    }
+}
 
 // Products Page
 .product-section {
@@ -1304,7 +1305,7 @@ body {
     }
     .slider-menu {
         align-items: center;
-        background-color: #fff;
+        background-color: $light;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, .08), 0 -4px 12px rgba(0, 0, 0, .08);
         display: flex;
         flex-direction: row;
@@ -1334,7 +1335,7 @@ body {
             font-weight: 600;
         }
         .regular-price {
-            color: #9a9a9a;
+            color: $light_gray2;
         }
     }
     .slider-menu .slider-menu__buy-button {
@@ -1514,7 +1515,7 @@ body {
             margin-right: -3.25rem !important;
             width: 6.5rem;
             height: 5.5rem;
-            background-color: #32cc7a;
+            background-color: $aquamarine;
             @include small {
                 width: 5.5rem;
                 height: 5.5rem;
@@ -1652,11 +1653,11 @@ body {
                         &.hover {
                             border-color: transparent;
                             background-color: transparent;
-                            color: #000;
+                            color: $dark;
                         }
                     }
                     &.active {
-                        color: #000;
+                        color: $dark;
                         background-color: transparent;
                         cursor: default;
                         position: relative;
@@ -1833,7 +1834,7 @@ body {
                             }
                             .benefits-icon {
                                 align-self: flex-start;
-                                color: #fff;
+                                color: $light;
                                 font-size: 12px;
                                 border-radius: 50%;
                                 padding: 0 0.2rem;
@@ -1878,13 +1879,13 @@ body {
                     display: flex;
                     width: 75px;
                     height: 75px;
-                    color: #fff;
+                    color: $light;
                     font-size: 3rem;
                     border-radius: 25vw;
                     overflow: hidden;
                     background-size: cover;
                     background-color: #ec5252;
-                    border: 3px solid #fff;
+                    border: 3px solid $light;
                     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.86);
                     opacity: 0.8;
                     transition: background 0.5s, color 1s, opacity 0.5s, border 0.5s;
@@ -1964,7 +1965,7 @@ body {
                         }
                         .benefits-icon {
                             align-self: flex-start;
-                            color: #fff;
+                            color: $light;
                             font-size: 12px;
                             border-radius: 50%;
                             box-shadow: 0px 0px 2px #888;
@@ -2144,7 +2145,7 @@ body {
                         margin: 0 0 20px;
                     }
                     .regular-price {
-                        color: #9a9a9a;
+                        color: $light_gray2;
                         font-size: 20px;
                         @include large {
                             font-size: 14px;
@@ -2226,7 +2227,7 @@ body {
                         .form-control {
                             height: calc(1.5em + 1.2rem + 2px);
                             position: relative;
-                            border: 1px solid #000;
+                            border: 1px solid $dark;
                             border-radius: 0;
                             font-size: 12px;
                             @include large {
@@ -2290,7 +2291,7 @@ body {
                     }
                     .description {
                         .title {
-                            color: #000000;
+                            color: $dark;
                             font-size: 13px;
                             font-weight: 500;
                             @include large {
@@ -2313,7 +2314,7 @@ body {
                                 text-decoration: line-through;
                             }
                             &.discount-amount {
-                                color: #000;
+                                color: $dark;
                                 font-weight: 500;
                                 font-size: 13px;
                                 @include large {
@@ -2340,10 +2341,10 @@ body {
             padding-top: 3rem;
         }
         .accordion .card {
-            border-top: solid thin #dcdacb;
-            border-left: solid 0 #dcdacb;
-            border-right: solid 0 #dcdacb;
-            border-bottom: solid 0 #dcdacb;
+            border-top: solid thin $light_gray;
+            border-left: solid 0 $light_gray;
+            border-right: solid 0 $light_gray;
+            border-bottom: solid 0 $light_gray;
             background: $light;
             .card-header {
                 background-color: $light;
@@ -3442,7 +3443,7 @@ body {
 // Plans Page
 .plans-section {
     .nav-link {
-        color: #707070;
+        color: $dark_gray2;
         border: unset !important;
         border-bottom: 3px solid transparent;
         padding: .5rem 2rem;
@@ -3504,7 +3505,7 @@ body {
                     align-self: center;
                     text-align: left;
                     font-size: .85rem;
-                    color: #7b7b7b;
+                    color: $dark_gray;
                 }
             }
         }
@@ -3594,11 +3595,11 @@ body {
     }
     .viewed_name a {
         font-size: 14px;
-        color: #707070;
+        color: $dark_gray2;
         transition: all 200ms ease;
     }
     .viewed_name a:hover {
-        color: darken(#707070, 3);
+        color: darken($dark_gray2, 3);
     }
     .item_marks {
         position: absolute;
@@ -3655,7 +3656,7 @@ body {
         }
     }
     .currencies {
-        background-color: #f4f2fa;
+        background-color: $light2;
         .container-fluid {
             height: 35vh !important;
             @include medium {
@@ -3770,7 +3771,7 @@ body {
                         padding: .65em .7em;
                         border-radius: .45rem;
                         &.badge-success {
-                            background-color: #32cc7a;
+                            background-color: $aquamarine;
                         }
                     }
                 }
@@ -3779,7 +3780,7 @@ body {
                     border-bottom: 1px solid #b8b8b8;
                     .card-title {
                         font-size: 1.35rem;
-                        color: #328acc;
+                        color: $blue;
                     }
                     h2 {
                         &.card-text {
@@ -3791,7 +3792,7 @@ body {
                     }
                     p {
                         &.card-text {
-                            color: #7b7b7b;
+                            color: $dark_gray;
                             font-size: .8rem;
                             @include extra-large {
                                 padding: 0 3rem;
@@ -3817,7 +3818,7 @@ body {
                     border-bottom-right-radius: 0;
                 }
                 .card-header {
-                    @include gradient(#328acc,
+                    @include gradient($blue,
                     #66b7f5);
                     @include medium {
                         margin-right: -.2rem;
@@ -3891,7 +3892,7 @@ body {
             padding: 2rem;
             border-radius: .55rem;
             box-shadow: 11px 12px 31px -5px rgba(0, 0, 0, 0.19);
-            background-color: #fff;
+            background-color: $light;
             position: relative;
             z-index: 100;
             .head {
@@ -3922,7 +3923,7 @@ body {
                             font-size: .7rem;
                         }
                         font-weight: 600;
-                        color: #707070;
+                        color: $dark_gray2;
                         margin-bottom: 0;
                     }
                     input[switch] {
@@ -3945,7 +3946,7 @@ body {
                             &:before {
                                 /* Label */
                                 text-transform: uppercase;
-                                color: #707070;
+                                color: $dark_gray2;
                                 content: attr(data-off-label);
                                 display: block;
                                 font-family: inherit;
@@ -3967,7 +3968,7 @@ body {
                                 content: '';
                                 position: absolute;
                                 left: 0rem;
-                                background-color: #707070;
+                                background-color: $dark_gray2;
                                 box-shadow: none;
                                 border-radius: 2rem;
                                 height: 1.6666666667rem;
@@ -3981,7 +3982,7 @@ body {
                                 background-color: #00d13f;
                                 background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
                                 &:before {
-                                    color: #fff;
+                                    color: $light;
                                     content: attr(data-on-label);
                                     right: auto;
                                     left: 0.2166666667rem;
@@ -4017,7 +4018,7 @@ body {
                 .g-alert-meet {
                     .text {
                         a {
-                            color: #707070;
+                            color: $dark_gray2;
                             font-weight: 600;
                         }
                     }
@@ -4048,7 +4049,7 @@ body {
         }
         .card-offer {
             background-color: $light;
-            border: 1px solid #707070;
+            border: 1px solid $dark_gray2;
             border-radius: .50rem;
             padding: 1rem .5rem;
             @include medium {
@@ -4060,7 +4061,7 @@ body {
                 margin-top: 1.5rem;
             }
             p {
-                color: #7b7b7b;
+                color: $dark_gray;
                 font-size: 1.05rem;
                 margin-bottom: 0;
             }
@@ -4152,7 +4153,6 @@ body {
     }
 }
 
-
 // Animations
 .fade-in-bottom {
     -webkit-animation: fade-in-bottom 1s cubic-bezier(.39, .575, .565, 1.000) both;
@@ -4184,7 +4184,6 @@ body {
         opacity: 1
     }
 }
-
 
 .all-courses-section {
     @include medium {
@@ -4273,7 +4272,7 @@ body {
     .item-icon {
         display: flex;
         &.active {
-            // color: #fff;
+            // color: $light;
             background: $light 0% 0% no-repeat padding-box;
             box-shadow: 5px 10px 20px #00083A29;
             border-radius: 3px;
@@ -4377,9 +4376,9 @@ body {
         }
     }
     .nav-collapse {
-        color: #727272;
+        color: $dark_gray3;
         &.active {
-            color: #727272;
+            color: $dark_gray3;
             background-color: unset;
             position: relative;
             &::after {
@@ -4424,7 +4423,7 @@ body {
         }
     }
     .all-packs {
-        border: 1px solid #707070;
+        border: 1px solid $dark_gray2;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         .btn-outline {
@@ -4632,7 +4631,7 @@ body {
             }
         }
         .megapack-items {
-            background-color: #EEEEEE;
+            background-color: $light3;
             position: relative;
             margin-bottom: 2rem;
             &:before {
@@ -4644,13 +4643,13 @@ body {
                 position: absolute;
                 border-left: 25px solid transparent;
                 border-right: 25px solid transparent;
-                border-bottom: 25px solid #eeeeee;
+                border-bottom: 25px solid $light3;
                 @include medium {
                     top: -2rem;
                     left: 45%;
                     border-left: 40px solid transparent;
                     border-right: 40px solid transparent;
-                    border-bottom: 40px solid #eeeeee;
+                    border-bottom: 40px solid $light3;
                 }
             }
             .title-mega {
@@ -4717,7 +4716,7 @@ body {
             margin-bottom: .75rem;
             text-align: left;
             font-size: 1rem;
-            color: #707070;
+            color: $dark_gray2;
         }
         .card-body {
             max-height: unset;
@@ -4729,7 +4728,7 @@ body {
             }
         }
         .card-text {
-            color: #707070;
+            color: $dark_gray2;
             text-align: justify;
             @include large {
                 font-size: .8rem;
@@ -4755,7 +4754,7 @@ body {
             .price-regular {
                 text-decoration: line-through;
                 letter-spacing: 0px;
-                color: #707070;
+                color: $dark_gray2;
                 font-size: 1rem;
                 @include large {
                     font-size: .9rem;
@@ -4792,7 +4791,7 @@ body {
         border-radius: 5px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        border: 1px solid #707070;
+        border: 1px solid $dark_gray2;
     }
     .modal-body {
         padding: 0;
@@ -4820,7 +4819,7 @@ body {
             display: grid;
             grid-template-columns: 12% 88%;
             align-items: center;
-            color: #32CC7A;
+            color: $aquamarine;
             @include medium {
                 grid-template-columns: 9% 80%;
                 margin-bottom: .5rem;
@@ -4944,7 +4943,7 @@ body {
                 }
             }
             .price-regular {
-                color: #707070;
+                color: $dark_gray2;
                 font-size: .85rem;
                 text-decoration: line-through;
             }
@@ -4973,7 +4972,7 @@ body {
                 .total-price {
                     display: flex;
                     justify-content: space-between;
-                    border-bottom: 1px dashed #707070;
+                    border-bottom: 1px dashed $dark_gray2;
                     padding-bottom: .25rem;
                     margin-bottom: .75rem;
                 }
@@ -5034,7 +5033,7 @@ body {
                 border-radius: 0rem;
             }
             .tag {
-                background-color: #328ACC;
+                background-color: $blue;
             }
             .card-img-top {
                 max-width: 10rem;
@@ -5077,7 +5076,7 @@ body {
                     .price-regular {
                         font-size: .85rem;
                         text-decoration: line-through;
-                        color: #707070;
+                        color: $dark_gray2;
                         font-weight: bold;
                         @include medium {
                             font-size: 1rem;
@@ -5227,7 +5226,7 @@ body {
                     margin: auto;
                     width: 52px;
                     height: 52px;
-                    background: #328ACC;
+                    background: $blue;
                     border-radius: 50%;
                     color: $light;
                     font-size: 2rem;
@@ -5242,7 +5241,7 @@ body {
                     }
                 }
                 .type {
-                    color: #328ACC;
+                    color: $blue;
                     font-weight: 600;
                 }
                 .card-title {
@@ -5300,7 +5299,7 @@ body {
         padding-bottom: 40px;
         overflow: hidden !important;
         p {
-            color: #7B7B7B;
+            color: $dark_gray;
             text-align: justify;
         }
         .third-text {
@@ -5360,7 +5359,7 @@ body {
     // fifth-section 
     .fifth-section {
         height: 300px;
-        color: #ffff;
+        color: $light;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5430,7 +5429,7 @@ body {
             }
             p {
                 width: 100%;
-                color: #707070;
+                color: $dark_gray2;
                 font-weight: 600;
                 text-align: justify;
             }
@@ -5441,8 +5440,8 @@ body {
         }
     }
 }
-//Termina Access
 
+//Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
 #sidebar {
     height: 100vh;
@@ -5477,7 +5476,7 @@ body {
     .btn-download {
         position: relative;
         overflow: hidden;
-        background: #F9C319 !important;
+        background: $mustard !important;
         border-style: none;
         height: 45px;
         width: 82%;
@@ -5525,6 +5524,62 @@ body {
     }
     @include extra-large {
         height: 4.5rem;
+    }
+    .dropdown-download {
+        margin-top: 8px !important;
+    }
+    .dropdown-menu-principal {
+        margin-top: -2px;
+        padding: 0px;
+        font-size: 15px;
+        width: 300px;
+        .dropdown-submenu {
+            display: flex;
+            margin: 0px !important;
+            align-items: center;
+            padding: 5px 7px;
+            .header-left {
+                display: flex;
+                .dropdown-toggle-category {
+                    display: flex;
+                    align-self: center;
+                    height: 100%;
+                }
+            }
+            .header-right {
+                font-size: .65rem;
+                display: flex;
+                align-items: center;
+            }
+            .person-dropdown-item {
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+            }
+        }
+    }
+    .dropdown-menu-second {
+        li {
+            padding: 1rem;
+        }
+    }
+    .category-menu {
+        padding: 0px;
+        font-size: 15px;
+        border: 1px solid $light_gray;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+        width: 300px;
+        margin-left: 0px;
+        height: 435.85px;
+        li:nth-child(1) {
+            margin-top: .75rem !important;
+        }
+    }
+    .dropdownn {
+        padding: 0px 15px 0px 15px;
+        border-radius: 8px;
+        width: 100%;
+        margin: .5rem 0 !important;
     }
     // Btn modification
     .btn {
@@ -5576,13 +5631,13 @@ body {
     .btn-download {
         position: relative;
         overflow: hidden;
-        background: #F9C319 !important;
+        background: $mustard !important;
         border-style: none;
-        height: 45px;
+        height: 38px;
         width: 10rem;
         padding: 0 !important;
         display: flex;
-        color: #fff;
+        color: $light;
         @include large {
             width: 12rem;
         }
@@ -5612,7 +5667,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-left: 1px solid #ffffff;
+            border-left: 1px solid $light;
             font-size: 25px;
             font-weight: 100;
         }
@@ -5689,7 +5744,7 @@ body {
             padding: 0 !important;
         }
         h5 {
-            color: #7b7b7b;
+            color: $dark_gray;
             font-size: 15px !important;
             overflow-wrap: break-word !important;
         }
@@ -5719,7 +5774,7 @@ body {
             padding: 0 !important;
         }
         h5 {
-            color: #7b7b7b;
+            color: $dark_gray;
             font-size: 15px !important;
             overflow-wrap: break-word !important;
         }
@@ -5807,7 +5862,7 @@ body {
         font-weight: 700;
     }
     .slick-slide img {
-        border: 0px solid #fff;
+        border: 0px solid $light;
         min-width: 0px !important;
     }
     .course-card-header {
@@ -5830,14 +5885,14 @@ body {
     }
     /* Buttons */
     .btn-outline {
-        border: 1px solid #707070;
+        border: 1px solid $dark_gray2;
         position: relative;
         min-width: 93px;
     }
     .btn-outline.active {
         background-color: #e0f7eb;
-        color: #32CC7A;
-        border: 1px solid #32CC7A;
+        color: $aquamarine;
+        border: 1px solid $aquamarine;
     }
     .best-choice {
         position: absolute;
@@ -5856,7 +5911,7 @@ body {
         position: absolute;
         right: -22px;
         top: 7px;
-        color: #fff;
+        color: $light;
         font-size: .35em;
         font-weight: 700;
         width: 77px;
@@ -5915,7 +5970,7 @@ body {
         }
         //table responsive inicia
         .table {
-            border: 1px solid #707070;
+            border: 1px solid $dark_gray2;
             margin: 0 !important;
             text-align: center;
             th {
@@ -5923,15 +5978,15 @@ body {
                 font-size: 1rem;
                 text-align: center;
                 padding: 10px 0;
-                border-bottom: 1px solid #707070;
-                border-top: 1px solid #707070;
+                border-bottom: 1px solid $dark_gray2;
+                border-top: 1px solid $dark_gray2;
                 @include large {
                     font-size: 1.3rem;
                 }
             }
             td {
                 font-size: 1rem !important;
-                border-bottom: 1px solid #707070 !important;
+                border-bottom: 1px solid $dark_gray2 !important;
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
@@ -6004,7 +6059,7 @@ body {
         .card {
             position: relative;
             overflow: hidden;
-            border: 1px solid #707070;
+            border: 1px solid $dark_gray2;
             background: #F7F7F7;
             box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
             @include large {
@@ -6012,7 +6067,7 @@ body {
             }
             .card-header {
                 position: relative !important;
-                background: #ffffff;
+                background: $light;
                 border-style: none;
                 .card-icon {
                     background: #D2E5F4;
@@ -6031,18 +6086,18 @@ body {
                 }
             }
             .card-body {
-                background: #ffffff !important;
+                background: $light !important;
                 h5 {
                     font-weight: 900;
                 }
                 .card-text-resaltar {
                     font-weight: 900;
-                    color: #000000 !important;
+                    color: $dark !important;
                 }
                 .card-text {
                     position: relative;
                     overflow: hidden;
-                    color: #7b7b7b;
+                    color: $dark_gray;
                     p {
                         span {
                             font-weight: 900;
@@ -6053,7 +6108,7 @@ body {
                         border-style: none;
                         background: #BFBFBF;
                         width: 100%;
-                        color: #000000;
+                        color: $dark;
                     }
                 }
                 .zoom-comprobante {
@@ -6067,7 +6122,7 @@ body {
                         z-index: -1;
                     }
                     span {
-                        color: #ffff;
+                        color: $light;
                         background: #00000062;
                         position: absolute;
                         width: 100%;
@@ -6126,17 +6181,15 @@ body {
         }
     }
 }
+
 // Fin checkout details
-
 // Descargar App Section Inicio
-.section-descargar-app{
+.section-descargar-app {
     margin: 0;
-
-    .sombra{
-        box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.22);
+    .sombra {
+        box-shadow: 10px 10px 19px -8px rgba(0, 0, 0, 0.22);
     }
-
-    .btn-no-activo{
+    .btn-no-activo {
         border-style: none;
         font-size: 1rem;
         width: 250px;
@@ -6144,34 +6197,30 @@ body {
         text-decoration: none !important;
         background: $light !important;
         transition: 0.3s ease;
-        span{
+        span {
             width: 10%;
             height: 100%;
             font-weight: 300;
             font-size: 1.5rem;
             margin-right: 10px;
-            color: #DC3545;
+            color: $danger;
         }
-
-        &:hover{
+        &:hover {
             color: $light !important;
-            background: #FCC11C !important;
+            background: $tertiary !important;
         }
-
-        &:hover span{
+        &:hover span {
             color: $light !important;
         }
-
     }
-
-    .btn-activo{
+    .btn-activo {
         border-style: none;
         font-size: 1rem;
         width: 250px;
         text-decoration: none !important;
-        background: #FCC11C;
+        background: $tertiary;
         color: $light !important;
-        span{
+        span {
             width: 10%;
             height: 100%;
             font-weight: 300;
@@ -6180,146 +6229,117 @@ body {
             color: $light;
         }
     }
-
-    
-
-
     .btn-descarga {
-        background: #FCC11C;
+        background: $tertiary;
         border-style: none;
         font-size: 1rem;
         width: 250px;
         color: $light;
         text-decoration: none !important;
-        span{
+        span {
             font-weight: 300;
             font-size: 1.5rem;
         }
     }
-
-    .btn-descarga:hover{
+    .btn-descarga:hover {
         color: $light
     }
-
     .banner {
         position: relative;
         height: 400px;
         background-image: url(../img/Banner1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position:  left bottom;
+        background-position: left bottom;
         display: flex;
         justify-content: center;
         align-items: center;
-        // z-index: -1 !important;
-
         @include large {
             justify-content: flex-start;
         }
-
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             top: 0;
             right: 0;
             background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,0,0.7259278711484594) 74%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,0,0.7259278711484594) 74%, rgba(0,0,0,1) 100%);
             width: 100%;
             height: 100%;
             z-index: 1;
         }
-
-        .header-description{
+        .header-description {
             overflow: hidden;
             text-align: center;
-            color: #ffff;
+            color: $light;
             z-index: 4;
             // background: red;
-
             @include large {
-                
                 width: 500px;
                 margin-left: 100px;
                 text-align: left;
             }
-
-            .btn-descarga{
+            .btn-descarga {
                 width: 250px;
                 margin: auto;
-
                 @include large {
                     margin-left: 0;
                 }
             }
-
-            .container-enlaces-app{
+            .container-enlaces-app {
                 position: relative;
                 // background: chocolate;
                 display: flex;
                 justify-content: center;
                 padding: 5px;
-
-                @include large{
+                @include large {
                     justify-content: flex-start;
                 }
-
-                a{  
+                a {
                     cursor: pointer;
                     position: relative;
                     width: 140px;
                     margin: 5px;
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-
             }
-
         }
-
-        .container-img-header{
+        .container-img-header {
             overflow: hidden;
             position: absolute;
             width: 500px;
             right: 0;
             bottom: -22%;
             z-index: 3;
-
             @include extra-large {
-                width: 700px; 
+                width: 700px;
             }
-
-            span{
-
+            span {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
                 // background: blue;
-                padding:0;
-
+                padding: 0;
                 @include large {
                     float: right;
                     margin-right: -20%;
                 }
-
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
             }
-
         }
-
     }
-
-    .first-section{
+    .first-section {
         margin-top: 100px;
     }
-       
-    .section-third{
+    .section-third {
         // background: red;
-        .third-img{
+        .third-img {
             width: 100%;
             height: 400px;
             background: url(../img/pespes.png);
@@ -6328,26 +6348,20 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-size: cover;
             // background: red;
             border-radius: 10px;
-
             @include large {
                 width: 70%;
             }
         }
-
-        .btn-descarga{
+        .btn-descarga {
             width: 250px;
         }
-
     }
-
-    .fourth-section{
+    .fourth-section {
         overflow: hidden;
-
-        .row{
+        .row {
             margin: 0;
         }
-
-        .fourth-1{
+        .fourth-1 {
             width: 100%;
             height: 200px;
             background: url(../img/fourth-section1.jpg);
@@ -6355,8 +6369,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-position: center;
             background-size: cover;
         }
-
-        .fourth-2{
+        .fourth-2 {
             width: 100%;
             height: 200px;
             background: url(../img/fourth-section2.jpg);
@@ -6364,8 +6377,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-position: center;
             background-size: cover;
         }
-
-        .fourth-3{
+        .fourth-3 {
             width: 100%;
             height: 200px;
             background: url(../img/fourth-section3.jpg);
@@ -6373,8 +6385,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-position: center;
             background-size: cover;
         }
-
-        .fourth-4{
+        .fourth-4 {
             width: 100%;
             height: 200px;
             background: url(../img/fourth-section4.jpg);
@@ -6382,7 +6393,6 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-position: center;
             background-size: cover;
         }
-
     }
 
     .sixth-section{
@@ -6392,11 +6402,8 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             width: 300px;
         }
     }
-
-
-    .seven-third{
-
-        .seven-img{
+    .seven-third {
+        .seven-img {
             width: 100%;
             height: 400px;
             background: url(../img/seven-section1.jpg);
@@ -6405,23 +6412,19 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
             background-size: cover;
             // background: red;
             border-radius: 5px;
-
             @include large {
                 width: 70%;
             }
         }
-
-        .seven-enlace{
-            background: #32CC7A;
+        .seven-enlace {
+            background: $aquamarine;
             color: $light;
             padding: 5px 20px;
             border-radius: 20px;
             text-decoration: none;
         }
     }
-
-
-    .eighth-section{
+    .eighth-section {
         background: url(../img/fifth-img.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -6432,19 +6435,16 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
         }
 
     }
-
-    .nineth-section{
+    .nineth-section {
         margin-top: 20px !important;
-        
-        @include  large {
+        @include large {
             margin-top: 150px !important;
         }
-
-       .card{
-           border-style: none !important;
-           .card-body{
-            position: relative;
-                .card-icon{
+        .card {
+            border-style: none !important;
+            .card-body {
+                position: relative;
+                .card-icon {
                     position: absolute;
                     top: -26px;
                     left: 0;
@@ -6452,35 +6452,29 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
                     margin: auto;
                     width: 52px;
                     height: 52px;
-                    background: #328acc;
+                    background: $blue;
                     border-radius: 50%;
-                    color: #fff;
+                    color: $light;
                     font-size: 2rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
-                
-                .card-body-img{
-                    img{
+                .card-body-img {
+                    img {
                         width: 30%;
                     }
                 }
-
                 .card-footer-enlace {
-                   a{
-                        background: #FCC11C;
+                    a {
+                        background: $tertiary;
                         border-style: none;
-                   }
+                    }
                 }
-           }
-
-       }
-        
+            }
+        }
     }
-
-
-    .tenth-section{
+    .tenth-section {
         width: 100%;
         height: 90%;
         background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
@@ -6492,4 +6486,5 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,
         color: $light;
     }
 }
+
 // Descargar App Section Termina
