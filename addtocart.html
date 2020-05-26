@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Añadir al Carrito</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <style>
+        .row {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="container">
+        <div class="row h-100">
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button type="button" onclick="apachurrale()" class="btn btn-primary">Apachurrale</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- // Add To Cart Modal -->
+    <div class="modal-add-cart">
+        <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                        <div class="container-fluid px-0">
+                            <div class="row px-3 px-md-4 px-lg-5 content-header">
+                                <div class="col-12 col-lg-7 py-4 px-3 px-md-4 px-xl-5">
+                                    <div class="header mb-2 mb-md-3">
+                                        <div class="added-message">
+                                            <div class="icon">
+                                                <span class="mdi mdi-checkbox-marked-circle-outline"></span>
+                                            </div>
+                                            <div class="text">
+                                                Añadido exitosamente
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items-added">
+                                        <div class="cart-item mb-2 mb-md-3 mb-lg-4">
+                                            <div class="cart-item-img">
+                                                <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="cart-item-details">
+                                                <h5 class="title">Megacurso Photoshop</h5>
+                                                <p class="subtitle">Maestro en 35h</p>
+                                                <div class="price-regular">520 USD</div>
+                                                <div class="price-promo">420 USD</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item mb-2 mb-md-3 mb-lg-4">
+                                            <div class="cart-item-img">
+                                                <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="cart-item-details">
+                                                <h5 class="title">Megacurso Photoshop</h5>
+                                                <p class="subtitle">Maestro en 35h</p>
+                                                <div class="price-regular">520 USD</div>
+                                                <div class="price-promo">420 USD</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item mb-2 mb-md-3 mb-lg-4">
+                                            <div class="cart-item-img">
+                                                <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="cart-item-details">
+                                                <h5 class="title">Megacurso Photoshop</h5>
+                                                <p class="subtitle">Maestro en 35h</p>
+                                                <div class="price-regular">520 USD</div>
+                                                <div class="price-promo">420 USD</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5 py-4 px-3 pl-md-4 pl-xl-5 right-cart">
+                                    <div class="header mb-2 mb-md-3 cart-zone">
+                                        <div class="added-message">
+                                            <div class="icon">
+                                                <span class="mdi mdi-cart-outline"></span>
+                                            </div>
+                                            <div class="text ml-lg-2">
+                                                Total en el carrito
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-total">
+                                        <div class="count">
+                                            <div class="count-items">
+                                                <div class="description">
+                                                    Cantidad de productos
+                                                </div>
+                                                <div class="quantity">
+                                                    3
+                                                </div>
+                                            </div>
+                                            <div class="total-price">
+                                                <div class="description">
+                                                    Total a pagar
+                                                </div>
+                                                <div class="price-total">
+                                                    1260 USD
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-lighter btn-block">Seguir comprando</button>
+                                            <button type="button" class="btn btn-warning btn-block">Ir al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row px-3 py-4 px-md-4 px-lg-5 py-lg-5 content-footer justify-content-lg-center">
+                                <div class="col-12 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+                                    <h5 class="title-mega">Otros cursos que podrían interesarte</h5>
+                                </div>
+                                <div class="col-12 mb-3 mb-md-4 mb-xl-0 col-lg-6 col-xl-4">
+                                    <div class="card">
+                                        <div class="d-flex justify-content-center p-2 p-md-3">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <div class="tag mb-2 mb-md-3">Actualizado 2020</div>
+                                            <h5 class="card-title">Adobe Illustrator CC desde cero:</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="footer mb-2 mb-md-3">
+                                                <div class="product-icon">
+                                                    <img src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="prices">
+                                                    <div class="price-regular">
+                                                        75,00 USD
+                                                    </div>
+                                                    <div class="price-promo">
+                                                        75,00 USD
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-warning btn-block mb-lg-2">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 mb-md-4 mb-xl-0 col-lg-6 col-xl-4">
+                                    <div class="card">
+                                        <div class="d-flex justify-content-center p-2 p-md-3">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <div class="tag mb-2 mb-md-3">Actualizado 2020</div>
+                                            <h5 class="card-title">Adobe Illustrator CC desde cero:</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="footer mb-2 mb-md-3">
+                                                <div class="product-icon">
+                                                    <img src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="prices">
+                                                    <div class="price-regular">
+                                                        75,00 USD
+                                                    </div>
+                                                    <div class="price-promo">
+                                                        75,00 USD
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-warning btn-block mb-lg-2">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 mb-md-4 mb-xl-0 col-lg-6 col-xl-4">
+                                    <div class="card">
+                                        <div class="d-flex justify-content-center p-2 p-md-3">
+                                            <img src="https://megacursos.com/uploads/images/thumbnails/93e9fd52d27cd13f813dd1b68750af89.png" class="card-img-top img-fluid" alt="...">
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <div class="tag mb-2 mb-md-3">Actualizado 2020</div>
+                                            <h5 class="card-title">Adobe Illustrator CC desde cero:</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="footer mb-2 mb-md-3">
+                                                <div class="product-icon">
+                                                    <img src="https://megacursos.com/uploads/images/thumbnails/0f407d98d5ac7d17a457e07aaa4f8e74.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="prices">
+                                                    <div class="price-regular">
+                                                        75,00 USD
+                                                    </div>
+                                                    <div class="price-promo">
+                                                        75,00 USD
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-warning btn-block mb-lg-2">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // End Add To Cart Modal -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function apachurrale() {
+            console.log('¡Se cargó el modal!');
+            $('#addToCartModal').modal('show');
+        }
+
+        function closeModal() {
+            console.log('Se ocultó exitosamente');
+            $('#addToCartModal').modal('hide');
+        }
+    </script>
+</body>
+
+</html>
