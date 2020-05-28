@@ -280,6 +280,8 @@ body {
         font-size: .8rem;
         color: $light;
         padding: 0 .45rem;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -1060,10 +1062,15 @@ body {
             position: relative;
             li {
                 display: inline-block;
-                width: 23%;
+                width: 35%;
                 margin: 15px;
                 position: relative;
                 cursor: pointer;
+                font-size: .8rem;
+                @include medium {
+                    width: 23%;
+                    font-size: 1rem;
+                }
                 &.active::after,
                 &:hover::after {
                     position: absolute;
@@ -1095,6 +1102,12 @@ body {
 }
 
 // End general CSS
+// Sweet Alert
+.swal2-container {
+    z-index: 99993 !important;
+}
+
+// End sweet alert
 // Diploma Page
 .diploma-section {
     .container-fluid {
@@ -4273,7 +4286,7 @@ body {
         position: fixed;
         width: 40px;
         height: 30px;
-        top: 5rem;
+        top: 8rem;
         left: 0;
         background-color: $light;
         color: $danger;
@@ -4299,7 +4312,7 @@ body {
         /* 0 width - change this with JavaScript */
         position: fixed;
         /* Stay in place */
-        z-index: 300;
+        z-index: 1200;
         /* Stay on top */
         top: 0;
         left: -3rem;
@@ -4322,6 +4335,7 @@ body {
             overflow-y: hidden;
             padding-top: 0;
             left: unset;
+            z-index: 300;
         }
         .closebtn {
             position: absolute;
@@ -4424,14 +4438,21 @@ body {
                     transform: rotate(-180deg) !important;
                 }
             }
+            .header-left {
+                .icon {
+                    filter: invert(54%) sepia(6%) saturate(18%) hue-rotate(341deg) brightness(92%) contrast(93%);
+                }
+            }
         }
     }
     .header-left {
         display: flex;
         flex-basis: 90%;
         .icon {
+            max-width: 25px;
             flex-basis: 10%;
             margin-right: .8rem;
+            filter: invert(33%) sepia(42%) saturate(4101%) hue-rotate(334deg) brightness(88%) contrast(96%);
         }
         .text {}
     }
@@ -4615,6 +4636,9 @@ body {
                 top: -3.5rem;
                 left: 50%;
             }
+            @include large {
+                left: 49%;
+            }
             @include extra-large {
                 left: 50.5%;
             }
@@ -4664,7 +4688,7 @@ body {
                     flex-direction: column;
                     width: 100%;
                     align-items: flex-end;
-                    @include medium {
+                    @include extra-large {
                         width: unset;
                         flex-direction: row;
                         justify-content: flex-end;
@@ -4672,13 +4696,13 @@ body {
                 }
                 .price-regular {
                     font-size: .85rem;
-                    @include medium {
+                    @include extra-large {
                         margin-bottom: 0.25rem;
                     }
                 }
                 .price-promo {
                     font-size: 1.15rem;
-                    @include medium {
+                    @include extra-large {
                         margin-right: .35rem;
                     }
                 }
@@ -5167,7 +5191,6 @@ body {
 
 // Access Section
 .access-section {
-    
     header {
         position: relative;
         overflow: hidden;
@@ -5177,7 +5200,6 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
         .header-img {
             width: 100%;
             height: 252px;
@@ -5200,7 +5222,6 @@ body {
                 z-index: -1;
             }
         }
-  
         .head-text {
             margin-top: -50%;
             display: flex;
@@ -5227,7 +5248,6 @@ body {
                 text-align: center;
                 font-weight: 700;
                 img {
-                    
                     width: 500px;
                     margin: 10px 0 50px 0;
                     box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
@@ -5395,7 +5415,6 @@ body {
             }
         }
         .third-text-icon {
-
             padding: 0;
             display: flex;
             justify-content: center;
@@ -5906,11 +5925,9 @@ body {
         background-size: contain;
         background-position: center;
         position: relative;
-
-        @include medium{
+        @include medium {
             height: 400px;
-
-            &::after{
+            &::after {
                 content: '';
                 background: #F4F2F9;
                 width: 100%;
@@ -5920,43 +5937,37 @@ body {
                 z-index: -1;
             }
         }
-
     }
-
-    .card-plansFree{
+    .card-plansFree {
         background-color: #F4F2F9;
         position: relative;
-        
-        .card{
+        .card {
             z-index: 2 !important;
             text-align: left;
             border-style: none !important;
-            box-shadow: 5px 10px 50px -10px rgba(0,0,0,0.28);
+            box-shadow: 5px 10px 50px -10px rgba(0, 0, 0, 0.28);
         }
-        .card-right{
-             background: #F5F5F5;
+        .card-right {
+            background: #F5F5F5;
         }
-
         @include large {
-            .card{
+            .card {
                 width: 400px;
                 height: 360px;
             }
-            .card-left{
+            .card-left {
                 float: right !important;
                 margin: 0 !important;
                 border-radius: 10px 0 0 10px;
-                box-shadow: -25px 10px 50px -10px rgba(0,0,0,0.22);
+                box-shadow: -25px 10px 50px -10px rgba(0, 0, 0, 0.22);
             }
-
-            .card-right{
+            .card-right {
                 float: left !important;
                 border-radius: 0 10px 10px 0;
-                box-shadow: 25px 10px 50px -10px rgba(0,0,0,0.22);
+                box-shadow: 25px 10px 50px -10px rgba(0, 0, 0, 0.22);
             }
         }
-
-        &::after{
+        &::after {
             content: '';
             width: 100%;
             height: 40%;
@@ -5967,12 +5978,11 @@ body {
             z-index: 1;
         }
     }
-
     .video-trailer {
         width: 100%;
         height: 300px;
         border-radius: 10px;
-        box-shadow: 5px 10px 50px -10px rgba(0,0,0,0.29);
+        box-shadow: 5px 10px 50px -10px rgba(0, 0, 0, 0.29);
         @include medium {
             width: 70%;
             height: 400px;
@@ -6123,7 +6133,6 @@ body {
                 }
             }
             .table-sub {
-                
                 width: 75% !important;
                 @include large {
                     width: 50% !important;
@@ -6291,7 +6300,6 @@ body {
         .third-section-info {
             width: 100%;
             margin: auto;
-            
             font-weight: 900;
             display: flex;
             flex-direction: column;
@@ -6389,8 +6397,8 @@ body {
             position: absolute;
             top: 0;
             right: 0;
-            background: rgb(0,0,0);
-            background: linear-gradient(90deg, rgba(0,0,0,0.8547794117647058) 38%, rgba(0,0,0,0.7259278711484594) 74%, rgba(0,0,0,1) 100%);
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8547794117647058) 38%, rgba(0, 0, 0, 0.7259278711484594) 74%, rgba(0, 0, 0, 1) 100%);
             width: 100%;
             height: 100%;
             z-index: 1;
@@ -6464,7 +6472,6 @@ body {
         margin-top: 100px;
     }
     .section-third {
-
         .third-img {
             width: 100%;
             height: 400px;
@@ -6519,10 +6526,8 @@ body {
             background-size: cover;
         }
     }
-
-    .sixth-section{
+    .sixth-section {
         background: #ECECEC;
-
         .btn-descarga {
             width: 300px;
         }
@@ -6554,10 +6559,9 @@ body {
         background-size: cover;
         background-position: center;
         height: 400px;
-        &::after{
+        &::after {
             background: transparent;
         }
-
     }
     .nineth-section {
         margin-top: 20px !important;
@@ -6612,15 +6616,10 @@ body {
 }
 
 // Descargar App Section Termina
-
-
 // products 
-
-#shopping-cart{
+#shopping-cart {
     display: none;
- 
     @include large {
         display: block;
     }
-
 }
