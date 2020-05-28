@@ -121,8 +121,8 @@
                 <!-- // -->
                 <div class="col-xs-12 p-0 m-0">
                     <div class="row navs-vertical">
-                        <div class="col-md-3 col-12 col-info order-11 order-md-1 px-md-3">
-                            <div class="nav flex-column nav-pills vtabs-left px-md-4 py-2 py-md-4" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="display: block;">
+                        <div class="col-lg-3 col-12 col-info order-11 order-lg-1 px-lg-3">
+                            <div class="nav flex-column nav-pills vtabs-left px-md-4 py-2 py-md-4 d-none d-lg-block" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="display: block;">
                                 <a class="nav-link active" id="v-pills-description-tab" data-toggle="pill" href="#v-pills-description" role="tab" aria-controls="v-pills-description" aria-selected="true">Descripción detallada</a>
                                 <a class="nav-link" id="v-pills-benefits-tab" data-toggle="pill" href="#v-pills-benefits" role="tab" aria-controls="v-pills-benefits" aria-selected="false">Usos y salidas profesionales</a>
                                 <a class="nav-link" id="v-pills-student-tab" data-toggle="pill" href="#v-pills-student" role="tab" aria-controls="v-pills-student" aria-selected="false">Ejemplos y proyectos concretos</a> <a class="nav-link" id="v-pills-delivery-tab"
@@ -132,18 +132,18 @@
                                 <a class="nav-link" id="v-pills-support-tab" data-toggle="pill" href="#v-pills-support" role="tab" aria-controls="v-pills-support" aria-selected="false">Asistencia individual</a>
                                 <a class="nav-link" id="v-pills-business-proposal-tab" data-toggle="pill" href="#v-pills-business-proposal" role="tab" aria-controls="v-pills-business-proposal" aria-selected="false">Cotización / Factura Proforma</a>
                             </div>
-                            <div id="nav-picker" style="display: none;">
-                                <div class="dropdown bootstrap-select" style="width: 100%;">
-                                    <select class="selectpicker" data-width="100%" data-style="btn-quarenty" tabindex="-98">
-                                <option tab-id="#v-pills-description" data-toggle="pill">Descripción detallada</option>
-                                <option tab-id="#v-pills-benefits" data-toggle="pill">Usos y salidas profesionales</option>
-                                <option tab-id="#v-pills-student" data-toggle="pill">Ejemplos y proyectos concretos</option>                            <option tab-id="#v-pills-delivery" data-toggle="pill">Acceso y descarga</option>
-                                <option tab-id="#v-pills-payment" data-toggle="pill">Métodos de Pago</option>
-                                <option tab-id="#v-pills-diploma" data-toggle="pill">Diploma oficial</option>
-                                <option tab-id="#v-pills-support" data-toggle="pill">Asistencia individual</option>
-                                <option tab-id="#v-pills-business-proposal" data-toggle="pill">Cotización / Factura Proforma</option>
-                            </select>
-                                    <button type="button" class="btn dropdown-toggle btn-quarenty" data-toggle="dropdown" role="button" title="Descripción detallada"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Descripción detallada</div></div> </div></button>
+                            <div id="nav-picker" class="d-block d-lg-none " >
+                                <div class="dropdown bootstrap-select d-flex justify-content-between flex-wrap p-2 align-items-center " style="width: 100%;">
+                                    <select class="selectpicker m-2 mx-auto " data-width="100%" data-style="btn-quarenty" tabindex="-98">
+                                        <option tab-id="#v-pills-description" data-toggle="pill">Descripción detallada</option>
+                                        <option tab-id="#v-pills-benefits" data-toggle="pill">Usos y salidas profesionales</option>
+                                        <option tab-id="#v-pills-student" data-toggle="pill">Ejemplos y proyectos concretos</option>                            <option tab-id="#v-pills-delivery" data-toggle="pill">Acceso y descarga</option>
+                                        <option tab-id="#v-pills-payment" data-toggle="pill">Métodos de Pago</option>
+                                        <option tab-id="#v-pills-diploma" data-toggle="pill">Diploma oficial</option>
+                                        <option tab-id="#v-pills-support" data-toggle="pill">Asistencia individual</option>
+                                        <option tab-id="#v-pills-business-proposal" data-toggle="pill">Cotización / Factura Proforma</option>
+                                    </select>
+                                    <button type="button" class="btn dropdown-toggle btn-quarenty mt-2 mx-auto " data-toggle="dropdown" role="button" title="Descripción detallada"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Descripción detallada</div></div> </div></button>
                                     <div class="dropdown-menu " role="combobox">
                                         <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
                                             <ul class="dropdown-menu inner show"></ul>
@@ -156,49 +156,52 @@
                                 <a href="#" class="shared">Compartelo con un amigo</a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 col-data order-12 order-md-2 px-md-4">
+                        <div class="col-lg-6 col-12 col-data order-12 order-lg-2 px-lg-4">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane tab-data fade show active" id="v-pills-description" role="tabpanel" aria-labelledby="v-pills-description-tab">
                                     <h3>Descripción detallada</h3>
+                                    
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-12">
+                                        <div class="col-12">
+
                                             <div class="descriptions">
-                                                <ul class="descriptions-items">
-                                                    <li class="descriptions-item descriptions-item-columns">
+                                                <ul class="descriptions-items ">
+                                                    <li class="descriptions-item descriptions-item-columns ">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">
+                                                        <span class="descriptions-text text-justify">
                                                         Este videocurso está actualizado a Abril 2020. El curso se actualiza periódicamente para incluír módulos con todas las nuevas funciones.
-                                                    </span>
+                                                        </span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">Este es un curso de 0 a 100, con el que te volverás un experto en After Effects con solo seguir las videoclases y realizar los ejercicios indicados.</span>
+                                                        <span class="descriptions-text text-justify">Este es un curso de 0 a 100, con el que te volverás un experto en After Effects con solo seguir las videoclases y realizar los ejercicios indicados.</span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">El acceso a las videoclases FullHD de este curso es ilimitado e infinito en el tiempo. Recibirás un email con usuario y contraseña de acceso para ver los cursos en cuanto completes el pago.</span>
+                                                        <span class="descriptions-text text-justify">El acceso a las videoclases FullHD de este curso es ilimitado e infinito en el tiempo. Recibirás un email con usuario y contraseña de acceso para ver los cursos en cuanto completes el pago.</span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">Si te surge cualquier tipo de duda durante el curso, tendrás a tu disposición un Foro interno con profesores para preguntar tus dudas.</span>
+                                                        <span class="descriptions-text text-justify">Si te surge cualquier tipo de duda durante el curso, tendrás a tu disposición un Foro interno con profesores para preguntar tus dudas.</span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">Puedes solicitar el Diploma Oficial con tu curso en el botón amarillo arriba "+ AÑADIR DIPLOMA OFICIAL Y OTROS EXTRAS"</span>
+                                                        <span class="descriptions-text text-justify">Puedes solicitar el Diploma Oficial con tu curso en el botón amarillo arriba "+ AÑADIR DIPLOMA OFICIAL Y OTROS EXTRAS"</span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">Megacursos.com es la empresa líder en formación online en español, operando desde 2009 con más de 100 mil alumnos activos.</span>
+                                                        <span class="descriptions-text text-justify">Megacursos.com es la empresa líder en formación online en español, operando desde 2009 con más de 100 mil alumnos activos.</span>
                                                     </li>
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                                                        <span class="descriptions-text">Nuestros Megacursos están diseñados y preparados con una calidad excepcional, avalado por nuestros alumnos.</span>
+                                                        <span class="descriptions-text text-justify">Nuestros Megacursos están diseñados y preparados con una calidad excepcional, avalado por nuestros alumnos.</span>
                                                     </li>
                                                 </ul>
                                             </div>
+                                            
                                             <p>
                                             </p>
-                                            <p>After Effects es uno de los softwares más populares de postproducción de vídeo. Dominándolo podrás crear todo tipo de gráficos animados, cabeceras, textos y dibujos animados, así como desenvolverte con soltura
+                                            <p class="text-justify">After Effects es uno de los softwares más populares de postproducción de vídeo. Dominándolo podrás crear todo tipo de gráficos animados, cabeceras, textos y dibujos animados, así como desenvolverte con soltura
                                                 en técnicas esenciales de composición y efectos visuales como chroma, corrección de color, efectos de partículas avanzados, etc<br><br>Una de las grandes ventajas de After Effects es su inigualable biblioteca
                                                 de plugins, que aportan al software una gran cantidad de potentes funciones adicionales de todas las áreas: partículas, manipulación de objetos 3D, colorización… Algunos de los plugins más populares como
                                                 los plugins Trapcode o Element 3D son enseñados en profundidad en el Megacurso, con los que se aprenden a crear espectaculares proyectos de temáticas como Harry Potter, Star Wars, Batman, Ironman, etc (ver
@@ -224,6 +227,9 @@
                                             <p></p>
                                         </div>
                                     </div>
+
+
+
                                 </div>
                                 <div class="tab-pane tab-data fade" id="v-pills-free-lessons" role="tabpanel" aria-labelledby="v-pills-free-lessons-tab">
                                     <h3>Clases gratis de After Effects desde 0</h3>
@@ -994,7 +1000,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-12 col-cart order-1 order-md-12">
+                        <div class="col-lg-3 col-12 col-cart order-1 order-lg-12">
                             <div class="cart-module">
                                 <form action="https://megacursos.com/cart/add-to-cart" id="add-to-cart" method="post" accept-charset="utf-8">
                                     <input type="hidden" name="cartkey" value="">
@@ -1004,7 +1010,7 @@
                                     <div class="right-module">
                                         <div id="shopping-cart" class="shopping-cart px-md-3 px-2">
                                             <div class="buy-box">
-                                                <div class="buy-box-element">
+                                                <div class="buy-box-element ">
                                                     <div class="buy-box-product">
                                                         <h2 class="badge badge-warning">Más vendidos</h2>
                                                         <h3>Megacurso de After Effects</h3>
@@ -1073,40 +1079,34 @@
                                             <div class="row row-normal">
                                                 <div class="col-12 extras">
                                                     <button class="btn btn-sm btn-block btn-light" type="button" data-toggle="modal" data-target="#extrasModal">
-                                                Añadir diploma oficial y otros extras
-                                                <i class="fas fa-plus-circle"></i>
-                                            </button>
+                                                        Añadir diploma oficial y otros extras
+                                                        <i class="fas fa-plus-circle"></i>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="extra-title pb-md-1 mx-md-3">
                                                 Extras agregados
                                             </div>
-
-                                            <div class="container-extras mx-2  mt-2 d-flex justify-content-between justify-content-center flex-wrap">
-                                               <div class="d-flex">
-                                                    <div class="icon m-auto p-1 ">
-                                                        <img src="https://megacursos.com/themes/megacursos/assets/images/western-union-logo.png" alt="" class="img-fluid border border-primary rounded" style="width: 50px;">
-                                                    </div>
-                                                    <div class="description px-0 m-auto">
-                                                        <p class="title mb-n2">Diploma Oficial</p>
-                                                        <span class="badge badge-success">Especial</span>
-                                                    </div>
-                                               </div>
-
-                                                   <div class="d-flex justify-content-between">
-                                                        <div class="amounts text-right px-0 m-auto">
-                                                            <p class="real-amount">+151.515 $COP</p>
-                                                            <p class="discount-amount mt-n1" style="font-size: 10px;">+87.040 $COP</p>
-                                                        </div>
-                                                        <div class="action m-auto p-2">
-                                                            <button type="button" class="btn btn-light">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </button>
-                                                        </div>
-                                                       
-                                                   </div>
+                                            <div class="container-extras mx-2 mx-md-3 mt-2">
+                                                <div class="icon m-auto p-1">
+                                                    <img src="https://megacursos.com/themes/megacursos/assets/images/western-union-logo.png" alt=""
+                                                        class="img-fluid border border-primary rounded">
+                                                </div>
+                                                <div class="description px-0 m-auto">
+                                                    <p class="title mb-n2">Diploma Oficial</p>
+                                                    <span class="badge badge-success">Especial</span>
+                                        
+                                                </div>
+                                                <div class="amounts text-right px-0 m-auto">
+                                                    <p class="real-amount">+151.515 $COP</p>
+                                                    <p class="discount-amount mt-n1">+87.040 $COP</p>
+                                                </div>
+                                                <div class="action m-auto">
+                                                    <button type="button" class="btn btn-light">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                     <div class="right-module mt-0 mt-md-2">
@@ -1178,7 +1178,7 @@
         </div>
         <!-- // Tab end -->
         <!-- // Temary start-->
-        <div class="col-md-9 col-12 col-sm-12 temary-container px-md-5">
+        <div class="col-lg-9 col-12 col-sm-12 temary-container px-md-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -4295,7 +4295,7 @@
         </div>
         <!-- // Temary end -->
         <!-- // Gallery start -->
-        <div class="col-md-9 col-12 col-sm-12 gallery-container px-md-5">
+        <div class="col-lg-9 col-12 col-sm-12 gallery-container px-md-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -4939,7 +4939,7 @@
         </div>
         <!-- // Gallery end -->
         <!-- // Content Extra -->
-        <div class="col-md-9 col-12 col-sm-12 content-extra-container px-md-5">
+        <div class="col-lg-9 col-12 col-sm-12 content-extra-container px-md-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -4976,7 +4976,7 @@
         </div>
         <!-- // End Content Extra -->
         <!-- // Comment section start -->
-        <div class="col-md-9 col-12 col-sm-12 comments-container px-md-5">
+        <div class="col-lg-9 col-12 col-sm-12 comments-container px-md-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -5112,11 +5112,11 @@
                             </div>
 
                         </div>
-                        <div class="row row-normal no-gutters mt-3 mb-5 justify-content-between commets-buttons">
-                            <div class="col-md-4">
+                        <div class="row row-normal no-gutters mt-3 mb-5 pb-5 pb-lg-0 d-flex justify-content-between align-items-center commets-buttons">
+                            <div class="col-md-4 m-2">
                                 <button class="btn btn-block btn-quaternary" id="loadMore" type="button">Mostrar más comentarios</button>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 m-2">
                                 <button onclick="apachurrame()" type="button" class="btn btn-block btn-quarenty d-flex justify-content-around align-items-center px-5" type="button"><i class="far fa-edit    "></i> Escribir comentario</button>
                             </div>
                         </div>
@@ -5381,10 +5381,10 @@
             var height = masthead + calc;
             $(".masthead").css("height", height + "px");
 
-            if ($(window).width() < 768) {
-                $('#nav-picker').css({
-                    "display": "block"
-                });
+            if ($(window).width() < 1024) {
+                // $('#nav-picker').css({
+                //     "display": "block"
+                // });
 
                 $(".vtabs-left").css({
                     "display": "none"
@@ -5400,9 +5400,9 @@
                 });
                 console.log('mobile')
             } else {
-                $('#nav-picker').css({
-                    "display": "none"
-                });
+                // $('#nav-picker').css({
+                //     "display": "none"
+                // });
                 $(".vtabs-left").css({
                     "display": "block"
                 });
@@ -5415,20 +5415,26 @@
                 console.log('not mobile')
                 $(window).scroll(function() {
                     var scroll = $(window).scrollTop();
-                    if (scroll < 1300) {
-                        $('#shopping-cart').removeClass('mi-fixed-top');
-                    } else {
-                        $('#shopping-cart').addClass('mi-fixed-top');
-                    }
+
+                     if ($(window).width() > 768){
+                         if (scroll < 1300) {
+                             $('#shopping-cart').removeClass('mi-fixed-top');
+                         } else {
+                             $('#shopping-cart').addClass('mi-fixed-top');
+                         }
+                     }else{
+                         $('#shopping-cart').removeClass('mi-fixed-top');
+                     }
+                     
                 });
             }
 
             $(window).on('resize', function() {
                 var win = $(this);
                 if (win.width() < 768) {
-                    $('#nav-picker').css({
-                        "display": "block"
-                    });
+                    // $('#nav-picker').css({
+                    //     "display": "block"
+                    // });
 
                     $(".vtabs-left").css({
                         "display": "none"
@@ -5444,9 +5450,9 @@
                     });
                     console.log('mobile')
                 } else {
-                    $('#nav-picker').css({
-                        "display": "none"
-                    });
+                    // $('#nav-picker').css({
+                    //     "display": "none"
+                    // });
                     $(".vtabs-left").css({
                         "display": "block"
                     });

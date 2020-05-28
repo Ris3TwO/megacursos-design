@@ -1588,7 +1588,7 @@ body {
         display: flex;
         justify-content: center;
         .product-hours {
-            margin-right: -3.25rem !important;
+            margin-right: -5.2rem !important;
             width: 6.5rem;
             height: 5.5rem;
             background-color: $aquamarine;
@@ -1817,7 +1817,7 @@ body {
         .descriptions-item-columns,
         .benefits-item-columns {
             width: 100%;
-            @include medium {
+            @include large {
                 width: 45%;
             }
         }
@@ -2063,7 +2063,10 @@ body {
                 border-radius: 4px;
                 color: #505763;
                 padding: 3px;
-                margin-top: 3rem;
+                margin-top: 1rem;
+                @include large {
+                    margin-top: 3rem;
+                }
                 &:not(:last-child) {
                     .shopping-cart {
                         -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
@@ -2071,16 +2074,18 @@ body {
                     }
                 }
                 .mi-fixed-top {
-                    position: fixed;
-                    top: 74px;
-                    right: 3.7%;
-                    z-index: 1031;
-                    background: white;
-                    max-width: 21.2%;
-                    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                    .coupon .row {
-                        .btn-coupon {
-                            right: 1.1rem;
+                    @include large {
+                        position: fixed;
+                        top: 74px;
+                        right: 3.7%;
+                        z-index: 1031;
+                        background: white;
+                        max-width: 21.2%;
+                        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                        .coupon .row {
+                            .btn-coupon {
+                                right: 1.1rem;
+                            }
                         }
                     }
                 }
@@ -2316,14 +2321,19 @@ body {
                             right: 1.7rem;
                             width: 6rem;
                             border-radius: 0;
-                            padding: 0.54rem 12px;
+                            padding: 0.55rem 12px;
                             margin-top: 0.05rem;
                             font-size: 14px;
                             @include medium {
                                 width: 4.5rem;
                                 margin-top: 1px;
                                 right: 2.20rem;
-                                padding: 0.35rem 12px;
+                            }
+                            @include large {
+                                width: 4.5rem;
+                                margin-top: 1px;
+                                right: 2.20rem;
+                                padding: 0.37rem 12px;
                             }
                         }
                         .extras {
@@ -6382,7 +6392,7 @@ body {
     .banner {
         position: relative;
         height: 400px;
-        background-image: url(../img/Banner1.jpg);
+        background-image: url(https://megacursos.com/themes/megacursos/assets/img/Banner1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left bottom;
@@ -6475,7 +6485,7 @@ body {
         .third-img {
             width: 100%;
             height: 400px;
-            background: url(../img/pespes.png);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/pespes.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6496,7 +6506,7 @@ body {
         .fourth-1 {
             width: 100%;
             height: 200px;
-            background: url(../img/fourth-section1.jpg);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section1.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6504,7 +6514,7 @@ body {
         .fourth-2 {
             width: 100%;
             height: 200px;
-            background: url(../img/fourth-section2.jpg);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6512,7 +6522,7 @@ body {
         .fourth-3 {
             width: 100%;
             height: 200px;
-            background: url(../img/fourth-section3.jpg);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section3.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6520,7 +6530,7 @@ body {
         .fourth-4 {
             width: 100%;
             height: 200px;
-            background: url(../img/fourth-section4.jpg);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section4.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6536,7 +6546,7 @@ body {
         .seven-img {
             width: 100%;
             height: 400px;
-            background: url(../img/seven-section1.jpg);
+            background: url(https://megacursos.com/themes/megacursos/assets/img/seven-section1.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -6554,7 +6564,7 @@ body {
         }
     }
     .eighth-section {
-        background: url(../img/fifth-img.png);
+        background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -6616,10 +6626,45 @@ body {
 }
 
 // Descargar App Section Termina
-// products 
-#shopping-cart {
-    display: none;
-    @include large {
-        display: block;
+// contact-section INICIA
+.contact-section {
+    .header {
+        width: 100%;
+        height: 300px;
+        background: red;
+        background: url(https://megacursos.com/themes/megacursos/assets/img/banner-contact.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include large {
+            text-align: left;
+            justify-content: flex-start;
+        }
+        .head-text {
+            @include large {
+                margin-left: 9%;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .title-mega {
+            font-size: 2.5rem;
+        }
+    }
+    .text-color-gris {
+        color: #999999;
+    }
+    .maps-frame {
+        width: 100%;
+        height: 300px;
+        @include large {
+            width: 500px;
+            height: 450px;
+        }
     }
 }
