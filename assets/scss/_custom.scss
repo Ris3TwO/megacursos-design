@@ -1032,6 +1032,69 @@ body {
     }
 }
 
+.box-interest {
+    background: $light;
+    border-radius: 2px;
+    display: inline-block;
+    height: auto;
+    margin: 1rem;
+    position: relative;
+    width: 450px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.inside-sign-lb {
+    display: block;
+    padding: 0;
+    h3 {
+        background: #ede3fb;
+        font-size: 17px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .inset {
+        .icon-listing {
+            display: block;
+            padding: 0;
+            margin-top: 10px;
+            position: relative;
+            li {
+                display: inline-block;
+                width: 23%;
+                margin: 15px;
+                position: relative;
+                cursor: pointer;
+                &.active::after,
+                &:hover::after {
+                    position: absolute;
+                    content: "";
+                    height: 25px;
+                    width: 25px;
+                    top: -12px;
+                    left: -12px;
+                    background: url(https://megacursos.com/themes/megacursos/assets/images/icon-right.png) top left no-repeat;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                label {
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#inline-register {
+    &.fancybox-content {
+        max-width: 550px;
+    }
+}
+
+// End general CSS
 // Diploma Page
 .diploma-section {
     .container-fluid {
@@ -3266,6 +3329,11 @@ body {
                 display: none;
             }
         }
+        .general-info {
+            @include extra-large {
+                font-size: 1rem;
+            }
+        }
         .data {
             @include large {
                 padding-left: 4.7rem !important;
@@ -3274,6 +3342,7 @@ body {
             .appbotons {
                 @include medium {
                     background-color: unset !important;
+                    max-width: 431px;
                 }
                 a {
                     img {
