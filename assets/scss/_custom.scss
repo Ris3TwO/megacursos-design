@@ -1575,7 +1575,7 @@ body {
         display: flex;
         justify-content: center;
         .product-hours {
-            margin-right: -3.25rem !important;
+            margin-right: -5.2rem !important;
             width: 6.5rem;
             height: 5.5rem;
             background-color: $aquamarine;
@@ -1804,7 +1804,7 @@ body {
         .descriptions-item-columns,
         .benefits-item-columns {
             width: 100%;
-            @include medium {
+            @include large{
                 width: 45%;
             }
         }
@@ -2050,7 +2050,11 @@ body {
                 border-radius: 4px;
                 color: #505763;
                 padding: 3px;
-                margin-top: 3rem;
+                margin-top: 1rem;
+                @include large{
+                     margin-top: 3rem;
+                }
+
                 &:not(:last-child) {
                     .shopping-cart {
                         -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
@@ -2058,16 +2062,18 @@ body {
                     }
                 }
                 .mi-fixed-top {
-                    position: fixed;
-                    top: 74px;
-                    right: 3.7%;
-                    z-index: 1031;
-                    background: white;
-                    max-width: 21.2%;
-                    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                    .coupon .row {
-                        .btn-coupon {
-                            right: 1.1rem;
+                    @include large {
+                        position: fixed;
+                        top: 74px;
+                        right: 3.7%;
+                        z-index: 1031;
+                        background: white;
+                        max-width: 21.2%;
+                        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                        .coupon .row {
+                            .btn-coupon {
+                                right: 1.1rem;
+                            }
                         }
                     }
                 }
@@ -2303,14 +2309,21 @@ body {
                             right: 1.7rem;
                             width: 6rem;
                             border-radius: 0;
-                            padding: 0.54rem 12px;
+                            padding: 0.55rem 12px;
                             margin-top: 0.05rem;
                             font-size: 14px;
-                            @include medium {
+                            
+                            @include medium{
                                 width: 4.5rem;
                                 margin-top: 1px;
                                 right: 2.20rem;
-                                padding: 0.35rem 12px;
+                            }
+                            
+                            @include large {
+                                width: 4.5rem;
+                                margin-top: 1px;
+                                right: 2.20rem;
+                                padding: 0.37rem 12px;
                             }
                         }
                         .extras {
@@ -6614,13 +6627,58 @@ body {
 // Descargar App Section Termina
 
 
-// products 
+// contact-section INICIA
+.contact-section{
 
-#shopping-cart{
-    display: none;
- 
-    @include large {
-        display: block;
+    .header{
+        width: 100%;
+        height: 300px;
+        background: red;
+        background: url(../img/banner-contact.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @include large{
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .head-text{
+            
+            @include large {
+                margin-left: 9%;
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+
+        .title-mega{
+            font-size: 2.5rem;
+        }
+
     }
+
+    .text-color-gris{
+        color: #999999;
+    }
+
+    .maps-frame{
+        width: 100%;
+        height: 300px;
+
+        @include large {
+             width: 500px;
+            height: 450px;
+        }
+
+    }
+
 
 }
