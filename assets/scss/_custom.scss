@@ -105,7 +105,7 @@ body {
 
 .btn-warning {
     background-color: $tertiary;
-    color: $light;
+    color: $light !important;
     padding: .55rem .75rem;
     font-weight: 600;
     border: 2px solid $tertiary;
@@ -3650,9 +3650,6 @@ body {
     }
     .viewed_slider_container {
         overflow: hidden;
-        @include medium {
-            padding-top: 20px;
-        }
     }
     .viewed_item {
         width: 100%;
@@ -4206,6 +4203,9 @@ body {
     }
     .our-plans {
         max-height: 40vh;
+        @media only screen and (max-width: 320px) {
+            max-height: 55vh;
+        }
         @include medium {
             max-height: 50vh;
         }
@@ -4214,6 +4214,9 @@ body {
         }
         .container {
             max-height: 40vh;
+            @media only screen and (max-width: 320px) {
+                max-height: 55vh;
+            }
             @include medium {
                 max-height: 50vh;
             }
@@ -4222,6 +4225,9 @@ body {
             }
             .row {
                 max-height: 40vh;
+                @media only screen and (max-width: 320px) {
+                    max-height: 50vh;
+                }
                 @include medium {
                     max-height: 45vh;
                 }
@@ -4270,6 +4276,7 @@ body {
     }
 }
 
+// All Courses Section
 .all-courses-section {
     @include medium {
         padding: 5rem 0;
@@ -4881,6 +4888,7 @@ body {
     }
 }
 
+// Modal Add To Cart
 .modal-add-cart {
     .modal-content {
         box-shadow: 10px 10px 26px #0000005F;
@@ -6070,7 +6078,7 @@ body {
                 content: '';
                 background: #F4F2F9;
                 width: 100%;
-                height: 20%;
+                height: 12%;
                 position: absolute;
                 bottom: 0;
                 z-index: -1;
@@ -6086,8 +6094,34 @@ body {
             border-style: none !important;
             box-shadow: 5px 10px 50px -10px rgba(0, 0, 0, 0.28);
         }
+        .card-left {
+            .title-free {
+                color: $dark !important;
+                font-weight: bold;
+            }
+            .allcourses.text {
+                color: $dark !important;
+            }
+            .free-time {
+                font-size: 12px;
+            }
+        }
         .card-right {
             background: #F5F5F5;
+            .h6 {
+                color: $dark !important;
+                font-weight: bold;
+                font-size: 1.15rem;
+            }
+            .col-icon {
+                i {
+                    color: #00D13F;
+                }
+            }
+            .col-text {
+                color: #999;
+                font-size: 15px;
+            }
         }
         @include large {
             .card {
@@ -6219,7 +6253,6 @@ body {
     }
 }
 
-//PRUEBAS SECTION FIN
 // Inicia checkout details
 .checkout-section {
     .color-text-dark {
