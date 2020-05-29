@@ -12,75 +12,6 @@
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <!-- Don't touch -->
-    <style>
-        .row {
-            margin: 0 !important;
-        }
-    </style>
-    <!-- Remove styles and add to especific file -->
-    <style>
-        .panel {
-            border-radius: 2px;
-            position: relative;
-            box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-            opacity: 1;
-        }
-        .dropbtn-products.first {
-            color: inherit;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .clientBannerContact {
-            height: 300px;
-        }
-
-        .section-title-toggle {
-            color: #ffffff;
-            display: inline-block;
-            width: 30px;
-            height: auto !important;
-            -ms-flex-item-align: end;
-            align-self: flex-end;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 50%;
-            -webkit-box-shadow: 0px 0px 5px #888;
-            box-shadow: 0px 0px 5px #888;
-            padding: 0.1rem 0.4rem 0.1rem 0.4rem;
-            background-color: #dc3545;
-            font-weight: 600;
-            line-height: 25px;
-            text-align: center;
-        }
-
-        [data-toggle="collapse"] .section-title-toggle::before {
-            content: "-" !important;
-        }
-
-        [data-toggle="collapse"].collapsed .section-title-toggle::before {
-            content: "+" !important;
-        }
-
-        .card-body {
-            min-height: 10rem;
-        }
-
-        .section-title-wrapper {
-            font-size: 15px;
-        }
-
-        input::placeholder {
-            color: #d0cccc !important;
-            font-size: 12px !important;
-        }
-
-        textarea::placeholder {
-            color: #d0cccc !important;
-            font-size: 12px !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -115,19 +46,70 @@
             </div>
         </div>
 
-        <div class="container text-center ">
+        <div class="container text-center  first-section">
             <h4 class="mt-5 font-weight-bold">¿Donde Estamos?</h4>
-            <p class="mt-3 mb-5 h5 text-color-gris">Tenemos oficinas en más de 30 paises.</p>
+            <p class="mt-3 mb-5 h5">Tenemos oficinas en más de 30 paises.</p>
 
             <div class="row">
                 <div class="col-12 col-lg-6 pt-2" >
                     <iframe class="maps-frame " 
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDgtNd1LRNNrpOrhZ0gCHAe00qKhkiRxRQ&amp;q=111 John St 1509New York,EE. UU.&amp;zoom=17&amp;"
                         scrolling="no" frameborder="0"></iframe>
+
+                        <h5 class="text-center mt-3 font-weight-bold">Otros medios de contacto:</h5>
+                        <p class="mt-3">CONTACTO PARA</p>
+                        <select name="flessons_country" id="flessons_country" class="form-control mt-3 col-md-6 m-auto">
+                            <option value="5">Argentina </option>
+                            <option value="6">Bolivia </option>
+                            <option value="7">Brazil </option>
+                            <option value="8">Chile </option>
+                            <option value="4">Colombia </option>
+                            <option value="9">Costa Rica </option>
+                            <option value="10">Cuba </option>
+                            <option value="21">Dominican Republic </option>
+                            <option value="11">Ecuador </option>
+                            <option value="12">El Salvador </option>
+                            <option value="13">Guatemala </option>
+                            <option value="14">Honduras </option>
+                            <option value="16">México </option>
+                            <option value="17">Nicaragua </option>
+                            <option value="25" selected="">Otro </option>
+                            <option value="19">Panamá </option>
+                            <option value="18">Paraguay </option>
+                            <option value="20">Perú </option>
+                            <option value="22">Puerto Rico </option>
+                            <option value="3">Spain </option>
+                            <option value="26">United Kingdom </option>
+                            <option value="2">United States </option>
+                            <option value="23">Uruguay </option>
+                            <option value="24">Venezuela </option>
+                        </select>
+
+                        <div class="row py-5 text-left container-contac-info">
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <span class="mr-3" ><i class="far fa-envelope"></i></span>
+                                <a href="mailto:atencion@megacursos.com">atencion@megacursos.com</a>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                    <span class="mr-3"><i class="fas fa-phone-alt"></i></span>
+                                    <a href="tel:+1 (917) 341 2153" >+1 (917) 341 2153</a></p>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <i class="fas fa-phone-alt"></i>
+                                    <span class="mr-3"><i class="fas fa-map-marker-alt"></i></span>
+                                    <a href="javascript:void(0)">
+                                         111 John St 1509 New York, EE. UU.
+                                    </a>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <span class="mr-3"><i class="fas fa-comments"></i></span>
+                                <a href="#">Chat 24h</a>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="col-12 col-lg-6 py-2">
-                    <div class="panel panel-default text-left py-3">
+                <div class="col-12 col-lg-6 py-2 mt-5 mt-lg-0">
+                    <div class="panel panel-default  text-left p-1 p-xl-3 ">
                         <div class="panel-body p-lg-2">
                             <form role="form" name="contactfrmmacc" id="contactfrmmacc" method="post">
                                 <div class="row">
@@ -187,7 +169,7 @@
                                     <button type="button" class="btn btn-danger btn-lg mb-3" name="submitcontact22" id="submitcontact22"
                                         style="width: 30%;">Enviar </button>
                                 </div>
-                                <div class=" d-flex justify-content-between p-2" >
+                                <div class=" d-flex justify-content-center p-2" >
                                     <span class="mr-3"><i class="fas fa-info-circle" style="color:#f10101"></i></span>
                                     <p>Si necesitas atencion inmediata , utiliza nuestro chat 24h o telefono 24h</p>
                                 </div>
@@ -204,6 +186,203 @@
             </div>
 
         </div>
+
+        <div class="second-section ">
+            <img class="d-none d-lg-block" src="https://megacursos.com/themes/megacursos/assets/img/support.png" alt="">
+            <div class="banner-text">
+                <p>Si necesitas atención inmediata,<br> utiliza
+                    nuestro chat directo</p>
+                <h4 class="font-weight-bold blanco">Pregunta Ahora</h4>
+                <button class="btn btn-danger mt-3 mx-auto mx-lg-0">Chat 24 hr</button>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center"
+                    style="justify-content: center;align-items: center;display: flex;flex-direction: column;">
+                    <h4 class="mt-5 font-weight-bold">Colaboraciones y otros temas</h4>
+                    <p class="font-weight-normal mt-3 text-center h5">Para cualquier duda general relacionada con los
+                        Megacursos,<br> puedes preguntarnos en atencion@megacursos.com <br> Tiempo de respuesta: menos de 24h.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <div class="accordion mb-5 mt-5" id="accordionExample">
+                        <div class="card mb-2" style="border: solid 2px #d4d4d4;">
+                            <div class="card-header" id="headingOne">
+                                <span class="mb-0 d-flex " style="justify-content: space-between;">
+                                    <button
+                                        class="btn btn-link questions-buttom section-container collapsed d-flex w-100 justify-content-between"
+                                        href="javascript:void(0)" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne" style="padding-left:15px">
+                                        <div class="section-header-left">
+                                            <span class="section-title-wrapper">
+                                                <span class="section-title-text">Para Empresas</span>
+                                            </span>
+                                        </div>
+                                        <div class="section-header-right">
+                                            <span class="section-title-toggle"></span>
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body" style="padding: 0px 10px;">
+                                    <div style="padding: 15px;">
+                                        Si estás interesado en la adquisición de Megacursos para capacitacitón en tu empresa,
+                                        puedes ponerte en contacto con nosotros en atencion@megacursos.com <br><br>
+                                        <span class="font-weight-bold">
+                                            Tiempo de respuesta: menos de 24h.
+                                        </span>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2" style="border: solid 2px #d4d4d4;">
+                            <div class="card-header" id="headingTwo">
+                                <span class="mb-0 d-flex " style="justify-content: space-between;">
+                                    <button
+                                        class="btn btn-link questions-buttom section-container collapsed d-flex w-100 justify-content-between"
+                                        href="javascript:void(0)" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo" style="padding-left:15px">
+                                        <div class="section-header-left">
+                                            <span class="section-title-wrapper">
+                                                <span class="section-title-text">Vende Megacursos</span>
+                                            </span>
+                                        </div>
+                                        <div class="section-header-right">
+                                            <span class="section-title-toggle"></span>
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+        
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body" style="padding: 0px 10px;">
+                                    <div style="padding: 15px;">
+                                        Si tienes dudas acerca de nuestros programas de Reventa y Referidos o te gustaría
+                                        solicitar información de cómo ganar dinero vendiendo licencias de megacursos puedes
+                                        ponerte en contacto con nosotros en atencion@megacursos.com<br><br>
+        
+                                        <span class="font-weight-bold">
+                                            Tiempo de respuesta: menos de 24h.
+                                        </span>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2" style="border: solid 2px #d4d4d4;">
+                            <div class="card-header" id="headingthree">
+                                <span class="mb-0 d-flex " style="justify-content: space-between;">
+                                    <button
+                                        class="btn btn-link questions-buttom section-container collapsed d-flex w-100 justify-content-between"
+                                        href="javascript:void(0)" data-toggle="collapse" data-target="#collapsethree"
+                                        aria-expanded="true" aria-controls="collapsethree" style="padding-left:15px">
+                                        <div class="section-header-left">
+                                            <span class="section-title-wrapper">
+                                                <span class="section-title-text">Sugiere nuevos megacursos</span>
+                                            </span>
+                                        </div>
+                                        <div class="section-header-right">
+                                            <span class="section-title-toggle"></span>
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+        
+                            <div id="collapsethree" class="collapse" aria-labelledby="headingthree"
+                                data-parent="#accordionExample">
+                                <div class="card-body" style="padding: 0px 10px;">
+                                    <div style="padding: 15px;">
+                                        Si hay algún tema en concreto del que te gustaría que hubiese Megacursos, puedes
+                                        proponernoslo en atencion@megacursos.com
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card mb-2" style="border: solid 2px #d4d4d4;">
+                            <div class="card-header" id="headingFour">
+                                <span class="mb-0 d-flex " style="justify-content: space-between;">
+                                    <button
+                                        class="btn btn-link questions-buttom section-container collapsed d-flex w-100 justify-content-between"
+                                        href="javascript:void(0)" data-toggle="collapse" data-target="#collapsefour"
+                                        aria-expanded="true" aria-controls="collapsefour" style="padding-left:15px">
+                                        <div class="section-header-left">
+                                            <span class="section-title-wrapper">
+                                                <span class="section-title-text">Sé profesor en Megacursos</span>
+                                            </span>
+                                        </div>
+                                        <div class="section-header-right">
+                                            <span class="section-title-toggle"></span>
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+        
+                            <div id="collapsefour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body" style="padding: 0px 10px;">
+                                    <div style="padding: 15px;">
+                                        Si eres experto de alg&uacute;n &aacute;rea de conocimiento concreto y tienes
+                                        experiencia docente en su ense&ntilde;anza, puedes presentarnos tu candidatura
+                                        adjuntando:<br><br>1. Tu curr&iacute;culum personal<br />2. Un boceto
+                                        de temario de los temas que ense&ntilde;ar&iacute;as<br />3. Una prueba de
+                                        grabaci&oacute;n de 5 minutos para ver tu modo de ense&ntilde;anza.<br />Env&iacute;a
+                                        todo esto a atencion@megacursos.com Te responderemos una vez analizada
+                                        tu propuesta. <br><br>
+                                        <span class="font-weight-bold">
+                                            Tiempo de respuesta: menos de 48h.
+                                        </span>
+        
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2" style="border: solid 2px #d4d4d4;">
+                            <div class="card-header" id="headingFive">
+                                <span class="mb-0 d-flex " style="justify-content: space-between;">
+                                    <button
+                                        class="btn btn-link questions-buttom section-container collapsed d-flex w-100 justify-content-between"
+                                        href="javascript:void(0)" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive" style="padding-left:15px">
+                                        <div class="section-header-left">
+                                            <span class="section-title-wrapper">
+                                                <span class="section-title-text">Colaboracioens corporativas</span>
+                                            </span>
+                                        </div>
+                                        <div class="section-header-right">
+                                            <span class="section-title-toggle"></span>
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+        
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body" style="padding: 0px 10px;">
+                                    <div style="padding: 15px;">
+                                        Si te gustaría contactar con Megacursos para discutir cualquier tipo de asunto
+                                        relacionado con publicidad, eventos, fusiones, inversiones y cualquier otro tipo de
+                                        temáticas corporativa, puedes hacerlo en atencion@megacursos.com <br><br>
+                                        <span class="font-weight-bold">
+                                            Tiempo de respuesta: menos de 24h.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
 
     </div>
 
