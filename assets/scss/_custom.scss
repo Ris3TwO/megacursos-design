@@ -5729,7 +5729,6 @@ body {
         }
     }
 }
-
 //Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
 #sidebar {
@@ -6548,7 +6547,9 @@ body {
 .section-descargar-app {
     margin: 0;
     .banner-footer {
-        background: #ffff !important;
+        &::before {
+            background: $light;
+        }
     }
     .sombra {
         box-shadow: 10px 10px 19px -8px rgba(0, 0, 0, 0.22);
@@ -6814,6 +6815,8 @@ body {
         }
         .card {
             border-style: none !important;
+            opacity: 0.0 !important;
+            transition: 1s all;
             .card-body {
                 position: relative;
                 .card-icon {
@@ -6835,6 +6838,8 @@ body {
                 .card-body-img {
                     img {
                         width: 30%;
+                        text-align: center;
+                        margin: 0 !important;
                     }
                 }
                 .card-footer-enlace {
@@ -6845,10 +6850,15 @@ body {
                 }
             }
         }
+        .showCard {
+            opacity: 1.1 !important;
+        }
         hr {
             border-color: #999999;
             width: 250px;
-            margin-left: 0 !important;
+            @include medium {
+                margin-left: 0 !important;
+            }
         }
     }
 }
@@ -6965,7 +6975,7 @@ body {
         background-size: content;
         // border: 1px solid #707070;
         margin-top: 100px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
         display: flex;
         justify-content: center;
         position: relative;

@@ -214,26 +214,26 @@
                     <h3 class="font-weight-bolder mb-5">Megacursos Player ®️ est&aacute; disponible en todas las plataformas que puedas necesitar
                     </h3>
 
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mt-lg-0">
+                    <div class="row text-center text-lg-left">
+                        <div class="col-12 col-md-6 mt-lg-0">
                             <b>MOBILE</b>
                             <hr>
-                            <a href="https://play.google.com/store/apps/details?id=com.megacusosoficial.app" target="_blank" class="btn btn-warning btn-activo d-flex align-items-center mb-4 sombra ">
+                            <a id="enlace-android" class=" btn btn-warning btn-activo d-flex align-items-center mb-4 sombra mx-auto mx-md-0 ">
                                 <span><i class="fab fa-android"></i></span> Disponible para Android
                             </a>
 
-                            <a href="https://apps.apple.com/es/app/megacursos/id1449328401" target="_blank" class="btn btn-warning  btn-no-activo  d-flex  align-items-center  sombra sombra">
+                            <a id="enlace-ios" class=" btn btn-warning  btn-no-activo  d-flex  align-items-center  sombra sombra mx-auto mx-md-0">
                                 <span><i class="fab fa-apple"></i></span>Disponible para IOS
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div class="col-12 col-md-6 mt-5 mt-md-0">
                             <b>DESKTOP</b>
                             <hr>
-                            <a href="#" target="_blank" class="btn btn-warning  btn-no-activo  d-flex  align-items-center mb-4 sombra">
+                            <a id="enlace-windows" class="btn btn-warning   btn-no-activo d-flex  align-items-center mb-4 sombra mx-auto mx-md-0">
                                 <span><i class="fab fa-windows"></i></span>Disponible para Windows
                             </a>
 
-                            <a href="#" target="_blank" class="btn btn-warning  btn-no-activo  d-flex align-items-center sombra">
+                            <a id="enlace-mac" class="btn btn-warning  btn-no-activo  d-flex align-items-center sombra mx-auto mx-md-0">
                                 <span><i class="fab fa-apple"></i></span>Disponible para Mac
                             </a>
                         </div>
@@ -241,11 +241,46 @@
                 </div>
 
                 <div class="col-12 col-lg-4 mt-5 mt-lg-0">
-                    <div class="card sombra">
+
+                    <div class="card sombra showCard" id="card-android">
                         <img src="assets/img/photomen.png" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <span class="card-icon"><img src="assets/img/Mobile.svg" alt=""></span>
-                            <h3 class="card-title font-weight-bolder">App mobile</h3>
+                            <h3 class="card-title font-weight-bolder mt-1">App movil</h3>
+                            <span class="card-body-img">
+                                <!-- <img src="assets/img/appstore.png" alt=""> -->
+                                <img class="ml-4" src="assets/img/googleplay.png" alt="">
+                            </span>
+                            <p class="card-text">Puedes reproducir sin limites todas las clases de los Megacursos que hayas adquirido en tu
+                                celular, descarga nuestra App disponible para IOS y Android.</p>
+                            <div class="card-footer-enlace col-md-12 d-flex justify-content-center">
+                                <a href="#" class="btn btn-warning btn-block">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sombra d-none" id="card-ios">
+                        <img src="assets/img/photomen.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <span class="card-icon"><img src="assets/img/Mobile.svg" alt=""></span>
+                            <h3 class="card-title font-weight-bolder mt-1">App movil</h3>
+                            <span class="card-body-img">
+                                <!-- <img src="assets/img/appstore.png" alt=""> -->
+                                <img class="ml-4" src="assets/img/appstore.png" alt="">
+                            </span>
+                            <p class="card-text">Puedes reproducir sin limites todas las clases de los Megacursos que hayas adquirido en tu
+                                celular, descarga nuestra App disponible para IOS y Android.</p>
+                            <div class="card-footer-enlace col-md-12 d-flex justify-content-center">
+                                <a href="#" class="btn btn-warning btn-block">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sombra d-none" id="card-windows" >
+                        <img src="assets/img/photomen.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <span class="card-icon"><img src="assets/img/Mobile.svg" alt=""></span>
+                            <h3 class="card-title font-weight-bolder mt-1">Windows</h3>
                             <span class="card-body-img">
                                 <!-- <img src="assets/img/appstore.png" alt=""> -->
                                 <img class="ml-4" src="assets/img/googleplay.png" alt="">
@@ -257,13 +292,33 @@
                         </div>
                     </div>
 
+
+                    <div class="card sombra d-none " id="card-mac">
+                        <img src="assets/img/photomen.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <span class="card-icon"><img src="assets/img/Mobile.svg" alt=""></span>
+                            <h3 class="card-title font-weight-bolder mt-1">Mac</h3>
+                            <span class="card-body-img">
+                                <!-- <img src="assets/img/appstore.png" alt=""> -->
+                                <img class="ml-4" src="assets/img/appstore.png" alt="">
+                            </span>
+                            <p class="card-text">Puedes reproducir sin limites todas las clases de los Megacursos que hayas adquirido en tu
+                                celular, descarga nuestra App disponible para IOS y Android.</p>
+                            <div class="card-footer-enlace col-md-12 d-flex justify-content-center">
+                                <a href="#" class="btn btn-warning btn-block">Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
 
         <div class="container-fluid banner-footer mt-3">
             <div class="container">
-                <div class="row with-image">
+                <div class="row with-image  m-0">
                     <div class="col-md-5">
                         <h2 class="title-mega">
                             Conoce todos nuestros cursos aquí
@@ -287,5 +342,62 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- CDN -->
+
+<script>
+
+    let android = document.getElementById("enlace-android");
+    let ios = document.getElementById("enlace-ios");
+    let  windows =  document.getElementById("enlace-windows");
+    let  mac = document.getElementById("enlace-mac");
+
+    let cards = ['card-android','card-ios','card-windows','card-mac'];
+    let enlaces =  ['enlace-android','enlace-ios','enlace-windows','enlace-mac'];
+
+    function showCard(showCard,enlace) {
+        //Mostramos card
+        document.getElementById(showCard).classList.remove('d-none');
+        setTimeout(function () {
+            document.getElementById(showCard).classList.add("showCard");
+        }, 500);
+
+        //Ocultamos Cards
+        for (let hideCard of cards) {
+            if (hideCard != showCard) {
+                document.getElementById(hideCard).classList.add('d-none');
+                document.getElementById(hideCard).classList.remove("showCard");
+            }
+        }
+
+        //Activo enlace
+        document.getElementById(enlace).classList.remove("btn-no-activo");
+        document.getElementById(enlace).classList.add("btn-activo");
+
+        for (let hideEnlace of enlaces) {
+            if (hideEnlace != enlace) {
+                document.getElementById(hideEnlace).classList.remove("btn-activo");
+                document.getElementById(hideEnlace).classList.add("btn-no-activo");
+            }
+        }
+
+    }
+
+    android.addEventListener("click", () => {
+        showCard("card-android", "enlace-android");
+    });
+
+    ios.addEventListener("click", () => {
+        showCard("card-ios", "enlace-ios");
+    });
+    
+    
+    windows.addEventListener("click" , ()=>{
+        showCard("card-windows","enlace-windows");
+    });
+
+    mac.addEventListener("click", () => {
+        showCard("card-mac","enlace-mac");
+    });
+
+</script>
 
 </html>
