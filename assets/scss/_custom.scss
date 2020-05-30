@@ -5593,13 +5593,15 @@ body {
 
  // banner-footer 
     .banner-footer {
+        padding: 20px 0;
         height: 300px;
         color: $light;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
         overflow: hidden;
+        position: relative;
+
         &::before {
             content: '';
             position: absolute;
@@ -6465,8 +6467,10 @@ body {
 .section-descargar-app {
     margin: 0;
 
-    .banner-footer{
-        background: #ffff !important;
+    .banner-footer {
+        &::before{
+            background: #ffffff;
+        }
     }
 
     .sombra {
@@ -6735,6 +6739,8 @@ body {
         }
         .card {
             border-style: none !important;
+            opacity: 0.0 !important;
+            transition: 1s all;
             .card-body {
                 position: relative;
                 .card-icon {
@@ -6756,9 +6762,12 @@ body {
                 .card-body-img {
                     img {
                         width: 30%;
+                        text-align: center;
+                        margin: 0 !important;
                     }
                 }
                 .card-footer-enlace {
+                   
                     a {
                         background: $tertiary;
                         border-style: none;
@@ -6767,10 +6776,19 @@ body {
             }
         }
 
+
+        .showCard{
+            opacity: 1.1 !important;
+        }
+
         hr{
             border-color: #999999;
             width: 250px;
-            margin-left: 0 !important;
+            
+
+            @include medium {
+                margin-left: 0 !important;
+            }
         }
     }
 
