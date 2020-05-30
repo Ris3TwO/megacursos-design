@@ -5588,66 +5588,64 @@ body {
             }
         }
     }
-   
 }
 
- // banner-footer 
-    .banner-footer {
-        padding: 20px 0;
-        height: 300px;
-        color: $light;
+// banner-footer 
+.banner-footer {
+    padding: 20px 0;
+    height: 300px;
+    color: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: #F7F7F7;
+        z-index: -1;
+    }
+    .with-image {
+        width: 100%;
+        height: 90%;
+        background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50%;
-            background: #F7F7F7;
-            z-index: -1;
+        z-index: 1;
+        box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
+        .title-mega {
+            color: $tertiary;
         }
-        .with-image {
-            width: 100%;
-            height: 90%;
-            background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-            box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
-            .title-mega {
-                color: $tertiary;
-            }
-            .message {
-                color: $light;
-            }
-            a {
-                background: $tertiary;
-                border-style: none;
-                color: $light;
-            }
-            // Mediadas para ipad - pc 
-            @include medium {
-                height: 50%;
-            }
-            @include large {
-                padding: 20px 100px;
-                height: 80%;
-                height: 200px;
-            }
+        .message {
+            color: $light;
+        }
+        a {
+            background: $tertiary;
+            border-style: none;
+            color: $light;
+        }
+        // Mediadas para ipad - pc 
+        @include medium {
+            height: 50%;
+        }
+        @include large {
+            padding: 20px 100px;
+            height: 80%;
+            height: 200px;
         }
     }
+}
 
 //Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
@@ -6466,13 +6464,11 @@ body {
 // Descargar App Section Inicio
 .section-descargar-app {
     margin: 0;
-
     .banner-footer {
-        &::before{
+        &::before {
             background: #ffffff;
         }
     }
-
     .sombra {
         box-shadow: 10px 10px 19px -8px rgba(0, 0, 0, 0.22);
     }
@@ -6623,12 +6619,10 @@ body {
         @include large {
             margin-top: 100px;
         }
-    
-        img{
+        img {
             width: 70px;
         }
-
-        p{
+        p {
             // background: red;
             width: 60% !important;
             font-size: 13px;
@@ -6767,7 +6761,6 @@ body {
                     }
                 }
                 .card-footer-enlace {
-                   
                     a {
                         background: $tertiary;
                         border-style: none;
@@ -6775,44 +6768,34 @@ body {
                 }
             }
         }
-
-
-        .showCard{
+        .showCard {
             opacity: 1.1 !important;
         }
-
-        hr{
+        hr {
             border-color: #999999;
             width: 250px;
-            
-
             @include medium {
                 margin-left: 0 !important;
             }
         }
     }
-
 }
 
 // Descargar App Section Termina
 // contact-section INICIA
 .contact-section {
-
     .row {
         margin: 0 !important;
     }
-    
     .panel {
         border-radius: 2px;
         position: relative;
         box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
         opacity: 1;
     }
-
     .panel:hover {
         box-shadow: 0 0 3px 2px rgba(20, 23, 28, .1), 0 4px 2px 0 rgba(20, 23, 28, .1);
     }
-
     .section-title-toggle {
         color: #ffffff;
         display: inline-block;
@@ -6831,33 +6814,26 @@ body {
         line-height: 25px;
         text-align: center;
     }
-    
     [data-toggle="collapse"] .section-title-toggle::before {
         content: "-" !important;
     }
-    
     [data-toggle="collapse"].collapsed .section-title-toggle::before {
         content: "+" !important;
     }
-    
     .card-body {
         min-height: 10rem;
     }
-    
     .section-title-wrapper {
         font-size: 15px;
     }
-
     input::placeholder {
         color: #d0cccc !important;
         font-size: 12px !important;
     }
-
     textarea::placeholder {
         color: #d0cccc !important;
         font-size: 12px !important;
     }
-
     .header {
         width: 100%;
         height: 300px;
@@ -6886,36 +6862,29 @@ body {
             font-size: 2.5rem;
         }
     }
-
     .maps-frame {
         width: 100%;
         height: 300px;
-        @include extra-large{
+        @include extra-large {
             width: 500px;
             height: 450px;
         }
-    }   
-
-    .first-section{
-        
-        p{
+    }
+    .first-section {
+        p {
             color: #999999;
         }
-
-        .container-contac-info{
-
-            span{
-                color:#f10101 !important;
+        .container-contac-info {
+            span {
+                color: #f10101 !important;
             }
-
-            a{
+            a {
                 text-decoration: none !important;
                 color: #8f8f8f !important;
             }
         }
     }
-
-    .second-section{
+    .second-section {
         width: 100% !important;
         height: 280px;
         background: transparent linear-gradient(101deg, #505763 0%, #101114 100%) 0% 0%;
@@ -6923,56 +6892,45 @@ body {
         background-position: center;
         background-size: content;
         // border: 1px solid #707070;
-        margin-top:100px;
-        margin-bottom: 0;
+        margin-top: 100px;
+        margin-bottom: 50px;
         display: flex;
         justify-content: center;
         position: relative;
-
         @include large {
             justify-content: flex-end;
         }
-
-
-        img{
+        img {
             position: absolute;
             left: 0;
             bottom: 0;
             margin-left: 10%;
             height: 400px;
         }
-
-        .banner-text{
+        .banner-text {
             height: 100%;
             color: #ffffff;
-            display: flex;  
+            display: flex;
             justify-content: center;
             flex-direction: column;
             text-align: center;
-
-            @include large{
+            @include large {
                 text-align: left;
                 margin-right: 15%;
             }
-
             @include extra-large {
                 margin-right: 20%;
             }
-            
-            p{
+            p {
                 font-size: 20px;
                 letter-spacing: 1px;
             }
-
-            button{
+            button {
                 border-radius: 2px !important;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 width: 35%;
             }
         }
-
     }
-
-
 }
