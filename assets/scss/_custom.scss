@@ -5652,8 +5652,11 @@ body {
             }
         }
     }
-    // fifth-section 
-    .fifth-section {
+   
+}
+
+ // banner-footer 
+    .banner-footer {
         height: 300px;
         color: $light;
         display: flex;
@@ -5707,38 +5710,6 @@ body {
             }
         }
     }
-    // sixth-section
-    .sixth-section {
-        background: #F7F7F7;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        @include large {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        .sixth-text {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px auto;
-            span {
-                margin: 2px 5px;
-                padding: 5px 10px 10px 0;
-            }
-            p {
-                width: 100%;
-                color: $dark_gray2;
-                font-weight: 600;
-                text-align: justify;
-            }
-            @include large {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-        }
-    }
-}
 
 //Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
@@ -6557,6 +6528,11 @@ body {
 // Descargar App Section Inicio
 .section-descargar-app {
     margin: 0;
+
+    .banner-footer{
+        background: #ffff !important;
+    }
+
     .sombra {
         box-shadow: 10px 10px 19px -8px rgba(0, 0, 0, 0.22);
     }
@@ -6604,7 +6580,7 @@ body {
         background: $tertiary;
         border-style: none;
         font-size: 1rem;
-        width: 250px;
+        min-width: 200px;
         color: $light;
         text-decoration: none !important;
         span {
@@ -6640,6 +6616,7 @@ body {
             z-index: 1;
         }
         .header-description {
+            // background: red;
             overflow: hidden;
             text-align: center;
             color: $light;
@@ -6650,7 +6627,7 @@ body {
                 text-align: left;
             }
             .btn-descarga {
-                width: 250px;
+                width: 300px;
                 margin: auto;
                 @include large {
                     margin-left: 0;
@@ -6659,20 +6636,17 @@ body {
             .container-enlaces-app {
                 position: relative;
                 // background: chocolate;
-                display: flex;
-                justify-content: center;
-                padding: 5px;
-                @include large {
-                    justify-content: flex-start;
-                }
+                padding: 5px 0;
                 a {
-                    cursor: pointer;
+                    display: inline-block;
                     position: relative;
-                    width: 140px;
-                    margin: 5px;
+                    width: 150px;
+                    border: 1px solid #ffffffa2;
+                    border-radius: 10px;
+                    overflow: hidden !important;
                     img {
                         width: 100%;
-                        height: 100%;
+                        // height: 100%;ss
                     }
                 }
             }
@@ -6705,7 +6679,22 @@ body {
         }
     }
     .first-section {
-        margin-top: 100px;
+        margin-top: 40px;
+        @include large {
+            margin-top: 100px;
+        }
+    
+        img{
+            width: 70px;
+        }
+
+        p{
+            // background: red;
+            width: 60% !important;
+            font-size: 13px;
+            color: #707070;
+            font-weight: 600 !important;
+        }
     }
     .section-third {
         .third-img {
@@ -6717,11 +6706,11 @@ body {
             background-size: cover;
             border-radius: 10px;
             @include large {
-                width: 70%;
+                width: 80%;
             }
         }
         .btn-descarga {
-            width: 250px;
+            width: 300px;
         }
     }
     .fourth-section {
@@ -6731,35 +6720,39 @@ body {
         }
         .fourth-1 {
             width: 100%;
-            height: 200px;
+            height: 270px;
             background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section1.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            border-radius: 10px;
         }
         .fourth-2 {
             width: 100%;
-            height: 200px;
+            height: 270px;
             background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            border-radius: 10px;
         }
         .fourth-3 {
             width: 100%;
-            height: 200px;
+            height: 270px;
             background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section3.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            border-radius: 10px;
         }
         .fourth-4 {
             width: 100%;
-            height: 200px;
+            height: 270px;
             background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section4.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            border-radius: 10px;
         }
     }
     .sixth-section {
@@ -6837,23 +6830,80 @@ body {
                 }
             }
         }
+
+        hr{
+            border-color: #999999;
+            width: 250px;
+            margin-left: 0 !important;
+        }
     }
-    .tenth-section {
-        width: 100%;
-        height: 90%;
-        background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        padding: 20px;
-        border-radius: 10px;
-        color: $light;
-    }
+
 }
 
 // Descargar App Section Termina
 // contact-section INICIA
 .contact-section {
+
+    .row {
+        margin: 0 !important;
+    }
+    
+    .panel {
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+        opacity: 1;
+    }
+
+    .panel:hover {
+        box-shadow: 0 0 3px 2px rgba(20, 23, 28, .1), 0 4px 2px 0 rgba(20, 23, 28, .1);
+    }
+
+    .section-title-toggle {
+        color: #ffffff;
+        display: inline-block;
+        width: 30px;
+        height: auto !important;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 5px #888;
+        box-shadow: 0px 0px 5px #888;
+        padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+        background-color: #dc3545;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    [data-toggle="collapse"] .section-title-toggle::before {
+        content: "-" !important;
+    }
+    
+    [data-toggle="collapse"].collapsed .section-title-toggle::before {
+        content: "+" !important;
+    }
+    
+    .card-body {
+        min-height: 10rem;
+    }
+    
+    .section-title-wrapper {
+        font-size: 15px;
+    }
+
+    input::placeholder {
+        color: #d0cccc !important;
+        font-size: 12px !important;
+    }
+
+    textarea::placeholder {
+        color: #d0cccc !important;
+        font-size: 12px !important;
+    }
+
     .header {
         width: 100%;
         height: 300px;
@@ -6882,15 +6932,93 @@ body {
             font-size: 2.5rem;
         }
     }
-    .text-color-gris {
-        color: #999999;
-    }
+
     .maps-frame {
         width: 100%;
         height: 300px;
-        @include large {
+        @include extra-large{
             width: 500px;
             height: 450px;
         }
+    }   
+
+    .first-section{
+        
+        p{
+            color: #999999;
+        }
+
+        .container-contac-info{
+
+            span{
+                color:#f10101 !important;
+            }
+
+            a{
+                text-decoration: none !important;
+                color: #8f8f8f !important;
+            }
+        }
     }
+
+    .second-section{
+        width: 100% !important;
+        height: 280px;
+        background: transparent linear-gradient(101deg, #505763 0%, #101114 100%) 0% 0%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: content;
+        // border: 1px solid #707070;
+        margin-top:100px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        @include large {
+            justify-content: flex-end;
+        }
+
+
+        img{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin-left: 10%;
+            height: 400px;
+        }
+
+        .banner-text{
+            height: 100%;
+            color: #ffffff;
+            display: flex;  
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            @include large{
+                text-align: left;
+                margin-right: 15%;
+            }
+
+            @include extra-large {
+                margin-right: 20%;
+            }
+            
+            p{
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+            button{
+                border-radius: 2px !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 35%;
+            }
+        }
+
+    }
+
+
 }
