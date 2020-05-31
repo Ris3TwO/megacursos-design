@@ -197,6 +197,9 @@ body {
     @include extra-large {
         margin-bottom: 2rem;
     }
+    a {
+        color: inherit !important;
+    }
 }
 
 .note-block {
@@ -1393,6 +1396,7 @@ body {
 // Products Page
 .product-section {
     .btn {
+        white-space: normal !important;
         padding: 8px 12px;
         @include medium {
             padding: 11px 12px;
@@ -1427,6 +1431,12 @@ body {
     }
     .TrengoWidgetLauncher__iframe {
         bottom: 80px !important;
+    }
+    .bootstrap-select {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: .5rem !important;
     }
     .slider-menu {
         align-items: center;
@@ -1925,6 +1935,7 @@ body {
                             }
                             .descriptions-text {
                                 font-size: 15px;
+                                text-align: justify;
                             }
                         }
                     }
@@ -1956,6 +1967,7 @@ body {
                             margin-bottom: 10px;
                             .benefits-text {
                                 font-size: 13px;
+                                text-align: justify;
                             }
                             .benefits-icon {
                                 align-self: flex-start;
@@ -2087,6 +2099,7 @@ body {
                         margin-bottom: 10px;
                         .benefits-text {
                             font-size: 13px;
+                            text-align: justify;
                         }
                         .benefits-icon {
                             align-self: flex-start;
@@ -3483,6 +3496,9 @@ body {
                     font-weight: 600;
                 }
                 .cart-info {
+                    p {
+                        text-align: left !important;
+                    }
                     color: $dark;
                     @include large {
                         padding: .5rem 1rem 1.5rem;
@@ -5729,6 +5745,7 @@ body {
         }
     }
 }
+
 //Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
 #sidebar {
@@ -6012,9 +6029,20 @@ body {
     .cart-mega {
         li {
             &:first-child {
-                width: 3.5rem;
+                width: 3rem;
+                @include medium {
+                    width: 3.5rem;
+                }
                 @include large {
                     width: 4rem;
+                }
+            }
+            .notification {
+                i {
+                    font-size: 1.5rem;
+                    @include large {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
@@ -6939,6 +6967,7 @@ body {
         }
         p {
             font-size: 1.1rem;
+            color: $light !important;
         }
         .title-mega {
             font-size: 2.5rem;
@@ -6964,6 +6993,21 @@ body {
                 text-decoration: none !important;
                 color: #8f8f8f !important;
             }
+        }
+        .form-label {
+            color: #7D7D7D;
+        }
+        .btn-danger {
+            width: 40%;
+            @include medium {
+                width: 30%;
+            }
+        }
+        .contact-info {
+            font-size: 20px;
+            color: $dark;
+            font-weight: bold;
+            line-height: 25px;
         }
     }
     .second-section {
