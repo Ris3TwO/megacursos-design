@@ -6892,7 +6892,7 @@ body {
 }
 
 // Descargar App Section Termina
-// contact-section INICIA
+// CONTACTO INICIA
 .contact-section {
     .row {
         margin: 0 !important;
@@ -7056,6 +7056,68 @@ body {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 width: 35%;
+            }
+        }
+    }
+}
+
+//FOOTER DE LA WEB INICIO//FOOTER DE LA WEB INICIO
+footer {
+    hr {
+        width: 100% !important;
+    }
+    a {
+        display: flex;
+        color: #8f8f8f;
+        text-decoration: none !important;
+        &:hover {
+            color: #8f8f8f !important;
+        }
+        span {
+            color: #f10101 !important;
+        }
+    }
+    .images__image {
+        margin: 5px;
+        img {
+            width: 70px;
+            height: 25px;
+            // filter: grayscale(30%);
+        }
+    }
+    .footer-links {
+        background: #f7f7f7;
+    }
+    .banner {
+        background-color: #ECECEC;
+        p {
+            width: 50%;
+            margin-left: 20px;
+            line-height: 20px;
+            color: #707070;
+        }
+    }
+    .enlaces-footer {
+        a {
+            width: 140px !important;
+            height: 40px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .enlaces-buttons {
+            a {
+                width: 200px !important;
+                height: 45px;
+                &:hover {
+                    color: $light !important;
+                }
+                span {
+                    color: $light !important;
+                    font-weight: 300;
+                    font-size: 1.3rem;
+                }
             }
         }
     }
