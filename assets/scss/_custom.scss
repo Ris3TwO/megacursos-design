@@ -8427,3 +8427,11 @@ footer {
   }
 
 }
+
+.arrow-carrusel-ganarDinero {
+  color: $light_gray2 !important;
+
+  &:hover {
+    color: $secondary !important;
+  }
+}
