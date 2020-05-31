@@ -8258,6 +8258,10 @@ footer {
     line-height: 12px;
     @include transition($time: .5s);
 
+    @include small() {
+      margin-top: -85px;
+    }
+
     @include large() {
       padding: 15px 25px;
       font-size: 15px;
