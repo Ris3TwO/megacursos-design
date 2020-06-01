@@ -6818,13 +6818,23 @@ footer {
     }    
 
     .images__image {
-        margin: 5px 20px;
-        width: 130px !important;
+        margin: 5px 10px;
+        width: 100px !important;
+        @include medium{
+            margin: 5px 20px;
+            width: 130px !important;
+        }
+
       }
     
     .images__image_last{
-        max-width: 130px !important;
-        margin: 5px 20px;
+        max-width: 90px !important;
+        margin: 5px 10px;
+        @include medium{
+            margin: 5px 20px;
+            width: 130px !important;
+        }
+
     }    
 
     .banner-footer-top {
