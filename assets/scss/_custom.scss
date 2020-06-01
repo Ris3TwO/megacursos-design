@@ -3485,9 +3485,9 @@ body {
                     height: 0;
                     border-style: solid;
                     border-color: transparent transparent $light;
-                    @include large {
+                    @include medium {
                         top: -20px;
-                        right: 23px;
+                        right: 14px;
                         border-width: 0px 13px 20px;
                     }
                 }
@@ -3500,16 +3500,18 @@ body {
                         text-align: left !important;
                     }
                     color: $dark;
-                    @include large {
+                    padding: .5rem;
+                    @include medium {
                         padding: .5rem 1rem 1.5rem;
                     }
                     .btn-primary {
                         background: transparent linear-gradient(96deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
                         border: 1px solid transparent;
                         text-transform: uppercase;
-                        font-size: .7rem;
+                        font-size: .7rem !important;
                         padding: .6rem .75rem;
                         font-weight: 600;
+                        border-radius: .25rem !important;
                     }
                 }
                 .cart-items {
@@ -3545,10 +3547,7 @@ body {
                     .cart-item {
                         display: grid;
                         grid-template-columns: 18% 78% 5%;
-                        @include large {
-                            grid-template-columns: 18% 78% 5%;
-                            padding: .5rem 0;
-                        }
+                        padding: .5rem 0;
                         &:not(:first-child) {
                             border-top: 1px solid #dddddd;
                         }
@@ -3564,8 +3563,8 @@ body {
                                 }
                             }
                             .prices {
-                                align-self: flex-end;
                                 display: flex;
+                                align-self: flex-end;
                                 .discount {
                                     color: $danger;
                                     font-size: 1.15rem;
@@ -3591,6 +3590,12 @@ body {
                 }
                 .cart-footer {
                     padding: 1.5rem 1.5rem 1rem 1.5rem;
+                    .amount {
+                        .title {
+                            text-align: left !important;
+                            text-transform: capitalize !important;
+                        }
+                    }
                 }
             }
         }
@@ -6040,8 +6045,8 @@ body {
             .notification {
                 i {
                     font-size: 1.5rem;
-                    @include large {
-                        font-size: 1.5rem;
+                    @include medium {
+                        font-size: 1rem;
                     }
                 }
             }
