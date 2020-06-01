@@ -7885,15 +7885,58 @@ body {
 
 //FOOTER DE LA WEB INICIO//FOOTER DE LA WEB INICIO
 footer {
+  overflow: hidden;
+  background: #f7f7f7 !important;
+  
+  .logo-farm__headline{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 0 auto 32px;
+    color: #9b999c;
+  }
+
+  .row {
+    margin: 0 !important;
+  }
+
+  .footer-title {
+    border-left: 4px solid #DC3545;
+    padding-left: 10px;
+    color: black;
+  }
 
   hr {
     width: 100% !important;
+  }
+
+  .container-enlaces-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .col-enalces{
+      width: 200px;
+    }
+
+    ul{
+      padding:0px !important;
+    }
+
+    li{
+      list-style: none !important;
+      padding: 4px 0 !important;
+    }
   }
 
   a {
     display: flex;
     color: #8f8f8f;
     text-decoration: none !important;
+    font-size: 15px !important;
 
     &:hover {
       color: #8f8f8f !important;
@@ -7905,18 +7948,13 @@ footer {
   }
 
   .images__image {
+    max-width: 50px !important;
     margin: 5px;
-
-
-    img {
-      width: 70px;
-      height: 25px;
-      // filter: grayscale(30%);
-    }
   }
 
-  .footer-links {
-    background: #f7f7f7;
+  .images__image_last{
+    max-width: 80px !important;
+    margin: 5px 20px;
   }
 
   .banner {
@@ -7945,15 +7983,15 @@ footer {
     .enlaces-buttons {
       a {
         width: 200px !important;
-        height: 45px;
-
+        height: 40px;
+        font-size: 13px;
         &:hover {
           color: $light !important;
         }
 
         span {
           color: $light !important;
-          font-weight: 300;
+          font-weight: normal !important;
           font-size: 1.3rem;
         }
       }
