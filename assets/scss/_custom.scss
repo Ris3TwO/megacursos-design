@@ -6047,7 +6047,10 @@ body {
     .row {
         margin: 0;
     }
-    // first-section
+    p {
+        color: $dark !important;
+    }
+    // first-section 
     .first-section {
         padding-bottom: 30px;
         .first-text {
@@ -6752,129 +6755,118 @@ body {
 
 //FOOTER DE LA WEB INICIO//FOOTER DE LA WEB INICIO
 footer {
-  overflow: hidden;
-  background: #f7f7f7 !important;
-  
-  .logo-farm__headline{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    width: 100%;
-    margin: 0 auto 32px;
-    color: #9b999c;
-  }
+    overflow: hidden;
+    background: #f7f7f7 !important;
 
-  .row {
-    margin: 0 !important;
-  }
-
-  .footer-title {
-    border-left: 4px solid #DC3545;
-    padding-left: 10px;
-    color: black;
-  }
-
-  hr {
-    width: 100% !important;
-  }
-
-  .container-enlaces-footer{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .col-enalces{
-      width: 200px;
-    }
-
-    ul{
-      padding:0px !important;
-    }
-
-    li{
-      list-style: none !important;
-      padding: 4px 0 !important;
-    }
-  }
-
-  a {
-    display: flex;
-    color: #8f8f8f;
-    text-decoration: none !important;
-    font-size: 15px !important;
-
-    &:hover {
-      color: #8f8f8f !important;
-    }
-
-    span {
-      color: #f10101 !important;
-    }
-  }
-
-  .images__image {
-    max-width: 50px !important;
-    margin: 5px;
-  }
-
-  .images__image_last{
-    max-width: 80px !important;
-    margin: 5px 20px;
-  }
-
-  .banner {
-    background-color: #ECECEC;
-
-    p {
-      width: 50%;
-      margin-left: 20px;
-      line-height: 20px;
-      color: #707070;
-    }
-    a {
-      width: 140px !important;
-      height: 40px;
-
-      img {
+    .logo-farm__headline{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
         width: 100%;
-        height: 100%;
+        margin: 0 auto 32px;
+        color: #9b999c;
       }
+
+      .row {
+        margin: 0 !important;
+      }
+    
+      .footer-title {
+        border-left: 4px solid #DC3545;
+        padding-left: 10px;
+        color: black;
+      }
+
+      hr {
+        width: 100% !important;
+      }
+
+    .container-enlaces-footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .col-enalces{
+          width: 200px;
+        }
+    
+        ul{
+          padding:0px !important;
+        }
+    
+        li{
+          list-style: none !important;
+          padding: 4px 0 !important;
+        }
+      }
+
+    a {
+        display: flex;
+        color: #8f8f8f;
+        text-decoration: none !important;
+        font-size: 15px !important;
+    
+            &:hover {
+            color: #8f8f8f !important;
+            }
+    
+            span {
+            color: #f10101 !important;
+            }
+    }    
+
+    .images__image {
+        max-width: 50px !important;
+        margin: 5px;
+      }
+    
+    .images__image_last{
+        max-width: 80px !important;
+        margin: 5px 20px;
+    }    
+
+    .banner-footer-top {
+        background-color: #ECECEC;
+        @include large{
+            padding-left: 8% !important;
+            padding-right: 8% !important;
+        }
+
+        p {
+            
+            color: #707070;
+            font-size: 0.9rem;
+            @include large{
+                width: 60%;  
+            }
+        }
+
+        img{
+            width: 50px;
+        }
     }
 
     .enlaces-buttons {
-      a {
-        width: 200px !important;
-        height: 40px;
-        font-size: 13px;
-        &:hover {
-            color: #8f8f8f !important;
+        a {
+            width: 200px !important;
+            height: 40px;
+            font-size: 13px;
+            &:hover {
+                color: #8f8f8f !important;
+            }
+            span {
+              color: $light !important;
+              font-weight: normal !important;
+              font-size: 1.3rem;
+            }   
         }
-        span {
-          color: $light !important;
-          font-weight: normal !important;
-          font-size: 1.3rem;
-        }
-    }
-    .images__image {
-        margin: 5px;
-        img {
-            width: 70px;
-            height: 25px;
-            // filter: grayscale(30%);
-        }
+          
+        
+
     }
 
-    .banner {
-        background-color: #ECECEC;
-        p {
-            width: 50%;
-            margin-left: 20px;
-            line-height: 20px;
-            color: #707070;
-        }
-    }
     .enlaces-footer {
         a {
             width: 140px !important;
@@ -6899,7 +6891,9 @@ footer {
             }
         }
     }
+
 }
+
 
 // Inicio GANAR DINERO PAGE
 // ganardinero-section
