@@ -6195,6 +6195,11 @@ body {
             @include large {
                 height: 520px;
             }
+            &.bank {
+                @include large {
+                    height: 552px;
+                }
+            }
             .card-header {
                 position: relative !important;
                 background: $light;
@@ -6299,9 +6304,11 @@ body {
                     transition: outline-offset .15s ease-in-out, background-color .15s linear;
                 }
                 .is-dragover {
-                    outline-offset: -20px;
-                    outline-color: #c8dadf;
-                    background-color: $light;
+                    .upload-image {
+                        outline-offset: -20px;
+                        outline-color: #c8dadf;
+                        background-color: $light;
+                    }
                 }
                 .box__file {
                     width: 0.1px;
@@ -6909,8 +6916,7 @@ body {
 footer {
     overflow: hidden;
     background: #f7f7f7 !important;
-
-    .logo-farm__headline{
+    .logo-farm__headline {
         text-align: center;
         text-transform: uppercase;
         font-size: 14px;
@@ -6919,97 +6925,78 @@ footer {
         width: 100%;
         margin: 0 auto 32px;
         color: #9b999c;
-      }
-
-      .row {
+    }
+    .row {
         margin: 0 !important;
-      }
-    
-      .footer-title {
+    }
+    .footer-title {
         border-left: 4px solid #DC3545;
         padding-left: 10px;
         color: black;
-      }
-
-      hr {
+    }
+    hr {
         width: 100% !important;
-      }
-
-    .container-enlaces-footer{
+    }
+    .container-enlaces-footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    
-        .col-enalces{
-          width: 200px;
+        .col-enalces {
+            width: 200px;
         }
-    
-        ul{
-          padding:0px !important;
+        ul {
+            padding: 0px !important;
         }
-    
-        li{
-          list-style: none !important;
-          padding: 4px 0 !important;
+        li {
+            list-style: none !important;
+            padding: 4px 0 !important;
         }
-      }
-
+    }
     a {
         display: flex;
         color: #8f8f8f;
         text-decoration: none !important;
         font-size: 15px !important;
-    
-            &:hover {
+        &:hover {
             color: #8f8f8f !important;
-            }
-    
-            span {
+        }
+        span {
             color: #f10101 !important;
-            }
-    }    
-
+        }
+    }
     .images__image {
         margin: 5px 10px;
         width: 100px !important;
-        @include medium{
+        @include medium {
             margin: 5px 20px;
             width: 130px !important;
         }
-
-      }
-    
-    .images__image_last{
+    }
+    .images__image_last {
         max-width: 100px !important;
         margin: 5px 10px;
-        @include medium{
+        @include medium {
             margin: 5px 20px;
             width: 130px !important;
         }
-
-    }    
-
+    }
     .banner-footer-top {
         background-color: #ECECEC;
-        @include large{
+        @include large {
             padding-left: 8% !important;
             padding-right: 8% !important;
         }
-
         p {
-            
             color: #707070;
             font-size: 0.9rem;
-            @include large{
-                width: 60%;  
+            @include large {
+                width: 60%;
             }
         }
-
-        img{
+        img {
             width: 50px;
         }
     }
-
     .enlaces-buttons {
         a {
             width: 200px !important;
@@ -7019,16 +7006,12 @@ footer {
                 color: #8f8f8f !important;
             }
             span {
-              color: $light !important;
-              font-weight: normal !important;
-              font-size: 1.3rem;
-            }   
+                color: $light !important;
+                font-weight: normal !important;
+                font-size: 1.3rem;
+            }
         }
-          
-        
-
     }
-
     .enlaces-footer {
         a {
             width: 140px !important;
@@ -7053,9 +7036,7 @@ footer {
             }
         }
     }
-
 }
-
 
 // Inicio GANAR DINERO PAGE
 // ganardinero-section
