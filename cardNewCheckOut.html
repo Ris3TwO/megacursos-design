@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Descargar Apps</title>
+</head>
+
+<body>
+
+<!-- Breadcrumb -->
+<div class="container-fluid menu-bread">
+    <div class="megaBreadcrumb py-0 over">
+        <div class="text">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                        <a class="breadbtn" href="#">Inicio</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        <a class="breadbtn">Descargar Apps</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="section-card" style="">
+
+    <div class="card card-checkOut" style="">
+        <div id="card-container" class="card-container">
+            <div class="card-info">
+                <div class="btn btn-primary btn-block mt-2 " style="display:none">CONFIRMA TU PEDIDO</div>
+            </div>
+            <div id="card-div" class="card-items">
+                <div class="row card-data-checkOut" id="mega-6">
+                    <div class="image col-4">
+                        <img class="img-fluid" src="./assets/img/curso3Dmax.png">
+                    </div>
+                    <div class="col-8 info-course" style="padding: 0">
+                        <div class="header"><h3 class="title">3Ds Max</h3>
+                            <div class="subtitle">Megacurso Maestro en 50h (actualizado 2020)</div>
+                        </div>
+                        <div class="prices">
+                            <div class="regularx-data">
+                                <div>Precio regular:</div>
+                                <div class="regularx"><strike>396.00 $USD</strike></div>
+                            </div>
+                            <div class="discount-data">
+                                <div>Diplomas y Extras:</div>
+                                <div class="discount"> 59,63 $USD</div>
+                            </div>
+                            <div class="discount-data">
+                                <div>Descuento:</div>
+                                <div class="discount">- 237,60 $USD</div>
+                            </div>
+
+                        </div>
+                        <div class="subtotal">
+                            <div class="price-actual-checkOut">
+                                <h6><strong>Subtotal:</strong></h6>
+                                <h5 class="discount">218,03 $USD</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  <!-- card-data-checkOut -->
+
+                <div class="add-checkOut">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" style="padding: 0; height: 35px;">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        <h6><strong>Diplomas oficales o Extras</strong></h6>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="items-add-checkOut">
+                                        <div class="subtitle">
+                                            <button type="button" onclick="deleteItemcardCheckout(this)" data-id="6"
+                                                    data-type="megacourse"
+                                                    class="btn btn-sm"><i class="fas fa-trash-alt"></i></button>
+                                            Diploma Oficial
+                                        </div>
+                                        <div class="price-add">
+                                            29.82 $USD
+                                        </div>
+                                    </div>
+                                    <div class="items-add-checkOut">
+                                        <div class="subtitle">
+                                            <button type="button" onclick="deleteItemcardCheckout(this)" data-id="6"
+                                                    data-type="megacourse"
+                                                    class="btn btn-sm"><i class="fas fa-trash-alt"></i></button>
+                                            Asistencia Individual
+                                        </div>
+                                        <div class="price-add">
+                                            29.81 $USD
+                                        </div>
+                                    </div>
+
+                                    <div class="items-add-checkOut">
+                                        <div class="subtitle" style=" padding-left: 30px;">
+                                            <strong>Subtotal:</strong>
+                                        </div>
+                                        <div class="price-add" style="border-top: 1px solid rgba(0,0,0,.4);">
+                                            59,63 $USD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- add-checkOut -->
+
+            </div> <!-- card-item -->
+
+
+
+            <div class="card-footer">
+                <div class="amountx">
+                    <div class="title">Subtotal: </div>
+                    <div>455.63 $USD</div>
+                </div>
+                <div class="amountx">
+                    <div class="title">Descuento: </div>
+                    <div>273.38 $USD</div>
+                </div>
+                <div class="amountx" style="display:none">
+                    <div class="title">Descuento extra: </div>
+                    <div>null</div>
+                </div>
+                <div class="amountx">
+                    <div class="title">Total: </div>
+                    <div>218.03 $USD</div>
+                </div>
+            </div>
+            <p style="display:none">Cupón de descuento</p>
+            <form style="display:none" id="cupon" style="display:block"><input type="text" name="descuento"
+                                                                               id="descuento" value="">
+                <button>Añadir</button>
+            </form>
+        </div>
+    </div>
+
+
+</div> <!-- section-card -->
+<!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<!-- CDN -->
+
+</body>
+</html>
