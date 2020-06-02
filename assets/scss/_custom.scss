@@ -86,6 +86,10 @@ body {
     }
 }
 
+.bg-light {
+    background-color: $light_gray !important;
+}
+
 .row-normal {
     margin-right: -15px !important;
     margin-left: -15px !important;
@@ -4706,8 +4710,6 @@ body {
     }
 }
 
-
-}
 // Modal Add To Cart
 .modal-add-cart {
     .modal-content {
@@ -4717,7 +4719,6 @@ body {
         border-top-right-radius: 0;
         border: 1px solid $dark_gray2;
     }
-    
     .modal-body {
         padding: 0;
         position: relative;
@@ -4731,7 +4732,6 @@ body {
             }
         }
     }
-    
     .header {
         &.cart-zone {
             .added-message {
@@ -4776,7 +4776,6 @@ body {
             }
         }
     }
-    
     .cart-items-added {
         min-height: 1px;
         max-height: 332px;
@@ -4881,7 +4880,6 @@ body {
             }
         }
     }
-    
     .right-cart {
         @include large {
             border-left: 1px solid #dee2e6 !important;
@@ -4942,7 +4940,6 @@ body {
             }
         }
     }
-    
     .content-footer {
         background-color: #F6F6F6;
         .title-mega {
@@ -5024,6 +5021,7 @@ body {
         }
     }
 }
+
 // Access Section
 .access-section {
     header {
@@ -5121,7 +5119,6 @@ body {
             }
         }
     }
-    
     .first-section,
     .second-section {
         margin-top: 2rem;
@@ -5129,7 +5126,6 @@ body {
             margin-top: 7rem;
         }
     }
-    
     .third-section,
     .four-section {
         margin-top: 2rem;
@@ -5137,7 +5133,6 @@ body {
             margin-top: 5rem;
         }
     }
-    
     // first-section
     .first-section {
         overflow: hidden;
@@ -5280,7 +5275,6 @@ body {
             }
         }
     }
-    
     // second-section
     .second-section {
         width: 100%;
@@ -5305,7 +5299,6 @@ body {
             font-weight: 900;
         }
     }
-    
     // third-section
     .third-section {
         width: 100%;
@@ -5375,7 +5368,6 @@ body {
             }
         }
     }
-    
     // fourth-section
     .fourth-section {
         padding: 1.5rem 0;
@@ -5419,6 +5411,7 @@ body {
         }
     }
 }
+
 // banner-footer
 .banner-footer {
     padding: 20px 0;
@@ -5439,7 +5432,6 @@ body {
         background: #F7F7F7;
         z-index: -1;
     }
-    
     .with-image {
         width: 100%;
         height: 90%;
@@ -5476,6 +5468,7 @@ body {
         }
     }
 }
+
 //Termina Access
 // CORRECCIONES DEL MEGA MENÚ INCIO
 #sidebar {
@@ -5489,30 +5482,24 @@ body {
         -webkit-appearance: none;
         -moz-appearance: none;
     }
-    
     &::-webkit-scrollbar:vertical {
         width: 8px;
     }
-    
     &::-webkit-scrollbar-button:increment,
     &::-webkit-scrollbar-button {
         display: none;
     }
-    
     &::-webkit-scrollbar:horizontal {
         height: 10px;
     }
-    
     &::-webkit-scrollbar-thumb {
         background-color: #d8d8d8;
         border-radius: 20px;
         border: 2px solid #f1f2f3;
     }
-    
     &::-webkit-scrollbar-track {
         border-radius: 10px;
     }
-    
     // btn descarga para moviles
     .btn-download {
         position: relative;
@@ -5551,6 +5538,7 @@ body {
         }
     }
 }
+
 #mega-menu {
     // Aplicando color al nav mega menu y flex para que no haga scroll horizontal
     background: #f1f0f0 !important;
@@ -5562,15 +5550,12 @@ body {
     @include medium {
         height: 7.5rem;
     }
-    
     @include extra-large {
         height: 4.5rem;
     }
-    
     .dropdown-download {
         margin-top: 8px !important;
     }
-    
     .dropdown-menu-principal {
         margin-top: -2px;
         padding: 0px;
@@ -5601,13 +5586,11 @@ body {
             }
         }
     }
-    
     .dropdown-menu-second {
         li {
             padding: 1rem;
         }
     }
-    
     .category-menu {
         padding: 0px;
         font-size: 15px;
@@ -5620,14 +5603,12 @@ body {
             margin-top: .75rem !important;
         }
     }
-    
     .dropdownn {
         padding: 0px 15px 0px 15px;
         border-radius: 8px;
         width: 100%;
         margin: .5rem 0 !important;
     }
-    
     // Btn modification
     .btn {
         @include medium {
@@ -5640,7 +5621,6 @@ body {
             font-size: 15px;
         }
     }
-    
     // Modifcando propiedes de la cesta
     .dropdown-cesta {
         position: absolute;
@@ -5656,13 +5636,11 @@ body {
             margin: 20px auto 20px auto;
         }
     }
-    
     // Modificando alineación de planes vertical
     .dropdown-planes {
         width: 30vw;
         margin-top: -10px;
     }
-    
     // btn descarga para pantallas grandes
     .content-btn-download {
         height: 100%;
@@ -5670,7 +5648,6 @@ body {
         align-items: center;
         padding: 0 !important;
     }
-    
     .category-text {
         @include medium {
             font-size: 13px;
@@ -5679,7 +5656,6 @@ body {
             font-size: 15px;
         }
     }
-    
     .btn-download {
         position: relative;
         overflow: hidden;
@@ -5724,7 +5700,6 @@ body {
             font-weight: 100;
         }
     }
-    
     // alineación para los elementos del nav mega menu
     @include large {
         .alinear-nav {
@@ -5732,7 +5707,6 @@ body {
             display: flex;
         }
     }
-    
     .search-box {
         width: 200px;
         @include medium {
@@ -5748,7 +5722,6 @@ body {
             width: 290px;
         }
     }
-    
     .navbar-brand {
         margin-right: 0;
         @include medium {
@@ -5770,14 +5743,12 @@ body {
             }
         }
     }
-    
     .mr-auto {
         margin-right: 0 !important;
         @include extra-large {
             margin-right: auto !important;
         }
     }
-    
     .cart-mega {
         li {
             &:first-child {
@@ -5789,6 +5760,7 @@ body {
         }
     }
 }
+
 .mega-divisa {
     //Paises contenido
     .dropdown-pais {
@@ -5820,7 +5792,6 @@ body {
             }
         }
     }
-    
     // tipo de cambio contenido
     .dropdown-tipo-cambio-content {
         overflow: hidden;
@@ -5849,7 +5820,6 @@ body {
             }
         }
     }
-    
     //  problemas con after  (iconos de flecha)
     .dropdown-tipo-cambio {
         position: relative;
@@ -5861,7 +5831,6 @@ body {
             transform: translateY(0);
         }
     }
-    
     .dropdown-otro {
         position: relative;
         &::after {
@@ -5873,17 +5842,18 @@ body {
         }
     }
 }
+
 // CORRECCIONES DEL MEGA MENÚ FIN
 // Index fix
 .mega-catego {
     flex-wrap: wrap;
 }
+
 // PRUEBAS SECTION INICIO
 .pruebas-section {
     .row {
         margin: 0;
     }
-    
     .clientBannerContact {
         width: 100%;
         height: 300px;
@@ -5908,7 +5878,6 @@ body {
             }
         }
     }
-    
     .card-plansFree {
         background-color: #F4F2F9;
         position: relative;
@@ -5956,7 +5925,6 @@ body {
             font-size: 15px;
         }
     }
-    
     @include large {
         .card {
             width: 400px;
@@ -5974,7 +5942,6 @@ body {
             box-shadow: 25px 10px 50px -10px rgba(0, 0, 0, 0.22);
         }
     }
-    
     &::after {
         content: '';
         width: 100%;
@@ -5986,6 +5953,7 @@ body {
         z-index: 1;
     }
 }
+
 .video-trailer {
     width: 100%;
     height: 300px;
@@ -5995,52 +5963,62 @@ body {
         width: 70%;
         height: 400px;
     }
-    
     @include large {
         width: 50%;
         height: 350px;
     }
 }
+
 // Codigo copiado del html
 .dropbtn-products.first {
     color: inherit;
     text-decoration: none;
     font-weight: 700;
 }
+
 .slick-slide img {
     border: 0px solid $light;
     min-width: 0px !important;
 }
+
 .course-card-header {
     padding: 10px;
     display: flex;
     justify-content: center
 }
+
 .item.slick-slide {
     width: auto !important;
 }
+
 .mega-item-active {
     border-color: $danger !important;
     color: $danger !important;
 }
+
 .course-card-item {
     height: 370px !important;
 }
+
 .price-text-container {
     top: 322px !important;
 }
 
+
 /* Buttons */
+
 .btn-outline {
     border: 1px solid $dark_gray2;
     position: relative;
     min-width: 93px;
 }
+
 .btn-outline.active {
     background-color: #e0f7eb;
     color: $aquamarine;
     border: 1px solid $aquamarine;
 }
+
 .best-choice {
     position: absolute;
     right: -5px;
@@ -6050,6 +6028,7 @@ body {
     height: 60px;
     z-index: 3;
 }
+
 .best-choice span {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -6068,6 +6047,7 @@ body {
     z-index: 2;
     line-height: 18px;
 }
+
 .best-choice:after,
 .best-choice:before {
     position: absolute;
@@ -6076,12 +6056,14 @@ body {
     content: '';
     z-index: 1;
 }
+
 .best-choice:before {
     right: 0;
     bottom: 12px;
     background-color: #007a2d;
     height: 7px;
 }
+
 .best-choice:after {
     left: 12px;
     top: 0;
@@ -6089,7 +6071,6 @@ body {
     width: 7px;
 }
 
-}
 // Inicia checkout details
 .checkout-section {
     .color-text-dark {
@@ -6100,8 +6081,9 @@ body {
     }
     p {
         color: $dark !important;
+        margin-bottom: 1rem !important;
     }
-    // first-section
+    // first-section 
     .first-section {
         padding-bottom: 30px;
         .first-text {
@@ -6117,7 +6099,6 @@ body {
                 font-weight: 600;
             }
         }
-        
         //table responsive inicia
         .table {
             border: 1px solid $dark_gray2;
@@ -6158,7 +6139,6 @@ body {
                 width: 25%;
             }
         }
-        
         .total-table {
             padding: 0;
             margin: 0;
@@ -6198,7 +6178,6 @@ body {
                 }
             }
         }
-        
         //table responsive termina
     }
     // second-section
@@ -6207,7 +6186,6 @@ body {
         .title-mega {
             font-size: 1.8rem;
         }
-        
         .card {
             position: relative;
             overflow: hidden;
@@ -6215,12 +6193,14 @@ body {
             background: #F7F7F7;
             box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
             @include large {
-                height: 500px;
+                height: 520px;
             }
             .card-header {
                 position: relative !important;
                 background: $light;
                 border-style: none;
+                padding: .75rem 1.25rem !important;
+                margin-bottom: 0 !important;
                 .card-icon {
                     background: #D2E5F4;
                     display: inline-block;
@@ -6238,6 +6218,8 @@ body {
                 }
             }
             .card-body {
+                min-height: 1px !important;
+                padding: 1.25rem !important;
                 background: $light !important;
                 h5 {
                     font-weight: 900;
@@ -6289,24 +6271,139 @@ body {
                 .upload-image {
                     border: 2px dashed #A4A4A4;
                     width: 100%;
-                    height: 120px;
                     position: relative;
                     overflow: hidden;
-                    img {
+                    background-color: #c8dadf;
+                    position: relative;
+                    .box__icon {
                         width: 100%;
-                        height: 100%;
+                        height: 40px;
+                        fill: #92b0b3;
+                        display: block;
+                        margin: 20px 0;
                     }
-                    span {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        img {
-                            width: 30px;
-                        }
+                    // span {
+                    //     position: absolute;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     display: flex;
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     img {
+                    //         width: 30px;
+                    //     }
+                    // }
+                }
+                .has-advanced-upload {
+                    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+                    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+                }
+                .is-dragover {
+                    outline-offset: -20px;
+                    outline-color: #c8dadf;
+                    background-color: $light;
+                }
+                .box__file {
+                    width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: -1;
+                }
+                .box__file+label {
+                    max-width: 80%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    display: inline-block;
+                    overflow: hidden;
+                }
+                .box__file+label:hover strong,
+                .box__file:focus+label strong,
+                .box__file.has-focus+label strong {
+                    color: #39bfd3;
+                }
+                .box__file:focus+label,
+                .box__file.has-focus+label {
+                    outline: 1px dotted #000;
+                    outline: -webkit-focus-ring-color auto 5px;
+                }
+                .box__file+label * {
+                    /* pointer-events: none; */
+                    /* in case of FastClick lib use */
+                }
+                .box__dragndrop,
+                .box__uploading,
+                .box__success,
+                .box__error {
+                    display: none;
+                }
+                .box__dragndrop,
+                .box__icon {
+                    display: none;
+                }
+                .has-advanced-upload .box__dragndrop {
+                    display: inline;
+                }
+                .has-advanced-upload .box__icon {
+                    width: 100%;
+                    height: 30px;
+                    fill: #92b0b3;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                .is-uploading .box__input,
+                .is-success .box__input,
+                .is-error .box__input {
+                    visibility: hidden;
+                }
+                .is-uploading .box__uploading,
+                .is-success .box__success,
+                .is-error .box__error {
+                    display: block;
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                    left: 0;
+                    -webkit-transform: translateY( -25%);
+                    transform: translateY( -25%);
+                }
+                .box__uploading {
+                    font-style: italic;
+                }
+                .box__success {
+                    -webkit-animation: appear-from-inside .25s ease-in-out;
+                    animation: appear-from-inside .25s ease-in-out;
+                }
+                @-webkit-keyframes appear-from-inside {
+                    from {
+                        -webkit-transform: translateY( -50%) scale( 0);
                     }
+                    75% {
+                        -webkit-transform: translateY( -50%) scale( 1.1);
+                    }
+                    to {
+                        -webkit-transform: translateY( -50%) scale( 1);
+                    }
+                }
+                @keyframes appear-from-inside {
+                    from {
+                        transform: translateY( -50%) scale( 0);
+                    }
+                    75% {
+                        transform: translateY( -50%) scale( 1.1);
+                    }
+                    to {
+                        transform: translateY( -50%) scale( 1);
+                    }
+                }
+                .box__restart {
+                    font-weight: 700;
+                }
+                .box__restart:focus,
+                .box__restart:hover {
+                    color: #39bfd3;
                 }
             }
         }
@@ -6332,6 +6429,7 @@ body {
         }
     }
 }
+
 // Fin checkout details
 // Descargar App Section Inicio
 .section-descargar-app {
@@ -6360,12 +6458,10 @@ body {
             margin-right: 10px;
             color: $danger;
         }
-        
         &:hover {
             color: $light !important;
             background: $tertiary !important;
         }
-        
         &:hover span {
             color: $light !important;
         }
@@ -6414,7 +6510,6 @@ body {
         @include large {
             justify-content: flex-start;
         }
-        
         &::after {
             content: '';
             position: absolute;
@@ -6426,7 +6521,6 @@ body {
             height: 100%;
             z-index: 1;
         }
-        
         .header-description {
             // background: red;
             overflow: hidden;
@@ -6463,7 +6557,6 @@ body {
                 }
             }
         }
-        
         .container-img-header {
             overflow: hidden;
             position: absolute;
@@ -6496,11 +6589,9 @@ body {
         @include large {
             margin-top: 100px;
         }
-        
         img {
             width: 70px;
         }
-        
         p {
             // background: red;
             width: 60% !important;
@@ -6522,7 +6613,6 @@ body {
                 width: 80%;
             }
         }
-        
         .btn-descarga {
             width: 300px;
         }
@@ -6532,7 +6622,6 @@ body {
         .row {
             margin: 0;
         }
-        
         .fourth-1 {
             width: 100%;
             height: 270px;
@@ -6542,7 +6631,6 @@ body {
             background-size: cover;
             border-radius: 10px;
         }
-        
         .fourth-2 {
             width: 100%;
             height: 270px;
@@ -6552,7 +6640,6 @@ body {
             background-size: cover;
             border-radius: 10px;
         }
-        
         .fourth-3 {
             width: 100%;
             height: 270px;
@@ -6562,7 +6649,6 @@ body {
             background-size: cover;
             border-radius: 10px;
         }
-        
         .fourth-4 {
             width: 100%;
             height: 270px;
@@ -6592,7 +6678,6 @@ body {
                 width: 70%;
             }
         }
-        
         .seven-enlace {
             background: $aquamarine;
             color: $light;
@@ -6616,7 +6701,6 @@ body {
         @include large {
             margin-top: 150px !important;
         }
-        
         .card {
             border-style: none !important;
             opacity: 0.0 !important;
@@ -6654,11 +6738,9 @@ body {
                 }
             }
         }
-        
         .showCard {
             opacity: 1.1 !important;
         }
-        
         hr {
             border-color: #999999;
             width: 250px;
@@ -6668,6 +6750,7 @@ body {
         }
     }
 }
+
 // Descargar App Section Termina
 // CONTACTO INICIA
 .contact-section {
@@ -6737,17 +6820,14 @@ body {
             text-align: left;
             justify-content: flex-start;
         }
-        
         .head-text {
             @include large {
                 margin-left: 9%;
             }
         }
-        
         p {
             font-size: 1.1rem;
         }
-        
         .title-mega {
             font-size: 2.5rem;
         }
@@ -6764,7 +6844,6 @@ body {
         p {
             color: #999999;
         }
-        
         .container-contac-info {
             span {
                 color: #f10101 !important;
@@ -6791,7 +6870,6 @@ body {
         @include large {
             justify-content: flex-end;
         }
-        
         img {
             position: absolute;
             left: 0;
@@ -6799,7 +6877,6 @@ body {
             margin-left: 10%;
             height: 400px;
         }
-        
         .banner-text {
             height: 100%;
             color: #ffffff;
@@ -6827,6 +6904,7 @@ body {
         }
     }
 }
+
 //FOOTER DE LA WEB INICIO//FOOTER DE LA WEB INICIO
 footer {
     hr {
@@ -6839,7 +6917,6 @@ footer {
         &:hover {
             color: #8f8f8f !important;
         }
-        
         span {
             color: #f10101 !important;
         }
@@ -6873,7 +6950,6 @@ footer {
                 height: 100%;
             }
         }
-        
         .enlaces-buttons {
             a {
                 width: 200px !important;
@@ -6890,6 +6966,7 @@ footer {
         }
     }
 }
+
 // Inicio GANAR DINERO PAGE
 // ganardinero-section
 .ganardinero-section {
@@ -6904,7 +6981,6 @@ footer {
         @include small() {
             margin-bottom: 75px;
         }
-        
         div {
             margin: 0 auto;
             max-width: 300px;
@@ -6945,7 +7021,6 @@ footer {
         @include small() {
             display: block;
         }
-        
         .curve {
             text-align: center;
             margin-top: -465px;
@@ -6959,7 +7034,6 @@ footer {
                 height: auto;
             }
         }
-        
         .step {
             position: relative;
             display: grid;
@@ -7119,7 +7193,6 @@ footer {
             margin-top: 35px;
             @include transition($time: .5s);
         }
-        
         .contenedor-footer {
             max-width: 1792px;
             height: 96px;
@@ -7145,7 +7218,6 @@ footer {
         @include small() {
             margin-top: -85px;
         }
-        
         @include large() {
             padding: 15px 25px;
             font-size: 15px;
@@ -7153,7 +7225,6 @@ footer {
             margin-top: -110px;
             @include transition($time: .5s);
         }
-        
         @include large() {
             font-size: 20px;
             line-height: 25px;
@@ -7167,6 +7238,7 @@ footer {
         margin-left: -10px;
     }
 }
+
 .numero-step {
     margin-top: -33px;
     background-color: #FCC11C;
@@ -7208,12 +7280,14 @@ footer {
         @include transition($time: .5s);
     }
 }
+
 #carousel-ganar-dinero {
     height: 360px;
     @include small() {
         display: none;
     }
 }
+
 .carousel-ganardinero {
     .carousel-item {
         >div {
@@ -7247,7 +7321,6 @@ footer {
                 max-width: 350px;
             }
         }
-        
         .step-impar {
             .icon {
                 background-color: #D8E3F5;
@@ -7263,7 +7336,6 @@ footer {
                 }
             }
         }
-        
         .step-par {
             .icon {
                 background-color: $danger;
@@ -7281,6 +7353,7 @@ footer {
         }
     }
 }
+
 .curve-carousel {
     position: absolute;
     margin-top: 65px;
@@ -7290,10 +7363,12 @@ footer {
         width: 99%;
     }
 }
+
 .arrow-carrusel-ganarDinero {
     color: $light_gray2 !important;
     &:hover {
         color: $secondary !important;
     }
 }
+
 // Fin GANAR DINERO PAGE
