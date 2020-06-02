@@ -227,7 +227,7 @@
                                                 <ul class="descriptions-items">
                                                     <li class="descriptions-item descriptions-item-columns">
                                                         <span class="descriptions-icon"><i class="fas fa-check"></i></span>
-                            <span class="descriptions-text">
+                            <span class="descriptions-text ">
                                                         Este videocurso está actualizado a Abril 2020. El curso se actualiza periódicamente para incluír módulos con todas las nuevas funciones.
                                                     </span>
                             </li>
@@ -259,7 +259,7 @@
                         </div>
                         <p>
                         </p>
-                        <p>After Effects es uno de los softwares más populares de postproducción de vídeo. Dominándolo podrás crear todo tipo de gráficos animados, cabeceras, textos y dibujos animados, así como desenvolverte con soltura en técnicas esenciales
+                        <p class="text-justify">After Effects es uno de los softwares más populares de postproducción de vídeo. Dominándolo podrás crear todo tipo de gráficos animados, cabeceras, textos y dibujos animados, así como desenvolverte con soltura en técnicas esenciales
                             de composición y efectos visuales como chroma, corrección de color, efectos de partículas avanzados, etc<br><br>Una de las grandes ventajas de After Effects es su inigualable biblioteca de plugins, que aportan al software una
                             gran cantidad de potentes funciones adicionales de todas las áreas: partículas, manipulación de objetos 3D, colorización… Algunos de los plugins más populares como los plugins Trapcode o Element 3D son enseñados en profundidad
                             en el Megacurso, con los que se aprenden a crear espectaculares proyectos de temáticas como Harry Potter, Star Wars, Batman, Ironman, etc (ver proyectos en galería de abajo<br><br><br>Con este Megacurso de After Effects dominarás
@@ -1058,7 +1058,7 @@
                                     <input type="hidden" name="CoursePrice" id="CoursePrice" value="422.40">
 
                                     <div class="right-module mt-md-5 mt-lg-0">
-                                        <div class="shopping-cart px-md-3 px-2 mt-md-3 mt-lg-0">
+                                        <div id="shopping-cart" class="shopping-cart px-md-3 px-2 mt-md-3 mt-lg-0">
                                             <div class="buy-box">
                                                 <div class="buy-box-element">
                                                     <div class="buy-box-product">
@@ -5383,13 +5383,11 @@
             });
 
             var masthead = $('.productDetails').height();
+            var calc = (masthead / 8);
+            var height = masthead + calc;
+            $(".masthead").css("height", height + "px");
 
-            if ($(window).width() < 768) {
-                // Height of container
-                var height = masthead + 130;
-                $(".masthead").css("height", height + "px");
-
-                // <!-- Properties -->
+            if ($(window).width() < 1024) {
                 // $('#nav-picker').css({
                 //     "display": "block"
                 // });
@@ -5408,9 +5406,6 @@
                 });
                 console.log('mobile')
             } else {
-                var height = masthead + 100;
-                $(".masthead").css("height", height + "px");
-
                 // $('#nav-picker').css({
                 //     "display": "none"
                 // });
@@ -5424,6 +5419,20 @@
                     "display": "block"
                 });
                 console.log('not mobile')
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+
+                     if ($(window).width() > 768){
+                         if (scroll < 1300) {
+                             $('#shopping-cart').removeClass('mi-fixed-top');
+                         } else {
+                             $('#shopping-cart').addClass('mi-fixed-top');
+                         }
+                     }else{
+                         $('#shopping-cart').removeClass('mi-fixed-top');
+                     }
+                     
+                });
             }
 
             $(window).on('resize', function() {
