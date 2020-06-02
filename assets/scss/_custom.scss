@@ -3519,6 +3519,9 @@ body {
     }
     .cart-mega {
         .dropdown {
+            i {
+                font-size: 1rem;
+            }
             .dropdown-products {
                 min-height: 4rem !important;
                 width: 320px;
@@ -3533,10 +3536,11 @@ body {
                     height: 0;
                     border-style: solid;
                     border-color: transparent transparent $light;
+                    top: -20px;
+                    border-width: 0px 13px 20px;
+                    right: 14px;
                     @include large {
-                        top: -20px;
                         right: 23px;
-                        border-width: 0px 13px 20px;
                     }
                 }
                 .title {
@@ -3545,6 +3549,7 @@ body {
                 }
                 .cart-info {
                     color: $dark;
+                    padding: .5rem;
                     @include large {
                         padding: .5rem 1rem 1.5rem;
                     }
@@ -3590,9 +3595,9 @@ body {
                     .cart-item {
                         display: grid;
                         grid-template-columns: 18% 78% 5%;
+                        padding: .5rem 0;
                         @include large {
                             grid-template-columns: 18% 78% 5%;
-                            padding: .5rem 0;
                         }
                         &:not(:first-child) {
                             border-top: 1px solid #dddddd;
@@ -4839,7 +4844,7 @@ body {
                 left: 49%;
             }
             @include extra-large {
-                left: 50.5%;
+                left: 49%;
             }
         }
         .megapack-header {
@@ -4982,7 +4987,7 @@ body {
         }
         .card-title {
             font-weight: 600;
-            margin-bottom: 0rem;
+            margin-bottom: .25rem;
             @include medium {
                 font-size: 1.2rem;
             }
@@ -5145,7 +5150,7 @@ body {
     }
     .cart-items-added {
         min-height: 1px;
-        max-height: 332px;
+        max-height: 338px;
         overflow-y: scroll;
         overflow-x: hidden;
         scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
@@ -6119,7 +6124,10 @@ body {
     .cart-mega {
         li {
             &:first-child {
-                width: 3.5rem;
+                width: 2.5rem;
+                @include medium {
+                    width: 3.5rem;
+                }
                 @include large {
                     width: 4rem;
                 }
