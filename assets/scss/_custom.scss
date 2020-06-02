@@ -4465,7 +4465,7 @@ body {
     }
 }
 
-// All courses section
+// All Courses Section
 .all-courses-section {
     @include medium {
         padding: 5rem 0;
@@ -4485,7 +4485,7 @@ body {
         position: fixed;
         width: 40px;
         height: 30px;
-        top: 5rem;
+        top: 8rem;
         left: 0;
         background-color: $light;
         color: $danger;
@@ -4511,7 +4511,7 @@ body {
         /* 0 width - change this with JavaScript */
         position: fixed;
         /* Stay in place */
-        z-index: 300;
+        z-index: 1200;
         /* Stay on top */
         top: 0;
         left: -3rem;
@@ -4534,6 +4534,7 @@ body {
             overflow-y: hidden;
             padding-top: 0;
             left: unset;
+            z-index: 300;
         }
         .closebtn {
             position: absolute;
@@ -4553,7 +4554,7 @@ body {
     .item-icon {
         display: flex;
         &.active {
-            // color: #fff;
+            // color: $light;
             background: $light 0% 0% no-repeat padding-box;
             box-shadow: 5px 10px 20px #00083A29;
             border-radius: 3px;
@@ -4634,6 +4635,11 @@ body {
             .header-right {
                 i {
                     transform: rotate(-180deg) !important;
+                }
+            }
+            .header-left {
+                .icon {
+                    filter: invert(54%) sepia(6%) saturate(18%) hue-rotate(341deg) brightness(92%) contrast(93%);
                 }
             }
         }
@@ -4916,45 +4922,156 @@ body {
                 }
             }
         }
-        .cart-items-added {
-            min-height: 1px;
-            max-height: 338px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
-            scrollbar-width: thin;
+        .megapack-items {
+            background-color: $light3;
+            position: relative;
+            margin-bottom: 2rem;
+            &:before {
+                content: '';
+                top: -1.5rem;
+                left: 43%;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 25px solid $light3;
+                @include medium {
+                    top: -2rem;
+                    left: 45%;
+                    border-left: 40px solid transparent;
+                    border-right: 40px solid transparent;
+                    border-bottom: 40px solid $light3;
+                }
+            }
+            .title-mega {
+                font-size: 1.15rem;
+                span {
+                    color: $danger;
+                }
+            }
+        }
+    }
+    .course-category {
+        .megapack-suggested {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .course-item {
+        margin-bottom: 2rem;
+    }
+    .course-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        @include medium {
+            display: grid;
+            grid-template-columns: 18% 54% 28%;
+            margin-top: 0;
+        }
+        @include extra-large {
+            display: grid;
+            grid-template-columns: 20% 54% 26%;
+        }
+    }
+    .course-item {
+        .card {
+            cursor: text;
+        }
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0rem;
             @include medium {
-                height: 100%;
+                font-size: 1.2rem;
             }
-        }
-        .price-regular {
-            text-decoration: line-through;
-            letter-spacing: 0px;
-            color: $dark_gray2;
-            font-size: 1rem;
-            @include large {
-                font-size: .9rem;
-            }
-        }
-        .price-promo {
-            color: $danger;
-            font-size: 1.2rem;
             @include large {
                 font-size: 1.1rem;
             }
-        }
-        .btn-warning {
-            border-radius: 0;
-            padding: .35rem .75rem;
-            max-width: 60%;
-            @include medium {
-                max-width: 100%;
+            @include extra-large {
+                font-size: 1.2rem;
             }
+            .text {
+                a {
+                    color: $dark;
+                    &:hover {
+                        color: $dark;
+                    }
+                }
+            }
+            .product-icon {
+                width: 25px;
+            }
+        }
+        .card-subtitle {
+            margin-bottom: .75rem;
+            text-align: left;
+            font-size: 1rem;
+            color: $dark_gray2;
+        }
+        .card-body {
+            max-height: unset;
+            min-height: 10rem;
+            padding: 1rem;
+            height: 100%;
+            @include large {
+                padding: 1rem .5rem;
+            }
+        }
+        .card-text {
+            color: $dark_gray2;
+            text-align: justify;
             @include large {
                 font-size: .8rem;
             }
-            @include extra-large {
-                font-size: .85rem;
+            p {
+                color: inherit;
+            }
+        }
+        .card-img {
+            max-width: 10rem;
+        }
+        .items-data {
+            margin-bottom: 1rem;
+            @include medium {
+                border-left: 1px solid #dee2e6 !important;
+                margin-bottom: 0;
+            }
+            .item {
+                @include medium {
+                    height: 100%;
+                }
+            }
+            .price-regular {
+                text-decoration: line-through;
+                letter-spacing: 0px;
+                color: $dark_gray2;
+                font-size: 1rem;
+                @include large {
+                    font-size: .9rem;
+                }
+            }
+            .price-promo {
+                color: $danger;
+                font-size: 1.2rem;
+                @include large {
+                    font-size: 1.1rem;
+                }
+            }
+            .btn-warning {
+                border-radius: 0;
+                padding: .35rem .75rem;
+                max-width: 60%;
+                @include medium {
+                    max-width: 100%;
+                }
+                @include large {
+                    font-size: .8rem;
+                }
+                @include extra-large {
+                    font-size: .85rem;
+                }
             }
         }
     }
