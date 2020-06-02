@@ -1,0 +1,115 @@
+
+
+.section-card {
+  padding: 25px;
+}
+.card-checkOut {
+  min-height: 300px;
+  min-width: 268px;
+  max-width: 445px;
+  background-color: #f8f8f9;
+  padding: 15px;
+
+  .card-container {
+
+    .card-items {
+      border-bottom: 1px dashed rgba(0,0,0,.8);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+
+      .card-data-checkOut {
+        padding-bottom: 10px;
+
+        .info-course {
+
+          .prices {
+            border-bottom: 1px solid rgba(0,0,0,.1);
+
+            .regularx-data{
+              padding-right: 15px;
+              display: flex;
+              justify-content: space-between;
+              >div {
+                font-size: 14px;
+                @include transition(.5s);
+
+                @include small {
+                  font-size: 20px;
+                  @include transition(.5s);
+                }
+              }
+            }
+
+            .discount-data {
+              padding-right: 15px;
+              display: flex;
+              justify-content: space-between;
+              >div {
+                font-size: 12px;
+                @include transition(.5s);
+
+                @include small {
+                  font-size: 18px;
+                  @include transition(.5s);
+                }
+              }
+            }
+
+
+          }
+
+          .price-actual-checkOut {
+            padding-right: 15px;
+            display: flex;
+            justify-content: space-between;
+          }
+
+        }
+
+      }
+
+      .add-checkOut {
+
+        .items-add-checkOut {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          > div {
+            font-size: 12px;
+            line-height: 12px;
+          }
+          .subtitle {
+            button {
+              i {
+                color: $danger;
+              }
+            }
+          }
+        }
+
+      }
+      .subtotal-item-checkOut {
+        .subtotal-curso {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+    }
+
+  }
+}
+
+.amountx {
+  display: flex;
+  justify-content: space-between;
+  >div {
+    font-size: 22px;
+    @include transition(.5s);
+
+    @include small {
+      font-size: 25px;
+      @include transition(.5s);
+    }
+  }
+}
