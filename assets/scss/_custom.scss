@@ -7063,6 +7063,15 @@ body {
             border-radius: 20px;
             text-decoration: none;
         }
+
+        .enlaces-megacursos{
+            a{
+                text-decoration: none !important;
+            }
+            span{
+                color: $danger;
+            }
+        }
     }
     .eighth-section {
         background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
@@ -7901,16 +7910,12 @@ footer {
             &::before{
                 content: '';
                 position: absolute;
-                top: 6px;
+                top: 10px;
                 left: 0;
                 background: #FCC11C;
                 height: 76%;
                 width: 2px;
-                margin-left: -1.5%;
-                z-index: 2;
-                @include small{
-                    margin-left: -2%;
-                }
+            
             }
 
             >div{
@@ -7924,10 +7929,6 @@ footer {
                 p{
                     text-align: justify;         
                     font-size: 1rem;
-                    @include large{
-                        padding-right: 30% !important;
-                    }
-    
                 }
     
                 &::before{
@@ -7940,12 +7941,18 @@ footer {
                     height: 13px;
                     border-radius: 50%;
                     border: 1px solid #707070;
-                    margin-left: -2.7%;
+                    margin-left: -1.5%;
+                    @include small{
+                        margin-left: -1.2%;
+                    }
                     @include medium{
-                        margin-left: -2.7%;
+                        margin-left: -0.8%;
                     }
                     @include large{
-                        margin-left: -2.9%;
+                        margin-left: -1.2%;
+                    }
+                    @include extra-large{
+                        margin-left: -1%;
                     }
 
                 }
