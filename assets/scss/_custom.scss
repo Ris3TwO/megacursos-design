@@ -7831,7 +7831,6 @@ footer {
 }
 
 // Fin GANAR DINERO PAGE
-<<<<<<< HEAD
 
 // HEADER BANNER 
 .header-banner{
@@ -7879,47 +7878,6 @@ footer {
 
 // CURSO EMPRESAS INICIO
 .curso-empresa-section{
-=======
-// CURSO EMPRESAS INICIO
-.curso-empresa-section {
-    .header {
-        background: url(../img/header-Empresas.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 80%;
-        width: 100%;
-        height: 280px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        .head-text {
-            color: $light;
-            z-index: 2;
-            .title-mega {
-                font-size: 2.5rem;
-            }
-            p {
-                font-size: 1.3rem;
-                span {
-                    color: #FCC11C;
-                }
-            }
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent linear-gradient(99deg, #F8F8F8 0%, #000055 100%) 0% 0% no-repeat padding-box;
-            opacity: 0.84;
-            z-index: 1;
-        }
-    }
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
     //colores para spam
     .color-one {
         background: #FEF1CD;
@@ -7963,14 +7921,9 @@ footer {
             }
             >div {
                 position: relative;
-<<<<<<< HEAD
                 padding-left: 20px !important;
                 
                 strong{
-=======
-                padding-left: 10px;
-                strong {
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
                     font-weight: 900;
                 }
                 p {
@@ -7991,22 +7944,6 @@ footer {
                     height: 12px;
                     border-radius: 50%;
                     border: 1px solid #707070;
-<<<<<<< HEAD
-=======
-                    margin-left: -1.5%;
-                    @include small {
-                        margin-left: -1.2%;
-                    }
-                    @include medium {
-                        margin-left: -0.8%;
-                    }
-                    @include large {
-                        margin-left: -1.2%;
-                    }
-                    @include extra-large {
-                        margin-left: -1%;
-                    }
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
                 }
             }
         }
@@ -8399,7 +8336,6 @@ footer {
                 right: 0;
             }
         }
-<<<<<<< HEAD
 
         .img-second-section{
             width: 100%;
@@ -8414,13 +8350,6 @@ footer {
                 height: 450px;
             }
         }
-=======
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
     }
 }
-<<<<<<< HEAD
 //QUE ES UN MEGACURSO FIN
-=======
-
-// CURSO EMPRESAS FIN
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
