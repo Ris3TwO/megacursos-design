@@ -1653,7 +1653,7 @@ body {
                 }
             }
             .owl-item {
-                height: 50px;
+                height: 106px;
             }
             .owl-carousel .owl-stage-outer {
                 padding: 0 .5rem;
@@ -1664,7 +1664,7 @@ body {
         }
         .packs_item {
             padding: 0;
-            width: 90px;
+            width: 100%;
             @include medium {
                 padding: .5rem 0;
             }
@@ -7063,12 +7063,11 @@ body {
             border-radius: 20px;
             text-decoration: none;
         }
-
-        .enlaces-megacursos{
-            a{
+        .enlaces-megacursos {
+            a {
                 text-decoration: none !important;
             }
-            span{
+            span {
                 color: $danger;
             }
         }
@@ -7823,11 +7822,9 @@ footer {
 }
 
 // Fin GANAR DINERO PAGE
-
 // CURSO EMPRESAS INICIO
-.curso-empresa-section{
-
-    .header{
+.curso-empresa-section {
+    .header {
         background: url(../img/header-Empresas.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -7839,25 +7836,20 @@ footer {
         align-items: center;
         flex-direction: column;
         position: relative;
-
-        .head-text{
+        .head-text {
             color: $light;
             z-index: 2;
-
-            .title-mega{
+            .title-mega {
                 font-size: 2.5rem;
             }
-
-            p{
+            p {
                 font-size: 1.3rem;
-                span{
+                span {
                     color: #FCC11C;
                 }
             }
-
         }
-
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -7869,32 +7861,27 @@ footer {
             z-index: 1;
         }
     }
-
     //colores para spam
-    .color-one{
+    .color-one {
         background: #FEF1CD;
     }
-    .color-two{
+    .color-two {
         background: #D2F4E2;
     }
-    .color-three{
+    .color-three {
         background: #F7D3D6;
     }
-
-    .first-section{
+    .first-section {
         width: 100%;
         background: #FBFBFB;
         position: relative !important;
-
-        .content-first-section{
+        .content-first-section {
             z-index: 2 !important;
-
-            .title-mega{
+            .title-mega {
                 font-size: 1.9rem;
             }
         }
-
-        &::after{
+        &::after {
             content: '';
             background: $light;
             width: 100%;
@@ -7904,10 +7891,9 @@ footer {
             left: 0;
             z-index: 1 !important;
         }
-
-        .first-description{
+        .first-description {
             position: relative;
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 top: 10px;
@@ -7915,23 +7901,18 @@ footer {
                 background: #FCC11C;
                 height: 76%;
                 width: 2px;
-            
             }
-
-            >div{
+            >div {
                 position: relative;
                 padding-left: 10px;
-                
-                strong{
+                strong {
                     font-weight: 900;
                 }
-    
-                p{
-                    text-align: justify;         
+                p {
+                    text-align: justify;
                     font-size: 1rem;
                 }
-    
-                &::before{
+                &::before {
                     content: '';
                     position: absolute;
                     top: 5px;
@@ -7942,39 +7923,34 @@ footer {
                     border-radius: 50%;
                     border: 1px solid #707070;
                     margin-left: -1.5%;
-                    @include small{
+                    @include small {
                         margin-left: -1.2%;
                     }
-                    @include medium{
+                    @include medium {
                         margin-left: -0.8%;
                     }
-                    @include large{
+                    @include large {
                         margin-left: -1.2%;
                     }
-                    @include extra-large{
+                    @include extra-large {
                         margin-left: -1%;
                     }
-
                 }
             }
-           
         }
-
-        .group-card{
+        .group-card {
             height: 100% !important;
-
-            .card{
+            .card {
                 border-style: none !important;
                 box-shadow: 10px 10px 20px #00000029;
                 border-radius: 10px !important;
-
-                .card-header{
+                .card-header {
                     background: transparent;
                     border-style: none !important;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    span{
+                    span {
                         display: inline-block;
                         width: 80px;
                         height: 80px;
@@ -7983,28 +7959,23 @@ footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        img{
+                        img {
                             width: 40px;
                             height: 40px;
                         }
                     }
                 }
-
-                .card-title{
+                .card-title {
                     text-align: center;
                     font-size: 1rem !important;
                     font-weight: 900;
                 }
-
             }
-            
-
         }
     }
-
-    .second-section{
+    .second-section {
         overflow: hidden;
-        .img-section-second{
+        .img-section-second {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8012,17 +7983,16 @@ footer {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            @include large{
+            @include large {
                 height: 500px;
-                margin-left: -10%; 
+                margin-left: -10%;
             }
-        }         
+        }
     }
-
-    .third-section{
+    .third-section {
         overflow: hidden;
         position: relative;
-        .img-section-third{
+        .img-section-third {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8030,12 +8000,12 @@ footer {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            @include large{
+            @include large {
                 height: 500px;
                 margin-left: 10%;
             }
-        }         
+        }
     }
-
 }
+
 // CURSO EMPRESAS FIN

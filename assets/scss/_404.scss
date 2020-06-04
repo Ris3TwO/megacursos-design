@@ -1,10 +1,13 @@
 .error-section {
     .error-container {
         text-align: center;
-        font-size: 180px;
+        font-size: 74px;
         font-family: 'Catamaran', sans-serif;
         font-weight: 800;
         margin: 20px 15px;
+        @include medium {
+            font-size: 180px;
+        }
     }
     .error-container>span {
         display: inline-block;

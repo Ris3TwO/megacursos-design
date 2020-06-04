@@ -1,0 +1,83 @@
+// Start page general
+.page-general-section {
+    .masthead {
+        color: $light;
+        background-color: #000063;
+    }
+    .descriptions-items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        .descriptions-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+            .descriptions-icon {
+                align-self: flex-start;
+                font-size: 16px;
+                border-radius: 50%;
+                padding: 0 0.2rem;
+                color: #00d270;
+                margin-right: 15px;
+                margin-top: 2px;
+                @include medium {
+                    margin-right: 8px;
+                    margin-top: 4px;
+                    font-size: 18px;
+                    padding: 0 .15rem;
+                }
+            }
+            .descriptions-text {
+                font-size: 15px;
+                text-align: justify;
+                color: $secondary;
+                a {
+                    color: inherit;
+                }
+                &:before {
+                    content: "\F05E0";
+                    display: inline-block;
+                    font: normal normal normal 24px/1 "Material Design Icons";
+                    font-size: inherit;
+                    text-rendering: auto;
+                    line-height: inherit;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 16px;
+                    border-radius: 50%;
+                    padding: 0 0.2rem;
+                    color: #00d270;
+                    margin-right: 15px;
+                    margin-top: 2px;
+                    @include medium {
+                        margin-right: 8px;
+                        margin-top: 4px;
+                        font-size: 18px;
+                        padding: 0 .15rem;
+                    }
+                }
+            }
+        }
+    }
+    .content-page {
+        margin: 3rem 0;
+        @include medium {
+            margin: 6rem 0;
+        }
+    }
+    .sections {
+        margin: 1.5rem 0;
+        @include medium {
+            margin: 3rem 0;
+        }
+    }
+    .general-info {
+        margin-bottom: .5rem;
+    }
+    .title-mega {
+        margin-bottom: 1rem;
+    }
+}
