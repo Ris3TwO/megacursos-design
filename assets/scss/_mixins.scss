@@ -24,6 +24,12 @@
     }
 }
 
+@mixin full-page {
+    @media only screen and (min-width: #{$full-page}) {
+        @content;
+    }
+}
+
 @mixin box-sizing($box-model) {
     box-sizing: $box-model;
 }
@@ -34,4 +40,10 @@
 
 @mixin transition($time) {
     transition: all $time ease-in-out;
+}
+
+@mixin flex-center () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
