@@ -7914,8 +7914,7 @@ footer {
                 left: 0;
                 background: #FCC11C;
                 height: 76%;
-                width: 2px;
-            
+                width: 1px;      
             }
 
             >div{
@@ -7929,6 +7928,7 @@ footer {
                 p{
                     text-align: justify;         
                     font-size: 1rem;
+                    padding-right: 25%;
                 }
     
                 &::before{
@@ -8035,6 +8035,199 @@ footer {
                 margin-left: 10%;
             }
         }         
+    }
+
+    .fourth-section{
+        background: #F9F9F9;
+        position: relative;
+        &::before{
+            content: '';
+            background: $light;
+            width: 100%;
+            height: 35%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .groud-card-fourth-section{
+
+            >div:nth-child(1) > .card{
+                .card-header{
+                    background: transparent linear-gradient(106deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
+                }
+            }
+            >div:nth-child(2) > .card{
+                .card-header{
+                    background: transparent linear-gradient(132deg, #FCC11C 0%, #FCC11C 0%, #FFF8E3 100%) 0% 0% no-repeat padding-box;
+                }
+            }
+            >div:nth-child(3) > .card{
+                .card-header{
+                    background: transparent linear-gradient(114deg, #CA2333 0%, #FEBAC0 100%) 0% 0% no-repeat padding-box;
+                }
+            }
+            >div:nth-child(4) > .card{
+                .card-header{
+                    background: transparent linear-gradient(94deg, #00004C 0%, #090999 100%) 0% 0% no-repeat padding-box;
+                }
+            }
+        }
+
+        .card{
+            border-style: none;
+            box-shadow: 10px 10px 40px #00000029;
+            border-radius: 15px !important;
+            .card-header{
+                border-style: none;
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
+                color: $light;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-radius: 15px 15px 0 0!important;
+            }
+            .card-body{
+                padding-top: 40px !important;
+                padding-bottom: 40px !important;
+
+                .card-title{
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
+
+                strong,.card-text{
+                    color: $dark_gray2;
+                }
+            }
+        }
+
+    }
+
+    .fith-section{
+
+        .card{
+            border-style: none;
+            box-shadow: 20px 20px 50px #00000029;
+            border-radius: 20px !important;
+            .card-header{
+                border-style: none;
+                background: transparent;
+                font-size: 2rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .sixth-section{
+        height: 300px !important;
+        background: transparent linear-gradient(115deg, #DC3545 46%, #F89B9B 100%);
+        position: relative !important;
+        overflow: hidden;
+        .sixth-section-content{
+            z-index: 2;
+        }
+        .audifono-img{
+            position: absolute;
+            right: 7%;
+            bottom: -45%;
+            width: 350px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+    }
+
+    .seven-section{
+        
+        .card, .card-header{
+            text-align: center;
+            border-style: none;
+            background: transparent;
+
+        }
+
+        .card-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            span{
+                display: inline-block;
+                background: $light;
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                border: 1px dashed $dark_gray2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+
+        @include large{
+            .group-card-seven > div:nth-child(2)  >  .card> .card-header::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                width:  100%;
+                height: 1px;
+                background: $dark_gray2;
+                z-index: -1;
+            }
+    
+            .group-card-seven > div:nth-child(3)  >  .card> .card-header::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                width:  100%;
+                height: 1px;
+                background: $dark_gray2;
+                z-index: -1;
+            }
+        }
+        
+        .card-title{
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        .card-text{
+            color: $dark-gray;
+        }
+    }
+
+
+    .eight-section{
+
+        .slider-empresas{
+            position: relative;
+            .btn-next,.btn-prev{
+                position: absolute;
+                top: 45%;
+                width: 20px;
+                height: 20px;
+                border-left: 4px solid $danger;
+                border-bottom: 4px solid $danger;
+                cursor: pointer;
+            }
+
+            .btn-next{
+                right: 0;
+                transform: rotate(225deg);
+            }
+            .btn-prev{
+                left: 0;  
+                transform: rotate(45deg);  
+            }
+        }
+
     }
 
 }
