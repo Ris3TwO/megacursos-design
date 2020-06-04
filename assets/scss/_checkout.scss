@@ -5,7 +5,7 @@
 .card-checkOut {
     min-height: 300px;
     min-width: 268px;
-    max-width: 445px;
+    // max-width: 445px;
     background-color: #f8f8f9;
     padding: 15px;
     .card-container {
@@ -14,10 +14,11 @@
             margin-bottom: 20px;
             padding-bottom: 10px;
             .card-data-checkOut {
-                padding-bottom: 10px;
+                padding: .75rem 0;
                 .info-course {
                     .prices {
-                        border-bottom: 1px solid rgba(0, 0, 0, .1);
+                        margin-top: .5rem;
+                        // border-bottom: 1px solid rgba(0, 0, 0, .1);
                         .regularx-data {
                             padding-right: 15px;
                             display: flex;
@@ -27,6 +28,10 @@
                                 @include transition(.5s);
                                 @include small {
                                     font-size: 20px;
+                                    @include transition(.5s);
+                                }
+                                @include medium {
+                                    font-size: 16px;
                                     @include transition(.5s);
                                 }
                             }
@@ -42,6 +47,10 @@
                                     font-size: 18px;
                                     @include transition(.5s);
                                 }
+                                @include medium {
+                                    font-size: 16px;
+                                    @include transition(.5s);
+                                }
                             }
                         }
                     }
@@ -49,14 +58,26 @@
                         padding-right: 15px;
                         display: flex;
                         justify-content: space-between;
+                        @include medium {
+                            font-size: 16px;
+                            @include transition(.5s);
+                        }
                     }
                 }
             }
             .add-checkOut {
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+                }
+                .card-body {
+                    padding: .75rem 1.25rem !important;
+                    background-color: #f8f8f9;
+                }
                 .items-add-checkOut {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    padding: .5rem 0;
                     >div {
                         font-size: 12px;
                         line-height: 12px;
@@ -88,6 +109,10 @@
         @include transition(.5s);
         @include small {
             font-size: 25px;
+            @include transition(.5s);
+        }
+        @include medium {
+            font-size: 20px;
             @include transition(.5s);
         }
     }

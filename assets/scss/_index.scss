@@ -1,0 +1,32 @@
+.testimonial {
+    margin: 0;
+    width: 18rem;
+    @media only screen and (max-width: 320px) {
+        width: 16rem;
+    }
+    @include small {
+        margin: 0 .15rem;
+        width: 15rem;
+    }
+    @include medium {
+        width: 21rem;
+    }
+    @include large {
+        margin: 0 .25rem;
+        width: 18rem;
+    }
+    @include extra-large {
+        margin: 0 .5rem;
+        width: 15rem;
+    }
+}
+
+.opinion-image {
+    width: 5rem !important;
+    @include medium {
+        width: 6rem !important;
+    }
+    @include large {
+        width: 4rem !important;
+    }
+}

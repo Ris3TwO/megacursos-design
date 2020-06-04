@@ -1653,7 +1653,11 @@ body {
                 }
             }
             .owl-item {
+<<<<<<< HEAD
                 height: 90px;
+=======
+                height: 106px;
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
             }
             .owl-carousel .owl-stage-outer {
                 padding: 0 .5rem;
@@ -1663,8 +1667,13 @@ body {
             }
         }
         .packs_item {
+<<<<<<< HEAD
             width: 90px;
             height: 90px;
+=======
+            padding: 0;
+            width: 100%;
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
             @include medium {
                 padding: .5rem 0;
             }
@@ -4844,7 +4853,7 @@ body {
                 left: 49%;
             }
             @include extra-large {
-                left: 49%;
+                left: 50.5%;
             }
         }
         .megapack-header {
@@ -5970,7 +5979,7 @@ body {
         box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
         width: 300px;
         margin-left: 0px;
-        height: 435.85px;
+        height: 495.85px;
         li:nth-child(1) {
             margin-top: .75rem !important;
         }
@@ -7063,12 +7072,11 @@ body {
             border-radius: 20px;
             text-decoration: none;
         }
-
-        .enlaces-megacursos{
-            a{
+        .enlaces-megacursos {
+            a {
                 text-decoration: none !important;
             }
-            span{
+            span {
                 color: $danger;
             }
         }
@@ -7823,6 +7831,7 @@ footer {
 }
 
 // Fin GANAR DINERO PAGE
+<<<<<<< HEAD
 
 // HEADER BANNER 
 .header-banner{
@@ -7870,31 +7879,68 @@ footer {
 
 // CURSO EMPRESAS INICIO
 .curso-empresa-section{
+=======
+// CURSO EMPRESAS INICIO
+.curso-empresa-section {
+    .header {
+        background: url(../img/header-Empresas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 80%;
+        width: 100%;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .head-text {
+            color: $light;
+            z-index: 2;
+            .title-mega {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.3rem;
+                span {
+                    color: #FCC11C;
+                }
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent linear-gradient(99deg, #F8F8F8 0%, #000055 100%) 0% 0% no-repeat padding-box;
+            opacity: 0.84;
+            z-index: 1;
+        }
+    }
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
     //colores para spam
-    .color-one{
+    .color-one {
         background: #FEF1CD;
     }
-    .color-two{
+    .color-two {
         background: #D2F4E2;
     }
-    .color-three{
+    .color-three {
         background: #F7D3D6;
     }
-
-    .first-section{
+    .first-section {
         width: 100%;
         background: #FBFBFB;
         position: relative !important;
-
-        .content-first-section{
+        .content-first-section {
             z-index: 2 !important;
-
-            .title-mega{
+            .title-mega {
                 font-size: 1.9rem;
             }
         }
-
-        &::after{
+        &::after {
             content: '';
             background: $light;
             width: 100%;
@@ -7904,37 +7950,38 @@ footer {
             left: 0;
             z-index: 1 !important;
         }
-
-        .first-description{
+        .first-description {
             position: relative;
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 top: 10px;
                 left: 0;
                 background: #FCC11C;
                 height: 76%;
-                width: 1px;      
+                width: 1px;
             }
-
-            >div{
+            >div {
                 position: relative;
+<<<<<<< HEAD
                 padding-left: 20px !important;
                 
                 strong{
+=======
+                padding-left: 10px;
+                strong {
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
                     font-weight: 900;
                 }
-    
-                p{
-                    text-align: justify;         
+                p {
+                    text-align: justify;
                     font-size: 1rem;
                     
                     @include large {
                         padding-right: 25%;
                     }   
                 }
-    
-                &::before{
+                &::before {
                     content: '';
                     position: absolute;
                     top: 5px;
@@ -7944,26 +7991,38 @@ footer {
                     height: 12px;
                     border-radius: 50%;
                     border: 1px solid #707070;
+<<<<<<< HEAD
+=======
+                    margin-left: -1.5%;
+                    @include small {
+                        margin-left: -1.2%;
+                    }
+                    @include medium {
+                        margin-left: -0.8%;
+                    }
+                    @include large {
+                        margin-left: -1.2%;
+                    }
+                    @include extra-large {
+                        margin-left: -1%;
+                    }
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
                 }
             }
-           
         }
-
-        .group-card{
+        .group-card {
             height: 100% !important;
-
-            .card{
+            .card {
                 border-style: none !important;
                 box-shadow: 10px 10px 20px #00000029;
                 border-radius: 10px !important;
-
-                .card-header{
+                .card-header {
                     background: transparent;
                     border-style: none !important;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    span{
+                    span {
                         display: inline-block;
                         width: 80px;
                         height: 80px;
@@ -7972,28 +8031,23 @@ footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        img{
+                        img {
                             width: 40px;
                             height: 40px;
                         }
                     }
                 }
-
-                .card-title{
+                .card-title {
                     text-align: center;
                     font-size: 1rem !important;
                     font-weight: 900;
                 }
-
             }
-            
-
         }
     }
-
-    .second-section{
+    .second-section {
         overflow: hidden;
-        .img-section-second{
+        .img-section-second {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8001,17 +8055,16 @@ footer {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            @include large{
+            @include large {
                 height: 500px;
-                margin-left: -10%; 
+                margin-left: -10%;
             }
-        }         
+        }
     }
-
-    .third-section{
+    .third-section {
         overflow: hidden;
         position: relative;
-        .img-section-third{
+        .img-section-third {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8019,17 +8072,16 @@ footer {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            @include large{
+            @include large {
                 height: 500px;
                 margin-left: 10%;
             }
-        }         
+        }
     }
-
-    .fourth-section{
+    .fourth-section {
         background: #F9F9F9;
         position: relative;
-        &::before{
+        &::before {
             content: '';
             background: $light;
             width: 100%;
@@ -8038,36 +8090,33 @@ footer {
             bottom: 0;
             left: 0;
         }
-
-        .groud-card-fourth-section{
-
-            >div:nth-child(1) > .card{
-                .card-header{
+        .groud-card-fourth-section {
+            >div:nth-child(1)>.card {
+                .card-header {
                     background: transparent linear-gradient(106deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
                 }
             }
-            >div:nth-child(2) > .card{
-                .card-header{
+            >div:nth-child(2)>.card {
+                .card-header {
                     background: transparent linear-gradient(132deg, #FCC11C 0%, #FCC11C 0%, #FFF8E3 100%) 0% 0% no-repeat padding-box;
                 }
             }
-            >div:nth-child(3) > .card{
-                .card-header{
+            >div:nth-child(3)>.card {
+                .card-header {
                     background: transparent linear-gradient(114deg, #CA2333 0%, #FEBAC0 100%) 0% 0% no-repeat padding-box;
                 }
             }
-            >div:nth-child(4) > .card{
-                .card-header{
+            >div:nth-child(4)>.card {
+                .card-header {
                     background: transparent linear-gradient(94deg, #00004C 0%, #090999 100%) 0% 0% no-repeat padding-box;
                 }
             }
         }
-
-        .card{
+        .card {
             border-style: none;
             box-shadow: 10px 10px 40px #00000029;
             border-radius: 15px !important;
-            .card-header{
+            .card-header {
                 border-style: none;
                 padding-top: 30px !important;
                 padding-bottom: 30px !important;
@@ -8077,30 +8126,26 @@ footer {
                 text-transform: uppercase;
                 border-radius: 15px 15px 0 0!important;
             }
-            .card-body{
+            .card-body {
                 padding-top: 40px !important;
                 padding-bottom: 40px !important;
-
-                .card-title{
+                .card-title {
                     font-size: 1.5rem;
                     font-weight: 900;
                 }
-
-                strong,.card-text{
+                strong,
+                .card-text {
                     color: $dark_gray2;
                 }
             }
         }
-
     }
-
-    .fith-section{
-
-        .card{
+    .fith-section {
+        .card {
             border-style: none;
             box-shadow: 20px 20px 50px #00000029;
             border-radius: 20px !important;
-            .card-header{
+            .card-header {
                 border-style: none;
                 background: transparent;
                 font-size: 2rem;
@@ -8108,16 +8153,15 @@ footer {
             }
         }
     }
-
-    .sixth-section{
+    .sixth-section {
         height: 300px !important;
         background: transparent linear-gradient(115deg, #DC3545 46%, #F89B9B 100%);
         position: relative !important;
         overflow: hidden;
-        .sixth-section-content{
+        .sixth-section-content {
             z-index: 2;
         }
-        .audifono-img{
+        .audifono-img {
             position: absolute;
             right: 7%;
             bottom: -45%;
@@ -8126,22 +8170,19 @@ footer {
             z-index: 1;
         }
     }
-
-    .seven-section{
-        
-        .card, .card-header{
+    .seven-section {
+        .card,
+        .card-header {
             text-align: center;
             border-style: none;
             background: transparent;
-
         }
-
-        .card-header{
+        .card-header {
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            span{
+            span {
                 display: inline-block;
                 background: $light;
                 width: 140px;
@@ -8151,43 +8192,39 @@ footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+                img {
                     width: 75px;
                     height: 75px;
                 }
             }
         }
-
-        @include large{
-            .group-card-seven > div:nth-child(2)  >  .card> .card-header::before{
+        @include large {
+            .group-card-seven>div:nth-child(2)>.card>.card-header::before {
                 content: '';
                 position: absolute;
                 top: 50%;
                 left: -50%;
-                width:  100%;
+                width: 100%;
                 height: 1px;
                 background: $dark_gray2;
                 z-index: -1;
             }
-    
-            .group-card-seven > div:nth-child(3)  >  .card> .card-header::before{
+            .group-card-seven>div:nth-child(3)>.card>.card-header::before {
                 content: '';
                 position: absolute;
                 top: 50%;
                 left: -50%;
-                width:  100%;
+                width: 100%;
                 height: 1px;
                 background: $dark_gray2;
                 z-index: -1;
             }
         }
-        
-        .card-title{
+        .card-title {
             font-size: 1.2rem;
             font-weight: 900;
         }
-
-        .card-text{
+        .card-text {
             color: $dark-gray;
         }
 
@@ -8213,13 +8250,11 @@ footer {
             }
         }
     }
-
-
-    .eight-section{
-
-        .slider-empresas{
+    .eight-section {
+        .slider-empresas {
             position: relative;
-            .btn-next,.btn-prev{
+            .btn-next,
+            .btn-prev {
                 position: absolute;
                 top: 45%;
                 width: 20px;
@@ -8229,14 +8264,13 @@ footer {
 
                 cursor: pointer;
             }
-
-            .btn-next{
+            .btn-next {
                 right: 0;
                 transform: rotate(225deg);
             }
-            .btn-prev{
-                left: 0;  
-                transform: rotate(45deg);  
+            .btn-prev {
+                left: 0;
+                transform: rotate(45deg);
             }
 
             .owl-carousel-custom{
@@ -8365,6 +8399,7 @@ footer {
                 right: 0;
             }
         }
+<<<<<<< HEAD
 
         .img-second-section{
             width: 100%;
@@ -8379,7 +8414,13 @@ footer {
                 height: 450px;
             }
         }
+=======
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
     }
-
 }
+<<<<<<< HEAD
 //QUE ES UN MEGACURSO FIN
+=======
+
+// CURSO EMPRESAS FIN
+>>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
