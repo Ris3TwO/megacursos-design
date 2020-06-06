@@ -14,8 +14,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
 const files = {
-    scssPath: 'assets/scss/*.scss'
-}
+    scssPath: "assets/scss/**/*.scss",
+};
 
 function scssTask() {
     var plugins = [
