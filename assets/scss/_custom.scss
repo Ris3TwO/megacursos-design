@@ -1659,11 +1659,7 @@ body {
                 }
             }
             .owl-item {
-<<<<<<< HEAD
                 height: 90px;
-=======
-                height: 106px;
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
             }
             .owl-carousel .owl-stage-outer {
                 padding: 0 .5rem;
@@ -1673,375 +1669,237 @@ body {
             }
         }
         .packs_item {
-<<<<<<< HEAD
             width: 90px;
             height: 90px;
-=======
-            padding: 0;
-            width: 100%;
->>>>>>> a908af7937b82be02af72953ab853aed70cc0e2d
-            @include medium {
-                padding: .5rem 0;
-            }
-            .packs_image {
-                width: 40px;
-            }
-            .packs_content {
-                padding-top: .5rem;
-                .packs_name {
-                    @include medium {
-                        font-size: 0.7rem;
-                    }
+            width: 40px;
+        }
+        .packs_content {
+            padding-top: .5rem;
+            .packs_name {
+                @include medium {
+                    font-size: 0.7rem;
                 }
             }
         }
     }
-    // Content
-    .ultraContainer {
-        margin-top: 7.5rem !important;
-        @include small {
-            margin-top: 1.5rem !important;
-        }
-        @include medium {
-            margin-top: 4.5rem !important;
-        }
-        @include small {
-            padding: 2.5rem;
-        }
+}
+
+// Content
+.ultraContainer {
+    margin-top: 7.5rem !important;
+    @include small {
+        margin-top: 1.5rem !important;
     }
-    .tabContainer {
+    @include medium {
+        margin-top: 4.5rem !important;
+    }
+    @include small {
+        padding: 2.5rem;
+    }
+}
+
+.tabContainer {
+    padding: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: $light !important;
+    margin-top: 3rem;
+    @include small {
         padding: 2rem;
-        padding-right: 0;
-        padding-left: 0;
-        background-color: $light !important;
-        margin-top: 3rem;
-        @include small {
-            padding: 2rem;
-        }
-        @include large {
-            padding: 3.5rem 2rem;
-        }
-        .row {
-            margin-right: -15px !important;
-            margin-left: -15px !important;
-        }
-        // Tabs
-        .navs-vertical {
-            .nav-pills {
-                background-color: #fbfbfb;
-                border-bottom: 1px solid transparent;
-                .nav-link {
-                    border: 1px solid transparent;
-                    color: #BEBEBF;
-                    font-weight: 500;
-                    line-height: 1.42857;
-                    padding: .5rem 0.95rem;
-                    @include small {
-                        font-size: 1rem;
-                    }
-                    a {
-                        &.hover {
-                            border-color: transparent;
-                            background-color: transparent;
-                            color: $dark;
-                        }
-                    }
-                    &.active {
-                        color: $dark;
-                        background-color: transparent;
-                        cursor: default;
-                        position: relative;
-                        border-right-color: transparent !important;
-                        &:after {
-                            content: '';
-                            width: 5px;
-                            height: 20px;
-                            background: $danger;
-                            position: absolute;
-                            left: 0px;
-                            top: 24%;
-                        }
-                    }
-                }
-            }
-            .col-info,
-            .col-data {
-                padding-top: 2rem;
-                border-bottom: 2px solid gray;
-                padding-bottom: 2rem;
+    }
+    @include large {
+        padding: 3.5rem 2rem;
+    }
+    .row {
+        margin-right: -15px !important;
+        margin-left: -15px !important;
+    }
+    // Tabs
+    .navs-vertical {
+        .nav-pills {
+            background-color: #fbfbfb;
+            border-bottom: 1px solid transparent;
+            .nav-link {
+                border: 1px solid transparent;
+                color: #BEBEBF;
+                font-weight: 500;
+                line-height: 1.42857;
+                padding: .5rem 0.95rem;
                 @include small {
-                    padding-top: 0;
-                    border-bottom: none;
-                    padding-bottom: 0;
-                }
-            }
-            .col-info {
-                .shared-with-friends {
-                    padding: 0.5rem;
-                    margin-top: 1rem;
-                    &:before {
-                        font-family: "Font Awesome 5 Free";
-                        font-weight: 900;
-                        content: "\f064";
-                        color: $danger;
-                        font-size: 18px;
-                        margin-right: 6px;
-                        margin-top: 2px;
-                        display: inline-block;
-                    }
-                    .shared {
-                        text-decoration: underline;
-                        margin-left: 0.2rem;
-                        color: $danger;
-                    }
-                }
-            }
-            .col-cart {
-                margin-top: -5rem;
-                @include small {
-                    margin-top: 0;
-                }
-            }
-            .col-data {
-                .row {
-                    margin: 0 !important;
-                    @include small {
-                        margin-right: -15px !important;
-                        margin-left: -15px !important;
-                    }
-                }
-            }
-        }
-        // Content of navs
-        .payment-data .benefits-item-columns,
-        .download-data .benefits-item-columns,
-        .requirements-data .benefits-item-columns {
-            width: 100%;
-        }
-        .payment-data {
-            .ml-n7 {
-                margin-left: -5rem !important;
-            }
-        }
-        .benefits-mega {
-            .benefits-item-columns {
-                width: 100%;
-            }
-        }
-        .descriptions-item-columns,
-        .benefits-item-columns {
-            width: 100%;
-            @include large {
-                width: 45%;
-            }
-        }
-        .tab-data {
-            h3 {
-                margin: 0 0 10px 30px;
-                font-size: 15px;
-                font-weight: 700;
-                @include small {
-                    margin: 0 0 20px;
-                    color: $dark;
-                    font-size: 1.75rem;
-                }
-            }
-            p {
-                font-size: 14px !important;
-                text-align: justify;
-                margin-bottom: .5rem;
-                @include small {
-                    font-size: 1em !important;
-                    margin-left: 0 !important;
-                    text-align: left;
-                }
-                @include medium {
-                    margin-left: 15px !important;
-                }
-            }
-            // Descriptions
-            .descriptions {
-                margin-bottom: 10px;
-                .descriptions-items {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    padding: 0;
-                    .descriptions-item {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 10px;
-                        &.descriptions-item-columns {
-                            .descriptions-icon {
-                                align-self: flex-start;
-                                color: $light;
-                                font-size: 12px;
-                                border-radius: 50%;
-                                padding: 0 0.2rem;
-                                background-color: #00d270;
-                                margin-right: 15px;
-                                margin-top: 2px;
-                                @include medium {
-                                    margin-right: 8px;
-                                    margin-top: 4px;
-                                    font-size: 10px;
-                                    padding: 0 .15rem;
-                                }
-                            }
-                            .descriptions-text {
-                                font-size: 15px;
-                                text-align: justify;
-                            }
-                        }
-                    }
-                }
-            }
-            // Benefits
-            .benefits {
-                padding: 10px 15px;
-                margin-bottom: 10px;
-                .benefits-content {
-                    margin-bottom: 5px;
-                    .benefits-title {
-                        font-size: 22px;
-                        font-weight: 600;
-                        margin: 0 0 10px;
-                    }
-                    em {
-                        font-size: 15px;
-                        text-transform: capitalize;
-                    }
-                    .benefits-items {
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        padding-top: 0.5rem;
-                        .benefits-item {
-                            display: flex;
-                            align-items: center;
-                            margin-bottom: 10px;
-                            .benefits-text {
-                                font-size: 13px;
-                            }
-                            .benefits-icon {
-                                align-self: flex-start;
-                                color: $light;
-                                font-size: 12px;
-                                border-radius: 50%;
-                                padding: 0 0.2rem;
-                                background-color: #28a745;
-                                margin-right: 15px;
-                                margin-top: 2px;
-                                @include medium {
-                                    font-size: 10px;
-                                    padding: 0 0.15rem;
-                                    margin-right: 8px;
-                                    margin-top: 4px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            // Examples
-            .studentData {
-                .card-body {
-                    min-height: 4rem;
-                }
-            }
-            // General
-            .accordion-faq {
-                .card-body {
-                    p {
-                        @include medium {
-                            margin-left: 0 !important;
-                        }
-                    }
-                }
-            }
-            // Access And Download
-            .icon-wrapper {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-items: center;
-                .custom-icon {
-                    cursor: pointer;
-                    display: flex;
-                    width: 75px;
-                    height: 75px;
-                    color: $light;
-                    font-size: 3rem;
-                    border-radius: 25vw;
-                    overflow: hidden;
-                    background-size: cover;
-                    background-color: #ec5252;
-                    border: 3px solid $light;
-                    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.86);
-                    opacity: 0.8;
-                    transition: background 0.5s, color 1s, opacity 0.5s, border 0.5s;
-                    &:before {
-                        width: 100%;
-                        display: flex;
-                        flex-flow: row wrap;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    &:hover {
-                        opacity: 1;
-                        color: white;
-                        background-color: #454b55;
-                        border: 3px solid $light;
-                    }
-                }
-            }
-            .t-medium {
-                font-size: 1.143em;
-                line-height: 1.251rem;
-            }
-            .block {
-                display: block;
-            }
-            .mbxs {
-                margin-bottom: 5px;
-            }
-            .block-text {
-                p {
-                    text-align: center !important;
-                    margin-left: 0 !important;
-                }
-            }
-            .header-static {
-                margin: 0 0 20px;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                align-items: center;
-                @include medium {
-                    padding-left: 0;
-                    padding-right: 0;
-                    align-items: flex-start;
-                }
-                h3 {
-                    margin: 0 !important;
-                }
-                .btn {
-                    font-size: 9px;
-                    @include small {
-                        font-size: 12px;
-                    }
-                }
-            }
-            .accordion-faq {
-                .card-products {
-                    min-height: 4rem;
-                }
-                .benefits-text {
                     font-size: 1rem;
                 }
-                .benefits-item-columns {
-                    width: 100%;
+                a {
+                    &.hover {
+                        border-color: transparent;
+                        background-color: transparent;
+                        color: $dark;
+                    }
+                }
+                &.active {
+                    color: $dark;
+                    background-color: transparent;
+                    cursor: default;
+                    position: relative;
+                    border-right-color: transparent !important;
+                    &:after {
+                        content: '';
+                        width: 5px;
+                        height: 20px;
+                        background: $danger;
+                        position: absolute;
+                        left: 0px;
+                        top: 24%;
+                    }
+                }
+            }
+        }
+        .col-info,
+        .col-data {
+            padding-top: 2rem;
+            border-bottom: 2px solid gray;
+            padding-bottom: 2rem;
+            @include small {
+                padding-top: 0;
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        .col-info {
+            .shared-with-friends {
+                padding: 0.5rem;
+                margin-top: 1rem;
+                &:before {
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f064";
+                    color: $danger;
+                    font-size: 18px;
+                    margin-right: 6px;
+                    margin-top: 2px;
+                    display: inline-block;
+                }
+                .shared {
+                    text-decoration: underline;
+                    margin-left: 0.2rem;
+                    color: $danger;
+                }
+            }
+        }
+        .col-cart {
+            margin-top: -5rem;
+            @include small {
+                margin-top: 0;
+            }
+        }
+        .col-data {
+            .row {
+                margin: 0 !important;
+                @include small {
+                    margin-right: -15px !important;
+                    margin-left: -15px !important;
+                }
+            }
+        }
+    }
+    // Content of navs
+    .payment-data .benefits-item-columns,
+    .download-data .benefits-item-columns,
+    .requirements-data .benefits-item-columns {
+        width: 100%;
+    }
+    .payment-data {
+        .ml-n7 {
+            margin-left: -5rem !important;
+        }
+    }
+    .benefits-mega {
+        .benefits-item-columns {
+            width: 100%;
+        }
+    }
+    .descriptions-item-columns,
+    .benefits-item-columns {
+        width: 100%;
+        @include large {
+            width: 45%;
+        }
+    }
+    .tab-data {
+        h3 {
+            margin: 0 0 10px 30px;
+            font-size: 15px;
+            font-weight: 700;
+            @include small {
+                margin: 0 0 20px;
+                color: $dark;
+                font-size: 1.75rem;
+            }
+        }
+        p {
+            font-size: 14px !important;
+            text-align: justify;
+            margin-bottom: .5rem;
+            @include small {
+                font-size: 1em !important;
+                margin-left: 0 !important;
+                text-align: left;
+            }
+            @include medium {
+                margin-left: 15px !important;
+            }
+        }
+        // Descriptions
+        .descriptions {
+            margin-bottom: 10px;
+            .descriptions-items {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 0;
+                .descriptions-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    &.descriptions-item-columns {
+                        .descriptions-icon {
+                            align-self: flex-start;
+                            color: $light;
+                            font-size: 12px;
+                            border-radius: 50%;
+                            padding: 0 0.2rem;
+                            background-color: #00d270;
+                            margin-right: 15px;
+                            margin-top: 2px;
+                            @include medium {
+                                margin-right: 8px;
+                                margin-top: 4px;
+                                font-size: 10px;
+                                padding: 0 .15rem;
+                            }
+                        }
+                        .descriptions-text {
+                            font-size: 15px;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+        // Benefits
+        .benefits {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            .benefits-content {
+                margin-bottom: 5px;
+                .benefits-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0 0 10px;
+                }
+                em {
+                    font-size: 15px;
+                    text-transform: capitalize;
                 }
                 .benefits-items {
                     display: flex;
@@ -2061,1155 +1919,1298 @@ body {
                             color: $light;
                             font-size: 12px;
                             border-radius: 50%;
-                            box-shadow: 0px 0px 2px #888;
                             padding: 0 0.2rem;
                             background-color: #28a745;
                             margin-right: 15px;
                             margin-top: 2px;
+                            @include medium {
+                                font-size: 10px;
+                                padding: 0 0.15rem;
+                                margin-right: 8px;
+                                margin-top: 4px;
+                            }
                         }
                     }
                 }
             }
         }
-        // Shoping Cart
-        .cart-module {
-            @include large {
-                margin-top: -2rem;
+        // Examples
+        .studentData {
+            .card-body {
+                min-height: 4rem;
             }
-            .right-module {
-                border-radius: 4px;
-                color: #505763;
-                padding: 3px;
-                margin-top: 1rem;
-                @include large {
-                    margin-top: 3rem;
-                }
-                &:not(:last-child) {
-                    .shopping-cart {
-                        -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-                        box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-                    }
-                }
-                .mi-fixed-top {
-                    @include large {
-                        position: fixed;
-                        top: 74px;
-                        right: 3.7%;
-                        z-index: 999;
-                        background: white;
-                        max-width: 21.2%;
-                        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                        .coupon .row {
-                            .btn-coupon {
-                                right: 1.1rem;
-                            }
-                        }
-                    }
-                }
-                .shopping-cart {
-                    color: #505763;
-                    padding-top: 1rem;
-                    padding-bottom: 2rem;
-                    transition: all .5s ease-in;
-                    .btn-block {
-                        padding: 0.45rem 12px;
-                        font-size: 18px;
-                        line-height: 1.35135;
-                        border-radius: 2px;
-                        font-weight: 600;
-                        @include large {
-                            font-size: 14px;
-                        }
-                    }
-                    .incentives {
-                        .incentives-header {
-                            margin-top: .5rem !important;
-                            margin-bottom: .5rem !important;
-                            font-weight: 700;
-                            font-size: 14px;
-                            color: $dark;
-                            @include large {
-                                font-size: 16px;
-                            }
-                        }
-                        .in-page-offset-anchor {
-                            position: absolute;
-                            top: -70px;
-                        }
-                        .incentives-list {
-                            margin-bottom: 0;
-                            margin-left: 0.5rem;
-                            color: #a6a6a6;
-                        }
-                        .incentives-item {
-                            font-size: 13px;
-                        }
-                        .incentives-item {
-                            display: flex;
-                            padding: 3px;
-                        }
-                        .incentives-icon-bold {
-                            font-weight: 600;
-                        }
-                        .incentives-icon {
-                            flex: 0 0 auto;
-                            min-width: 1px;
-                            margin-right: 6px;
-                            padding-top: 3px;
-                            width: 15px;
-                            &.i {
-                                vertical-align: 12%;
-                            }
-                        }
-                        .incentives-text {
-                            word-break: break-word;
-                        }
-                    }
-                }
-                .shopping-cart-module {
-                    -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-                    box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-                    .shopping-cart-module-inner {
-                        padding: 1rem;
-                        @include large {
-                            padding: 10px 20px;
-                            p {
-                                margin: 0 0 10.5px;
-                            }
-                        }
-                        .buy-for-team-title {
-                            font-size: 22px;
-                            font-weight: 700;
-                            margin-top: 0;
-                            padding-bottom: 4px;
-                            color: $dark;
-                        }
-                        .buy-for-team-text {
-                            color: #686f7a;
-                            margin-bottom: 4px;
-                            font-size: 12px;
-                        }
-                        .buy-for-team-text {
-                            p {
-                                margin: 0 0 10.5px;
-                                margin-bottom: 10.5px;
-                            }
-                        }
-                        .buy-for-team-link {
-                            font-weight: 700;
-                            padding-right: 20px;
-                            text-decoration: underline;
-                        }
-                        a {
-                            &.buy-for-team-link {
-                                color: $danger;
-                                background-color: transparent;
-                                font-weight: 400;
-                                &:after {
-                                    font-family: "font awesome 5 free";
-                                    content: "\f054";
-                                    display: inline-block;
-                                    padding-left: 12px;
-                                    vertical-align: middle;
-                                    font-weight: 900;
-                                    font-size: 11px;
-                                }
-                            }
-                            &:hover,
-                            &:focus {
-                                text-decoration: none;
-                                color: #454b55;
-                            }
-                        }
-                    }
-                }
-                .buy-box-element {
-                    margin-bottom: 5px;
-                    .buy-box-product {
-                        width: 80%;
-                        .badge-warning {
-                            padding: 0.4rem;
-                            border-radius: 0;
-                            background-color: $warning;
-                        }
-                        h3 {
-                            font-weight: 700;
-                            color: $dark;
-                        }
-                    }
-                    .price {
-                        color: $danger;
-                        font-weight: 600;
-                        margin: 0 0 20px;
-                    }
-                    .regular-price {
-                        color: $light_gray2;
-                        font-size: 20px;
-                        @include large {
-                            font-size: 14px;
-                        }
-                    }
-                    .discount-price {
-                        color: $dark;
-                        font-size: 20px;
-                        font-weight: 600;
-                        @include large {
-                            font-size: 14px;
-                        }
-                    }
-                    .countdown-discount {
-                        color: $dark;
-                        ul {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-                            li {
-                                display: inline-block;
-                                font-size: 0.9rem;
-                                list-style-type: none;
-                                padding: 0.5rem;
-                                text-transform: capitalize;
-                                @include large {
-                                    font-size: 0.7rem;
-                                    padding: 0.4rem;
-                                }
-                                span {
-                                    display: block;
-                                    font-size: 1.2rem;
-                                    font-weight: 700;
-                                }
-                            }
-                        }
-                    }
-                    &.buy-box-element-add-to-cart-button {
-                        margin-top: 12px;
-                        margin-bottom: 12px !important;
-                        .btn-danger {
-                            color: $light;
-                            background-color: $danger;
-                            border: 1px solid transparent;
-                            &:hover {
-                                color: $light;
-                                background-color: #992337;
-                                border-color: transparent;
-                            }
-                        }
-                    }
-                    &.buy-box-element-row {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        padding-bottom: 1.5rem;
-                        border-bottom: 1px solid #ddd;
-                    }
-                }
-                .extra-title {
-                    font-weight: 700;
-                    font-size: 13px;
-                    color: $dark;
-                    border-bottom: 2px solid #ddd;
-                    @include large {
-                        font-size: 12px;
-                        margin-top: 0.5rem;
-                    }
-                }
-                .coupon {
-                    .row {
-                        margin: 0 !important;
-                        @include small {
-                            margin-right: -15px !important;
-                            margin-left: -15px !important;
-                            margin: 0 !important;
-                        }
-                        .form-control {
-                            height: calc(1.5em + 1.2rem + 2px);
-                            position: relative;
-                            border: 1px solid $dark;
-                            border-radius: 0;
-                            font-size: 12px;
-                            @include large {
-                                height: calc(1.5em + .8rem + 2px);
-                                font-size: 0.8rem;
-                            }
-                        }
-                        .btn-coupon {
-                            position: absolute;
-                            right: 1.7rem;
-                            width: 6rem;
-                            border-radius: 0;
-                            padding: 0.55rem 12px;
-                            margin-top: 0.05rem;
-                            font-size: 14px;
-                            @include medium {
-                                width: 4.5rem;
-                                margin-top: 1px;
-                                right: 2.20rem;
-                            }
-                            @include large {
-                                width: 4.5rem;
-                                margin-top: 1px;
-                                right: 2.20rem;
-                                padding: 0.37rem 12px;
-                            }
-                        }
-                        .extras {
-                            .btn {
-                                text-align: left;
-                                i {
-                                    padding-right: 1rem;
-                                    font-size: 18px;
-                                    @include medium {
-                                        padding-left: 1rem;
-                                    }
-                                    @include large {
-                                        font-size: 15px;
-                                        padding-left: 0.1rem;
-                                        padding-right: 0.5rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .extras {
-                    .btn {
-                        font-weight: 600;
-                        padding: 6px 6px;
-                        font-size: 16px;
-                        @include small {
-                            font-size: 14px;
-                        }
-                        i {
-                            padding-left: 0.5rem;
-                        }
-                    }
-                }
-                .container-extras {
-                    display: grid;
-                    grid-template-columns: 20% 35% 40% 1%;
+        }
+        // General
+        .accordion-faq {
+            .card-body {
+                p {
                     @include medium {
-                        display: grid;
-                        grid-template-columns: 18% 32% 45% 5%;
+                        margin-left: 0 !important;
                     }
-                    .description {
-                        .title {
-                            color: $dark;
-                            font-size: 13px;
-                            font-weight: 500;
-                            @include large {
-                                font-size: 11px;
-                            }
-                        }
-                        .badge {
-                            border-radius: .75rem;
-                            padding: .15em .8em;
-                            font-size: 60%;
-                        }
+                }
+            }
+        }
+        // Access And Download
+        .icon-wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            .custom-icon {
+                cursor: pointer;
+                display: flex;
+                width: 75px;
+                height: 75px;
+                color: $light;
+                font-size: 3rem;
+                border-radius: 25vw;
+                overflow: hidden;
+                background-size: cover;
+                background-color: #ec5252;
+                border: 3px solid $light;
+                box-shadow: 0 1px 10px rgba(0, 0, 0, 0.86);
+                opacity: 0.8;
+                transition: background 0.5s, color 1s, opacity 0.5s, border 0.5s;
+                &:before {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:hover {
+                    opacity: 1;
+                    color: white;
+                    background-color: #454b55;
+                    border: 3px solid $light;
+                }
+            }
+        }
+        .t-medium {
+            font-size: 1.143em;
+            line-height: 1.251rem;
+        }
+        .block {
+            display: block;
+        }
+        .mbxs {
+            margin-bottom: 5px;
+        }
+        .block-text {
+            p {
+                text-align: center !important;
+                margin-left: 0 !important;
+            }
+        }
+        .header-static {
+            margin: 0 0 20px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            align-items: center;
+            @include medium {
+                padding-left: 0;
+                padding-right: 0;
+                align-items: flex-start;
+            }
+            h3 {
+                margin: 0 !important;
+            }
+            .btn {
+                font-size: 9px;
+                @include small {
+                    font-size: 12px;
+                }
+            }
+        }
+        .accordion-faq {
+            .card-products {
+                min-height: 4rem;
+            }
+            .benefits-text {
+                font-size: 1rem;
+            }
+            .benefits-item-columns {
+                width: 100%;
+            }
+            .benefits-items {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding-top: 0.5rem;
+                .benefits-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .benefits-text {
+                        font-size: 13px;
                     }
-                    .amounts {
-                        p {
-                            margin-top: inherit;
-                            margin-bottom: inherit;
-                            &.real-amount {
-                                font-size: 10px;
-                                padding-top: 0.25rem;
-                                text-decoration: line-through;
-                            }
-                            &.discount-amount {
-                                color: $dark;
-                                font-weight: 500;
-                                font-size: 13px;
-                                @include large {
-                                    font-size: 11px;
-                                }
-                            }
-                        }
-                    }
-                    .action {
-                        .btn {
-                            color: $danger;
-                            padding: 0;
-                            font-size: 12px;
-                        }
+                    .benefits-icon {
+                        align-self: flex-start;
+                        color: $light;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 2px #888;
+                        padding: 0 0.2rem;
+                        background-color: #28a745;
+                        margin-right: 15px;
+                        margin-top: 2px;
                     }
                 }
             }
         }
     }
-    // Temary
-    .temary-container {
-        padding-top: 1rem;
-        @include medium {
-            padding-top: 3rem;
+    // Shoping Cart
+    .cart-module {
+        @include large {
+            margin-top: -2rem;
         }
-        .accordion .card {
-            border-top: solid thin $light_gray;
-            border-left: solid 0 $light_gray;
-            border-right: solid 0 $light_gray;
-            border-bottom: solid 0 $light_gray;
-            background: $light;
-            .card-header {
-                background-color: $light;
+        .right-module {
+            border-radius: 4px;
+            color: #505763;
+            padding: 3px;
+            margin-top: 1rem;
+            @include large {
+                margin-top: 3rem;
             }
-        }
-        .curriculum-wrapper {
-            margin-top: .5rem !important;
-            position: relative;
-            font-size: 15px;
-            @include small {
-                margin-top: 0 !important;
-            }
-            p {
-                margin-bottom: .5rem;
-            }
-            a {
-                color: $dark;
-                background-color: transparent;
-                font-weight: 600;
-                text-decoration: none;
-                font-size: 12px;
-                @include medium {
-                    font-size: 14px;
-                }
-                &:hover,
-                &:focus {
-                    text-decoration: none;
-                    color: #454b55;
+            &:not(:last-child) {
+                .shopping-cart {
+                    -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+                    box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
                 }
             }
-            .mb-0 {
-                a {
-                    color: #555C63;
-                    line-height: 1.2;
-                    letter-spacing: -0.02rem;
-                    font-size: 1.2rem;
-                    padding: 16px 15px;
-                }
-            }
-            .curriculum-header-container {
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 10px;
-                .header-left {
-                    display: flex;
-                    width: 100%;
-                    @include medium {
-                        width: 45%;
+            .mi-fixed-top {
+                @include large {
+                    position: fixed;
+                    top: 74px;
+                    right: 3.7%;
+                    z-index: 999;
+                    background: white;
+                    max-width: 21.2%;
+                    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                    .coupon .row {
+                        .btn-coupon {
+                            right: 1.1rem;
+                        }
                     }
-                    .curriculum-header-title {
-                        font-size: 20px;
-                        font-weight: 600;
-                        margin: 0 0 -4px;
+                }
+            }
+            .shopping-cart {
+                color: #505763;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                transition: all .5s ease-in;
+                .btn-block {
+                    padding: 0.45rem 12px;
+                    font-size: 18px;
+                    line-height: 1.35135;
+                    border-radius: 2px;
+                    font-weight: 600;
+                    @include large {
+                        font-size: 14px;
+                    }
+                }
+                .incentives {
+                    .incentives-header {
+                        margin-top: .5rem !important;
+                        margin-bottom: .5rem !important;
+                        font-weight: 700;
+                        font-size: 14px;
                         color: $dark;
-                        @include medium {
-                            font-size: 30px;
+                        @include large {
+                            font-size: 16px;
                         }
                     }
-                    .curriculum-header-hours {
-                        font-size: 16px;
-                        margin: 0 0 10px;
-                        &:before {
-                            font-family: "font awesome 5 free";
-                            content: "\f252";
-                            display: inline-block;
-                            padding-right: 10px;
-                            vertical-align: middle;
-                            font-weight: 900;
-                            margin-top: -5px;
+                    .in-page-offset-anchor {
+                        position: absolute;
+                        top: -70px;
+                    }
+                    .incentives-list {
+                        margin-bottom: 0;
+                        margin-left: 0.5rem;
+                        color: #a6a6a6;
+                    }
+                    .incentives-item {
+                        font-size: 13px;
+                    }
+                    .incentives-item {
+                        display: flex;
+                        padding: 3px;
+                    }
+                    .incentives-icon-bold {
+                        font-weight: 600;
+                    }
+                    .incentives-icon {
+                        flex: 0 0 auto;
+                        min-width: 1px;
+                        margin-right: 6px;
+                        padding-top: 3px;
+                        width: 15px;
+                        &.i {
+                            vertical-align: 12%;
                         }
                     }
-                }
-                .header-right {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding-left: 20px;
-                    width: 40%;
-                    margin-top: .2rem;
-                    @include medium {
-                        width: 50%;
+                    .incentives-text {
+                        word-break: break-word;
                     }
                 }
             }
-            .freeclass {
-                border: 0;
-                position: relative;
-                padding: 10px 0px;
-                line-height: 20px;
-                color: $light;
-                font-weight: 600;
-                display: flex;
-                flex-wrap: wrap;
-                background-color: #000b6b;
-                @include medium {
-                    padding: 20px 15px;
-                    display: inline-flex;
-                }
-                .header-left {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin-left: auto;
-                    padding-left: 30px;
-                    width: 100%;
-                    @include medium {
-                        padding-left: 20px;
-                        width: 50%;
-                    }
-                    .message {
-                        font-size: 12px;
-                        color: $light;
-                        &:before {
-                            font-family: "font awesome 5 free";
-                            content: "\f058";
-                            display: inline-block;
-                            padding-right: 0.3rem;
-                            vertical-align: middle;
-                            font-weight: 900;
-                            font-size: 24px;
-                            color: #00d270;
-                            margin-left: -0.8rem;
+            .shopping-cart-module {
+                -webkit-box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+                box-shadow: 0 0 2px 2px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+                .shopping-cart-module-inner {
+                    padding: 1rem;
+                    @include large {
+                        padding: 10px 20px;
+                        p {
+                            margin: 0 0 10.5px;
                         }
-                        @include medium {
-                            font-size: 14px;
-                            &:before {
-                                padding-right: 1rem;
+                    }
+                    .buy-for-team-title {
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin-top: 0;
+                        padding-bottom: 4px;
+                        color: $dark;
+                    }
+                    .buy-for-team-text {
+                        color: #686f7a;
+                        margin-bottom: 4px;
+                        font-size: 12px;
+                    }
+                    .buy-for-team-text {
+                        p {
+                            margin: 0 0 10.5px;
+                            margin-bottom: 10.5px;
+                        }
+                    }
+                    .buy-for-team-link {
+                        font-weight: 700;
+                        padding-right: 20px;
+                        text-decoration: underline;
+                    }
+                    a {
+                        &.buy-for-team-link {
+                            color: $danger;
+                            background-color: transparent;
+                            font-weight: 400;
+                            &:after {
+                                font-family: "font awesome 5 free";
+                                content: "\f054";
+                                display: inline-block;
+                                padding-left: 12px;
+                                vertical-align: middle;
+                                font-weight: 900;
+                                font-size: 11px;
+                            }
+                        }
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            color: #454b55;
+                        }
+                    }
+                }
+            }
+            .buy-box-element {
+                margin-bottom: 5px;
+                .buy-box-product {
+                    width: 80%;
+                    .badge-warning {
+                        padding: 0.4rem;
+                        border-radius: 0;
+                        background-color: $warning;
+                    }
+                    h3 {
+                        font-weight: 700;
+                        color: $dark;
+                    }
+                }
+                .price {
+                    color: $danger;
+                    font-weight: 600;
+                    margin: 0 0 20px;
+                }
+                .regular-price {
+                    color: $light_gray2;
+                    font-size: 20px;
+                    @include large {
+                        font-size: 14px;
+                    }
+                }
+                .discount-price {
+                    color: $dark;
+                    font-size: 20px;
+                    font-weight: 600;
+                    @include large {
+                        font-size: 14px;
+                    }
+                }
+                .countdown-discount {
+                    color: $dark;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        li {
+                            display: inline-block;
+                            font-size: 0.9rem;
+                            list-style-type: none;
+                            padding: 0.5rem;
+                            text-transform: capitalize;
+                            @include large {
+                                font-size: 0.7rem;
+                                padding: 0.4rem;
+                            }
+                            span {
+                                display: block;
+                                font-size: 1.2rem;
+                                font-weight: 700;
                             }
                         }
                     }
                 }
-                .header-right {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding-left: 20px;
-                    width: 50%;
-                    margin-top: .2rem;
-                    @include medium {
-                        padding-right: 30px;
-                        padding-left: 0;
-                        margin-left: auto;
-                        justify-content: flex-end;
-                        margin-top: 0;
-                    }
-                    .show-me {
-                        font-size: 12px;
-                        color: $danger;
-                        background-color: transparent;
-                        font-weight: 400;
-                        text-decoration: underline;
-                        @include medium {
-                            font-size: 14px;
-                        }
+                &.buy-box-element-add-to-cart-button {
+                    margin-top: 12px;
+                    margin-bottom: 12px !important;
+                    .btn-danger {
+                        color: $light;
+                        background-color: $danger;
+                        border: 1px solid transparent;
                         &:hover {
-                            background-color: transparent;
+                            color: $light;
+                            background-color: #992337;
+                            border-color: transparent;
                         }
-                        &:after {
-                            font-family: "font awesome 5 free";
-                            content: "\f054";
-                            display: inline-block;
-                            padding-left: 12px;
-                            vertical-align: middle;
-                            font-weight: 900;
+                    }
+                }
+                &.buy-box-element-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding-bottom: 1.5rem;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+            .extra-title {
+                font-weight: 700;
+                font-size: 13px;
+                color: $dark;
+                border-bottom: 2px solid #ddd;
+                @include large {
+                    font-size: 12px;
+                    margin-top: 0.5rem;
+                }
+            }
+            .coupon {
+                .row {
+                    margin: 0 !important;
+                    @include small {
+                        margin-right: -15px !important;
+                        margin-left: -15px !important;
+                        margin: 0 !important;
+                    }
+                    .form-control {
+                        height: calc(1.5em + 1.2rem + 2px);
+                        position: relative;
+                        border: 1px solid $dark;
+                        border-radius: 0;
+                        font-size: 12px;
+                        @include large {
+                            height: calc(1.5em + .8rem + 2px);
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .btn-coupon {
+                        position: absolute;
+                        right: 1.7rem;
+                        width: 6rem;
+                        border-radius: 0;
+                        padding: 0.55rem 12px;
+                        margin-top: 0.05rem;
+                        font-size: 14px;
+                        @include medium {
+                            width: 4.5rem;
+                            margin-top: 1px;
+                            right: 2.20rem;
+                        }
+                        @include large {
+                            width: 4.5rem;
+                            margin-top: 1px;
+                            right: 2.20rem;
+                            padding: 0.37rem 12px;
+                        }
+                    }
+                    .extras {
+                        .btn {
+                            text-align: left;
+                            i {
+                                padding-right: 1rem;
+                                font-size: 18px;
+                                @include medium {
+                                    padding-left: 1rem;
+                                }
+                                @include large {
+                                    font-size: 15px;
+                                    padding-left: 0.1rem;
+                                    padding-right: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .extras {
+                .btn {
+                    font-weight: 600;
+                    padding: 6px 6px;
+                    font-size: 16px;
+                    @include small {
+                        font-size: 14px;
+                    }
+                    i {
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
+            .container-extras {
+                display: grid;
+                grid-template-columns: 20% 35% 40% 1%;
+                @include medium {
+                    display: grid;
+                    grid-template-columns: 18% 32% 45% 5%;
+                }
+                .description {
+                    .title {
+                        color: $dark;
+                        font-size: 13px;
+                        font-weight: 500;
+                        @include large {
                             font-size: 11px;
                         }
                     }
+                    .badge {
+                        border-radius: .75rem;
+                        padding: .15em .8em;
+                        font-size: 60%;
+                    }
+                }
+                .amounts {
+                    p {
+                        margin-top: inherit;
+                        margin-bottom: inherit;
+                        &.real-amount {
+                            font-size: 10px;
+                            padding-top: 0.25rem;
+                            text-decoration: line-through;
+                        }
+                        &.discount-amount {
+                            color: $dark;
+                            font-weight: 500;
+                            font-size: 13px;
+                            @include large {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                .action {
+                    .btn {
+                        color: $danger;
+                        padding: 0;
+                        font-size: 12px;
+                    }
                 }
             }
-            .accordion {
-                .card-header {
-                    padding: 0;
-                    .section-container {
-                        display: flex;
-                        align-items: center;
-                        border: solid 2px #d4d4d4;
-                        border-bottom: none;
-                        cursor: pointer;
-                        height: auto;
-                        padding: 14px 15px;
-                        &.collapsed {
-                            border: solid 2px #d4d4d4;
-                        }
-                        .section-header-left {
-                            display: flex;
-                            flex-direction: column;
-                            flex-basis: 75%;
-                            .section-title-wrapper {
-                                flex-direction: row;
-                                display: flex;
-                                flex-flow: column wrap;
-                                color: $dark;
-                                flex: 1 1 auto;
-                                font-size: 18px;
-                                font-weight: 600;
-                                .section-title-text {
-                                    font-size: 12px;
-                                    padding-left: 14px;
-                                    padding-right: 10px;
-                                    font-weight: 600;
-                                    @include small {
-                                        font-size: 15px;
-                                    }
-                                }
-                                .section-class-count {
-                                    font-size: 12px;
-                                    padding-left: 14px;
-                                    font-weight: 400;
-                                    color: #b4b4b4;
-                                    @include medium {
-                                        font-size: 15px;
-                                    }
-                                }
-                            }
-                        }
-                        .section-header-right {
-                            display: flex;
-                            justify-content: flex-end;
-                            color: #505763;
-                            -ms-flex-preferred-size: 22%;
-                            flex-basis: 22%;
-                            .section-title-toggle {
-                                display: inline-block;
-                                width: 30px;
-                                height: auto !important;
-                                align-self: flex-end;
-                                color: $light;
-                                font-size: 18px;
-                                border-radius: 50%;
-                                box-shadow: 0px 0px 5px #888;
-                                padding: 0.1rem 0.4rem 0.1rem 0.4rem;
-                                background-color: $danger;
-                                font-weight: 600;
-                                line-height: 25px;
-                                text-align: center;
-                            }
+        }
+    }
+}
+
+// Temary
+.temary-container {
+    padding-top: 1rem;
+    @include medium {
+        padding-top: 3rem;
+    }
+    .accordion .card {
+        border-top: solid thin $light_gray;
+        border-left: solid 0 $light_gray;
+        border-right: solid 0 $light_gray;
+        border-bottom: solid 0 $light_gray;
+        background: $light;
+        .card-header {
+            background-color: $light;
+        }
+    }
+    .curriculum-wrapper {
+        margin-top: .5rem !important;
+        position: relative;
+        font-size: 15px;
+        @include small {
+            margin-top: 0 !important;
+        }
+        p {
+            margin-bottom: .5rem;
+        }
+        a {
+            color: $dark;
+            background-color: transparent;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 12px;
+            @include medium {
+                font-size: 14px;
+            }
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: #454b55;
+            }
+        }
+        .mb-0 {
+            a {
+                color: #555C63;
+                line-height: 1.2;
+                letter-spacing: -0.02rem;
+                font-size: 1.2rem;
+                padding: 16px 15px;
+            }
+        }
+        .curriculum-header-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            .header-left {
+                display: flex;
+                width: 100%;
+                @include medium {
+                    width: 45%;
+                }
+                .curriculum-header-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 0 0 -4px;
+                    color: $dark;
+                    @include medium {
+                        font-size: 30px;
+                    }
+                }
+                .curriculum-header-hours {
+                    font-size: 16px;
+                    margin: 0 0 10px;
+                    &:before {
+                        font-family: "font awesome 5 free";
+                        content: "\f252";
+                        display: inline-block;
+                        padding-right: 10px;
+                        vertical-align: middle;
+                        font-weight: 900;
+                        margin-top: -5px;
+                    }
+                }
+            }
+            .header-right {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 20px;
+                width: 40%;
+                margin-top: .2rem;
+                @include medium {
+                    width: 50%;
+                }
+            }
+        }
+        .freeclass {
+            border: 0;
+            position: relative;
+            padding: 10px 0px;
+            line-height: 20px;
+            color: $light;
+            font-weight: 600;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #000b6b;
+            @include medium {
+                padding: 20px 15px;
+                display: inline-flex;
+            }
+            .header-left {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-left: auto;
+                padding-left: 30px;
+                width: 100%;
+                @include medium {
+                    padding-left: 20px;
+                    width: 50%;
+                }
+                .message {
+                    font-size: 12px;
+                    color: $light;
+                    &:before {
+                        font-family: "font awesome 5 free";
+                        content: "\f058";
+                        display: inline-block;
+                        padding-right: 0.3rem;
+                        vertical-align: middle;
+                        font-weight: 900;
+                        font-size: 24px;
+                        color: #00d270;
+                        margin-left: -0.8rem;
+                    }
+                    @include medium {
+                        font-size: 14px;
+                        &:before {
+                            padding-right: 1rem;
                         }
                     }
                 }
-                .collapse.show {
+            }
+            .header-right {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 20px;
+                width: 50%;
+                margin-top: .2rem;
+                @include medium {
+                    padding-right: 30px;
+                    padding-left: 0;
+                    margin-left: auto;
+                    justify-content: flex-end;
+                    margin-top: 0;
+                }
+                .show-me {
+                    font-size: 12px;
+                    color: $danger;
+                    background-color: transparent;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    @include medium {
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        background-color: transparent;
+                    }
+                    &:after {
+                        font-family: "font awesome 5 free";
+                        content: "\f054";
+                        display: inline-block;
+                        padding-left: 12px;
+                        vertical-align: middle;
+                        font-weight: 900;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .accordion {
+            .card-header {
+                padding: 0;
+                .section-container {
+                    display: flex;
+                    align-items: center;
                     border: solid 2px #d4d4d4;
-                    border-top: 0;
-                    padding-bottom: 2rem;
-                }
-                .card-body {
-                    min-height: 2rem;
-                    padding: 0.8rem;
-                    p {
-                        color: $dark;
-                        font-size: 12px;
-                        transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
-                        width: 100%;
-                        @include medium {
-                            width: 70%;
-                            text-align: justify;
-                        }
+                    border-bottom: none;
+                    cursor: pointer;
+                    height: auto;
+                    padding: 14px 15px;
+                    &.collapsed {
+                        border: solid 2px #d4d4d4;
                     }
-                    .lecture-container {
+                    .section-header-left {
                         display: flex;
-                        background-color: $light;
-                        color: #686f7a;
-                        letter-spacing: .3px;
-                        line-height: 1.33;
-                        &.lecture-container-preview {
-                            .content-summary,
-                            .title,
-                            .preview-text {
-                                color: $danger;
+                        flex-direction: column;
+                        flex-basis: 75%;
+                        .section-title-wrapper {
+                            flex-direction: row;
+                            display: flex;
+                            flex-flow: column wrap;
+                            color: $dark;
+                            flex: 1 1 auto;
+                            font-size: 18px;
+                            font-weight: 600;
+                            .section-title-text {
+                                font-size: 12px;
+                                padding-left: 14px;
+                                padding-right: 10px;
+                                font-weight: 600;
+                                @include small {
+                                    font-size: 15px;
+                                }
+                            }
+                            .section-class-count {
+                                font-size: 12px;
+                                padding-left: 14px;
+                                font-weight: 400;
+                                color: #b4b4b4;
+                                @include medium {
+                                    font-size: 15px;
+                                }
                             }
                         }
-                        .left-content {
+                    }
+                    .section-header-right {
+                        display: flex;
+                        justify-content: flex-end;
+                        color: #505763;
+                        -ms-flex-preferred-size: 22%;
+                        flex-basis: 22%;
+                        .section-title-toggle {
+                            display: inline-block;
+                            width: 30px;
+                            height: auto !important;
+                            align-self: flex-end;
+                            color: $light;
+                            font-size: 18px;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 5px #888;
+                            padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+                            background-color: $danger;
+                            font-weight: 600;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .collapse.show {
+                border: solid 2px #d4d4d4;
+                border-top: 0;
+                padding-bottom: 2rem;
+            }
+            .card-body {
+                min-height: 2rem;
+                padding: 0.8rem;
+                p {
+                    color: $dark;
+                    font-size: 12px;
+                    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
+                    width: 100%;
+                    @include medium {
+                        width: 70%;
+                        text-align: justify;
+                    }
+                }
+                .lecture-container {
+                    display: flex;
+                    background-color: $light;
+                    color: #686f7a;
+                    letter-spacing: .3px;
+                    line-height: 1.33;
+                    &.lecture-container-preview {
+                        .content-summary,
+                        .title,
+                        .preview-text {
+                            color: $danger;
+                        }
+                    }
+                    .left-content {
+                        display: flex;
+                        align-items: flex-start;
+                        width: 70%;
+                        .top {
+                            flex-direction: column-reverse;
                             display: flex;
-                            align-items: flex-start;
-                            width: 70%;
-                            .top {
-                                flex-direction: column-reverse;
+                            width: 100%;
+                            .title {
+                                color: #007791;
+                                font-size: 14px;
+                                margin-top: -2px;
+                                align-content: center;
                                 display: flex;
-                                width: 100%;
-                                .title {
-                                    color: #007791;
-                                    font-size: 14px;
-                                    margin-top: -2px;
-                                    align-content: center;
-                                    display: flex;
+                                cursor: pointer;
+                                &:before {
+                                    font-family: "font awesome 5 free";
+                                    content: "\f144";
+                                    display: inline-block;
+                                    padding-right: 10px;
+                                    vertical-align: middle;
+                                    font-weight: 900;
+                                    font-size: 16px;
+                                    color: #000b6b;
+                                }
+                                .down-arrow {
+                                    color: #505763;
                                     cursor: pointer;
-                                    &:before {
-                                        font-family: "font awesome 5 free";
-                                        content: "\f144";
-                                        display: inline-block;
-                                        padding-right: 10px;
-                                        vertical-align: middle;
-                                        font-weight: 900;
-                                        font-size: 16px;
-                                        color: #000b6b;
-                                    }
-                                    .down-arrow {
-                                        color: #505763;
-                                        cursor: pointer;
-                                        display: inline-block;
-                                        margin-left: 10px;
-                                        &.collapsed {
-                                            &:after {
-                                                font-family: "font awesome 5 free";
-                                                content: "\f078";
-                                                display: inline-block;
-                                                vertical-align: middle;
-                                                font-weight: 900;
-                                                font-size: 11px;
-                                            }
-                                        }
+                                    display: inline-block;
+                                    margin-left: 10px;
+                                    &.collapsed {
                                         &:after {
                                             font-family: "font awesome 5 free";
-                                            content: "\f077";
+                                            content: "\f078";
                                             display: inline-block;
                                             vertical-align: middle;
                                             font-weight: 900;
                                             font-size: 11px;
                                         }
                                     }
-                                }
-                            }
-                        }
-                        .details {
-                            display: flex;
-                            justify-content: flex-end;
-                            flex-wrap: wrap;
-                            margin-left: auto;
-                            width: 30%;
-                            font-size: 14px;
-                            .preview-text {
-                                color: $danger;
-                                text-decoration: underline;
-                            }
-                            .content-summary {
-                                color: #a7a7a7 !important;
-                                flex-direction: row-reverse;
-                                display: flex;
-                                text-align: right;
-                                white-space: nowrap;
-                                width: 40%;
-                            }
-                        }
-                    }
-                    .description-collapse {
-                        &.show {
-                            border: none !important;
-                            padding-bottom: 0 !important;
-                        }
-                        .content {
-                            display: flex;
-                            .img-description {
-                                flex: 0 0 4rem;
-                                margin-left: 1.5rem;
-                                margin-right: 0.5rem;
-                                align-self: flex-start;
-                                margin-top: 1rem;
-                                font-size: 12px;
-                                max-width: 50px;
-                                @include medium {
-                                    flex: 0 1 10rem;
-                                    align-self: center;
-                                    margin-top: 0;
-                                    margin-right: 1rem;
-                                    max-width: 75px;
-                                }
-                                img {
-                                    min-width: 50px;
-                                    @include medium {
-                                        min-width: 75px;
+                                    &:after {
+                                        font-family: "font awesome 5 free";
+                                        content: "\f077";
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        font-weight: 900;
+                                        font-size: 11px;
                                     }
                                 }
                             }
                         }
                     }
-                }
-            }
-        }
-        .card-img,
-        .card-img-bottom,
-        .card-img-top {
-            width: 80%;
-        }
-        [data-toggle="collapse"] .section-title-toggle::before {
-            content: "-";
-        }
-        [data-toggle="collapse"].collapsed .section-title-toggle::before {
-            content: "+";
-        }
-    }
-    /* Gallery */
-    .gallery-container {
-        padding-top: 3rem;
-        .viewed {
-            background: none;
-            border-radius: 0;
-            box-shadow: unset;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            .viewed_title_container {
-                border-bottom: solid 1px transparent;
-                position: relative;
-                .viewed_title {
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin: 0 0 -4px;
-                    color: $dark;
-                    margin-bottom: 22px;
-                    @include medium {
-                        font-size: 30px;
-                        margin-bottom: 14px;
-                    }
-                }
-                .viewed_nav_container {
-                    position: absolute;
-                    right: 10px;
-                    bottom: -4px;
-                    @include medium {
-                        right: -5px;
-                        bottom: 14px;
-                    }
-                    .viewed_nav {
-                        display: inline-block;
-                        cursor: pointer;
-                        &:hover i {
-                            color: #606264;
-                        }
-                        i {
+                    .details {
+                        display: flex;
+                        justify-content: flex-end;
+                        flex-wrap: wrap;
+                        margin-left: auto;
+                        width: 30%;
+                        font-size: 14px;
+                        .preview-text {
                             color: $danger;
-                            font-size: 18px;
-                            padding: 5px;
-                            transition: all 200ms ease;
-                            background: unset;
-                            width: unset;
-                            height: unset;
-                            border-radius: unset;
+                            text-decoration: underline;
                         }
-                        &.viewed_prev {
-                            margin-right: 10px;
+                        .content-summary {
+                            color: #a7a7a7 !important;
+                            flex-direction: row-reverse;
+                            display: flex;
+                            text-align: right;
+                            white-space: nowrap;
+                            width: 40%;
                         }
                     }
                 }
-            }
-            .viewed_item {
-                width: 100%;
-                background: $light;
-                border-radius: 8px;
-                padding-top: 25px;
-                padding-bottom: 25px;
-                padding-left: 15px;
-                padding-right: 15px;
-                .viewed_image {
-                    width: 250px;
-                    img {
-                        display: block;
-                        max-width: 100%;
+                .description-collapse {
+                    &.show {
+                        border: none !important;
+                        padding-bottom: 0 !important;
+                    }
+                    .content {
+                        display: flex;
+                        .img-description {
+                            flex: 0 0 4rem;
+                            margin-left: 1.5rem;
+                            margin-right: 0.5rem;
+                            align-self: flex-start;
+                            margin-top: 1rem;
+                            font-size: 12px;
+                            max-width: 50px;
+                            @include medium {
+                                flex: 0 1 10rem;
+                                align-self: center;
+                                margin-top: 0;
+                                margin-right: 1rem;
+                                max-width: 75px;
+                            }
+                            img {
+                                min-width: 50px;
+                                @include medium {
+                                    min-width: 75px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    /* Content Extra */
-    .content-extra-container {
-        h2 {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 -4px;
-            color: $dark;
-            margin-bottom: 2rem !important;
-            @include medium {
-                font-size: 30px;
-            }
-        }
-        p {
-            width: 70%;
-            @include medium {
-                width: 100%;
-            }
-        }
-        img {
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-        }
-        a {
-            padding: 10px 30px !important;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 0;
-            font-weight: 600;
-            align-items: center;
-            .icon {
-                font-size: 1.5rem;
-            }
-        }
+    .card-img,
+    .card-img-bottom,
+    .card-img-top {
+        width: 80%;
     }
-    /* Comments */
-    .comments-container {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
-        @include medium {
-            padding-top: 3rem !important;
-            padding-bottom: 3rem !important;
-        }
-        h2 {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 -4px;
-            color: $dark;
-            @include medium {
-                font-size: 30px;
+    [data-toggle="collapse"] .section-title-toggle::before {
+        content: "-";
+    }
+    [data-toggle="collapse"].collapsed .section-title-toggle::before {
+        content: "+";
+    }
+}
+
+
+/* Gallery */
+
+.gallery-container {
+    padding-top: 3rem;
+    .viewed {
+        background: none;
+        border-radius: 0;
+        box-shadow: unset;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .viewed_title_container {
+            border-bottom: solid 1px transparent;
+            position: relative;
+            .viewed_title {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0 0 -4px;
+                color: $dark;
+                margin-bottom: 22px;
+                @include medium {
+                    font-size: 30px;
+                    margin-bottom: 14px;
+                }
+            }
+            .viewed_nav_container {
+                position: absolute;
+                right: 10px;
+                bottom: -4px;
+                @include medium {
+                    right: -5px;
+                    bottom: 14px;
+                }
+                .viewed_nav {
+                    display: inline-block;
+                    cursor: pointer;
+                    &:hover i {
+                        color: #606264;
+                    }
+                    i {
+                        color: $danger;
+                        font-size: 18px;
+                        padding: 5px;
+                        transition: all 200ms ease;
+                        background: unset;
+                        width: unset;
+                        height: unset;
+                        border-radius: unset;
+                    }
+                    &.viewed_prev {
+                        margin-right: 10px;
+                    }
+                }
             }
         }
-        .comments {
-            display: none;
-            border-bottom: 1px solid #dddddd;
-            .media {
+        .viewed_item {
+            width: 100%;
+            background: $light;
+            border-radius: 8px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .viewed_image {
+                width: 250px;
                 img {
-                    width: 50px;
-                    @include medium {
-                        width: 75px;
-                    }
+                    display: block;
+                    max-width: 100%;
                 }
-                .media-body {
+            }
+        }
+    }
+}
+
+
+/* Content Extra */
+
+.content-extra-container {
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 -4px;
+        color: $dark;
+        margin-bottom: 2rem !important;
+        @include medium {
+            font-size: 30px;
+        }
+    }
+    p {
+        width: 70%;
+        @include medium {
+            width: 100%;
+        }
+    }
+    img {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    a {
+        padding: 10px 30px !important;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0;
+        font-weight: 600;
+        align-items: center;
+        .icon {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+/* Comments */
+
+.comments-container {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    @include medium {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 -4px;
+        color: $dark;
+        @include medium {
+            font-size: 30px;
+        }
+    }
+    .comments {
+        display: none;
+        border-bottom: 1px solid #dddddd;
+        .media {
+            img {
+                width: 50px;
+                @include medium {
+                    width: 75px;
+                }
+            }
+            .media-body {
+                color: $dark;
+                text-align: justify;
+                font-weight: 400;
+                line-height: 1.7em;
+                font-size: 0.8rem;
+                @include medium {
+                    font-size: 1rem;
+                }
+                p {
                     color: $dark;
-                    text-align: justify;
-                    font-weight: 400;
-                    line-height: 1.7em;
                     font-size: 0.8rem;
                     @include medium {
                         font-size: 1rem;
                     }
-                    p {
-                        color: $dark;
-                        font-size: 0.8rem;
-                        @include medium {
-                            font-size: 1rem;
-                        }
-                    }
-                    .comment {
-                        margin-left: -2.5rem;
-                        @include medium {
-                            margin-left: 0;
-                        }
+                }
+                .comment {
+                    margin-left: -2.5rem;
+                    @include medium {
+                        margin-left: 0;
                     }
                 }
-            }
-        }
-        .commets-buttons {
-            .btn {
-                font-size: 1rem;
-                border-radius: 0rem;
-                line-height: 1.5 !important;
-                &.btn-quaternary {
-                    padding: 8px 12px;
-                }
-                &.btn-quaternary {
-                    color: $danger;
-                }
-                &.btn-quarenty {
-                    font-weight: 600;
-                    i {
-                        @include medium {
-                            font-size: 1.4rem;
-                        }
-                        @include large {
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
-            }
-        }
-        .comment-box {
-            background-color: #f6f6f6;
-            label {
-                font-weight: 600;
-            }
-            .form-control {
-                border-radius: 0 !important;
-                border: 1px solid transparent;
-            }
-        }
-        .g-alert-meet {
-            @include extra-large {
-                grid-template-columns: 4% 96%;
-            }
-            .icon {
-                margin-top: -.3rem;
-                .mdi {
-                    font-size: 24px;
-                    font-weight: 600;
-                }
-            }
-            .text {
-                font-size: 1rem;
-                color: $dark;
             }
         }
     }
-    /* Modal */
-    .modal-content {
-        border-radius: 0;
-        .modal-header {
-            border-bottom: 1px solid transparent;
-            padding-bottom: 0;
-            .modal-title {
-                margin: 1rem;
-                margin-top: 1rem;
-                font-size: 1.1rem;
-                font-weight: 600;
-                margin-top: 1rem;
-                @include medium {
-                    margin: 2rem;
-                    margin-top: 2rem;
-                    font-size: 1.5rem;
-                }
-                &:after {
-                    content: '';
-                    width: 3.8rem;
-                    height: 5px;
-                    background: $danger;
-                    position: absolute;
-                    top: 4rem;
-                    left: 2rem;
-                    @include medium {
-                        width: 4.8rem;
-                        top: 6rem;
-                        left: 3rem;
-                    }
-                }
+    .commets-buttons {
+        .btn {
+            font-size: 1rem;
+            border-radius: 0rem;
+            line-height: 1.5 !important;
+            &.btn-quaternary {
+                padding: 8px 12px;
             }
-            .close {
-                margin: 0;
-                span {
-                    color: $danger;
+            &.btn-quaternary {
+                color: $danger;
+            }
+            &.btn-quarenty {
+                font-weight: 600;
+                i {
+                    @include medium {
+                        font-size: 1.4rem;
+                    }
+                    @include large {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }
-        .modal-body {
-            .col-discount {
-                margin-bottom: 1rem;
+    }
+    .comment-box {
+        background-color: #f6f6f6;
+        label {
+            font-weight: 600;
+        }
+        .form-control {
+            border-radius: 0 !important;
+            border: 1px solid transparent;
+        }
+    }
+    .g-alert-meet {
+        @include extra-large {
+            grid-template-columns: 4% 96%;
+        }
+        .icon {
+            margin-top: -.3rem;
+            .mdi {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+        .text {
+            font-size: 1rem;
+            color: $dark;
+        }
+    }
+}
+
+
+/* Modal */
+
+.modal-content {
+    border-radius: 0;
+    .modal-header {
+        border-bottom: 1px solid transparent;
+        padding-bottom: 0;
+        .modal-title {
+            margin: 1rem;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            @include medium {
+                margin: 2rem;
+                margin-top: 2rem;
+                font-size: 1.5rem;
+            }
+            &:after {
+                content: '';
+                width: 3.8rem;
+                height: 5px;
+                background: $danger;
+                position: absolute;
+                top: 4rem;
+                left: 2rem;
                 @include medium {
-                    margin-left: 2rem;
-                }
-                h2 {
-                    font-size: 0.8rem;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                }
-                p {
-                    font-size: 14px;
+                    width: 4.8rem;
+                    top: 6rem;
+                    left: 3rem;
                 }
             }
-            .alert-content {
-                display: flex;
+        }
+        .close {
+            margin: 0;
+            span {
+                color: $danger;
+            }
+        }
+    }
+    .modal-body {
+        .col-discount {
+            margin-bottom: 1rem;
+            @include medium {
+                margin-left: 2rem;
+            }
+            h2 {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .alert-content {
+            display: flex;
+            padding-bottom: 2rem;
+            @include medium {
                 padding-bottom: 2rem;
+                margin-left: 0.5rem;
+            }
+            .info {
+                font-size: 14px;
+                font-weight: 600;
+                flex: 0 0 100%;
+                padding-left: 10px;
                 @include medium {
-                    padding-bottom: 2rem;
-                    margin-left: 0.5rem;
+                    flex: 0 0 calc(100% - 4rem);
+                    padding-left: 20px;
+                }
+            }
+            .icon {
+                font-size: 18px;
+                color: $warning;
+                margin-left: -1rem;
+                padding-right: 1rem;
+                @include medium {
+                    margin-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        .col-extras {
+            border: 2px solid #bdbdbd;
+            border-radius: .25rem;
+            padding: 2rem 1rem;
+            display: flex;
+            margin-bottom: 2rem;
+            @include medium {
+                flex: 0 0 calc(50% - 3rem);
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+                margin-bottom: 3rem;
+                padding: 3rem 2rem;
+            }
+            .extra-img {
+                flex: 0 1 12rem;
+                margin-right: 0.5rem;
+                @include medium {
+                    margin-right: 0;
+                }
+            }
+        }
+        .extra-content {
+            .header {
+                display: flex;
+                .title {
+                    font-size: 1.2rem;
+                    margin-top: -0.5rem;
+                    line-height: 1.15;
+                    font-weight: 600;
+                }
+                .discount {
+                    margin-top: -0.6rem;
+                    .badge {
+                        padding: 0.25rem 0.4rem;
+                        margin-left: 0.5rem;
+                        border-radius: 0;
+                        background-color: $danger;
+                    }
+                }
+            }
+            .type {
+                font-size: 1.2rem;
+                margin-top: -0.4rem;
+            }
+            .price {
+                display: flex;
+                flex-wrap: wrap;
+                .ofert {
+                    font-size: 14px;
+                    color: $danger;
+                    font-weight: 600;
+                }
+                .regular {
+                    font-size: 10px;
+                    margin-left: 0.4rem;
+                    margin-top: 0.25rem;
+                    text-decoration: line-through;
+                    color: #ababab;
+                }
+            }
+            .description {
+                .text {
+                    font-size: 14px;
+                    text-align: justify;
+                    line-height: 1.35;
+                    margin-bottom: 0.2rem;
                 }
                 .info {
-                    font-size: 14px;
-                    font-weight: 600;
-                    flex: 0 0 100%;
-                    padding-left: 10px;
-                    @include medium {
-                        flex: 0 0 calc(100% - 4rem);
-                        padding-left: 20px;
-                    }
-                }
-                .icon {
-                    font-size: 18px;
-                    color: $warning;
-                    margin-left: -1rem;
-                    padding-right: 1rem;
-                    @include medium {
-                        margin-left: 0;
-                        padding-right: 0;
+                    a {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                        color: #eb8e97;
+                        margin-top: 0.2rem;
                     }
                 }
             }
-            .col-extras {
-                border: 2px solid #bdbdbd;
-                border-radius: .25rem;
-                padding: 2rem 1rem;
-                display: flex;
-                margin-bottom: 2rem;
+            .add {
+                padding-top: 0.5rem;
+                width: 100%;
                 @include medium {
-                    flex: 0 0 calc(50% - 3rem);
-                    margin-right: 1.5rem;
-                    margin-left: 1.5rem;
-                    margin-bottom: 3rem;
-                    padding: 3rem 2rem;
-                }
-                .extra-img {
-                    flex: 0 1 12rem;
-                    margin-right: 0.5rem;
-                    @include medium {
-                        margin-right: 0;
-                    }
-                }
-            }
-            .extra-content {
-                .header {
-                    display: flex;
-                    .title {
-                        font-size: 1.2rem;
-                        margin-top: -0.5rem;
-                        line-height: 1.15;
-                        font-weight: 600;
-                    }
-                    .discount {
-                        margin-top: -0.6rem;
-                        .badge {
-                            padding: 0.25rem 0.4rem;
-                            margin-left: 0.5rem;
-                            border-radius: 0;
-                            background-color: $danger;
-                        }
-                    }
-                }
-                .type {
-                    font-size: 1.2rem;
-                    margin-top: -0.4rem;
-                }
-                .price {
-                    display: flex;
-                    flex-wrap: wrap;
-                    .ofert {
-                        font-size: 14px;
-                        color: $danger;
-                        font-weight: 600;
-                    }
-                    .regular {
-                        font-size: 10px;
-                        margin-left: 0.4rem;
-                        margin-top: 0.25rem;
-                        text-decoration: line-through;
-                        color: #ababab;
-                    }
-                }
-                .description {
-                    .text {
-                        font-size: 14px;
-                        text-align: justify;
-                        line-height: 1.35;
-                        margin-bottom: 0.2rem;
-                    }
-                    .info {
-                        a {
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            text-decoration: underline;
-                            color: #eb8e97;
-                            margin-top: 0.2rem;
-                        }
-                    }
-                }
-                .add {
-                    padding-top: 0.5rem;
-                    width: 100%;
-                    @include medium {
-                        width: 60%;
-                    }
+                    width: 60%;
                 }
             }
         }
@@ -7875,9 +7876,8 @@ footer {
 }
 
 // Fin GANAR DINERO PAGE
-
 // HEADER BANNER 
-.header-banner{
+.header-banner {
     background: url(../img/header-Empresas.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7889,25 +7889,20 @@ footer {
     align-items: center;
     flex-direction: column;
     position: relative;
-
-    .head-text{
+    .head-text {
         color: $light;
         z-index: 2;
-
-        .title-mega{
+        .title-mega {
             font-size: 2.5rem;
         }
-
-        p{
+        p {
             font-size: 1.3rem;
-            span{
+            span {
                 color: #FCC11C;
             }
         }
-
     }
-
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -7921,7 +7916,7 @@ footer {
 }
 
 // CURSO EMPRESAS INICIO
-.curso-empresa-section{
+.curso-empresa-section {
     //colores para spam
     .color-one {
         background: #FEF1CD;
@@ -7966,17 +7961,15 @@ footer {
             >div {
                 position: relative;
                 padding-left: 20px !important;
-                
-                strong{
+                strong {
                     font-weight: 900;
                 }
                 p {
                     text-align: justify;
                     font-size: 1rem;
-                    
                     @include large {
                         padding-right: 25%;
-                    }   
+                    }
                 }
                 &::before {
                     content: '';
@@ -8208,10 +8201,9 @@ footer {
         .card-text {
             color: $dark-gray;
         }
-
-        .card-body  {
+        .card-body {
             position: relative;
-            span{
+            span {
                 background: $danger;
                 display: inline-block;
                 position: absolute;
@@ -8242,7 +8234,6 @@ footer {
                 height: 20px;
                 border-left: 4px solid $danger;
                 border-bottom: 4px solid $danger;
-
                 cursor: pointer;
             }
             .btn-next {
@@ -8253,29 +8244,25 @@ footer {
                 left: 0;
                 transform: rotate(45deg);
             }
-
-            .owl-carousel-custom{
+            .owl-carousel-custom {
                 // background: red;
                 padding: 10px 0;
             }
-
-            .item{
+            .item {
                 background: transparent !important;
                 height: 200px;
                 width: 480px;
                 margin-left: 13px !important;
                 margin-right: 13px !important;
-                img{
+                img {
                     width: 100%;
                     height: 100%;
-                   
                 }
             }
-
-            .owl-dots-custom{
+            .owl-dots-custom {
                 display: flex;
                 justify-content: center;
-                .owl-dot{
+                .owl-dot {
                     border: 1px solid $dark_gray2;
                     width: 16px;
                     height: 16px;
@@ -8285,8 +8272,7 @@ footer {
                     position: relative;
                     padding: 0;
                 }
-
-                .active > span {
+                .active>span {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -8300,32 +8286,29 @@ footer {
                 }
             }
         }
-
     }
-
 }
-// CURSO EMPRESAS FIN
 
+// CURSO EMPRESAS FIN
 //QUE ES UN MEGACURSO INICIO
-.whatIsMegacurso-section{
-    .header-banner{
+.whatIsMegacurso-section {
+    .header-banner {
         background: url(../img/header-img.png);
-        background-size: 100%  auto;
-        background-position: center  bottom;
-        &::after{
+        background-size: 100% auto;
+        background-position: center bottom;
+        &::after {
             background: transparent linear-gradient(102deg, #00002B 0%, #000055 100%) 0% 0% no-repeat padding-box;
         }
     }
-
-    .first-section{
-        >div > div:nth-child(2) span{
+    .first-section {
+        >div>div:nth-child(2) span {
             color: $danger;
             font-size: 3.5rem;
-            img{
+            img {
                 width: 80px;
             }
         }
-        .img-first-section{
+        .img-first-section {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8334,15 +8317,14 @@ footer {
             background-size: cover;
             background-position: 70% center;
             box-shadow: 20px 20px 50px #00000029;
-            @include large{
+            @include large {
                 width: 70%;
                 height: 420px;
             }
         }
     }
-
-    .second-section{
-        span{
+    .second-section {
+        span {
             margin: auto !important;
             width: 60px;
             height: 60px;
@@ -8351,37 +8333,35 @@ footer {
             justify-content: center;
             align-items: center;
         }
-
-        .second-text-section > div:nth-child(1) span{
+        .second-text-section>div:nth-child(1) span {
             background: #F7D2D6;
-            @include  medium {
+            @include medium {
                 position: absolute;
                 left: 0;
             }
         }
-        .second-text-section > div:nth-child(2) span{
+        .second-text-section>div:nth-child(2) span {
             background: #D2E5F4;
-            @include  medium {
+            @include medium {
                 position: absolute;
                 left: 0;
             }
         }
-        .second-text-section-two > div:nth-child(1) span{
+        .second-text-section-two>div:nth-child(1) span {
             background: #D2E5F4;
-            @include  medium {
+            @include medium {
                 position: absolute;
                 right: 0;
             }
         }
-        .second-text-section-two > div:nth-child(2) span{
+        .second-text-section-two>div:nth-child(2) span {
             background: #FFF1CD;
-            @include  medium {
+            @include medium {
                 position: absolute;
                 right: 0;
             }
         }
-
-        .img-second-section{
+        .img-second-section {
             width: 100%;
             height: 200px;
             border-radius: 10px;
@@ -8396,4 +8376,5 @@ footer {
         }
     }
 }
+
 //QUE ES UN MEGACURSO FIN
