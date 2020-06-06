@@ -1118,6 +1118,12 @@ body {
                     font-size: 2.4rem;
                 }
             }
+            .col-10 {
+                max-height: 135px;
+                @include medium {
+                    max-height: unset;
+                }
+            }
         }
         .example-design {
             width: 100%;
@@ -1703,6 +1709,9 @@ body {
         @include small {
             padding: 2rem;
         }
+        @include large {
+            padding: 3.5rem 2rem;
+        }
         .row {
             margin-right: -15px !important;
             margin-left: -15px !important;
@@ -1831,6 +1840,7 @@ body {
             p {
                 font-size: 14px !important;
                 text-align: justify;
+                margin-bottom: .5rem;
                 @include small {
                     font-size: 1em !important;
                     margin-left: 0 !important;
@@ -1891,6 +1901,7 @@ body {
                     }
                     em {
                         font-size: 15px;
+                        text-transform: capitalize;
                     }
                     .benefits-items {
                         display: flex;
@@ -2075,7 +2086,7 @@ body {
                         position: fixed;
                         top: 74px;
                         right: 3.7%;
-                        z-index: 1031;
+                        z-index: 999;
                         background: white;
                         max-width: 21.2%;
                         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -3518,6 +3529,7 @@ body {
         color: $dark;
     }
     .cart-mega {
+        cursor: pointer;
         .dropdown {
             i {
                 font-size: 1rem;
@@ -3525,6 +3537,7 @@ body {
             .dropdown-products {
                 min-height: 4rem !important;
                 width: 320px;
+                cursor: default;
                 @include large {
                     width: 380px;
                     margin-top: 1rem;
@@ -3548,6 +3561,9 @@ body {
                     font-weight: 600;
                 }
                 .cart-info {
+                    p {
+                        text-align: left !important;
+                    }
                     color: $dark;
                     padding: .5rem;
                     @include large {
@@ -3557,7 +3573,7 @@ body {
                         background: transparent linear-gradient(96deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
                         border: 1px solid transparent;
                         text-transform: uppercase;
-                        font-size: .7rem;
+                        font-size: .7rem !important;
                         padding: .6rem .75rem;
                         font-weight: 600;
                     }
@@ -4521,7 +4537,7 @@ body {
         top: 0;
         left: -3rem;
         background-color: $light;
-        /* Black*/
+        /* $dark*/
         overflow-x: hidden;
         /* Disable horizontal scroll */
         padding-top: 7rem;
@@ -6368,7 +6384,13 @@ body {
 }
 
 .course-card-item {
-    height: 370px !important;
+    height: 400px !important;
+}
+
+.megapack {
+    .course-card-item {
+        height: 370px !important;
+    }
 }
 
 .price-text-container {
@@ -7165,7 +7187,7 @@ body {
         -webkit-box-shadow: 0px 0px 5px #888;
         box-shadow: 0px 0px 5px #888;
         padding: 0.1rem 0.4rem 0.1rem 0.4rem;
-        background-color: #dc3545;
+        background-color: $danger;
         font-weight: 600;
         line-height: 25px;
         text-align: center;
@@ -7309,9 +7331,16 @@ footer {
         margin: 0 !important;
     }
     .footer-title {
-        border-left: 4px solid #DC3545;
+        border-left: 4px solid $danger;
         padding-left: 10px;
-        color: black;
+        color: $dark;
+        font-size: 1.6rem;
+        @include medium {
+            font-size: 1.2rem;
+        }
+        @include extra-large {
+            font-size: 1rem;
+        }
     }
     hr {
         width: 100% !important;
@@ -7321,7 +7350,10 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
         .col-enalces {
-            width: 200px;
+            width: 100%;
+            @include medium {
+                width: 200px;
+            }
         }
         ul {
             padding: 0px !important;
@@ -7335,7 +7367,16 @@ footer {
         display: flex;
         color: #8f8f8f;
         text-decoration: none !important;
-        font-size: 15px !important;
+        font-size: 1.2rem !important;
+        @include medium {
+            font-size: .95rem !important;
+        }
+        @include large {
+            font-size: 1rem !important;
+        }
+        @include extra-large {
+            font-size: 15px !important;
+        }
         &:hover {
             color: #8f8f8f !important;
         }
@@ -7349,6 +7390,9 @@ footer {
         @include medium {
             margin: 5px 20px;
             width: 130px !important;
+        }
+        @include large {
+            width: 100px !important;
         }
     }
     .images__image_last {
@@ -8084,7 +8128,7 @@ footer {
     }
     .sixth-section {
         height: 300px !important;
-        background: transparent linear-gradient(115deg, #DC3545 46%, #F89B9B 100%);
+        background: transparent linear-gradient(115deg, $danger 46%, #F89B9B 100%);
         position: relative !important;
         overflow: hidden;
         .sixth-section-content {
