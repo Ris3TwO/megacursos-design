@@ -22,8 +22,8 @@
 
     <div class="checkout-pago-section">
 
-        <div class="container-fluid first-section py-3 px-xl-5">
-            <a href="#" class="h5  text-decoration-none text-dark"><span class="mr-3"><i class="fas fa-arrow-left"></i></span> Regresar</a>
+        <div class=" container first-section py-3">
+            <a href="#" class="text-decoration-none text-dark"><span class="mr-1"><i class="fas fa-arrow-left"></i></span> Regresar</a>
             <h2 class="title-mega mt-3">Checkout</h2>
 
             <div class="row py-3 px-lg-0">
@@ -49,7 +49,7 @@
                                                 Edita cualquier tipo de pelicula, cortometraje, anuncio, video musical o cualquier otro proyecto de video desde el comienzo hasta al final. 
                                             </p>
                                             <p class="d-flex justify-content-between font-weight-bold">
-                                                <strong>Precio: </strong> <strong>100.000 Cop</strong>
+                                                <strong>Precio regular: </strong> <strong>100.000 Cop</strong>
                                             </p>
                                             <p class="d-flex justify-content-between font-weight-bold">
                                                 <strong>Extras: </strong><strong>50.000 Cop</strong>
@@ -61,12 +61,12 @@
                                     <h5 class="card-title">Añadir extras</h5>
 
                                     <div class="row">
-                                        <div class="col-12 col-md-7 py-2 pr-0 my-auto  extras-text" >
+                                        <div class="col-12 col-md-7 py-2 pr-0  extras-text" >
                                             <span><img src="assets/img/icon-Checkout-first-section.svg" alt=""></span>
-                                            <p class="my-auto "> Diploma oficial Físico enviado gratis a tu domicilio</p>
+                                            <p> Diploma oficial Físico enviado gratis a tu domicilio</p>
                                         </div>
-                                        <div class="col-12 col-md-5 d-flex align-items-center justify-content-between check-first-section">
-                                            <strong>+ 15.000 Cop</strong>
+                                        <div class="col-12 col-md-5 d-flex align-items-center justify-content-end justify-content-lg-between  check-first-section">
+                                            <strong class="mr-5 mr-lg-0">+ 15.000 Cop</strong>
                                             <label class="switch-check">
                                                 <input type="checkbox" checked>
                                                 <span class="slider round"></span>
@@ -74,16 +74,17 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 col-md-7  py-2 pr-0 extras-text">
+                                        <div class="col-12 col-md-7  py-2  extras-text">
                                             <span><img src="assets/img/iconTwo-Checkout-first-section.svg" alt=""></span>
-                                            <p class="my-auto">Asistencia 24h del profesor para resolverte cualquier duda que pueda surgirte</p>
+                                            <p>Asistencia 24h del profesor para resolverte cualquier duda que pueda surgirte</p>
                                         </div>
-                                        <div class="col-12 col-md-5 d-flex align-items-center justify-content-between check-first-section">
-                                            <strong>+ 15.000 Cop</strong>
-                                            <label class="switch-check">
-                                                <input type="checkbox">
-                                                <span class="slider round"></span>
-                                            </label>    
+                                        <div class="col-12 col-md-5 d-flex align-items-center justify-content-end justify-content-lg-between  check-first-section">
+                                            <strong class="mr-5 mr-lg-0">+ 15.000 Cop</strong>
+                                            
+                                                <label class="switch-check">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>   
                                         </div>
                                     </div>
         
@@ -92,7 +93,7 @@
                         </div>
                         
                         <div class="col-12 mt-3">
-                            <div class="card  py-3">
+                            <div class="card  ">
                                 <div class="card-body ">
                                     <p class="d-flex justify-content-between font-weight-bolder">
                                       <strong>Sub total</strong> <strong>200.000 Cop</strong>
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <div class="col-12 col-lg-6 mt-3 mt-lg-0 px-lg-0">
                     <div class="card">
                         <div class="card-header">
                             <strong>Datos de la cuenta</strong>
@@ -129,7 +130,7 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="formGroupExampleInput">Nombre</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -159,7 +160,13 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="formGroupExampleInput">Pais</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Colombia</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                          </select>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +174,7 @@
                             <h5 class="card-title mt-3">Elige tu forma de pago</h5>
                             <div class="row mt-3">
                                   <div class="col-12 col-md-7">
-                                    <p class="mr-5 card-text">Formas de pago para</p>
+                                    <h6 class="mr-5">Formas de pago para</h6>
                                   </div>
                                   <div class="col-12 col-md-5 mt-3 mt-lg-0">
                                     <select class="form-control" id="exampleFormControlSelect1">
@@ -184,38 +191,42 @@
                                 <div class="col-12 mt-3">
                                     <div class="card-paypal">
                                         <div class="card-pago-description">
-                                            <input class="input-radio-design"  type="radio" name="exampleRadios"  value="option1" >
-                                            <div class="img-pago"><img src="" alt=""></div>
+                                            <label class="radio-custom">
+                                                <input type="radio" name="exampleRadios"  value="option1">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <div class="img-pago"></div>
                                             <p class="m-0 p-0">PayPal  <b>¡0% comis!</b></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
                                     <div class="card-tarjeta ">
-                                        <div class="card-pago-description">
-                                            <input class="input-radio-design"  type="radio" name="exampleRadios"  value="option1" checked>
-                                            <div class="img-pago"><img src="" alt=""></div>
+                                        <div class="card-pago-description">              
+                                            <label class="radio-custom">
+                                                <input type="radio" name="exampleRadios"  value="option2" checked>
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <div class="img-pago"><img src="assets/img/pago-tarjeta.svg" alt=""></div>
                                             <p class="m-0 p-0">Pago con tarjeta de credito</p>
                                         </div>
-                                        <div class="row py-3">
-                                            <div class="col-12 col-md-5   col-lg-12 col-xl-5 pr-xl-0" >
+                                        <div class="card-tarjeta-input mt-3" >
+
                                                 <div class="form-group">
                                                     <label for="formGroupExampleInput">Numero de tarjeta:</label>
                                                     <input type="text" class="form-control" id="formGroupExampleInput">
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-md-3   col-lg-6 col-xl-3 pr-xl-0">
-                                                <div class="form-group">
+
+                                                <div class="form-group" >
                                                     <label for="formGroupExampleInput">Fecha de vencimiento</label>
                                                     <input type="text" class="form-control" id="formGroupExampleInput">
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-md-3   col-lg-6 col-xl-3 pr-xl-0">
+
                                                 <div class="form-group">
                                                     <label for="formGroupExampleInput">Codigo de seguridad</label>
                                                     <input type="text" class="form-control" id="formGroupExampleInput">
                                                 </div>
-                                            </div>
+
                                         </div>
                                         <button type="button" class="btn btn-danger btn-lg btn-block">Pagar</button>
                                         <div class="img-card-tarjeta mt-3">
@@ -231,8 +242,12 @@
                                 <div class="col-12 mt-3">
                                     <div class="card-WU">
                                         <div class="card-pago-description">
-                                            <input class="input-radio-design"  type="radio" name="exampleRadios"  value="option1"  >
-                                            <div class="img-pago"><img src="" alt=""></div>
+                                            
+                                            <label class="radio-custom">
+                                                <input type="radio" name="exampleRadios"  value="option3"  >
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <div class="img-pago"></div>
                                             <p class="m-0 p-0">Western Union <br>
                                                 <b>Solo si no tienes tarjeta ni PayPal</b></p>
                                         </div>
@@ -241,8 +256,11 @@
                                 <div class="col-12 mt-3">
                                     <div class="card-tranferencia">
                                         <div class="card-pago-description">
-                                            <input class="input-radio-design"  type="radio" name="exampleRadios"  value="option1" >
-                                            <div class="img-pago"><img src="" alt=""></div>
+                                            <label class="radio-custom">
+                                                <input type="radio" name="exampleRadios"  value="option4" >
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <div class="img-pago"><img src="assets/img/transferencia.svg" alt=""></div>
                                             <p class="m-0 p-0">Transferencia bancaria</p>
                                         </div>
                                     </div>
@@ -255,11 +273,63 @@
             </div>
         </div>
 
+        <div class="container  second-section pt-3">
+            <h2 class="title-mega"><span class="mr-3"><img src="assets/img/megaGarantia.png" alt=""></span>Megarantía</h2>
+
+            <div class="row pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class=" text-justify "><strong>ACCESO AL CURSO 100% INMEDIATO TRAS INSCRIPCIÓN</strong><br>
+                            Segundos después de haber completado tu pago seguro recibirás un email con las claves para poder acceder a todas las videoclases y archivos.
+                            <strong>NOTA:</strong> A veces puede tardar hasta 24h dependiendo de la velocidad de clarificación del método de pago usado. Por métodos como tarjeta/PayPal es instantáneo. </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>ACCESO 100% ILIMITADO, VITALICIO Y CON ACTUALIZACIONES GRATIS</strong><br>    
+                        Podrás acceder a tu contenido desde cualquier dispositivo las veces que quieras, sin ningún tipo de límite de tiempo (podrás acceder al curso dentro de 5, 10 o 30 años sin problema). Todas las actualizaciones futuras del curso (por nuevas funciones, evoluciones del software, etc.) son 100% gratuitas: tu curso siempre estará actualizado. 
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>VIDEOCLASES SIEMPRE EN ALTA DEFINICIÓN (HD)</strong><br> 
+                            Todas las clases de todos los cursos han sido grabadas en Alta Definición, para que puedas disfrutar de ellas con dispositivos de cualquier resolución (incluidos dispositivos de Pantalla Retina y televisores HD) con la máxima claridad.
+                            NOTA: Es necesario disponer de dispositivos de Alta Definición para poder disfrutar de esta calidad.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>EL TEMARIO ES 100% EL MISMO QUE EL MOSTRADO EN LA WEB</strong><br>
+                            En las páginas de TODOS los cursos y packs tienes la pestaña “Temario” para que revises lo que vas a aprender. Este será exactamente el contenido incluido en el curso. Clase por clase. Exactamente igual.</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>TODAS LAS CAPTURAS PERTENECEN 100% A LAS CLASESB</strong><br>
+                            Todas las capturas, fotograrías y trailers que veas en las páginas de producto están tomadas SIN EDICIÓN FOTOGRÁFICA de los cursos.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>EXPLICACIÓN 100% CLARA, CONCISA Y PRÁCTICA</strong><br>
+                            Comprobarás que las clases son extremadamente agradables de seguir, y con la gran cantidad de proyectos de ejemplo los conocimientos se establecerán sin casi esfuerzo.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="mr-3"><img src="assets/img/check-circle.svg" alt=""></span>
+                        <p class="text-justify"><strong>EL PAGO ES 100% SEGURO CON ENCRIPTACIÓN SSL</strong>
+                            Como puedes comprobar en la barra de tu navegador, Megacursos.com es un sitio web encriptado. Tus datos jamás serán conocidos por nadie, ni siquiera por nosotros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
   
 
- 
-
+    
 </body>
 <!-- CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
