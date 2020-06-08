@@ -94,7 +94,7 @@
                         
                         <div class="col-12 mt-3">
                             <div class="card  ">
-                                <div class="card-body ">
+                                <div class="card-body card-total">
                                     <p class="d-flex justify-content-between font-weight-bolder">
                                       <strong>Sub total</strong> <strong>200.000 Cop</strong>
                                     </p>
@@ -171,6 +171,16 @@
                                 </div>
                             </div>
 
+                            <h5 class="card-title mt-3">¿Es una empresa?</h5>
+                            <div class="d-flex justify-content-start align-items-center pb-2">
+                                <h6 class="mr-3 my-0 "><strong>MEGACURSOS:</strong></h6>
+                                <span>  <a href="https://megacursos.com" target="_blank" class="text-decoration-none ">megacursos.com</a> </span>
+                            </div>
+                            <h6 class="mb-3"> Podrás solicitar la factura en 
+                                <a href="atencion@megacursos.com" target="_blank" class="text-decoration-none ">atencion@megacursos.com</a>
+                                aportando tus datos completos.
+                            </h6>
+
                             <h5 class="card-title mt-3">Elige tu forma de pago</h5>
                             <div class="row mt-3">
                                   <div class="col-12 col-md-7">
@@ -189,10 +199,10 @@
 
                             <div class="row">
                                 <div class="col-12 mt-3">
-                                    <div class="card-paypal">
+                                    <div class="card-paypal" id="card-paypal">
                                         <div class="card-pago-description">
                                             <label class="radio-custom">
-                                                <input type="radio" name="exampleRadios"  value="option1">
+                                                <input type="radio" name="exampleRadios" id="radio_1"  value="option1">
                                                 <span class="checkmark"></span>
                                               </label>
                                             <div class="img-pago"></div>
@@ -201,12 +211,14 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <div class="card-tarjeta ">
-                                        <div class="card-pago-description">              
+                                    <div class="card-tarjeta" id="card-tarjeta">
+                                        <div class="card-pago-description">
+
                                             <label class="radio-custom">
-                                                <input type="radio" name="exampleRadios"  value="option2" checked>
+                                                <input type="radio" name="exampleRadios"  value="option2" id="radio_2" checked>
                                                 <span class="checkmark"></span>
                                               </label>
+
                                             <div class="img-pago"><img src="assets/img/pago-tarjeta.svg" alt=""></div>
                                             <p class="m-0 p-0">Pago con tarjeta de credito</p>
                                         </div>
@@ -240,24 +252,24 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <div class="card-WU">
+                                    <div class="card-WU" id="card-WU">
                                         <div class="card-pago-description">
                                             
                                             <label class="radio-custom">
-                                                <input type="radio" name="exampleRadios"  value="option3"  >
+                                                <input type="radio" id="radio_3" name="exampleRadios"  value="option3"  >
                                                 <span class="checkmark"></span>
                                               </label>
                                             <div class="img-pago"></div>
                                             <p class="m-0 p-0">Western Union <br>
-                                                <b>Solo si no tienes tarjeta ni PayPal</b></p>
+                                                <b>Sólo si no tienes tarjeta ni PayPal</b></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <div class="card-tranferencia">
+                                    <div class="card-tranferencia" id="card-tranferencia">
                                         <div class="card-pago-description">
                                             <label class="radio-custom">
-                                                <input type="radio" name="exampleRadios"  value="option4" >
+                                                <input type="radio" id="radio_4" name="exampleRadios"  value="option4" >
                                                 <span class="checkmark"></span>
                                               </label>
                                             <div class="img-pago"><img src="assets/img/transferencia.svg" alt=""></div>
@@ -337,4 +349,26 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="assets/js/owl.carousel.js"></script>
 <!-- CDN -->
+<script>
+    
+   
+    
+    $( "#card-paypal" ).click(function() {
+        $("#radio_1").prop('checked', true);  
+    });
+    
+    $( "#card-tarjeta" ).click(function() {
+        $("#radio_2").prop('checked', true);        
+    });
+
+    $( "#card-WU" ).click(function() {
+        $("#radio_3").prop('checked', true);  
+    });
+
+    $( "#card-tranferencia" ).click(function() {
+        $("#radio_4").prop('checked', true);  
+    });
+
+    
+</script>
 </html>
