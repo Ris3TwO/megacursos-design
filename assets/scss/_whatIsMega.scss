@@ -1,0 +1,351 @@
+//QUE ES UN MEGACURSO INICIO
+.whatIsMegacurso-section {
+
+    .color-one {
+        background: #FEF1CD;
+    }
+
+    .color-two {
+        background: #D2F4E2;
+    }
+
+    .color-three {
+        background: #F7D3D6;
+    }
+
+    .card-header{
+        background: transparent;
+        border-radius: 10px 0 10px 0;
+        border-style: none;
+        span{
+            width: 106px;
+            height: 106px;
+            display: inline-block;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+        }
+    }
+
+    .header-banner {
+        background: url(../img/header-img.png);
+        background-size: 100% auto;
+        background-position: center bottom;
+        &::after {
+            background: transparent linear-gradient(102deg, #00002B 0%, #000055 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    .first-section {
+        >div>div:nth-child(2) span {
+            color: $danger;
+            font-size: 3.5rem;
+            img {
+                width: 80px;
+            }
+        }
+        .img-first-section {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            background: url(../img/first-section-WhatIsMega.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 70% center;
+            box-shadow: 20px 20px 50px #00000029;
+            @include large {
+                width: 70%;
+                height: 420px;
+            }
+        }
+    }
+    .second-section {
+        span {
+            margin: auto !important;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+        }
+        .second-text-section>div:nth-child(1) span {
+            background: #F7D2D6;
+            @include medium {
+                position: absolute;
+                left: 0;
+            }
+        }
+        .second-text-section>div:nth-child(2) span {
+            background: #D2E5F4;
+            @include medium {
+                position: absolute;
+                left: 0;
+            }
+        }
+        .second-text-section-two>div:nth-child(1) span {
+            background: #D2E5F4;
+            @include medium {
+                position: absolute;
+                right: 0;
+            }
+        }
+        .second-text-section-two>div:nth-child(2)  {
+            span{
+                background: #FFF1CD;
+                @include medium {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            ul{
+                // background: red;
+                text-align: left !important;
+                padding-left: 23px !important;
+            }
+
+            li{
+                list-style: none !important;
+                position: relative;
+                &::before{
+                    content:'';
+                    background: $danger;
+                    position: absolute;
+                    top: 10px;
+                    left: -20px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+            }
+  
+        }
+        .img-second-section {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            background: url(../img/second-section-WhatIsMega.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 20% center;
+            box-shadow: 20px 20px 50px #00000029;
+            @include large {
+                height: 450px;
+            }
+        }
+    }
+
+    .third-section{
+        background: #E6F1F9;
+        position: relative;
+        
+        div{
+            z-index: 2 !important;
+        }
+
+        &::after{
+            content: '';
+            background: $light;
+            width: 100%;
+            height: 30%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+
+        .card{
+            border: 1px solid #707070;
+            border-radius: 10px;
+            @include large{
+                height: 330px;
+            }
+            .card-header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+    }
+
+    .fourth-section{
+        
+        .card{
+            border-style: none;
+            box-shadow: 20px 20px 40px #0000001A;
+            border-radius: 10px;
+        }
+
+        .card-body{
+            a{  
+                font-weight: 600;
+                color: $danger !important;
+                text-decoration: underline $danger !important;
+            }
+        }
+        
+    }
+
+
+    .fifth-section{
+
+        @include extra-large{
+            padding-right: 9% !important;
+        }
+
+        .img-section-fifth{
+            background: url(../img/fifth-section-img-whatIsMega.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            
+            @include extra-large {
+                height: 500px;
+                margin-left:-10%;
+            }
+        }
+
+
+        .tabla-custom{
+            border: 1px solid #E2E2E2 !important;
+            tr,th,td{
+                border: 1px solid #E2E2E2 !important;
+            }
+
+            .mega-table {
+                position: relative !important;
+                background: transparent linear-gradient(94deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box !important;
+                color: $light;
+                text-align: center !important;
+                span{
+                    background: transparent linear-gradient(94deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
+                    position: absolute;
+                    top: -9px;
+                    left:0;
+                    width: 100%;
+                    height: 11px;
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+
+
+            th{
+                text-align: center !important;
+            }
+
+            .general-info{
+                font-size: 0.9rem !important;
+                text-align: left;
+            }
+
+            tbody{
+                tr:nth-child(1), tr:last-child {
+                    background: #F6F6F6;
+                  }
+
+
+            }
+
+        }
+
+    }
+
+    .sixth-section{
+        width: 100%;
+        background: #F9F9F9;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background: $light;
+            width: 100%;
+            height: 40%;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+       
+        .slider-custom
+        {
+            z-index: 2;
+            .item{
+                width: 300px;
+                height: 303px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                .mensaje-slider{
+                    background: $light;
+                    width: 90%;
+                    height: 70%;
+                    box-shadow: 5px 5px 20px #9E9E9E40;
+                    border-radius: 30px;
+                    padding: 20px;
+                    position: relative;
+                    p{
+                        margin : 0 !important;
+                        text-align: left;
+                        color: #676767 !important;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -18px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 30px;
+                        height:  20px;
+                         background: $light;
+                        clip-path: polygon(100% 0, 0 0, 50% 100%);
+
+                    }
+                }
+
+                .persona-slider{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    strong{
+                        color: #30404F;
+                    }
+                    .img-slider{
+                        width: 60px;
+                        height: 60px;
+                        background: green;
+                        margin-right: 20px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .banner-footer{
+        background: $light !important;
+        &::before {
+            background: $light !important;
+        }
+    }
+
+    
+}
+
+//QUE ES UN MEGACURSO FIN

@@ -1,6 +1,10 @@
 // CHECKOUT PAGO INICIO 
 .checkout-pago-section{
     background: #EFF0F4;
+
+    .color-gris{
+        color: $secondary !important;
+    }
   
     .switch-check{
         position: relative !important;
@@ -96,12 +100,12 @@
             height: 8px;
             border-radius: 50%;
             background: #23D160;
-            transform: scale(0);
+            opacity: 0;
             transition: 0.4s ease;
           }
           
           input:checked ~ .checkmark:after {
-            transform: scale(1);
+            opacity: 1;
           }
     }
 
