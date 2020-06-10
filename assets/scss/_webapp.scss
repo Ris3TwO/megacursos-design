@@ -1,0 +1,344 @@
+
+.navbar-custom{
+    background: $light;
+    width: 0;
+    height: 100vh;
+    z-index: 10000;
+    padding: 0;
+    transition: 0.3s ease;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    @include small{
+        width: 8%;
+        padding: 20px 10px;
+    }
+
+    @include medium{
+        height: 700px;
+        width: 30%; 
+        position: absolute;
+        overflow: initial;
+    }
+
+    @include extra-large{
+        width: 22%;
+    }
+
+    .nav-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50px;
+        background: $light;
+        @include small{
+            position: initial;
+            width: 100%;
+            height: initial;
+            top: initial;
+            left: initial;
+        }
+
+        @include medium{
+            justify-content: space-between;
+        }
+
+        .nav-pais{
+            display: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+      
+            @include medium{
+                display: block;
+            }
+        }
+
+        .toggler-nav{
+            width: 36px;
+            height: 36px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            cursor: pointer;
+            >span{
+                display: inline-block;
+                background: #333333;
+            }
+
+            > span:nth-child(1){
+                width: 27px;
+                height: 3px;
+            }
+
+            > span:nth-child(2){
+                width: 21px;
+                height: 3px;
+            }
+
+            > span:nth-child(3){
+                width: 15px;
+                height: 3px;
+            }
+        }
+
+        
+    }
+
+    /* body nav  */
+    .nav-persona {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        .img-person{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        span{
+            display: inline-block;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            background: #2BDA51;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: $light;
+            
+        }
+    }
+
+    .enlaces-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem !important;
+        >div{
+            background: #F5F7FB;
+            border-radius: 10px;
+            padding: 5px 12px;
+            text-align: left !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            >span{
+                background: #D8E3F5;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+            }
+
+            strong{
+                font-weight: 900;
+            }
+
+            a{
+                color: $dark !important;
+                span{
+                    font-size: 0.6rem;
+
+                }
+            }
+        }
+    }
+
+    .enlaces-principal{
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        li {
+            list-style: none;
+            margin: 0;
+            display: block;
+            padding: 10px 10px;
+            a{  
+                text-decoration: none !important;
+                display: block;
+                color: $dark;
+                font-weight: 900;
+
+                &:hover{
+                    color: $dark;
+                }
+                span{
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .enlace-close{
+        width: 100%;
+        margin-top: 10px;
+       
+        a{  
+            text-decoration: none !important;
+            display: block;
+            color: $dark;
+            font-weight: 900;
+            padding: 20px 10px;
+            &:hover{
+                color: $dark;
+            }
+        }
+        span{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 20px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-persona, .enlaces-top, .enlaces-principal, .enlace-close{
+        width: 0;
+        overflow: hidden;
+        @include medium{
+            width: initial;
+            overflow: initial;
+        }
+      
+    }
+
+
+}
+
+.navbar-custom-small{
+    width: 90%;
+    padding: 20px 10px;
+
+    @include small{
+        width: 50%;
+    }
+
+    @include medium{
+        width: 10%; 
+    }
+
+    @include extra-large{
+        width: 5%;
+    }
+
+    .nav-header{
+        justify-content: space-between;
+        position: initial;
+        width: 100%;
+        height: initial;
+        top: inherit;
+        left: inherit;
+        @include medium{
+            justify-content: center;
+        }
+
+        
+        .nav-pais{
+            display: block;
+            @include medium{
+                display: none;
+            }
+        }
+    }
+
+    .nav-persona, .enlaces-top, .enlaces-principal, .enlace-close{
+        width: initial;
+            @include medium{
+                width: 0;
+                overflow: hidden;
+            }
+    }
+
+}
+
+.position-fixed-custom{
+    height: 100vh ;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    &::-webkit-scrollbar {
+        display: none;  
+    }
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+}
+
+.principal-section{
+    background: #E5E5E5;
+    position: relative;
+    transition: 0.3s ease;
+
+    @include small{
+        padding-left: 5% !important;
+    }
+
+    @include medium{
+        padding-left: 30% !important;
+    }
+
+    @include extra-large{
+        padding-left: 22% !important;
+    }
+    
+}
+
+.principal-section-large{
+    
+    &::after{
+        content: '';
+        background: rgba(0, 0, 0, 0.322);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+
+   
+
+    @include medium{
+        padding-left: 10% !important;
+        &::after{
+            position: inherit;
+        }
+    }
+
+    @include extra-large{
+        padding-left: 5% !important;
+    }
+
+}
