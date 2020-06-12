@@ -1,20 +1,21 @@
 // CHECKOUT PAGO INICIO 
-.checkout-pago-section{
-    background: #E5E5E5;
-
-    .switch-check{
-        position: relative;
-        display: inline-block;
-        width: 81.52px;
-        height: 33.09px;
+.checkout-pago-section {
+    background: #EFF0F4;
+    .color-gris {
+        color: $secondary !important;
+    }
+    .switch-check {
+        position: relative !important;
+        width: 70px;
+        height: 30px;
         border-radius: 37.0526px;
         box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
         input {
             opacity: 0;
             width: 0;
             height: 0;
-          }
-          .slider {
+        }
+        .slider {
             position: absolute;
             cursor: pointer;
             top: 0;
@@ -22,71 +23,103 @@
             right: 0;
             bottom: 0;
             background-color: #C4C4C4;
-            transition: .4s;
-          }
-          
-          .slider:before {
+            transition: .4s ease;
+            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+        }
+        .slider:before {
             position: absolute;
             content: "";
             height: 26px;
             width: 26px;
             left: 4px;
-            bottom: 4px;
+            bottom: 2px;
             background-color: $light;
-            transition: .4s;
-          }
-          
-          input:checked + .slider {
+            transition: .4s ease;
+        }
+        input:checked+.slider {
             background-color: #23D160;
-          }
-          
-          input:focus + .slider {
-            box-shadow: 0 0 1px #23D160;
-          }
-          
-          input:checked + .slider:before {
-            transform: translateX(48px);
-          }
-          
-          .slider.round {
+            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+        }
+        input:focus+.slider {
+            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+        }
+        input:checked+.slider:before {
+            transform: translateX(37px);
+        }
+        .slider.round {
             border-radius: 34px;
-          }
-          
-          .slider.round:before {
+        }
+        .slider.round:before {
             border-radius: 50%;
-          }
-        
+        }
     }
-
-    .input-text-button{
-
-        @include small{    
+    .radio-custom {
+        display: block;
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 22px;
+        user-select: none;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: #EFF0F4;
+            border-radius: 50%;
+            border: 1px solid #ced4da;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto !important;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #23D160;
+            opacity: 0;
+            transition: 0.4s ease;
+        }
+        input:checked~.checkmark:after {
+            opacity: 1;
+        }
+    }
+    .input-text-button {
+        @include small {
             height: 56px;
             width: 100%;
             background: #F5F7FB;
             position: relative;
-            border-radius: 5px;        
+            border-radius: 5px;
         }
-
-        input{
+        input {
             position: relative;
             background: #F5F7FB !important;
             width: 100% !important;
             height: 50px !important;
-            border-radius: 5px;   
+            border-radius: 5px;
             padding-left: 10px !important;
             border-style: none !important;
             margin: 10px 0;
-            @include small{
+            @include small {
                 margin: 0 !important;
                 height: 100% !important;
             }
         }
-        
-        button{
+        button {
             width: 126px !important;
-            height: 40px !important;   
-            @include small{
+            height: 40px !important;
+            @include small {
                 position: absolute;
                 right: 2%;
                 top: 0;
@@ -94,143 +127,222 @@
                 margin: auto;
             }
         }
-
     }
-
-    .first-section{
-        
-        .card{
+    .first-section {
+        .card {
             border-style: none !important;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
             border-radius: 10px;
-            .card-header{
+            .card-header {
                 border-style: none !important;
                 background: $gray !important;
                 border-radius: 10px 10px 0 0 !important;
-                strong{
+                strong {
                     font-weight: 900 !important;
                 }
             }
-
-            h5{
-                font-weight: 900;
-                font-size: 1.4rem;
+            .card-text,
+            p,
+            select {
+                font-size: 0.9rem !important;
             }
-            h6{
+            h5 {
+                font-weight: 900;
+            }
+            h6 {
                 font-weight: 400;
-                font-size: 1.2rem;
             }
         }
-
-        .img-first-section-checkout{
+        .img-first-section-checkout {
             background: $gray;
             width: 100%;
             height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+            img {
                 height: 90%;
             }
-            @include small{
+            @include small {
                 height: 100%;
             }
-           
         }
-
-        .extras-text{
-            // background: red;
-
-            span{
+        .extras-text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            p {
+                width: 73%;
+            }
+            span {
                 display: inline-block;
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 background: #D8E3F5;
-                float: left;
                 margin-right: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                img {
+                    width: 50%;
+                }
             }
         }
-
-        .check-first-section{
+        .check-first-section {
             // background: red !important;
-            strong{
+            strong {
                 color: $danger !important;
                 font-weight: 900 !important;
+                font-size: 0.9rem;
             }
         }
-
-        small{
-            font-size: 13px !important;
+        small {
+            font-size: 0.68rem !important;
             text-align: justify;
         }
     }
-
-    .card-paypal,.card-tarjeta,.card-WU,.card-tranferencia{
-        border: 0.5px solid #848484;
+    .card-total {
+        color: #3d3d3d !important;
+        p:nth-child(4) strong {
+            color: black !important;
+            font-size: 1rem !important;
+        }
+    }
+    .card-paypal,
+    .card-tarjeta,
+    .card-WU,
+    .card-tranferencia {
+        border: 1px solid #ced4da;
         width: 100%;
         padding: 15px 15px !important;
         border-radius: 5px;
         position: relative;
-    }
-
-    .card-tarjeta{
-        background: #F5F7FB !important;
-
-        .form-group{
-            font-size: 13px !important;
-            font-weight: 900 !important;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
         }
-
-        .img-card-tarjeta{
+    }
+    .card-pago-description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .img-pago {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: #D8E3F5;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+            }
+            @include small {
+                margin: 0 15px 0 20px;
+            }
+        }
+        p {
+            width: 100% !important;
+            text-align: center;
+            font-weight: 600 !important;
+            color: #464646 !important;
+            @include small {
+                width: initial !important;
+            }
+            @include medium {
+                text-align: left;
+            }
+            b {
+                color: $dark_gray !important;
+            }
+        }
+    }
+    .card-tarjeta {
+        background: #F5F7FB !important;
+        .card-tarjeta-input {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .form-group label {
+                font-size: 0.8rem !important;
+                font-weight: 900 !important;
+                margin: 0;
+            }
+            .form-group:nth-child(1) {
+                width: 100% !important;
+            }
+            .form-group:nth-child(2) {
+                width: 100% !important;
+            }
+            .form-group:nth-child(3) {
+                width: 100% !important;
+            }
+            @include small {
+                .form-group:nth-child(1) {
+                    width: 100% !important;
+                }
+                .form-group:nth-child(2) {
+                    width: 40% !important;
+                }
+                .form-group:nth-child(3) {
+                    width: 40% !important;
+                }
+            }
+            @include extra-large {
+                .form-group:nth-child(1) {
+                    width: 40% !important;
+                }
+                .form-group:nth-child(2) {
+                    width: 28% !important;
+                }
+                .form-group:nth-child(3) {
+                    width: 28% !important;
+                }
+            }
+        }
+        .img-card-tarjeta {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            >div{
+            >div {
                 width: 100px;
                 margin: 10px;
-
                 @include large {
-                    width: 75px;
+                    width: 70px;
                     margin: 5px;
                 }
-
-                img{
+                img {
                     width: 100%;
                 }
             }
         }
     }
-
-    .card-pago-description{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-
-        .img-pago{ 
-            width: 54px;
-            height: 54px;
-            border-radius: 50%;
-            background: #D8E3F5;
-            margin: 0 15px  0 20px;
-        }
-
-        p{
-            font-weight: 600 !important;
-            color: #464646  !important;
-            b{
-                color: #22CB5D !important; 
+    .card-paypal>.card-pago-description .img-pago {
+        background: url(../img/paypal.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .card-WU>.card-pago-description .img-pago {
+        background: url(../img/wu.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .second-section {
+        p {
+            color: #464646 !important;
+            font-size: 0.9rem !important;
+            strong {
+                font-weight: 900;
             }
         }
-
     }
-    
-
-
-
 }

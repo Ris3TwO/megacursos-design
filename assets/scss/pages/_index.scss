@@ -30,3 +30,10 @@
         width: 4rem !important;
     }
 }
+
+@include large {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: .25rem !important;
+        padding-right: .25rem !important;
+    }
+}

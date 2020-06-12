@@ -49,6 +49,18 @@ body {
     height: 70vh;
 }
 
+.hv-100 {
+    height: 100vh;
+}
+
+.text-warning {
+    color: $warning;
+}
+
+.text-danger {
+    color: $danger;
+}
+
 // Breadcrumb
 .menu-bread {
     background-color: $light !important;
@@ -4762,7 +4774,6 @@ body {
             margin-right: .8rem;
             filter: invert(33%) sepia(42%) saturate(4101%) hue-rotate(334deg) brightness(88%) contrast(96%);
         }
-        .text {}
     }
     .header-right {
         display: flex;
@@ -6817,10 +6828,6 @@ body {
                     outline: 1px dotted #000;
                     outline: -webkit-focus-ring-color auto 5px;
                 }
-                .box__file+label * {
-                    /* pointer-events: none; */
-                    /* in case of FastClick lib use */
-                }
                 .box__dragndrop,
                 .box__uploading,
                 .box__success,
@@ -7472,17 +7479,6 @@ footer {
             color: #f10101 !important;
         }
     }
-    .images__image {
-        margin: 5px 10px;
-        width: 100px !important;
-        @include medium {
-            margin: 5px 20px;
-            width: 130px !important;
-        }
-        @include large {
-            width: 100px !important;
-        }
-    }
     .images__image_last {
         max-width: 100px !important;
         margin: 5px 10px;
@@ -7525,8 +7521,8 @@ footer {
     }
     .enlaces-footer {
         a {
-            width: 140px !important;
-            height: 40px;
+            width: 176px !important;
+            height: 45px;
             img {
                 width: 100%;
                 height: 100%;
@@ -7534,7 +7530,7 @@ footer {
         }
         .enlaces-buttons {
             a {
-                width: 200px !important;
+                width: 176px !important;
                 height: 45px;
                 &:hover {
                     color: $light !important;
@@ -8194,6 +8190,16 @@ footer {
     }
     .fith-section {
         .card {
+            position: relative;
+            img {
+                position: absolute;
+                top: -25%;
+                left: -5%;
+                width: 100% !important;
+                @include large {
+                    width: 110% !important;
+                }
+            }
             border-style: none;
             box-shadow: 20px 20px 50px #00000029;
             border-radius: 20px !important;
@@ -8302,30 +8308,7 @@ footer {
         }
     }
     .eight-section {
-        .slider-empresas {
-            position: relative;
-            .btn-next,
-            .btn-prev {
-                position: absolute;
-                top: 45%;
-                width: 20px;
-                height: 20px;
-                border-left: 4px solid $danger;
-                border-bottom: 4px solid $danger;
-                cursor: pointer;
-            }
-            .btn-next {
-                right: 0;
-                transform: rotate(225deg);
-            }
-            .btn-prev {
-                left: 0;
-                transform: rotate(45deg);
-            }
-            .owl-carousel-custom {
-                // background: red;
-                padding: 10px 0;
-            }
+        .slider-custom {
             .item {
                 background: transparent !important;
                 height: 200px;
@@ -8337,122 +8320,74 @@ footer {
                     height: 100%;
                 }
             }
-            .owl-dots-custom {
-                display: flex;
-                justify-content: center;
-                .owl-dot {
-                    border: 1px solid $dark_gray2;
-                    width: 16px;
-                    height: 16px;
-                    border-radius: 50%;
-                    margin: 5px;
-                    cursor: pointer;
-                    position: relative;
-                    padding: 0;
-                }
-                .active>span {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    margin: auto !important;
-                    background: $danger;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                }
-            }
         }
     }
 }
 
 // CURSO EMPRESAS FIN
-//QUE ES UN MEGACURSO INICIO
-.whatIsMegacurso-section {
-    .header-banner {
-        background: url(../img/header-img.png);
-        background-size: 100% auto;
-        background-position: center bottom;
-        &::after {
-            background: transparent linear-gradient(102deg, #00002B 0%, #000055 100%) 0% 0% no-repeat padding-box;
-        }
+// SLIDER PERSONALIZADO INICIO
+.slider-custom {
+    position: relative;
+    .btn-next,
+    .btn-prev {
+        position: absolute;
+        top: 45%;
+        width: 20px;
+        height: 20px;
+        border-left: 4px solid $danger;
+        border-bottom: 4px solid $danger;
+        cursor: pointer;
+        z-index: 20 !important;
     }
-    .first-section {
-        >div>div:nth-child(2) span {
-            color: $danger;
-            font-size: 3.5rem;
-            img {
-                width: 80px;
-            }
-        }
-        .img-first-section {
+    .btn-next {
+        right: 0;
+        transform: rotate(225deg);
+    }
+    .btn-prev {
+        left: 0;
+        transform: rotate(45deg);
+    }
+    .owl-carousel-custom {
+        // background: red;
+        padding: 10px 0;
+    }
+    .item {
+        background: transparent !important;
+        height: 200px;
+        width: 480px;
+        margin-left: 13px !important;
+        margin-right: 13px !important;
+        img {
             width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            background: url(../img/first-section-WhatIsMega.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 70% center;
-            box-shadow: 20px 20px 50px #00000029;
-            @include large {
-                width: 70%;
-                height: 420px;
-            }
+            height: 100%;
         }
     }
-    .second-section {
-        span {
-            margin: auto !important;
-            width: 60px;
-            height: 60px;
+    .owl-dots-custom {
+        display: flex;
+        justify-content: center;
+        .owl-dot {
+            border: 1px solid $dark_gray2;
+            width: 16px;
+            height: 16px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 5px;
+            cursor: pointer;
+            position: relative;
+            padding: 0;
         }
-        .second-text-section>div:nth-child(1) span {
-            background: #F7D2D6;
-            @include medium {
-                position: absolute;
-                left: 0;
-            }
-        }
-        .second-text-section>div:nth-child(2) span {
-            background: #D2E5F4;
-            @include medium {
-                position: absolute;
-                left: 0;
-            }
-        }
-        .second-text-section-two>div:nth-child(1) span {
-            background: #D2E5F4;
-            @include medium {
-                position: absolute;
-                right: 0;
-            }
-        }
-        .second-text-section-two>div:nth-child(2) span {
-            background: #FFF1CD;
-            @include medium {
-                position: absolute;
-                right: 0;
-            }
-        }
-        .img-second-section {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            background: url(../img/second-section-WhatIsMega.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 20% center;
-            box-shadow: 20px 20px 50px #00000029;
-            @include medium {
-                height: 450px;
-            }
+        .active>span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto !important;
+            background: $danger;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
         }
     }
 }
 
-//QUE ES UN MEGACURSO FIN
+// SLIDER PERSONALIZADO  FIN
