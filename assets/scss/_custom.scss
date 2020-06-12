@@ -13,6 +13,14 @@ body {
     background-color: $light;
 }
 
+.hv-30 {
+    height: 30vh;
+}
+
+.hv-35 {
+    height: 35vh;
+}
+
 .hv-40 {
     height: 40vh;
 }
@@ -39,6 +47,18 @@ body {
 
 .hv-70 {
     height: 70vh;
+}
+
+.hv-100 {
+    height: 100vh;
+}
+
+.text-warning {
+    color: $warning;
+}
+
+.text-danger {
+    color: $danger;
 }
 
 // Breadcrumb
@@ -236,6 +256,23 @@ body {
             margin-left: 3rem;
         }
     }
+}
+
+.scrollTop {
+    position: fixed;
+    right: 2%;
+    bottom: 18%;
+    background-color: $danger;
+    padding: .5rem .8rem;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 1500;
+    border-radius: 50%;
+}
+
+.scrollTop a {
+    font-size: 18px;
+    color: $light;
 }
 
 .g-info-meet {
@@ -1346,6 +1383,7 @@ body {
 // Products Page
 .product-section {
     .btn {
+        white-space: normal;
         padding: 8px 12px;
         @include medium {
             padding: 11px 12px;
@@ -1483,7 +1521,7 @@ body {
     }
     .masthead {
         height: 40vh;
-        min-height: 1100px;
+        min-height: 800px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1549,12 +1587,12 @@ body {
                 font-weight: 600;
                 &:after {
                     font-family: "Font Awesome 5 Free";
-                    content: "\f054";
+                    content: "\f144";
                     display: inline-block;
-                    padding-left: 12px;
+                    padding-left: 6px;
                     vertical-align: middle;
                     font-weight: 900;
-                    font-size: 11px;
+                    font-size: 16px;
                 }
             }
         }
@@ -1646,20 +1684,46 @@ body {
             }
         }
         .packs_slider_container {
-            padding: 0 1.5rem;
+            padding: 0 .5rem;
             @include small {
                 padding: 0;
             }
             .packs_nav_container {
                 bottom: unset;
-                top: 60%;
+                top: 50%;
+                @include small {
+                    top: 50%;
+                }
                 @include medium {
                     top: 55%;
                     right: -1%;
                 }
+                @include transition(.5s);
             }
             .owl-item {
                 height: 90px;
+                @include large {
+                    height: 60px;
+                }
+                .packs_image {
+                    width: 70% !important;
+                    @include large {
+                        width: 50% !important;
+                    }
+                    @include extra-large {
+                        width: 40% !important;
+                    }
+                }
+                .packs_item {
+                    padding: .25rem;
+                    width: 6rem;
+                }
+                .packs_name {
+                    font-size: 0.75rem;
+                    @include medium {
+                        font-size: 0.7rem;
+                    }
+                }
             }
             .owl-carousel .owl-stage-outer {
                 padding: 0 .5rem;
@@ -1667,11 +1731,6 @@ body {
                     padding: 0;
                 }
             }
-        }
-        .packs_item {
-            width: 90px;
-            height: 90px;
-            width: 40px;
         }
         .packs_content {
             padding-top: .5rem;
@@ -1713,6 +1772,11 @@ body {
     .row {
         margin-right: -15px !important;
         margin-left: -15px !important;
+    }
+    &.ultraContent {
+        .col-cart {
+            margin-top: 0 !important;
+        }
     }
     // Tabs
     .navs-vertical {
@@ -1897,9 +1961,13 @@ body {
                     font-weight: 600;
                     margin: 0 0 10px;
                 }
+                .benefits-item {
+                    .benefits-title {
+                        font-size: 13px;
+                    }
+                }
                 em {
                     font-size: 15px;
-                    text-transform: capitalize;
                 }
                 .benefits-items {
                     display: flex;
@@ -1913,6 +1981,12 @@ body {
                         margin-bottom: 10px;
                         .benefits-text {
                             font-size: 13px;
+                            .benefits-item {
+                                margin-bottom: 6px;
+                                .benefits-text {
+                                    display: inline-flex;
+                                }
+                            }
                         }
                         .benefits-icon {
                             align-self: flex-start;
@@ -2961,6 +3035,7 @@ body {
     .comments {
         display: none;
         border-bottom: 1px solid #dddddd;
+        padding: .75rem 0;
         .media {
             img {
                 width: 50px;
@@ -3681,14 +3756,26 @@ body {
     .premiumx {
         display: none !important;
         transition: all 1s linear;
+        .text {
+            color: #00b938 !important;
+        }
     }
     .profesionalx {
         display: none !important;
         transition: all 1s linear;
+        .text {
+            color: #3496e0 !important;
+        }
     }
     .premium_profesionalx {
         display: none !important;
         transition: all 1s linear;
+        .text {
+            color: #00b938 !important;
+        }
+    }
+    .benefits-item.premium_profesionalx:nth-child(5n) .text {
+        color: #3496e0 !important;
     }
     .nav-link {
         color: $dark_gray2;
@@ -3923,7 +4010,7 @@ body {
         text-align: center;
     }
     .masthead {
-        height: 45vh;
+        height: 30vh;
         min-height: 200px;
         background-image: url('https://megacursos.com/themes/megacursos/assets/img/planes/header.png');
         background-size: cover;
@@ -3963,14 +4050,14 @@ body {
     .currencies {
         background-color: $light2;
         .container-fluid {
-            height: 35vh !important;
+            height: 25vh !important;
             @include medium {
-                height: 65vh !important;
+                height: 40vh !important;
             }
             .row {
-                height: 35vh !important;
+                height: 25vh !important;
                 @include medium {
-                    height: 65vh !important;
+                    height: 35vh !important;
                 }
                 .content {
                     @include medium {
@@ -4056,7 +4143,7 @@ body {
     .plans {
         margin-top: 1rem;
         @include medium {
-            margin-top: -7rem;
+            margin-top: 4rem;
         }
         .card {
             border: none;
@@ -4081,7 +4168,7 @@ body {
                     }
                 }
                 .head {
-                    padding: 1rem 0 2rem;
+                    padding: 1rem 0 3.5rem;
                     border-bottom: 1px solid #b8b8b8;
                     .card-title {
                         font-size: 1.35rem;
@@ -4165,7 +4252,7 @@ body {
                 }
                 .card-body {
                     .head {
-                        padding: 0 0 1rem;
+                        padding: 0 0 2rem;
                     }
                 }
             }
@@ -4173,7 +4260,10 @@ body {
     }
     .extras {
         @include medium {
-            margin: 7rem 0 !important;
+            margin: 4rem 0 !important;
+        }
+        @include extra-large {
+            margin: 2rem 0 3rem 0!important;
         }
         .suggested {
             padding: 1rem;
@@ -4684,7 +4774,6 @@ body {
             margin-right: .8rem;
             filter: invert(33%) sepia(42%) saturate(4101%) hue-rotate(334deg) brightness(88%) contrast(96%);
         }
-        .text {}
     }
     .header-right {
         display: flex;
@@ -6739,10 +6828,6 @@ body {
                     outline: 1px dotted #000;
                     outline: -webkit-focus-ring-color auto 5px;
                 }
-                .box__file+label * {
-                    /* pointer-events: none; */
-                    /* in case of FastClick lib use */
-                }
                 .box__dragndrop,
                 .box__uploading,
                 .box__success,
@@ -7394,17 +7479,6 @@ footer {
             color: #f10101 !important;
         }
     }
-    .images__image {
-        margin: 5px 10px;
-        width: 100px !important;
-        @include medium {
-            margin: 5px 20px;
-            width: 130px !important;
-        }
-        @include large {
-            width: 100px !important;
-        }
-    }
     .images__image_last {
         max-width: 100px !important;
         margin: 5px 10px;
@@ -7447,8 +7521,8 @@ footer {
     }
     .enlaces-footer {
         a {
-            width: 140px !important;
-            height: 40px;
+            width: 176px !important;
+            height: 45px;
             img {
                 width: 100%;
                 height: 100%;
@@ -7456,7 +7530,7 @@ footer {
         }
         .enlaces-buttons {
             a {
-                width: 200px !important;
+                width: 176px !important;
                 height: 45px;
                 &:hover {
                     color: $light !important;
@@ -8115,20 +8189,17 @@ footer {
         }
     }
     .fith-section {
-      
         .card {
-
             position: relative;
-            img{
+            img {
                 position: absolute;
                 top: -25%;
                 left: -5%;
                 width: 100% !important;
-                @include large{
+                @include large {
                     width: 110% !important;
                 }
             }
-
             border-style: none;
             box-shadow: 20px 20px 50px #00000029;
             border-radius: 20px !important;
@@ -8238,7 +8309,6 @@ footer {
     }
     .eight-section {
         .slider-custom {
-          
             .item {
                 background: transparent !important;
                 height: 200px;
@@ -8253,8 +8323,8 @@ footer {
         }
     }
 }
-// CURSO EMPRESAS FIN
 
+// CURSO EMPRESAS FIN
 // SLIDER PERSONALIZADO INICIO
 .slider-custom {
     position: relative;
@@ -8319,6 +8389,5 @@ footer {
         }
     }
 }
+
 // SLIDER PERSONALIZADO  FIN
-
-

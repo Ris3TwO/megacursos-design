@@ -103,10 +103,9 @@
 }
 
 // CHECKOUT PAGO INICIO 
-.checkout-pago-section{
+.checkout-pago-section {
     background: #EFF0F4;
-
-    .color-gris{
+    .color-gris {
         color: $secondary !important;
     }
   
@@ -118,28 +117,26 @@
             width: 100%;
             background: #F5F7FB;
             position: relative;
-            border-radius: 5px;        
+            border-radius: 5px;
         }
-
-        input{
+        input {
             position: relative;
             background: #F5F7FB !important;
             width: 100% !important;
             height: 50px !important;
-            border-radius: 5px;   
+            border-radius: 5px;
             padding-left: 10px !important;
             border-style: none !important;
             margin: 10px 0;
-            @include small{
+            @include small {
                 margin: 0 !important;
                 height: 100% !important;
             }
         }
-        
-        button{
+        button {
             width: 126px !important;
-            height: 40px !important;   
-            @include small{
+            height: 40px !important;
+            @include small {
                 position: absolute;
                 right: 2%;
                 top: 0;
@@ -147,63 +144,55 @@
                 margin: auto;
             }
         }
-
     }
-
-    .first-section{
-
-          .card{
+    .first-section {
+        .card {
             border-style: none !important;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
             border-radius: 10px;
-            .card-header{
+            .card-header {
                 border-style: none !important;
                 background: $gray !important;
                 border-radius: 10px 10px 0 0 !important;
-                strong{
+                strong {
                     font-weight: 900 !important;
                 }
             }
-    
-            .card-text , p , select{
+            .card-text,
+            p,
+            select {
                 font-size: 0.9rem !important;
             }
-
-
-            h5{
+            h5 {
                 font-weight: 900;
             }
-            h6{
+            h6 {
                 font-weight: 400;
             }
         }
-
-        
-        .img-first-section-checkout{
+        .img-first-section-checkout {
             background: $gray;
             width: 100%;
             height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+            img {
                 height: 90%;
             }
-            @include small{
+            @include small {
                 height: 100%;
             }
-           
         }
-
-        .extras-text{
+        .extras-text {
             display: flex;
             align-items: center;
-            justify-content: start;
+            justify-content: flex-start;
             flex-wrap: wrap;
-            p{
+            p {
                 width: 73%;
             }
-            span{
+            span {
                 display: inline-block;
                 width: 50px;
                 height: 50px;
@@ -213,38 +202,35 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+                img {
                     width: 50%;
                 }
             }
         }
-
-        .check-first-section{
+        .check-first-section {
             // background: red !important;
-            strong{
+            strong {
                 color: $danger !important;
                 font-weight: 900 !important;
                 font-size: 0.9rem;
             }
         }
-
-        small{
+        small {
             font-size: 0.68rem !important;
             text-align: justify;
         }
     }
-    
-    .card-total{
+    .card-total {
         color: #3d3d3d !important;
-        p:nth-child(4) strong{
+        p:nth-child(4) strong {
             color: black !important;
-            font-size:  1rem !important;
+            font-size: 1rem !important;
         }
-
-
     }
-
-    .card-paypal,.card-tarjeta,.card-WU,.card-tranferencia{
+    .card-paypal,
+    .card-tarjeta,
+    .card-WU,
+    .card-tranferencia {
         border: 1px solid #ced4da;
         width: 100%;
         padding: 15px 15px !important;
@@ -252,18 +238,16 @@
         position: relative;
         cursor: pointer;
         transition: 0.3s ease;
-        &:hover{
+        &:hover {
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
         }
     }
-
-    .card-pago-description{
+    .card-pago-description {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-
-        .img-pago{ 
+        .img-pago {
             width: 54px;
             height: 54px;
             border-radius: 50%;
@@ -272,143 +256,110 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+            img {
                 width: 50%;
             }
-            @include small{
-                margin: 0 15px  0 20px;
+            @include small {
+                margin: 0 15px 0 20px;
             }
         }
-
-
-        p{  
+        p {
             width: 100% !important;
             text-align: center;
             font-weight: 600 !important;
-            color: #464646  !important;
-            @include small{
+            color: #464646 !important;
+            @include small {
                 width: initial !important;
             }
-
-            @include medium{
+            @include medium {
                 text-align: left;
             }
-
-            b{
-                color: $dark_gray !important; 
+            b {
+                color: $dark_gray !important;
             }
         }
-
     }
-
-    .card-tarjeta{
+    .card-tarjeta {
         background: #F5F7FB !important;
-        
-        .card-tarjeta-input{
+        .card-tarjeta-input {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-       
-            .form-group  label{
+            .form-group label {
                 font-size: 0.8rem !important;
                 font-weight: 900 !important;
                 margin: 0;
             }
-
-            .form-group:nth-child(1){
+            .form-group:nth-child(1) {
                 width: 100% !important;
             }
-
-            .form-group:nth-child(2){
+            .form-group:nth-child(2) {
                 width: 100% !important;
             }
-
-            .form-group:nth-child(3){
+            .form-group:nth-child(3) {
                 width: 100% !important;
             }
-
-
-            @include small{
-
-                .form-group:nth-child(1){
+            @include small {
+                .form-group:nth-child(1) {
                     width: 100% !important;
                 }
-    
-                .form-group:nth-child(2){
+                .form-group:nth-child(2) {
                     width: 40% !important;
                 }
-    
-                .form-group:nth-child(3){
+                .form-group:nth-child(3) {
                     width: 40% !important;
                 }
-
             }
-
-            @include  extra-large{
-                .form-group:nth-child(1){
+            @include extra-large {
+                .form-group:nth-child(1) {
                     width: 40% !important;
                 }
-    
-                .form-group:nth-child(2){
+                .form-group:nth-child(2) {
                     width: 28% !important;
                 }
-    
-                .form-group:nth-child(3){
+                .form-group:nth-child(3) {
                     width: 28% !important;
                 }
-    
             }
-
         }
-
-        .img-card-tarjeta{
+        .img-card-tarjeta {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            >div{
+            >div {
                 width: 100px;
                 margin: 10px;
-
                 @include large {
                     width: 70px;
                     margin: 5px;
                 }
-
-                img{
+                img {
                     width: 100%;
                 }
             }
         }
     }
-
-    .card-paypal > .card-pago-description .img-pago{
+    .card-paypal>.card-pago-description .img-pago {
         background: url(../img/paypal.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
     }
-
-    .card-WU > .card-pago-description .img-pago{
+    .card-WU>.card-pago-description .img-pago {
         background: url(../img/wu.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
     }
- 
-    .second-section{
-
-        p{
+    .second-section {
+        p {
             color: #464646 !important;
             font-size: 0.9rem !important;
-            strong{
+            strong {
                 font-weight: 900;
             }
-            
         }
     }
-
-
-
 }

@@ -1,0 +1,174 @@
+.freeclassmaterial-section {
+    height: 100vh;
+    background: url('https://megacursos.com/themes/megacursos/assets/img/fondo-descargas1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .form-control-lg {
+        height: calc(1.5em + 1.8rem + 2px);
+        padding: 1rem 1.8rem;
+    }
+    .container-fluid {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+    }
+}
+
+.freeclassmaterial-section2 {
+    .overflow-hidden {
+        background: url('https://megacursos.com/themes/megacursos/assets/img/fondo-descargas1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 70%;
+    }
+    .btn-circle.btn-sm {
+        width: 55px;
+        height: 55px;
+        padding: 8px 0px;
+        border-radius: 45px;
+        font-size: 8px;
+        text-align: center;
+        position: relative;
+        top: -20px;
+        box-shadow: 10px 10px 20px #FF141461;
+    }
+    .btn-circle.btn-md {
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        border-radius: 25px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .btn-circle.btn-xl {
+        width: 70px;
+        height: 70px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .card {
+        min-height: 420px;
+        box-shadow: 10px 10px 40px #00000029;
+        border-radius: 15px;
+        .number {
+            font-size: 20px;
+            color: $light;
+            font-weight: bold;
+            margin-top: -7px;
+        }
+        .step {
+            font-size: 11px;
+            color: white;
+            margin-top: -8px;
+            font-weight: bold;
+        }
+        .btn-warning {
+            max-width: 230px;
+        }
+        .card-body {
+            color: $dark;
+            span,
+            p {
+                color: inherit;
+                font-weight: 900;
+            }
+            img {
+                padding: 10px;
+            }
+            .mega-icon {
+                background-color: #E8E1FF;
+                border-radius: 50px;
+            }
+            .available-for {
+                color: #707070;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .apps-for {
+                margin: 0 1rem;
+                @include medium {
+                    margin: 0 .25rem;
+                }
+                @include large {
+                    margin: 0;
+                }
+                @include extra-large {
+                    margin: 0 1.25rem;
+                }
+                img {
+                    padding: 10px;
+                    @include large {
+                        width: 94px !important;
+                        padding: 10px 4px;
+                    }
+                    @include extra-large {
+                        width: 110px !important;
+                        padding: 10px;
+                    }
+                }
+            }
+            .step-3-image {
+                width: 260px;
+                @media only screen and (max-width: 320px) {
+                    width: 220px;
+                }
+                @include large {
+                    width: 220px;
+                }
+                @include extra-large {
+                    width: 300px;
+                }
+            }
+            .step-3-text {
+                .instruction {
+                    color: $dark;
+                    font-weight: 900;
+                }
+                .text-danger {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .col-statistics:not(:last-child) {
+        @include medium {
+            border-right: 3px solid #7070701a;
+        }
+    }
+    .cipher {
+        font-weight: bold;
+        font-size: 20px;
+        @include medium {
+            margin-bottom: 20px;
+        }
+    }
+    .text-gray {
+        color: #707070;
+    }
+    .step-2-images {
+        background-color: #E8E1FF;
+        border-radius: 73px;
+        margin-top: 40px;
+        padding: 17px;
+        width: 100px;
+        height: 100px;
+    }
+    .description {
+        .create-account,
+        .create-account2 {
+            color: $dark;
+            font-weight: 900;
+            margin-top: 40px;
+        }
+        .create-account2 {
+            margin-top: -6px;
+        }
+        .text-danger {
+            font-size: 14px;
+        }
+    }
+}
