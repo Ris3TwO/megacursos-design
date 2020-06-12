@@ -1,3 +1,107 @@
+//CONTROL FORM GLOBAL
+.switch-check{
+    position: relative !important;
+    width:  70px;
+    height: 30px;
+    border-radius: 37.0526px;
+    box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #C4C4C4;
+        transition: .4s ease;
+        box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 2px;
+        background-color: $light;
+        transition: .4s ease;
+      }
+      
+      input:checked + .slider {
+        background-color: #23D160;
+        box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+      }
+      
+      input:focus + .slider {
+        box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
+      }
+      
+      input:checked + .slider:before {
+        transform: translateX(37px);
+      }
+      
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    
+}
+
+.radio-custom{
+        display: block;
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 22px;
+        user-select: none;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: #EFF0F4;
+        border-radius: 50%;
+        border: 1px solid #ced4da;
+      }
+      
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #23D160;
+        opacity: 0;
+        transition: 0.4s ease;
+      }
+      
+      input:checked ~ .checkmark:after {
+        opacity: 1;
+      }
+}
+
 // CHECKOUT PAGO INICIO 
 .checkout-pago-section{
     background: #EFF0F4;
@@ -6,108 +110,6 @@
         color: $secondary !important;
     }
   
-    .switch-check{
-        position: relative !important;
-        width:  70px;
-        height: 30px;
-        border-radius: 37.0526px;
-        box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
-        input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-          .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #C4C4C4;
-            transition: .4s ease;
-            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
-          }
-          
-          .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 2px;
-            background-color: $light;
-            transition: .4s ease;
-          }
-          
-          input:checked + .slider {
-            background-color: #23D160;
-            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
-          }
-          
-          input:focus + .slider {
-            box-shadow: inset 0px 4.94034px 4.94034px rgba(0, 0, 0, 0.15);
-          }
-          
-          input:checked + .slider:before {
-            transform: translateX(37px);
-          }
-          
-          .slider.round {
-            border-radius: 34px;
-          }
-          
-          .slider.round:before {
-            border-radius: 50%;
-          }
-        
-    }
-
-    .radio-custom{
-            display: block;
-            position: relative;
-            margin-right: 10px;
-            cursor: pointer;
-            font-size: 22px;
-            user-select: none;
-
-          input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-          }
-          
-          .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 18px;
-            width: 18px;
-            background-color: #EFF0F4;
-            border-radius: 50%;
-            border: 1px solid #ced4da;
-          }
-          
-          .checkmark:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto !important;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #23D160;
-            opacity: 0;
-            transition: 0.4s ease;
-          }
-          
-          input:checked ~ .checkmark:after {
-            opacity: 1;
-          }
-    }
 
     .input-text-button{
 
