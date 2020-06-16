@@ -500,7 +500,7 @@
         padding: 20px 10px !important;
     }
 
-    @include extra-large{
+    @include medium{
         width: 0 !important;
         padding: 0 !important;
     }
@@ -524,15 +524,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    // position: relative;
     p{
         margin: 0 !important;
         padding: 0 !important;
     }
 
     .img-person{
-        width: 50.75px;
-        height: 50.75px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         overflow: hidden;
         img{
@@ -722,6 +722,7 @@
     align-items: center !important;
     flex-direction: column;
     border-radius: 10px !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12) !important;
     strong{
         width: 100% ;
         font-weight: 600 !important;
@@ -841,7 +842,7 @@
 
 .input-search{
    position: relative;
-   span{
+   >span{
      position: absolute;
      padding: 5px;
      color:  $dark_gray;
@@ -852,6 +853,55 @@
      margin: auto;
      z-index: 3;
    }
+}
+
+.input-search-data{
+  width: 100%;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: height 0.5s linear ;
+  background: $light;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 20000;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.input-search-data-large{
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+.input-search-data-enlaces{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+
+    div{
+        width: 65%;
+        p{
+            margin: 0;
+            padding: 0;
+            line-height: 16px !important;
+            font-size: 0.9rem !important;
+        }
+    }
+
+    .enlace-icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        background-color: $tertiary;
+        color: $light;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+        font-size: 0.8rem;
+        border-radius: 3px !important;
+    }
 }
 
 .container-enlaces-mega{
@@ -1072,7 +1122,7 @@
     }
 }
 
-//INICIANDO SECTION GRATIS
+//INICIANDO SECTION 
 .inicio-gratis-section{
     .planes-text{
         width: 100%;
@@ -1255,6 +1305,40 @@
         .card-cursos{
             background: $light;
             width: 100%;
+
+            .list-cursos{
+                width: 100%;      
+                // background: red;
+                overflow: hidden;
+                overflow-y: scroll;
+
+               @include extra-large{
+                    height: 300px;
+                    padding-top: 10px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    &::-webkit-scrollbar {
+                        width: 5px;    
+                        height: 5px; 
+                        display: none;
+                    }
+                
+                    &::-webkit-scrollbar-thumb {
+                        background: #ccc;
+                        border-radius: 4px;
+                    }
+                
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: #b3b3b3;
+                        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+                    }
+                    
+                    &::-webkit-scrollbar-thumb:active {
+                        background-color: #999999;
+                    }
+               }
+
+            }
             
             @include extra-large{
                 width: 60%;
@@ -1274,6 +1358,9 @@
     
             }
         }
+
+        
+
     }
 
     .img-text-button a{
@@ -1282,3 +1369,104 @@
     }
 }
 
+
+// VIDEO JS CUSTOM 
+
+.player-section{
+    .video-container{
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+
+        >.video-custom {
+            width: 100% !important;
+            position: relative;
+
+            .vjs-big-play-button {
+                height: 3em;
+                width: 3em;
+                background: #46464652;
+                border-radius: 50%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                border: 1px solid $light;
+
+                .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .vjs-icon-play:before {
+                    position: relative;
+                }
+                
+              }
+
+            .vjs-control-bar{
+                background: #464646;
+                height: 30px;
+            }
+
+            .vjs-remaining-time{
+                // background: blue;
+                width: 50px;
+                font-size: 1.1em;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto !important;
+                
+            }
+
+            .vjs-volume-panel{
+                position: absolute;
+                right: 60px !important;
+
+            }
+            
+            .vjs-picture-in-picture-control{
+                position: absolute;
+                right: 30px !important;
+            }
+
+            .vjs-fullscreen-control {
+                position: absolute;
+                right: 0 !important;
+            }
+  
+
+            .vjs-progress-control{
+                // background: red !important;
+                position: absolute;
+                top:   -9px;
+                width: 100%;
+                height: 9px;
+                padding: 0 !important;
+
+                .vjs-progress-holder{
+                    margin: 0 !important;
+                    height: 9px;
+                    &:hover .vjs-play-progress:before{
+                        // background: red;
+                        top: -0.2em
+                    }
+       
+                }
+
+                .vjs-play-progress{
+                    background: #23D160;
+
+                    &:before{
+                        font-size: 1em;
+                        top: 0;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+}
