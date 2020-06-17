@@ -81,8 +81,10 @@
 
                         <div class="video-container">
                             <video class="video-js vjs-16-9 vjs-big-play-centered video-custom " data-setup="{}" controls id="mega-video">
+                                
                                 <source src="assets/video/videoPrueba.mp4" type="video/mp4">
                             </video>
+                           
                         </div>
 
                         <div class="card mt-3">
@@ -136,10 +138,48 @@
     });
 
 
-    //Video Custom
+    //Video JS 
     var reproductor = videojs('mega-video', {
-        fluid: true
+        fluid: true,
     });
+
+    // Agregando Control Bar
+    let videoCustom = document.getElementById('mega-video_html5_api');
+    let controlBar = document.getElementsByClassName('vjs-control-bar');
+    var button_left = document.createElement("button");
+    var button_right = document.createElement("button");
+
+    button_left.setAttribute("id", "vjs-btn-left");
+    button_right.setAttribute("id", "vjs-btn-right");
+
+    controlBar[0].appendChild(button_left);
+    controlBar[0].appendChild(button_right);
+
+
+    document.getElementById('vjs-btn-left').addEventListener('click', ()=>{
+        videoCustom.currentTime  = videoCustom.currentTime - 10;
+    })
+
+    document.getElementById('vjs-btn-right').addEventListener('click', ()=>{
+        videoCustom.currentTime = videoCustom.currentTime + 10;
+    })
+
+    //Agregando Enlaces
+    let containerVideo = document.getElementById('mega-video');
+    var enlace_left = document.createElement("a");
+    enlace_left.href = "#";
+    var enlace_right = document.createElement("a");
+    enlace_right.href = "#";
+
+    enlace_left.setAttribute("id", "vjs-link-left");
+    enlace_right.setAttribute("id", "vjs-link-right");
+    enlace_left.innerHTML = '<i class="fas fa-caret-left"></i>';
+    enlace_right.innerHTML = '<i class="fas fa-caret-right"></i>';
+    
+    containerVideo.appendChild(enlace_left);
+    containerVideo.appendChild(enlace_right);
+
+  
 
 </script>
 

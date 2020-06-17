@@ -1380,7 +1380,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
-        color: #F7F8FA;
+        color: $light;
     }
     .video-container{
         width: 100%;
@@ -1388,14 +1388,103 @@
         overflow: hidden;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
 
-        >.video-custom {
+        //custom
+
+        .vjs-paused .vjs-big-play-button,
+        .vjs-paused.vjs-has-started .vjs-big-play-button {
+            display: block;
+            
+        }
+
+        .vjs-paused .vjs-big-play-button,
+        .vjs-paused.vjs-has-started #vjs-link-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .vjs-paused .vjs-big-play-button,
+        .vjs-paused.vjs-has-started #vjs-link-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+        }
+  
+        #vjs-btn-left{
+            height: 100%;
+            width: 30px;
+            outline: none;
+            &::before{
+                content: url(../img/videlo-left.svg);
+                margin-top: 1px;
+            }
+            &::focus{
+
+            }
+        }
+
+        #vjs-btn-right{
+            height: 100%;
+            width: 30px;
+            outline: none;
+            &::before{
+                content: url(../img/video-right.svg);
+                margin-top: 20px; 
+            }
+
+        }
+
+        #vjs-link-left{
+            display: none;
+            position: absolute;
+            width:  30px;
+            height: 15%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background: #727272;
+            color: $light;
+            font-size: 1rem;
+            text-decoration: none !important;
+            transition: 0.5s linear;
+
+            &:hover{
+                background: #929292 !important;
+            }
+            
+        }
+
+        #vjs-link-right{
+            display: none;
+            position: absolute;
+            width: 30px;
+            height: 15%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: #727272;
+            color: $light;
+            font-size: 1rem;
+            text-decoration: none !important;
+            transition: 0.5s linear;
+            &:hover{
+                background: #929292 !important;
+            }
+           
+        }
+       
+
+        .video-custom {
             width: 100% !important;
             position: relative;
-
             .vjs-big-play-button {
                 height: 3.5em;
                 width: 3.5em;
-                background: #46464652;
+                background: #7272726b;
                 border-radius: 50%;
                 top: 0;
                 left: 0;
@@ -1403,28 +1492,30 @@
                 bottom: 0;
                 margin: auto;
                 position: absolute;
-                border-style: none;
-                
-
+                border-style: none !important;
+                outline: none !important;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+                transition: 0.5s linear;
                 .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .vjs-icon-play:before {
                     position: relative;
                     line-height: 1.3em;
                     font-size: 5rem;
                     
                 }
+
+                &:hover{
+                    background: #727272b4;
+                }
                 
               }
 
             .vjs-control-bar{
-                // background: #464646;
-                background: #000000bd;
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgba(0,0,0,0.711922268907563) 0%, rgba(0,0,0,0.7371323529411764) 27%, rgba(0,0,0,0.22452731092436973) 100%);
                 height: 35px;
-                
             }
 
-
             // buttons 
-
             .vjs-play-control{
                 // background: red;
                 outline: none !important;
@@ -1444,43 +1535,63 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                outline: none !important;
+                border-style: none !important;
             }
 
             .vjs-volume-panel{
                 position: absolute;
                 right: 80px !important;
                 // background: brown;
+                outline: none !important;
+                border-style: none !important;
+                display: flex;
+                align-items: center;
 
+                .vjs-mute-control {
+                    outline: none !important;
+                    border-style: none !important;
+                    display: flex;
+                    align-items: center;
+                }
+                .vjs-volume-horizontal{
+                    display: flex;
+                    align-items: center;
+                }
+                
             }
             
             .vjs-picture-in-picture-control{
                 position: absolute;
                 right: 40px !important;
                 // background: blue;
+                outline: none !important;
+                border-style: none !important;
             }
 
             .vjs-fullscreen-control {
                 position: absolute;
                 right: 0 !important;
                 // background: red;
+                outline: none !important;
+                border-style: none !important;
             }
             
-
-            // barra de progreso 
-            // .vjs-control-text{
-            //     background: red !important;
-            //     // display: none;
-            // }
 
             .vjs-load-progress div{
                 background: #d0d3d6f5 !important;
             }
+
             .vjs-progress-control{
                 position: absolute;
                 top:   -5px;
-                width: 100%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 97%;
                 height: 5px;
                 padding: 0 !important;
+                
 
                 .vjs-progress-holder{
                     margin: 0 !important;
@@ -1510,4 +1621,7 @@
 
         }
     }
+
+  
+
 }
