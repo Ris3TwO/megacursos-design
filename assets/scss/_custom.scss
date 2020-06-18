@@ -7548,56 +7548,18 @@ footer {
 // Inicio GANAR DINERO PAGE
 // ganardinero-section
 .ganardinero-section {
-    .title-ganardinero {
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-        @include small() {
-            margin-bottom: 75px;
-        }
-        div {
-            margin: 0 auto;
-            max-width: 300px;
-            @include transition($time: .5s);
-            @include small() {
-                max-width: 330px;
-                @include transition($time: .5s);
-            }
-            @include large() {
-                max-width: 720px;
-                @include transition($time: .5s);
-            }
-            span {
-                font-family: Mukta;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 20px;
-                @include transition($time: .5s);
-                @include large() {
-                    font-size: 30px;
-                    line-height: 30px;
-                    @include transition($time: .5s);
-                }
-                @include large() {
-                    font-size: 48px;
-                    line-height: 48px;
-                    @include transition($time: .5s);
-                }
-            }
-        }
-    }
+
     .steps-container {
+        // background: red;
         width: 100%;
         padding: 15px;
         height: 505px;
         display: none;
-        @include small() {
+        @include large{ 
             display: block;
+            // width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         .curve {
             text-align: center;
@@ -7630,9 +7592,6 @@ footer {
                 padding: 7px;
                 .title-step {
                     height: 33px;
-                    font-family: Mukta;
-                    font-style: normal;
-                    font-weight: bold;
                     font-size: 12px;
                     line-height: 12px;
                     text-align: center;
@@ -7646,16 +7605,12 @@ footer {
                         @include transition($time: .5s);
                     }
                     @include extra-large() {
-                        font-size: 25px;
-                        line-height: 32px;
-                        @include transition($time: .5s);
+                        font-size: 1.3rem;
+                        font-weight: 600;
                     }
                 }
                 .contenido {
                     margin-top: 10px;
-                    font-family: Mukta;
-                    font-style: normal;
-                    font-weight: normal;
                     font-size: 10px;
                     line-height: 12px;
                     text-align: center;
@@ -7667,9 +7622,7 @@ footer {
                         @include transition($time: .5s);
                     }
                     @include extra-large() {
-                        font-size: 20px;
-                        line-height: 25px;
-                        @include transition($time: .5s);
+                        font-size: 1rem;
                     }
                 }
             }
@@ -7763,57 +7716,15 @@ footer {
         }
     }
     .footer-ganardinero {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        @include transition($time: .5s);
-        @include extra-large() {
-            margin-top: 35px;
-            @include transition($time: .5s);
-        }
-        .contenedor-footer {
-            max-width: 1792px;
-            height: 96px;
-            padding: 10px;
-        }
-    }
-    .nota-ganardinero {
-        display: flex;
-        align-items: center;
-        margin-top: -85px;
-        height: 100%;
-        border: 1px solid $dark_gray3;
-        box-sizing: border-box;
+        border: 0.583418px solid #464646;
         border-radius: 10px;
+        padding: 10px;
         text-align: center;
-        padding: 15px 10px;
-        font-family: Mukta;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 12px;
-        @include transition($time: .5s);
-        @include small() {
-            margin-top: -85px;
+        p{
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center ;
         }
-        @include large() {
-            padding: 15px 25px;
-            font-size: 15px;
-            line-height: 16px;
-            margin-top: -110px;
-            @include transition($time: .5s);
-        }
-        @include large() {
-            font-size: 20px;
-            line-height: 25px;
-            @include transition($time: .5s);
-        }
-    }
-    .recuadro-sombra {
-        height: 100%;
-        background: $gray;
-        border-radius: 10px;
-        margin-left: -10px;
     }
 }
 
@@ -7827,9 +7738,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Mukta;
-    font-style: normal;
-    font-weight: bold;
     font-size: 36px;
     line-height: 32px;
     @include transition($time: .5s);
@@ -7860,9 +7768,40 @@ footer {
 }
 
 #carousel-ganar-dinero {
-    height: 360px;
-    @include small() {
-        display: none;
+    max-height: 600px;
+
+    .carousel-indicators{
+        position: absolute !important;
+        bottom:  -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        background: none !important;
+        border-left: 4px solid $danger;
+        border-bottom: 4px solid $danger;
+    }
+
+
+    .carousel-control-next-icon{
+        transform: rotate(225deg) !important;
+    }
+    .carousel-control-prev-icon {
+        transform: rotate(45deg) !important;
+    }
+
+    .carousel-indicators li{
+        background-color: $danger !important;
+    }
+
+}
+
+.hide-slider{
+    display: block;
+    @include large{
+        display: none   !important;
     }
 }
 
@@ -7876,13 +7815,10 @@ footer {
             padding: 7px;
             .title-step {
                 margin-top: 10px;
-                width: 350px;
-                height: 33px;
-                font-family: Mukta;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 25px;
-                line-height: 28px;
+                width: 80% !important;
+                font-size: 1rem;
+                overflow: hidden !important;
+
                 text-align: center;
                 display: flex;
                 align-items: center;
@@ -7890,11 +7826,7 @@ footer {
                 margin-bottom: 15px;
             }
             .contenido {
-                font-family: Mukta;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 25px;
+                font-size: 0.9rem;
                 text-align: center;
                 max-width: 350px;
             }
@@ -7967,10 +7899,10 @@ footer {
         color: $light;
         z-index: 2;
         .title-mega {
-            font-size: 2.5rem;
+            font-size: 1rem;
         }
         p {
-            font-size: 1.3rem;
+            font-size: 0.9rem;
             span {
                 color: #FCC11C;
             }
