@@ -1,0 +1,329 @@
+// Descargar App Section Inicio
+.section-descargar-app {
+    margin: 0;
+    .banner-footer {
+        &::before {
+            background: #ffffff;
+        }
+    }
+    .sombra {
+        box-shadow: 10px 10px 19px -8px rgba(0, 0, 0, 0.22);
+    }
+    .btn-no-activo {
+        border-style: none;
+        font-size: 1rem;
+        width: 250px;
+        color: $dark !important;
+        text-decoration: none !important;
+        background: $light !important;
+        transition: 0.3s ease;
+        span {
+            width: 10%;
+            height: 100%;
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: $danger;
+        }
+        &:hover {
+            color: $light !important;
+            background: $tertiary !important;
+        }
+        &:hover span {
+            color: $light !important;
+        }
+    }
+    .btn-activo {
+        border-style: none;
+        font-size: 1rem;
+        width: 250px;
+        text-decoration: none !important;
+        background: $tertiary;
+        color: $light !important;
+        span {
+            width: 10%;
+            height: 100%;
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: $light;
+        }
+    }
+    .btn-descarga {
+        background: $tertiary;
+        border-style: none;
+        font-size: 1rem;
+        min-width: 200px;
+        color: $light;
+        text-decoration: none !important;
+        span {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+    .btn-descarga:hover {
+        color: $light
+    }
+    .banner {
+        position: relative;
+        height: 400px;
+        background-image: url(https://megacursos.com/themes/megacursos/assets/img/Banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include large {
+            justify-content: flex-start;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8547794117647058) 38%, rgba(0, 0, 0, 0.7259278711484594) 74%, rgba(0, 0, 0, 1) 100%);
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .header-description {
+            // background: red;
+            overflow: hidden;
+            text-align: center;
+            color: $light;
+            z-index: 4;
+            @include large {
+                width: 500px;
+                margin-left: 100px;
+                text-align: left;
+            }
+            .btn-descarga {
+                width: 300px;
+                margin: auto;
+                @include large {
+                    margin-left: 0;
+                }
+            }
+            .container-enlaces-app {
+                position: relative;
+                // background: chocolate;
+                padding: 5px 0;
+                a {
+                    display: inline-block;
+                    position: relative;
+                    width: 150px;
+                    border: 1px solid #ffffffa2;
+                    border-radius: 10px;
+                    overflow: hidden !important;
+                    img {
+                        width: 100%;
+                        // height: 100%;ss
+                    }
+                }
+            }
+        }
+        .container-img-header {
+            overflow: hidden;
+            position: absolute;
+            width: 500px;
+            right: 0;
+            bottom: -22%;
+            z-index: 3;
+            @include extra-large {
+                width: 700px;
+            }
+            span {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                // background: blue;
+                padding: 0;
+                @include large {
+                    float: right;
+                    margin-right: -20%;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .first-section {
+        margin-top: 40px;
+        @include large {
+            margin-top: 100px;
+        }
+        img {
+            width: 70px;
+        }
+        p {
+            // background: red;
+            width: 60% !important;
+            font-size: 13px;
+            color: #707070;
+            font-weight: 600 !important;
+        }
+    }
+    .section-third {
+        .third-img {
+            width: 100%;
+            height: 400px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/pespes.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            @include large {
+                width: 80%;
+            }
+        }
+        .btn-descarga {
+            width: 300px;
+        }
+    }
+    .fourth-section {
+        overflow: hidden;
+        .row {
+            margin: 0;
+        }
+        .fourth-1 {
+            width: 100%;
+            height: 270px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .fourth-2 {
+            width: 100%;
+            height: 270px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .fourth-3 {
+            width: 100%;
+            height: 270px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .fourth-4 {
+            width: 100%;
+            height: 270px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/fourth-section4.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+    }
+    .sixth-section {
+        background: #ECECEC;
+        .btn-descarga {
+            width: 300px;
+        }
+    }
+    .seven-third {
+        .seven-img {
+            width: 100%;
+            height: 400px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/seven-section1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+            @include large {
+                width: 70%;
+            }
+        }
+        .seven-enlace {
+            background: $aquamarine;
+            color: $light;
+            padding: 5px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .enlaces-megacursos {
+            a {
+                text-decoration: none !important;
+            }
+            span {
+                color: $danger;
+            }
+        }
+    }
+    .eighth-section {
+        background: url(https://megacursos.com/themes/megacursos/assets/img/fifth-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        &::after {
+            background: transparent;
+        }
+    }
+    .nineth-section {
+        margin-top: 20px !important;
+        @include large {
+            margin-top: 150px !important;
+        }
+        .card {
+            border-style: none !important;
+            opacity: 0.0 !important;
+            transition: 1s all;
+            .card-body {
+                position: relative;
+                .card-icon {
+                    position: absolute;
+                    top: -26px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 52px;
+                    height: 52px;
+                    background: $blue;
+                    border-radius: 50%;
+                    color: $light;
+                    font-size: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .card-body-img {
+                    img {
+                        width: 30%;
+                        text-align: center;
+                        margin: 0 !important;
+                    }
+                }
+                .card-footer-enlace {
+                    a {
+                        background: $tertiary;
+                        border-style: none;
+                    }
+                }
+            }
+        }
+        .showCard {
+            opacity: 1.1 !important;
+        }
+        hr {
+            border-color: #999999;
+            width: 250px;
+            @include medium {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+// Descargar App Section Termina

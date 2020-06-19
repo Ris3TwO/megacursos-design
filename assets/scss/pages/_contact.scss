@@ -1,0 +1,152 @@
+// CONTACTO INICIA
+.contact-section {
+    .row {
+        margin: 0 !important;
+    }
+    .panel {
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+        opacity: 1;
+    }
+    .panel:hover {
+        box-shadow: 0 0 3px 2px rgba(20, 23, 28, .1), 0 4px 2px 0 rgba(20, 23, 28, .1);
+    }
+    .section-title-toggle {
+        color: #ffffff;
+        display: inline-block;
+        width: 30px;
+        height: auto !important;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 5px #888;
+        box-shadow: 0px 0px 5px #888;
+        padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+        background-color: $danger;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+    }
+    [data-toggle="collapse"] .section-title-toggle::before {
+        content: "-" !important;
+    }
+    [data-toggle="collapse"].collapsed .section-title-toggle::before {
+        content: "+" !important;
+    }
+    .card-body {
+        min-height: 10rem;
+    }
+    .section-title-wrapper {
+        font-size: 15px;
+    }
+    input::placeholder {
+        color: #d0cccc !important;
+        font-size: 12px !important;
+    }
+    textarea::placeholder {
+        color: #d0cccc !important;
+        font-size: 12px !important;
+    }
+    .header {
+        width: 100%;
+        height: 300px;
+        background: red;
+        background: url(https://megacursos.com/themes/megacursos/assets/img/banner-contact.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include large {
+            text-align: left;
+            justify-content: flex-start;
+        }
+        .head-text {
+            @include large {
+                margin-left: 9%;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .title-mega {
+            font-size: 2.5rem;
+        }
+    }
+    .maps-frame {
+        width: 100%;
+        height: 300px;
+        @include extra-large {
+            width: 500px;
+            height: 450px;
+        }
+    }
+    .first-section {
+        p {
+            color: #999999;
+        }
+        .container-contac-info {
+            span {
+                color: #f10101 !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: #8f8f8f !important;
+            }
+        }
+    }
+    .second-section {
+        width: 100% !important;
+        height: 280px;
+        background: transparent linear-gradient(101deg, #505763 0%, #101114 100%) 0% 0%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: content;
+        // border: 1px solid #707070;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        @include large {
+            justify-content: flex-end;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin-left: 10%;
+            height: 400px;
+        }
+        .banner-text {
+            height: 100%;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            @include large {
+                text-align: left;
+                margin-right: 15%;
+            }
+            @include extra-large {
+                margin-right: 20%;
+            }
+            p {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            button {
+                border-radius: 2px !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 35%;
+            }
+        }
+    }
+}

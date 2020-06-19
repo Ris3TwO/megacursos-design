@@ -1,0 +1,120 @@
+// Diploma Page
+.diploma-section {
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        overflow: hidden;
+        .col-diploma {
+            background-color: $light2;
+            h1 {
+                font-weight: 600;
+                margin-top: 2rem;
+                @include medium {
+                    margin-top: 4rem;
+                }
+                @include large {
+                    font-size: 2.4rem;
+                }
+            }
+            .col-10 {
+                max-height: 135px;
+                @include medium {
+                    max-height: unset;
+                }
+            }
+        }
+        .example-design {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -0.5rem;
+            @include small {
+                margin-top: -1rem;
+            }
+            @include medium {
+                margin-top: -1.25rem;
+            }
+            @include large {
+                margin-top: -2.25rem;
+            }
+            .icon {
+                display: flex;
+                align-content: center;
+                position: relative;
+                width: 2rem;
+                @include small {
+                    width: 3rem;
+                    margin-left: 0;
+                }
+                @include medium {
+                    width: 3rem;
+                    height: 2.5rem;
+                }
+                @include large {
+                    width: 5rem;
+                    height: 4.5rem;
+                }
+                .img-over {
+                    position: absolute;
+                    padding: 0.5rem;
+                    @include small {
+                        padding: 0.8rem;
+                    }
+                    @include large {
+                        padding: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .first-section,
+    .second-section,
+    .third-section {
+        margin-top: 2rem;
+        @include extra-large {
+            margin-top: 7rem;
+        }
+    }
+    .third-section {
+        @include extra-large {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    .with-image {
+        background-image: url('https://megacursos.com/themes/megacursos/assets/img/diploma/background-info.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $primary;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        padding: 1.5rem 2rem;
+        h1 {
+            color: $light;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: $light;
+        }
+        @include medium {
+            p {
+                text-align: justify;
+            }
+        }
+        @include extra-large {
+            padding: 2.5rem 4rem;
+            margin-top: 5rem;
+            h1 {
+                max-width: 30%;
+            }
+            .col-md-6 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

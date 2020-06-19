@@ -1,0 +1,112 @@
+.freelessons-section {
+    .btn-descarga {
+        background: $tertiary;
+        border-style: none;
+        font-size: 1rem;
+        min-width: 200px;
+        color: $light;
+        text-decoration: none !important;
+        span {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+    .btn-descarga:hover {
+        color: $light
+    }
+    header {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .header-img {
+            width: 100%;
+            height: 252px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/header-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent linear-gradient(102deg, #00002B 0%, #000055 100%) 0% 0% no-repeat padding-box;
+                opacity: 0.73;
+                z-index: -1;
+            }
+        }
+        .col-head {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            h1 {
+                font-weight: 600;
+                flex-basis: 100%;
+                @include large {
+                    font-size: 2.4rem;
+                }
+            }
+            .lead {
+                color: $light !important;
+                flex-basis: 100%;
+                @include medium {
+                    flex-basis: 75%;
+                }
+                @include large {
+                    flex-basis: 42%;
+                }
+            }
+        }
+        .head-text {
+            margin-top: -50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+            @media only screen and (min-width: 360px) {
+                margin-top: -30%;
+            }
+            @include medium {
+                margin-top: -20%;
+            }
+            @include large {
+                margin-top: -15%;
+            }
+            .head {
+                font-weight: 600;
+                font-size: 2.5rem;
+                color: $light;
+            }
+            .info {
+                width: 90%;
+                text-align: center;
+                font-weight: 700;
+                img {
+                    width: 500px;
+                    margin: 10px 0 50px 0;
+                    box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
+                }
+                .description {
+                    font-weight: 400;
+                    width: 100%;
+                    font-size: 1.2rem;
+                    color: $dark;
+                }
+                @include large {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

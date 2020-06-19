@@ -1,0 +1,330 @@
+// Inicio GANAR DINERO PAGE
+// ganardinero-section
+.ganardinero-section {
+    .steps-container {
+        // background: red;
+        width: 100%;
+        padding: 15px;
+        height: 505px;
+        display: none;
+        @include large {
+            display: block;
+            // width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .curve {
+            text-align: center;
+            margin-top: -465px;
+            @include transition($time: .5s);
+            @include large() {
+                margin-top: -440px;
+                @include transition($time: .5s);
+            }
+            img {
+                max-width: 80%;
+                height: auto;
+            }
+        }
+        .step {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: center;
+            height: 505px;
+            @include transition($time: .5s);
+            @include extra-large() {
+                @include transition($time: .5s);
+            }
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 7px;
+                .title-step {
+                    height: 33px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    @include transition($time: .5s);
+                    @include large() {
+                        margin-top: 15px;
+                        font-size: 18px;
+                        line-height: 20px;
+                        @include transition($time: .5s);
+                    }
+                    @include extra-large() {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                }
+                .contenido {
+                    margin-top: 10px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-align: center;
+                    @include transition($time: .5s);
+                    @include large() {
+                        margin-top: 10px;
+                        font-size: 15px;
+                        line-height: 18px;
+                        @include transition($time: .5s);
+                    }
+                    @include extra-large() {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .step-impar {
+                .icon {
+                    background-color: #D8E3F5;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition($time: .5s);
+                    @include medium() {
+                        height: 110px;
+                        width: 110px;
+                        @include transition($time: .5s);
+                    }
+                    @include large() {
+                        height: 160px;
+                        width: 160px;
+                        @include transition($time: .5s);
+                    }
+                    @include extra-large() {
+                        height: 160px;
+                        width: 160px;
+                        max-width: 220px;
+                        max-height: 200px;
+                        @include transition($time: .5s);
+                    }
+                    i {
+                        font-size: 35px;
+                        @include medium() {
+                            font-size: 55px;
+                        }
+                        @include large() {
+                            font-size: 80px;
+                            @include transition($time: .5s);
+                        }
+                        @include extra-large() {
+                            font-size: 100px;
+                            @include transition($time: .5s);
+                        }
+                    }
+                }
+            }
+            .step-par {
+                margin-top: 35%;
+                .icon {
+                    background-color: $danger;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    border-radius: 50%;
+                    @include transition($time: .5s);
+                    @include medium() {
+                        height: 80px;
+                        width: 80px;
+                        @include transition($time: .5s);
+                    }
+                    @include large() {
+                        height: 115px;
+                        width: 115px;
+                        @include transition($time: .5s);
+                    }
+                    @include extra-large() {
+                        height: 160px;
+                        width: 160px;
+                        @include transition($time: .5s);
+                    }
+                    i {
+                        font-size: 25px;
+                        @include medium() {
+                            font-size: 40px;
+                            @include transition($time: .5s);
+                        }
+                        @include large() {
+                            font-size: 65px;
+                            @include transition($time: .5s);
+                        }
+                        @include extra-large() {
+                            font-size: 90px;
+                            @include transition($time: .5s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-ganardinero {
+        border: 0.583418px solid #464646;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        p {
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+        }
+    }
+}
+
+.numero-step {
+    margin-top: -33px;
+    background-color: #FCC11C;
+    height: 55px;
+    width: 55px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    line-height: 32px;
+    @include transition($time: .5s);
+    @include small() {
+        margin-top: -13px;
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+        line-height: 26px;
+        @include transition($time: .5s);
+    }
+    @include medium() {
+        margin-top: -20px;
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+        line-height: 26px;
+        @include transition($time: .5s);
+    }
+    @include large() {
+        margin-top: -20px;
+        height: 55px;
+        width: 55px;
+        font-size: 36px;
+        line-height: 32px;
+        @include transition($time: .5s);
+    }
+}
+
+#carousel-ganar-dinero {
+    max-height: 600px;
+    .carousel-indicators {
+        position: absolute !important;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background: none !important;
+        border-left: 4px solid $danger;
+        border-bottom: 4px solid $danger;
+    }
+    .carousel-control-next-icon {
+        transform: rotate(225deg) !important;
+    }
+    .carousel-control-prev-icon {
+        transform: rotate(45deg) !important;
+    }
+    .carousel-indicators li {
+        background-color: $danger !important;
+    }
+}
+
+.hide-slider {
+    display: block;
+    @include large {
+        display: none !important;
+    }
+}
+
+.carousel-ganardinero {
+    .carousel-item {
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 7px;
+            .title-step {
+                margin-top: 10px;
+                width: 80% !important;
+                font-size: 1rem;
+                overflow: hidden !important;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .contenido {
+                font-size: 0.9rem;
+                text-align: center;
+                max-width: 350px;
+            }
+        }
+        .step-impar {
+            .icon {
+                background-color: #D8E3F5;
+                height: 160px;
+                width: 160px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 7px;
+                i {
+                    font-size: 90px;
+                }
+            }
+        }
+        .step-par {
+            .icon {
+                background-color: $danger;
+                height: 160px;
+                width: 160px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                border-radius: 50%;
+                i {
+                    font-size: 90px;
+                }
+            }
+        }
+    }
+}
+
+.curve-carousel {
+    position: absolute;
+    margin-top: 65px;
+    z-index: -1;
+    img {
+        height: auto;
+        width: 99%;
+    }
+}
+
+.arrow-carrusel-ganarDinero {
+    color: $light_gray2 !important;
+    &:hover {
+        color: $secondary !important;
+    }
+}
+
+// Fin GANAR DINERO PAGE

@@ -1,0 +1,227 @@
+// PRUEBAS SECTION INICIO
+.pruebas-section {
+    .row {
+        margin: 0;
+    }
+    .clientBannerContact {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('https://megacursos.com/themes/megacursos/assets/img/fondo-pruebagratis.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        @include medium {
+            height: 400px;
+            &::after {
+                content: '';
+                background: #F4F2F9;
+                width: 100%;
+                height: 12%;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .d-flex {
+            background-color: #ffffffad;
+            border-radius: .25rem;
+        }
+    }
+    .card-plansFree {
+        background-color: #F4F2F9;
+        position: relative;
+        .card {
+            z-index: 2 !important;
+            text-align: left;
+            border-style: none !important;
+            box-shadow: 5px 10px 50px -10px rgba(0, 0, 0, 0.28);
+        }
+        .card-left {
+            .title-free {
+                color: $dark !important;
+                font-weight: bold;
+            }
+            .allcourses-text {
+                color: $dark !important;
+            }
+            .free-time {
+                font-size: 12px;
+            }
+        }
+        .cart-mega {
+            li {
+                &:first-child {
+                    width: 3rem;
+                    @include medium {
+                        width: 3.5rem;
+                    }
+                    @include large {
+                        width: 4rem;
+                    }
+                }
+                .notification {
+                    i {
+                        font-size: 1.5rem;
+                        @include medium {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .col-text {
+            color: #999;
+            font-size: 15px;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            background: $light;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    @include large {
+        .card {
+            width: 400px;
+            height: 410px;
+        }
+        .card-left {
+            float: right !important;
+            margin: 0 !important;
+            border-radius: 10px 0 0 10px;
+            box-shadow: -25px 10px 50px -10px rgba(0, 0, 0, 0.22);
+        }
+        .card-right {
+            float: left !important;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 25px 10px 50px -10px rgba(0, 0, 0, 0.22);
+        }
+    }
+}
+
+.video-trailer {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px -10px rgba(0, 0, 0, 0.29);
+    @include medium {
+        width: 70%;
+        height: 400px;
+    }
+    @include large {
+        width: 50%;
+        height: 350px;
+    }
+}
+
+// Codigo copiado del html
+.dropbtn-products.first {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.slick-slide img {
+    border: 0px solid $light;
+    min-width: 0px !important;
+}
+
+.course-card-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.mega-item-active {
+    border-color: $danger !important;
+    color: $danger !important;
+}
+
+.course-card-item {
+    height: 400px !important;
+}
+
+.megapack {
+    .course-card-item {
+        height: 370px !important;
+    }
+}
+
+.price-text-container {
+    top: 322px !important;
+}
+
+
+/* Buttons */
+
+.btn-outline {
+    border: 1px solid $dark_gray2;
+    position: relative;
+    min-width: 93px;
+}
+
+.btn-outline.active {
+    background-color: #e0f7eb;
+    color: $aquamarine;
+    border: 1px solid $aquamarine;
+}
+
+.best-choice {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+}
+
+.best-choice span {
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -22px;
+    top: 7px;
+    color: $light;
+    font-size: .35em;
+    font-weight: 700;
+    width: 77px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #01ae43;
+    z-index: 2;
+    line-height: 18px;
+}
+
+.best-choice:after,
+.best-choice:before {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    content: '';
+    z-index: 1;
+}
+
+.best-choice:before {
+    right: 0;
+    bottom: 12px;
+    background-color: #007a2d;
+    height: 7px;
+}
+
+.best-choice:after {
+    left: 12px;
+    top: 0;
+    background-color: #007a2d;
+    width: 7px;
+}

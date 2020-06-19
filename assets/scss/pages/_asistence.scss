@@ -1,0 +1,121 @@
+// Asistence Page
+.asistence-section {
+    .masthead {
+        height: 50vh;
+        min-height: 200px;
+        background-image: url('https://megacursos.com/themes/megacursos/assets/img/asistencia/header-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        color: $light !important;
+        img {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .col-head {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            h1 {
+                font-weight: 600;
+                flex-basis: 100%;
+                @include large {
+                    font-size: 2.4rem;
+                }
+            }
+            .lead {
+                color: $light !important;
+                flex-basis: 100%;
+                @include medium {
+                    flex-basis: 75%;
+                }
+                @include large {
+                    flex-basis: 42%;
+                }
+            }
+        }
+    }
+    .first-section,
+    .second-section {
+        margin-top: 2rem;
+        @include extra-large {
+            margin-top: 7rem;
+        }
+    }
+    .third-section,
+    .four-section {
+        margin-top: 2rem;
+        @include extra-large {
+            margin-top: 5rem;
+        }
+    }
+    .first-section {
+        @include medium {
+            padding-right: 0;
+        }
+        .col-info {
+            @include extra-large {
+                padding-right: 5rem !important;
+                padding-left: 5rem !important;
+            }
+            .content-info {
+                @include extra-large {
+                    margin-right: -3.5rem;
+                }
+            }
+            .title-mega {
+                @include medium {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .img-fixed {
+            display: flex;
+            @include medium {
+                justify-content: flex-end;
+                padding-left: 3rem !important;
+                padding-right: 0 !important;
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+            @include large {
+                padding-left: 5rem !important;
+                padding-top: 0rem !important;
+                padding-bottom: 0rem !important;
+            }
+            img {
+                border-radius: 1rem !important;
+                @include medium {
+                    border-radius: 1rem 0 0 1rem !important;
+                }
+            }
+        }
+    }
+    .second-section {
+        &>div {
+            img {
+                @include large {
+                    margin: -4rem 0;
+                }
+            }
+        }
+    }
+    .third-section {
+        @include extra-large {
+            margin-top: 6rem;
+        }
+        .row {
+            background-color: #f2f0f7;
+            border-radius: 1rem;
+            img {
+                border-radius: 1.2rem !important;
+                @include medium {
+                    border-radius: 0rem !important;
+                }
+            }
+        }
+    }
+}

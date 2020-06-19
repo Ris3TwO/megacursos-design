@@ -1,0 +1,311 @@
+// Modal Add To Cart
+.modal-add-cart {
+    .modal-content {
+        box-shadow: 10px 10px 26px #0000005F;
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 1px solid $dark_gray2;
+    }
+    .modal-body {
+        padding: 0;
+        position: relative;
+        button {
+            &.close {
+                position: absolute;
+                right: 1rem;
+                top: .5rem;
+                font-size: 2rem;
+                z-index: 1055;
+            }
+        }
+    }
+    .header {
+        &.cart-zone {
+            .added-message {
+                color: $dark;
+                .icon {
+                    color: $danger;
+                }
+            }
+        }
+        .added-message {
+            display: grid;
+            grid-template-columns: 12% 88%;
+            align-items: center;
+            color: $aquamarine;
+            @include medium {
+                grid-template-columns: 9% 80%;
+                margin-bottom: .5rem;
+            }
+            @include extra-large {
+                grid-template-columns: 7% 80%;
+            }
+            .icon {
+                .mdi {
+                    font-size: 1.55rem;
+                    @include small {
+                        font-size: 1.65rem;
+                    }
+                    @include medium {
+                        font-size: 1.85rem;
+                    }
+                }
+            }
+            .text {
+                font-size: 1.15rem;
+                font-weight: bold;
+                @include small {
+                    font-size: 1.25rem;
+                }
+                @include medium {
+                    font-size: 1.45rem;
+                }
+            }
+        }
+    }
+    .cart-items-added {
+        min-height: 1px;
+        max-height: 338px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+        @include medium {
+            max-height: 230px;
+        }
+        @include large {
+            max-height: 250px;
+        }
+        @include extra-large {
+            max-height: 257px;
+        }
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        &::-webkit-scrollbar:vertical {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-button:increment,
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+        &::-webkit-scrollbar:horizontal {
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #d8d8d8;
+            border-radius: 20px;
+            border: 2px solid #f1f2f3;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+        .cart-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include medium {
+                display: grid;
+                grid-template-columns: 20% 80%;
+                flex-direction: unset;
+            }
+        }
+        .cart-item-img {
+            margin-right: .5rem;
+            @include medium {
+                margin-right: 1rem;
+            }
+            @include large {
+                margin-right: 1.5rem;
+            }
+            img {
+                height: 10rem !important;
+                @include medium {
+                    height: auto !important;
+                }
+            }
+        }
+        .cart-item-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-top: .5rem;
+            align-items: center;
+            margin-bottom: 1rem;
+            @include medium {
+                align-items: flex-start;
+                margin-top: 0;
+                margin-left: 1rem;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            @include large {
+                margin-left: 1.5rem;
+            }
+            .title {
+                margin: 0;
+                font-weight: 600;
+            }
+            .subtitle {
+                color: #565656;
+                text-align: center;
+                @include medium {
+                    text-align: left;
+                }
+            }
+            .price-regular {
+                color: $dark_gray2;
+                font-size: .85rem;
+                text-decoration: line-through;
+            }
+            .price-promo {
+                color: $danger;
+                font-weight: 600;
+                line-height: 1;
+            }
+        }
+    }
+    .right-cart {
+        @include large {
+            border-left: 1px solid #dee2e6 !important;
+        }
+        .cart-total {
+            background-color: $light !important;
+            .count {
+                font-size: 1.1rem;
+                @include large {
+                    font-size: 0.95rem;
+                }
+                @include extra-large {
+                    font-size: 1.25rem;
+                }
+                .count-items,
+                .total-price {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px dashed $dark_gray2;
+                    padding-bottom: .25rem;
+                    margin-bottom: .75rem;
+                }
+                .quantity,
+                .price-total {
+                    color: $danger;
+                    font-weight: bold;
+                }
+            }
+            .buttons {
+                margin-top: 1rem;
+                @include medium {
+                    margin-top: 1.5rem;
+                }
+                .btn {
+                    &:first-child {
+                        margin-bottom: 1rem;
+                        @include large {
+                            margin-bottom: 1.15rem;
+                        }
+                        @include extra-large {
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+                .btn-lighter,
+                .btn-warning {
+                    padding: .75rem;
+                }
+                .btn-lighter {
+                    color: $dark;
+                    &:focus,
+                    &:hover {
+                        background-color: $light;
+                        color: $success;
+                        border: 2px solid $success;
+                    }
+                }
+            }
+        }
+    }
+    .content-footer {
+        background-color: #F6F6F6;
+        .title-mega {
+            text-align: center;
+            font-size: 1.55rem;
+            @include medium {
+                text-align: left;
+                font-size: 1.45rem;
+            }
+            @include large {
+                font-size: 1.65rem;
+            }
+        }
+        .card {
+            border: none;
+            .btn {
+                border-radius: 0rem;
+            }
+            .tag {
+                background-color: $blue;
+            }
+            .card-img-top {
+                max-width: 10rem;
+                @include medium {
+                    max-width: 8rem;
+                }
+            }
+            .card-title {
+                font-size: 1.15rem;
+                font-weight: bold;
+            }
+            .card-text {
+                p {
+                    color: $dark;
+                    text-align: justify !important;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    /* number of lines to show */
+                    -webkit-box-orient: vertical;
+                    margin: 0 !important;
+                }
+            }
+            a {
+                color: $dark !important;
+                &:hover {
+                    color: darken($dark, 3);
+                }
+            }
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .product-icon {
+                    width: 25px;
+                }
+                .prices {
+                    text-align: right;
+                    .price-regular {
+                        font-size: .85rem;
+                        text-decoration: line-through;
+                        color: $dark_gray2;
+                        font-weight: bold;
+                        @include medium {
+                            font-size: 1rem;
+                        }
+                    }
+                    .price-promo {
+                        color: $danger;
+                        font-weight: bold;
+                        font-size: 1.15rem;
+                        @include medium {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
