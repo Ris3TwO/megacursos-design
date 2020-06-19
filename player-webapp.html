@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.8.2/video.min.js"></script>
+
+    <title>Player</title>
+</head>
+
+<body>
+
+    <nav class=" navbar-top-player fixed-top">
+       <div class="d-flex align-items-center">
+            <div class="img-person mr-3 d-none" id="img-person-top"><img src="assets/img/persona.png" class="img-fluid" alt=""></div>
+            <span class="toggler-nav" id="toggler-nav"><span></span><span></span><span></span></span>
+       </div>
+        <p class="text-right d-none d-sm-block">Megacurso Premier pro, Maestro en 50 H</p>
+        <div class="progress-custom-top d-none d-sm-block">
+            <p class="text-center"><b>75%</b> Completado</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+        </div>
+    </nav>
+
+    <div class="navbar-custom navbar-custom-player pt-5" id="navbar-custom">
+
+        <div class="nav-persona pt-5" >
+            <div class="img-person mt-3"><img src="assets/img/persona.png" class="img-fluid" alt=""></div>
+            <span class="mt-2 ">PRO</span>
+            <p class="h5 font-weight-bolder mt-2">Arlene Watson</p>
+        </div>
+
+
+        <div class="enlaces-top">
+            <div class="">
+                <span><img src="assets/img/diplomas-nav.svg" alt=""></span>
+                <strong class="my-1">Diplomas oficiales</strong>
+                <a href="#" class="text-decoration-none">Añadir al plan<span class="ml-2"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+            <div class="">
+                <span><img src="assets/img/asistencia.svg" alt=""></span>
+                <strong class="my-1">Asistencia individual</strong>
+                <a href="#" class="text-decoration-none">Contactar<span class="ml-2"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+        </div>
+
+        <ul class="enlaces-principal">
+            <li> <a href="#"><span><img src="assets/img/inicio-nav.svg" alt=""></span> <span>Inicio</span> </a> </li>
+            <li> <a href="#"><span><img src="assets/img/mega-nav.svg" alt=""></span><span>Megacursos</span></a>  </li>
+            <li> <a href="#"><span><img src="assets/img/planes.svg" alt=""></span><span>Mis planes</span></a>  </li>
+            <li> <a href="#"><span><img src="assets/img/blog.svg" alt=""></span><span>Blog</span> </a> </li>
+            <li> <a href="#"><span><img src="assets/img/ajustes.svg" alt=""></span><span>Ajustes</span></a>  </li>
+        </ul> 
+
+        <div class="enlace-close"><a href="#">
+            <span><img src="assets/img/cerrar.svg" alt=""></span><span>Cerrar sesion</span></a> 
+        </div>
+    </div>
+
+    <div class="principal-section  pb-3 pt-5" id="principal-section">
+        
+        <div class="player-section pt-4">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8  pr-xl-0">
+
+                        <div class="video-container">
+                            <video class="video-js vjs-16-9 vjs-big-play-centered video-custom " data-setup="{}" controls id="mega-video">
+                                
+                                <source src="assets/video/videoPrueba.mp4" type="video/mp4">
+                            </video>
+                           
+                        </div>
+
+                        <ul class="nav nav-pills mb-3 mt-3 nav-pills-custom" id="pills-tab" role="tablist">
+                            <li class="nav-item mr-3" role="presentation">
+                              <a class="nav-link  text-dark " id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-home" aria-selected="true">Descripción</a>
+                            </li>
+                            <li class="nav-item mr-3" role="presentation">
+                              <a class="nav-link text-dark " id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-profile" aria-selected="false">Descargables</a>
+                            </li>
+                            <li class="nav-item mr-3" role="presentation">
+                              <a class="nav-link text-dark active " id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-contact" aria-selected="false">Diploma oficial</a>
+                            </li>
+                            <li class="nav-item mr-3" role="presentation" >
+                                <a class="nav-link text-dark " id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-contact" aria-selected="false">Asistencia individual</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-content-custom" id="pills-tabContent">
+                            <div class="tab-pane fade " id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade show active" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <h5 class="font-weight-bolder">Diploma oficial</h5>
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis semper auctor nunc feugiat vulputate. Sagittis leo eget porttitor adipiscing vitae, eget. Mauris fusce commodo sapien amet, ultricies etiam sed. Lorem tellus malesuada tristique interdum. Vulputate elementum adipiscing malesuada id viverra gravida placerat. Amet sit pharetra lacinia sit a a, sed at. Vulputate libero, accumsan ullamcorper ullamcorper aliquam. Quisque fermentum, eget congue orci id. Aliquam morbi mauris augue cras integer. Et risus ornare .</p>
+
+
+                                <div class="container ganardinero-section">
+
+                                    <h2 class="title-mega text-center mb-3 "><strong>5 PASOS PARA GANAR DINERO <br class="d-none d-block"> CON MEGACURSOS</strong></h2>
+                            
+                               
+                            
+                                    <div id="carousel-ganar-dinero"  class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                        </ol>
+                                        <div class="carousel-inner carousel-ganardinero">
+                                            <div class="carousel-item active">
+                                                <div class="step-impar">
+                                                    <div class="curve-carousel">
+                                                        <img src="./assets/img/lineaCurvaCarousel.png">
+                                                    </div>
+                                                    <div class="icon">
+                                                        <i class="fas fa-download "></i>
+                                                    </div>
+                                                    <div class="numero-step"><span>1</span></div>
+                                                    <div class="title-step">
+                                                        <span>Descarga Gratis Megacursos Player</span>
+                                                    </div>
+                                                    <div class="contenido">
+                                                        <span>(Cualquier Plataforma) y visualiza el (los) Megacurso de 0 a 100 que deses a tu ritmo y en cualquier dispositivo</span>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="step-par">
+                                                    <div class="curve-carousel">
+                                                        <img src="./assets/img/lineaCurvaCarousel.png">
+                                                    </div>
+                                                    <div class="icon">
+                                                        <i class="fas fa-headphones "></i>
+                                                    </div>
+                                                    <div class="numero-step"><span>2</span></div>
+                                                    <div class="title-step">
+                                                        <span>Usa la Asistencia Individual 24h</span>
+                                                    </div>
+                                                    <div class="contenido">
+                                                        <span>Nuestro equipo de profesores 24h te resolverá cualquier duda de tu curso.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="step-impar">
+                                                    <div class="curve-carousel">
+                                                        <img src="./assets/img/lineaCurvaCarousel.png">
+                                                    </div>
+                                                    <div class="icon">
+                                                        <i class="fas fa-clipboard-list "></i>
+                                                    </div>
+                                                    <div class="numero-step"><span>3</span></div>
+                                                    <div class="title-step">
+                                                        <span>Realiza tu Megatest Oficial</span>
+                                                    </div>
+                                                    <div class="contenido">
+                                                        <span>entro del Mc Player. ¡Tienes 2 intentos gratis! </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="step-par">
+                                                    <div class="curve-carousel">
+                                                        <img src="./assets/img/lineaCurvaCarousel.png">
+                                                    </div>
+                                                    <div class="icon">
+                                                        <i class="fas fa-map-marker-alt "></i>
+                                                    </div>
+                                                    <div class="numero-step"><span>4</span></div>
+                                                    <div class="title-step">
+                                                        <span>Tras aprobar el Megatest Oficial</span>
+                                                    </div>
+                                                    <div class="contenido">
+                                                        <span>escribe tu dirección en Mc Player y te enviaremos el Diploma Oficial Físico a tu domicilio 100% gratis y añádelo a tu CV (incluye código único de legitimidad).</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="step-impar">
+                                                    <div class="curve-carousel">
+                                                        <img src="./assets/img/lineaCurvaCarousel.png">
+                                                    </div>
+                                                    <div class="icon">
+                                                        <i class="fas fa-briefcase "></i>
+                                                    </div>
+                                                    <div class="numero-step"><span>5</span></div>
+                                                    <div class="title-step">
+                                                        <span>Únete al mercado laboral</span>
+                                                    </div>
+                                                    <div class="contenido">
+                                                        <span>Créate un portafolio de diseñador o programador, abre un negocio online u ofrécete a tu empleo original tu CV con más disciplinas e idiomas que nunca</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel-ganar-dinero" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel-ganar-dinero" role="button" data-slide="next" style="padding-left: 25px;">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                            
+                            
+                                    <div class="footer-ganardinero mb-3 mt-5">
+                                       <p>Para estudiantes de Mc de diseño, programación, internet, arte, música, etc. recomendamos la creación de un portafolio gratuito online en el que exponer tus proyectos aprendidos durante el Mc o los 100% creativos tuyos. Incrementará en un 75% tus posibilidades de encontrar trabajo.</p>
+                                    </div> <!-- footer-ganardinero -->
+                            
+                                </div> <!--  Fin ganardinero-section -->
+
+
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">prueba</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-xl-4 mt-3 mt-lg-0">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Contenido del curso</h5>
+                             
+
+                              <div id="accordion" class="acordion-custom">
+                                <div class="card mt-2">
+                                  <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                      <button class="btn btn-link" number="1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>Comenzando a lo grande </strong>  <br>
+                                        <small>0/4 de clases | 15 Min</small>
+                                      </button>
+                                    </h5>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body px-0">
+                                    <hr class=" mt-0 mb-0">
+                                        
+                                        <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                            <label class="container-checkbox-box mr-3">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div  class=" group-progress">
+                                                <strong>Titulo de la clase</strong>
+                                                <div class="progress-custom">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <small>75% visto </small>
+                                                </div>
+                                                <span><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                            <label class="container-checkbox-box mr-3">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div  class=" group-progress">
+                                                <strong>Titulo de la clase</strong>
+                                                <div class="progress-custom">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <small>75% visto </small>
+                                                </div>
+                                                <span><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                            <label class="container-checkbox-box mr-3">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div  class=" group-progress">
+                                                <strong>Titulo de la clase</strong>
+                                                <div class="progress-custom">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <small>75% visto </small>
+                                                </div>
+                                                <span><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                            <label class="container-checkbox-box mr-3">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div  class=" group-progress">
+                                                <strong>Titulo de la clase</strong>
+                                                <div class="progress-custom">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <small>75% visto </small>
+                                                </div>
+                                                <span><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card mt-2">
+                                    <div class="card-header" id="headingTwo">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" number="2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                          <strong>Comenzando a lo grande </strong>  <br>
+                                          <small>0/4 de clases | 15 Min</small>
+                                        </button>
+                                      </h5>
+                                    </div>
+                                
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                      <div class="card-body px-0">
+                                      <hr class=" mt-0 mb-0">
+                                          
+                                          <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                              <label class="container-checkbox-box mr-3">
+                                                  <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                              </label>
+                                              <div  class=" group-progress">
+                                                  <strong>Titulo de la clase</strong>
+                                                  <div class="progress-custom">
+                                                      <div class="progress">
+                                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                      </div>
+                                                      <small>75% visto </small>
+                                                  </div>
+                                                  <span><i class="fas fa-play"></i></span>
+                                              </div>
+                                          </a>
+  
+                                          <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                              <label class="container-checkbox-box mr-3">
+                                                  <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                              </label>
+                                              <div  class=" group-progress">
+                                                  <strong>Titulo de la clase</strong>
+                                                  <div class="progress-custom">
+                                                      <div class="progress">
+                                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                      </div>
+                                                      <small>75% visto </small>
+                                                  </div>
+                                                  <span><i class="fas fa-play"></i></span>
+                                              </div>
+                                          </a>
+  
+                                          <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                              <label class="container-checkbox-box mr-3">
+                                                  <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                              </label>
+                                              <div  class=" group-progress">
+                                                  <strong>Titulo de la clase</strong>
+                                                  <div class="progress-custom">
+                                                      <div class="progress">
+                                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                      </div>
+                                                      <small>75% visto </small>
+                                                  </div>
+                                                  <span><i class="fas fa-play"></i></span>
+                                              </div>
+                                          </a>
+  
+                                          <a href="#" class="group-check-link text-decoration-none text-dark py-2 px-1" >
+                                              <label class="container-checkbox-box mr-3">
+                                                  <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                              </label>
+                                              <div  class=" group-progress">
+                                                  <strong>Titulo de la clase</strong>
+                                                  <div class="progress-custom">
+                                                      <div class="progress">
+                                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                      </div>
+                                                      <small>75% visto </small>
+                                                  </div>
+                                                  <span><i class="fas fa-play"></i></span>
+                                              </div>
+                                          </a>
+  
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+
+                              </div>
+                              
+                              <div class="d-flex justify-content-center justify-content-xl-between flex-xl-wrap flex-column flex-xl-row mt-3">
+                                <span class="mr-2 span-circle fondo-one"><img src="assets/img/initino-blue.svg" class="img-fluid" alt=""></span>
+                                <div class="planes-text mt-3 mt-xl-0">
+                                    <h5 class="card-title font-weight-bolder text-center text-xl-left"><strong>Hacer megatest</strong></h5>
+                                    <p class="card-text card-text-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis semper auctor nunc feugiat vulputate. Sagittis</p>
+                                    <a href="#" class="btn btn-warning py-1">Tomar Megatest</a>
+                                    </div>
+                              </div>
+
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<!-- CDN -->
+<script>
+
+    let toggler_nav = document.getElementById('toggler-nav');
+    let navbar_custom = document.getElementById('navbar-custom');
+    let principal = document.getElementById('principal-section');
+
+    toggler_nav.addEventListener('click', ()=>{
+        navbar_custom.classList.toggle('navbar-custom-player-small');
+        principal.classList.toggle('principal-section-large-player');
+        document.getElementById('img-person-top').classList.toggle('d-none');
+    });
+
+
+    //Video JS 
+    var reproductor = videojs('mega-video', {
+        fluid: true,
+    });
+
+    // Agregando Control Bar
+    let videoCustom = document.getElementById('mega-video_html5_api');
+    let controlBar = document.getElementsByClassName('vjs-control-bar');
+    var button_left = document.createElement("button");
+    var button_right = document.createElement("button");
+
+    button_left.setAttribute("id", "vjs-btn-left");
+    button_right.setAttribute("id", "vjs-btn-right");
+
+    controlBar[0].appendChild(button_left);
+    controlBar[0].appendChild(button_right);
+
+
+    document.getElementById('vjs-btn-left').addEventListener('click', ()=>{
+        videoCustom.currentTime  = videoCustom.currentTime - 10;
+    })
+
+    document.getElementById('vjs-btn-right').addEventListener('click', ()=>{
+        videoCustom.currentTime = videoCustom.currentTime + 10;
+    })
+
+    //Agregando Enlaces
+    let containerVideo = document.getElementById('mega-video');
+    var enlace_left = document.createElement("a");
+    enlace_left.href = "#";
+    var enlace_right = document.createElement("a");
+    enlace_right.href = "#";
+
+    enlace_left.setAttribute("id", "vjs-link-left");
+    enlace_right.setAttribute("id", "vjs-link-right");
+    enlace_left.innerHTML = '<i class="fas fa-caret-left"></i>';
+    enlace_right.innerHTML = '<i class="fas fa-caret-right"></i>';
+    
+    containerVideo.appendChild(enlace_left);
+    containerVideo.appendChild(enlace_right);
+
+  
+
+</script>
+
+</html>
