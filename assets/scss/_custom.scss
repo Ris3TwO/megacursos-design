@@ -204,6 +204,51 @@ body {
     }
 }
 
+.btn-download {
+    position: relative;
+    overflow: hidden;
+    background: $mustard !important;
+    border-style: none;
+    height: 38px;
+    width: 10rem;
+    padding: 0 !important;
+    display: flex;
+    color: $light;
+    @include large {
+        width: 12rem;
+    }
+    .btn-download-text {
+        overflow: hidden;
+        overflow-wrap: break-word;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 .55rem;
+        font-size: 10px;
+        @include large {
+            font-size: 12px;
+            padding: 0 1rem;
+        }
+        span {
+            font-size: 8px;
+            margin-top: 2px;
+        }
+    }
+    .btn-download-icon {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid $light;
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
 .title-mega {
     font-weight: 600;
     font-size: 1.8rem;
@@ -1519,6 +1564,16 @@ body {
             display: none
         }
     }
+    .product-image {
+        filter: drop-shadow(4px 8px 11px rgba(255, 255, 255, 0.41));
+        max-width: 80%;
+        @include small {
+            max-width: 90%;
+        }
+        @include medium {
+            max-width: 100%;
+        }
+    }
     .masthead {
         height: 40vh;
         min-height: 800px;
@@ -1526,6 +1581,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+        background-color: $dark;
         @include medium {
             min-height: 400px;
         }
@@ -1629,17 +1685,27 @@ body {
         justify-content: center;
         .product-hours {
             margin-right: -5.2rem !important;
-            width: 6.5rem;
+            width: 5.5rem;
             height: 5.5rem;
             background-color: $aquamarine;
+            position: absolute;
+            left: -5%;
+            top: 35%;
+            z-index: 100;
             @include small {
-                width: 5.5rem;
-                height: 5.5rem;
+                left: -6%;
+            }
+            @include medium {
+                left: 0%;
             }
             @include large {
                 margin-right: -4.25rem !important;
                 width: 8.5rem;
                 height: 8.5rem;
+                left: -10%;
+            }
+            @include extra-large {
+                left: -20%;
             }
             h3 {
                 margin: 0;
@@ -1667,7 +1733,7 @@ body {
         }
     }
     .col-sliders {
-        transform: translateY(7.8rem);
+        transform: translateY(4.8rem);
         @include large {
             transform: translateY(1rem);
         }
@@ -1774,6 +1840,7 @@ body {
         margin-left: -15px !important;
     }
     &.ultraContent {
+        margin-top: 5rem;
         .col-cart {
             margin-top: 0 !important;
         }
@@ -1832,6 +1899,7 @@ body {
             .shared-with-friends {
                 padding: 0.5rem;
                 margin-top: 1rem;
+                cursor: pointer;
                 &:before {
                     font-family: "Font Awesome 5 Free";
                     font-weight: 900;
@@ -2559,7 +2627,7 @@ body {
                 display: flex;
                 width: 100%;
                 @include medium {
-                    width: 45%;
+                    width: 50%;
                 }
                 .curriculum-header-title {
                     font-size: 20px;
@@ -3368,7 +3436,7 @@ body {
                             padding: .5rem 1rem 1.5rem;
                         }
                         .btn-primary {
-                            background: transparent linear-gradient(96deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
+                            background: linear-gradient(to right, #5c4ec9 13%, #3b69c8 33%, #0099c7 68%, #0099c7 100%);
                             border: 1px solid transparent;
                             text-transform: uppercase;
                             font-size: .7rem !important;
@@ -3462,6 +3530,9 @@ body {
                     }
                 }
             }
+        }
+        .col-benefits {
+            padding: 1rem 0 1rem 1rem!important;
         }
     }
 }
@@ -3655,7 +3726,7 @@ body {
                         padding: .5rem 1rem 1.5rem;
                     }
                     .btn-primary {
-                        background: transparent linear-gradient(96deg, #5BD463 0%, #D0F8A3 100%) 0% 0% no-repeat padding-box;
+                        background: linear-gradient(to right, #5c4ec9 13%, #3b69c8 33%, #0099c7 68%, #0099c7 100%);
                         border: 1px solid transparent;
                         text-transform: uppercase;
                         font-size: .7rem !important;
@@ -6143,50 +6214,6 @@ body {
             font-size: 15px;
         }
     }
-    .btn-download {
-        position: relative;
-        overflow: hidden;
-        background: $mustard !important;
-        border-style: none;
-        height: 38px;
-        width: 10rem;
-        padding: 0 !important;
-        display: flex;
-        color: $light;
-        @include large {
-            width: 12rem;
-        }
-        .btn-download-text {
-            overflow: hidden;
-            overflow-wrap: break-word;
-            width: 80%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 0 .55rem;
-            font-size: 10px;
-            @include large {
-                font-size: 12px;
-                padding: 0 1rem;
-            }
-            span {
-                font-size: 8px;
-                margin-top: 2px;
-            }
-        }
-        .btn-download-icon {
-            width: 20%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-left: 1px solid $light;
-            font-size: 25px;
-            font-weight: 100;
-        }
-    }
     // alineación para los elementos del nav mega menu
     @include large {
         .alinear-nav {
@@ -6367,6 +6394,10 @@ body {
                 z-index: -1;
             }
         }
+        .d-flex {
+            background-color: #ffffffad;
+            border-radius: .25rem;
+        }
     }
     .card-plansFree {
         background-color: #F4F2F9;
@@ -6382,7 +6413,7 @@ body {
                 color: $dark !important;
                 font-weight: bold;
             }
-            .allcourses.text {
+            .allcourses-text {
                 color: $dark !important;
             }
             .free-time {
@@ -6414,11 +6445,21 @@ body {
             color: #999;
             font-size: 15px;
         }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            background: $light;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
     }
     @include large {
         .card {
             width: 400px;
-            height: 360px;
+            height: 410px;
         }
         .card-left {
             float: right !important;
@@ -6431,16 +6472,6 @@ body {
             border-radius: 0 10px 10px 0;
             box-shadow: 25px 10px 50px -10px rgba(0, 0, 0, 0.22);
         }
-    }
-    &::after {
-        content: '';
-        width: 100%;
-        height: 40%;
-        position: absolute;
-        background: $light;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
     }
 }
 
@@ -7521,8 +7552,11 @@ footer {
     }
     .enlaces-footer {
         a {
-            width: 176px !important;
+            width: 200px !important;
             height: 45px;
+            @include medium {
+                width: 176px !important;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -7530,8 +7564,11 @@ footer {
         }
         .enlaces-buttons {
             a {
-                width: 176px !important;
                 height: 45px;
+                width: 200px !important;
+                @include medium {
+                    width: 176px !important;
+                }
                 &:hover {
                     color: $light !important;
                 }
@@ -8391,3 +8428,116 @@ footer {
 }
 
 // SLIDER PERSONALIZADO  FIN
+// SLIDER PERSONALIZADO  FIN
+.freelessons-section {
+    .btn-descarga {
+        background: $tertiary;
+        border-style: none;
+        font-size: 1rem;
+        min-width: 200px;
+        color: $light;
+        text-decoration: none !important;
+        span {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+    .btn-descarga:hover {
+        color: $light
+    }
+    header {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .header-img {
+            width: 100%;
+            height: 252px;
+            background: url(https://megacursos.com/themes/megacursos/assets/img/header-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent linear-gradient(102deg, #00002B 0%, #000055 100%) 0% 0% no-repeat padding-box;
+                opacity: 0.73;
+                z-index: -1;
+            }
+        }
+        .col-head {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            h1 {
+                font-weight: 600;
+                flex-basis: 100%;
+                @include large {
+                    font-size: 2.4rem;
+                }
+            }
+            .lead {
+                color: $light !important;
+                flex-basis: 100%;
+                @include medium {
+                    flex-basis: 75%;
+                }
+                @include large {
+                    flex-basis: 42%;
+                }
+            }
+        }
+        .head-text {
+            margin-top: -50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+            @media only screen and (min-width: 360px) {
+                margin-top: -30%;
+            }
+            @include medium {
+                margin-top: -20%;
+            }
+            @include large {
+                margin-top: -15%;
+            }
+            .head {
+                font-weight: 600;
+                font-size: 2.5rem;
+                color: $light;
+            }
+            .info {
+                width: 90%;
+                text-align: center;
+                font-weight: 700;
+                img {
+                    width: 500px;
+                    margin: 10px 0 50px 0;
+                    box-shadow: 10px 17px 24px -6px rgba(0, 0, 0, 0.11);
+                }
+                .description {
+                    font-weight: 400;
+                    width: 100%;
+                    font-size: 1.2rem;
+                    color: $dark;
+                }
+                @include large {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
