@@ -10,16 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include transition(.5s);
 
     @include large() {
       height: 250px;
-      @include transition(.5s);
-    }
-
-    @include extra-large() {
-      height: 425px;
-      @include transition(.5s);
+      font-size: 3rem;
     }
 
     .tilte-clientes {
@@ -188,22 +182,9 @@
   }
 
   .customer-feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 730px;
-
-    .title-feedback {
-      width: 100%;
-      height: 440px;
-      background-color: #F9F9F9;
-      display: flex;
-      justify-content: center;
-      padding-top: 105px;
-    }
 
     .carrusel-feedback {
-      margin-top: -240px;
+
       height: 440px;
       width: 100%;
       display: flex;
@@ -227,7 +208,7 @@
         width: 70%;
 
         .indicators-feedback {
-          top: 480px;
+          bottom: -60px !important;
           li {
             background-color: $danger;
             height: 15px;
@@ -240,9 +221,9 @@
 
       #carrusel-backup {
         width: 80%;
-
+        padding: 10px !important;
         .indicators-feedback {
-          top: 195px;
+          bottom: -60px !important;
           li {
             background-color: $danger;
             height: 15px;
@@ -280,11 +261,10 @@
 .container-card-feedback {
   .card-feedback {
     height: 300px;
-    background-color: #FFFFFF;
+    // background-color: #FFFFFF;
     box-shadow: 10px 10px 50px #9E9E9E40;
     border-radius: 30px;
     opacity: 1;
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 18px;
     text-align: justify;
@@ -294,19 +274,14 @@
     padding: 15px;
 
 
+
     @include extra-large() {
-      font-size: 20px;
+      font-size: 1rem;
       line-height: 25px;
       padding: 45px;
 
     }
 
-    @include full-page() {
-      font-size: 22px;
-      line-height: 30px;
-      padding: 45px;
-
-    }
   }
   .triangulo {
     width: 0;
@@ -391,6 +366,7 @@
 //justify-content: space-around;
 
 .carrusel-feedback-three {
+  
   display: none !important;
   @include small() {
     display: flex !important;

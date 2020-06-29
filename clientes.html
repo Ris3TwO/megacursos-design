@@ -1,1071 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganar Dinero</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="stylesheet" href="assets/css/app.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-
-    <style>
-        .row {
-            margin: 0;
-        }
-
-        p {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1em;
-            font-weight: 300;
-            line-height: 1.7em;
-            color: #999;
-        }
-
-        .owl-stage {
-            display: none;
-        }
-    </style>
-    <script>
-        function apachurrame() {
-            var caja = document.getElementById("box-comment");
-            caja.style.display = null;
-            var scroll = new SmoothScroll();
-            var anchor = document.querySelector('#box-comment');
-            var options = {
-                speed: 5000,
-                easing: 'easeOutCubic'
-            };
-            scroll.animateScroll(anchor, null, options);
-        }
-    </script>
-
-    <script>
-        function draw() {
-            var canvas = document.getElementById('canvas');
-            if (canvas.getContext) {
-                var ctx = canvas.getContext('2d');
-
-                // Triángulo rellenado
-                ctx.beginPath();
-                ctx.moveTo(25, 25);
-                ctx.lineTo(105, 25);
-                ctx.lineTo(25, 105);
-                ctx.fill();
-
-                // Triángulo contorneado
-                ctx.beginPath();
-                ctx.moveTo(125, 125);
-                ctx.lineTo(125, 45);
-                ctx.lineTo(45, 125);
-                ctx.closePath();
-                ctx.stroke();
-            }
-        }
-
-    </script>
-
+    <title>clientes</title>
 </head>
 
 <body>
 
-<!-- Breadcrumb -->
-<div class="container-fluid menu-bread">
-    <div class="megaBreadcrumb p-0 over">
-        <div class="text">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">
-                        <a class="breadbtn" href="https://megacursos.com/allcourses/megacurso">Todos</a>
-                    </li>
+    <!-- Breadcrumb -->
+    <div class="container-fluid menu-bread">
+        <div class="megaBreadcrumb py-0 over">
+            <div class="text">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a class="breadbtn" href="#">Inicio</a>
+                        </li>
 
-                    <li class="breadcrumb-item">
-                        <a class="breadbtn">Clientes</a>
-                    </li>
-
-                </ol>
-            </nav>
+                        <li class="breadcrumb-item">
+                            <a class="breadbtn">Qué es un Megacurso</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="clientes-section">
+    <div class="clientes-section">
+        <div class="header-cliente">
 
-    <div class="header-cliente">
-        <div class="tilte-clientes">
-            <h1>Testimonios y clientes</h1>
-        </div>
-    </div> <!-- fin seccion header-cliente -->
-
-    <div class="companies-trusted">
-        <img src="assets/img/img_confiado.png" alt="">
-
-        <div class="testimony-clients">
-            <div class="content-testimony">
-                <div class="description-testimony">
-                    <div class="title-description">
-                        <h3>
-                            Ellos han confiado en nosotros
-                        </h3>
+                <h1 class="title-mega text-center">Testimonios <br class="d-none d-lg-block"> y clientes</h1>
+        </div> <!-- fin seccion header-cliente -->
+    
+        <div class="companies-trusted">
+            <img src="assets/img/img_confiado.png" alt="">
+    
+            <div class="testimony-clients">
+                <div class="content-testimony">
+                    <div class="description-testimony">
+                        <div class="title-description">
+                            <h3>
+                                Ellos han confiado en nosotros
+                            </h3>
+                        </div>
+                        <div class="content-description">
+                            <span>
+                                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </span>
+                        </div>
                     </div>
-                    <div class="content-description">
-                        <span>
-                            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </span>
+                    <div class="testimonies">
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen22.png" alt="" style="width: 135px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen24.png" alt="" style="width: 64px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    De La Riva group, la mayor agencia de investigación de mercados y análisis de México con presencia en más de 5 países adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen27.png" alt="" style="width: 87px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    La Universidad de Salamanca, la Universidad más antigua de España, adquirió licencias de megacursos en 2015 para su Parque Científico interno.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen28.png" alt="" style="width: 124px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    La Policía Nacional de Colombia, cuerpo de seguridad más importante del país junto con el ejército, adquirió en 2015 licencias de megacursos.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen31.png" alt="" style="width: 76px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    Bt Group, una de las empresas de telecomunicaciones más grandes del mundo operadora más de 170 países, adquirió en 2016 megacursos para formación.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+                        <div class="testimony-client">
+                            <div class="header-testimony">
+                                <img src="./assets/img/imagen32.png" alt="" style="width: 94px">
+                            </div>
+                            <div class="content-testimony">
+                                <span>
+                                    Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                            </div>
+                            <div class="link-site">
+                                <a href="">Ir al sitio oficial</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="carrusel-testimonies" >
+                        <!--Controls-->
+                        <div class="controls-top controls-carrusel" style="margin-left: -8%; width: 98%; margin-top: 65px">
+                            <a class="btn-floating" href="#carrusel-testimonies" data-slide="prev"><i
+                                    class="fa fa-chevron-left fa-2x"></i></a>
+                            <a class="btn-floating" href="#carrusel-testimonies" data-slide="next"><i
+                                    class="fa fa-chevron-right fa-2x"></i></a>
+                        </div>
+                        <!--/.Controls-->
+    
+                        <!--Carousel Wrapper-->
+                        <div id="carrusel-testimonies" class="carousel slide carousel-multi-item" data-ride="carousel" >
+    
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+    
+                                <div class="carousel-item active">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen22.png" alt="" style="width: 135px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen24.png" alt="" style="width: 64px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    De La Riva group, la mayor agencia de investigación de mercados y análisis de México con presencia en más de 5 países adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen27.png" alt="" style="width: 87px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    La Universidad de Salamanca, la Universidad más antigua de España, adquirió licencias de megacursos en 2015 para su Parque Científico interno.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen28.png" alt="" style="width: 124px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    La Policía Nacional de Colombia, cuerpo de seguridad más importante del país junto con el ejército, adquirió en 2015 licencias de megacursos.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen31.png" alt="" style="width: 76px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    Bt Group, una de las empresas de telecomunicaciones más grandes del mundo operadora más de 170 países, adquirió en 2016 megacursos para formación.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="testimony-client">
+                                        <div class="header-testimony">
+                                            <img src="./assets/img/imagen32.png" alt="" style="width: 94px">
+                                        </div>
+                                        <div class="content-testimony">
+                                <span>
+                                    Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
+                                </span>
+                                        </div>
+                                        <div class="link-site">
+                                            <a href="">Ir al sitio oficial</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+    
+                            <!--Indicators-->
+    <!--                        <ol class="carousel-indicators indicators-feedback">-->
+    <!--                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>-->
+    <!--                            <li data-target="#multi-item-example" data-slide-to="1"></li>-->
+    <!--                            <li data-target="#multi-item-example" data-slide-to="2"></li>-->
+    <!--                        </ol>-->
+                            <!--/.Indicators-->
+    
+                        </div>
+                        <!--/.Carousel Wrapper-->
+    
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+        </div> <!-- fin seccion companies-trusted -->
+    </div>
+
+    <div class="whatIsMegacurso-section">
+       <div class="sixth-section">
+           <div class="container py-4 ">
+                <h2 class="title-mega text-center  mb-3">Lo que dicen de nosotros</h2>
+                <div class="slider-custom px-1 px-sm-3 px-lg-4 px-lg-5 text-center">
+           
+                    <div class="btn-next" id="btn-next-one"></div>
+                    <div class="btn-prev" id="btn-prev-one"></div>
+           
+                    <div class="owl-carousel owl-theme  owl-carousel-custom " id="owl-one">
+                        <div class="item">
+                            <div class="mensaje-slider">
+                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t</p>
+                            </div>
+                            <div class="persona-slider">
+                                <div class="img-slider"><img src="./assets/img/mujer.jpg" class="img-fluid" alt=""></div>
+                                <span><strong>Michael Florian</strong><br>Chimbote Perú</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="mensaje-slider">
+                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t</p>
+                            </div>
+                            <div class="persona-slider">
+                                <div class="img-slider"><img src="./assets/img/mujer.jpg" class="img-fluid"  alt=""></div>
+                                <span><strong>Louis Murphy</strong><br>Chimbote Perú</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="mensaje-slider">
+                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t</p>
+                            </div>
+                            <div class="persona-slider">
+                                <div class="img-slider"><img src="./assets/img/mujer.jpg" class="img-fluid"   alt=""></div>
+                                <span><strong>Randy Mendez</strong><br>Chimbote Perú</span>
+                            </div>
+                        </div>
+                    </div>
+           
+                    <div id="carousel-custom-dots-one" class="owl-dots-custom mt-3">
+                        <div class="owl-dot owl-dot-one active"><span></span></div>
+                        <div class="owl-dot owl-dot-one"><span></span></div>
+                        <div class="owl-dot owl-dot-one"><span></span></div>
                     </div>
                 </div>
-                <div class="testimonies">
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen22.png" alt="" style="width: 135px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen24.png" alt="" style="width: 64px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                De La Riva group, la mayor agencia de investigación de mercados y análisis de México con presencia en más de 5 países adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen27.png" alt="" style="width: 87px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                La Universidad de Salamanca, la Universidad más antigua de España, adquirió licencias de megacursos en 2015 para su Parque Científico interno.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen28.png" alt="" style="width: 124px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                La Policía Nacional de Colombia, cuerpo de seguridad más importante del país junto con el ejército, adquirió en 2015 licencias de megacursos.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen31.png" alt="" style="width: 76px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                Bt Group, una de las empresas de telecomunicaciones más grandes del mundo operadora más de 170 países, adquirió en 2016 megacursos para formación.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-                    <div class="testimony-client">
-                        <div class="header-testimony">
-                            <img src="./assets/img/imagen32.png" alt="" style="width: 94px">
-                        </div>
-                        <div class="content-testimony">
-                            <span>
-                                Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                        </div>
-                        <div class="link-site">
-                            <a href="">Ir al sitio oficial</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carrusel-testimonies" >
-                    <!--Controls-->
-                    <div class="controls-top controls-carrusel" style="margin-left: -8%; width: 98%; margin-top: 65px">
-                        <a class="btn-floating" href="#carrusel-testimonies" data-slide="prev"><i
-                                class="fa fa-chevron-left fa-2x"></i></a>
-                        <a class="btn-floating" href="#carrusel-testimonies" data-slide="next"><i
-                                class="fa fa-chevron-right fa-2x"></i></a>
-                    </div>
-                    <!--/.Controls-->
-
-                    <!--Carousel Wrapper-->
-                    <div id="carrusel-testimonies" class="carousel slide carousel-multi-item" data-ride="carousel" >
-
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-
-                            <div class="carousel-item active">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen22.png" alt="" style="width: 135px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen24.png" alt="" style="width: 64px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                De La Riva group, la mayor agencia de investigación de mercados y análisis de México con presencia en más de 5 países adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen27.png" alt="" style="width: 87px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                La Universidad de Salamanca, la Universidad más antigua de España, adquirió licencias de megacursos en 2015 para su Parque Científico interno.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen28.png" alt="" style="width: 124px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                La Policía Nacional de Colombia, cuerpo de seguridad más importante del país junto con el ejército, adquirió en 2015 licencias de megacursos.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen31.png" alt="" style="width: 76px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                Bt Group, una de las empresas de telecomunicaciones más grandes del mundo operadora más de 170 países, adquirió en 2016 megacursos para formación.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="testimony-client">
-                                    <div class="header-testimony">
-                                        <img src="./assets/img/imagen32.png" alt="" style="width: 94px">
-                                    </div>
-                                    <div class="content-testimony">
-                            <span>
-                                Salvamento Marítimo, entidad pública empresarial dependiente del Ministerio de Fomento de España, adquirió en 2016 licencias de megacursos para formación.
-                            </span>
-                                    </div>
-                                    <div class="link-site">
-                                        <a href="">Ir al sitio oficial</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Slides-->
-
-                        <!--Indicators-->
-<!--                        <ol class="carousel-indicators indicators-feedback">-->
-<!--                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>-->
-<!--                            <li data-target="#multi-item-example" data-slide-to="1"></li>-->
-<!--                            <li data-target="#multi-item-example" data-slide-to="2"></li>-->
-<!--                        </ol>-->
-                        <!--/.Indicators-->
-
-                    </div>
-                    <!--/.Carousel Wrapper-->
+                
+           </div>
+       </div>
+    </div>
 
 
+    <div class="curso-empresa-section">
+        <div class="container eight-section">
+            <h2 class="title-mega text-center mb-5">Quienes nos respaldan</h2>
+            <div class="slider-custom px-4 px-lg-5 text-center">
+
+                <div class="btn-next" id="btn-next-two"></div>
+                <div class="btn-prev" id="btn-prev-two"></div>
+
+                <div class="owl-carousel owl-theme mt-2 owl-carousel-custom " id="owl-two">
+                    <div class="item"><img src="assets/img/slider-empresas-one.png" alt=""></div>
+                    <div class="item"><img src="assets/img/slider-empresas-two.png" alt=""></div>
+                    <div class="item"><img src="assets/img/slider-empresas-one.png" alt=""></div>
                 </div>
 
-
-            </div>
-        </div>
-
-    </div> <!-- fin seccion companies-trusted -->
-
-    <div class="customer-feedback">
-        <div class="title-feedback">
-            <h2>Lo que dicen de nosotros</h2>
-        </div>
-
-        <div class="carrusel-feedback carrusel-feedback-three">
-            <!--Controls-->
-            <div class="controls-top controls-carrusel">
-                <a class="btn-floating" href="#corrusel-feedback" data-slide="prev"><i
-                        class="fa fa-chevron-left fa-2x"></i></a>
-                <a class="btn-floating" href="#corrusel-feedback" data-slide="next"><i
-                        class="fa fa-chevron-right fa-2x"></i></a>
-            </div>
-            <!--/.Controls-->
-
-            <!--Carousel Wrapper-->
-            <div id="corrusel-feedback" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/mujer.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Carolyn Oroño
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/ejecutivo.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Louis Murphy
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/joven.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Randy Mendez
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item ">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/mujer.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Carolyn Oroño
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/ejecutivo.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Louis Murphy
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/joven.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Randy Mendez
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item ">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/mujer.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Carolyn Oroño
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/ejecutivo.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Louis Murphy
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/joven.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Randy Mendez
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.Third slide-->
-
+                <div id="carousel-custom-dots-two" class="owl-dots-custom mt-3">
+                    <div class="owl-dot owl-dot-two active"><span></span></div>
+                    <div class="owl-dot owl-dot-two"><span></span></div>
+                    <div class="owl-dot owl-dot-two"><span></span></div>
                 </div>
-                <!--/.Slides-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators indicators-feedback">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-
-            </div>
-            <!--/.Carousel Wrapper-->
-
-
-        </div>
-        <div class="carrusel-feedback carrusel-feedback-one">
-            <!--Controls-->
-            <div class="controls-top controls-carrusel">
-                <a class="btn-floating" href="#corrusel-feedback" data-slide="prev"><i
-                        class="fa fa-chevron-left fa-2x"></i></a>
-                <a class="btn-floating" href="#corrusel-feedback" data-slide="next"><i
-                        class="fa fa-chevron-right fa-2x"></i></a>
-            </div>
-            <!--/.Controls-->
-
-            <!--Carousel Wrapper-->
-            <div id="corrusel-feedback" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/mujer.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Carolyn Oroño
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item ">
-
-                        <div class="row">
-
-                            <div class="col-md-4 ">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/ejecutivo.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Louis Murphy
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!--/.Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item ">
-
-                        <div class="row">
-
-                            <div class="col-md-4 ">
-                                <div class="container-card-feedback">
-                                    <div class="card-feedback">
-                                    <span>
-                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, n unknown printer took a galley of type and scrambled it to make a t
-                                    </span>
-
-                                    </div>
-                                    <div class="triangulo">
-
-                                    </div>
-                                    <div class="client-feedback">
-                                        <div class="foto-client">
-                                            <img src="./assets/img/joven.jpg" alt="">
-                                        </div>
-                                        <div class="client-name">
-                                            <div class="name">
-                                                Randy Mendez
-                                            </div>
-                                            <div class="from">
-                                                Chimbote Perú
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--/.Third slide-->
-
-                </div>
-
-                <!--/.Slides-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators indicators-feedback">
-                    <li data-target="#corrusel-feedback" data-slide-to="0" class="active"></li>
-                    <li data-target="#corrusel-feedback" data-slide-to="1"></li>
-                    <li data-target="#corrusel-feedback" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-
-            </div>
-            <!--/.Carousel Wrapper-->
-
-
-        </div>
-
-
-    </div> <!-- fin seccion customer-feedback -->
-
-    <div class="customer-feedback" style="height: auto; margin-top: 20px" >
-        <div class="title-feedback" style="background-color: #ffffff">
-            <h2>Quienes nos respaldan</h2>
-        </div>
-
-        <div class="carrusel-feedback" >
-            <!--Controls-->
-            <div class="controls-top controls-carrusel">
-                <a class="btn-floating" href="#carrusel-backup" data-slide="prev"><i
-                        class="fa fa-chevron-left fa-2x"></i></a>
-                <a class="btn-floating" href="#carrusel-backup" data-slide="next"><i
-                        class="fa fa-chevron-right fa-2x"></i></a>
-            </div>
-            <!--/.Controls-->
-
-            <!--Carousel Wrapper-->
-            <div id="carrusel-backup" class="carousel slide carousel-multi-item" data-ride="carousel" style="width: 70%">
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="container-card-feedback">
-                                    <img class="backup" src="./assets/img/grupo-940.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item ">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="container-card-feedback">
-                                    <img class="backup" src="./assets/img/grupo-940.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item ">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="container-card-feedback">
-                                    <img class="backup" src="./assets/img/grupo-940.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Third slide-->
-
-                </div>
-                <!--/.Slides-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators indicators-feedback">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-
-            </div>
-            <!--/.Carousel Wrapper-->
-
-
-        </div>
-
-
-    </div> <!-- fin seccion customer-feedback -->
-
-    <footer role="contentinfo">
-
-        <div class="row banner-footer-top pt-3">
-            <div class="col-12 col-md-6  col-lg-4 mx-auto d-flex align-items-start">
-                <img class="mt-2 mr-3" loading="lazy" src="https://megacursos.com/themes/megacursos/assets/img/metric.svg" alt="">
-                <p class="text-left">Domina la disciplina que te apasione desde 0 hasta ser un experto</p>
-            </div>
-            <div class="col-12 col-md-6  col-lg-4 mx-auto d-flex align-items-start justify-content-center" >
-                <img class="mt-2 mr-3" loading="lazy" src="https://megacursos.com/themes/megacursos/assets/img/hd.svg" alt="">
-                <p class="text-left">Todas las videoclases en FullHD incluyendo todos los archivos necesarios para
-                    seguirlas.</p>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mx-auto d-flex align-items-start justify-content-end">
-                <img class="mt-2 mr-3" loading="lazy" src="https://megacursos.com/themes/megacursos/assets/img/tablet.svg" alt="">
-                <p class="text-left ">Acceso instantáneo tras compra desde todos PC/Mac, móvil o tablet sin límite de
-                    tiempo.</p>
             </div>
         </div>
+    </div>
 
-        <div class="container pt-4">
-
-            <div class="container-enlaces-footer">
-
-                <div class="col-enalces mt-3 mt-md-0">
-                    <strong class="footer-title uppercase">Información</strong>
-                    <ul class="list">
-                        <li>
-                            <a href="https://megacursos.com/page/que-es-un-megacurso">¿Qué es un megacursos?</a>
-                        </li>
-
-                        <li>
-                            <a href="https://megacursos.com/client">Testimonios</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/contentpage/asistencia">Asistencia</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/page/diploma">Diploma</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/page/acceso">Acceso a cursos</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-enalces mt-3 mt-md-0">
-                    <strong class="footer-title uppercase ">Megacursos.com</strong>
-                    <ul class="list" style="padding:0px">
-                        <li>
-                            <a href="https://megacursos.com/page/nosotros">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="https://blog.megacursos.com/" target="_blank">Blog</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/planes" target="_blank">Planes</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/contentpage/para-empresas">Empresas</a>
-                        </li>
-                        <li>
-                            <a href="https://megacursos.com/contacto">Contacto</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-enalces mt-3 mt-md-0">
-                    <strong class="footer-title uppercase ">Contactanos</strong>
-                    <ul class="list" style="padding:0px">
-                        <li>
-                            <a href="mailto:atencion@megacursos.com">
-                                <span class="mr-2"><i class="far fa-envelope"></i></span>
-                                atencion@megacursos.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+1 (917) 341 2153" >
-                                <span class="mr-2"><i class="fas fa-phone"></i></span>
-                                +1 (917) 341 2153
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="mr-2"><i class="fas fa-comments"></i></span>Chat 24h
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <span class="mr-2"><i class="fas fa-map-marker-alt" ></i></span>
-                                <p>111 John St 1509<br>New York,<br>EE. UU.</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-enalces mt-3 mt-md-0">
-                    <strong class="footer-title uppercase ">Descarga nuesta APP</strong>
-
-                    <div class="d-flex flex-column mt-3 enlaces-footer">
-                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.megacusosoficial.app"
-                           class="inline-block mb-2">
-                            <img loading="lazy" alt="Disponible en Google Play"
-                                 src="https://megacursos.com/themes/megacursos/assets/images/appDownloadAndroid.png">
-                        </a>
-                        <a target="_blank" href="https://apps.apple.com/es/app/megacursos/id1449328401"
-                           class="inline-block mb-2">
-                            <img loading="lazy" alt="Disponible en la App Store"
-                                 src="https://megacursos.com/themes/megacursos/assets/images/appDownloadiOS.png">
-                        </a>
-
-                        <div class="enlaces-buttons">
-                            <a href="/descargar-appwindows" class="btn btn btn-warning mb-2 d-flex align-items-center">
-                                <span class="mr-4"><i class="fab fa-windows"></i></span>APP  para Windows
-                            </a>
-                            <a href="/descargar-appmac" class="btn btn btn-warning mb-2 d-flex align-items-center ">
-                                <span class="mr-4"><i class="fab fa-apple"></i></span>APP  para Mac
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-enalces mt-3 mt-md-0">
-                    <strong class="footer-title uppercase mt-3">Siguenos</strong>
-                    <div class="d-flex flex-column mb-2 mt-3">
-                        <a href="https://instagram.com/megacursosoficial" target="__blank">
-                            <span class="mr-2"><i class="fab fa-instagram"></i></span>
-                            @megacursosoficial</a>
-
-                        <div class="fb-page mt-3" data-href="https://www.facebook.com/megacursosoficial"
-                             data-width="380" data-hide-cover="false" data-show-facepile="false"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <div class="logo-farm-container ">
-                <div class="logo-farm__images images d-flex justify-content-center align-items-center flex-wrap">
-
-                    <div class="images__image_last">
-                        <img loading="lazy" class="js-logo-farm-image img-fluid"
-                             alt="Logo de Vox Media"
-                             src="https://megacursos.com/themes/megacursos/assets/img/paypal-pay.png">
-                    </div>
-                    <div class="images__image_last">
-                        <img loading="lazy" class="js-logo-farm-image img-fluid"
-                             src="https://megacursos.com/themes/megacursos/assets/img/vender4.png">
-                    </div>
-                    <div class="images__image_last">
-                        <img loading="lazy" class="js-logo-farm-image img-fluid"
-                             src="https://megacursos.com/themes/megacursos/assets/img/vender2.png">
-                    </div>
-                    <div class="images__image_last">
-                        <img loading="lazy" class="js-logo-farm-image img-fluid"
-                             src="https://megacursos.com/themes/megacursos/assets/img/vender1.png">
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="d-flex justify-content-center align-items-center flex-wrap">
-                <p class="general-info mx-3">Politicas de privacida</p>
-                <p class="general-info mx-3">Terminos y servicio</p>
-                <p class="general-info mx-3 text-center text-md-left">Copyright © 2009-2020 Suotta Ltd. Todos los
-                    derechos reservados.
-                </p>
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-</div>
-
-
-<script src="https://megacursos.com/themes/megacursos/estilos/owlcarousel/jquery-3.2.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
-        defer="defer"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
-        defer="defer"></script>
+  
 
 </body>
+<!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<!-- CDN -->
+<script>
+
+//owl one
+ 
+$('#owl-one').owlCarousel({
+        nav: false,
+        margin: 4,
+        loop: true,
+        autoWidth: true,
+        autoplay: true,
+        items: 2,
+        dotsContainer: '#carousel-custom-dots-one',
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash'
+    })
+
+    var owlOne = $('#owl-one');
+    owlOne.owlCarousel();
+    // Go to the next item
+    $('#btn-next-one').click(function() {
+        owlOne.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('#btn-prev-one').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owlOne.trigger('prev.owl.carousel', [300]);
+    })
+
+    $('.owl-dot-one').click(function () {
+        owlOne.trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+
+
+
+    //owl two
+ 
+$('#owl-two').owlCarousel({
+        nav: false,
+        margin: 4,
+        loop: true,
+        autoWidth: true,
+        autoplay: true,
+        items: 2,
+        dotsContainer: '#carousel-custom-dots-two',
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash'
+    })
+
+    var owlTwo = $('#owl-two');
+    owlTwo.owlCarousel();
+    // Go to the next item
+    $('#btn-next-two').click(function() {
+        owlTwo.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('#btn-prev-two').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owlTwo.trigger('prev.owl.carousel', [300]);
+    })
+
+    $('.owl-dot-two').click(function () {
+        owlTwo.trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+
+
+
+
+
+
+
+
+
+
+</script>
+
 </html>
