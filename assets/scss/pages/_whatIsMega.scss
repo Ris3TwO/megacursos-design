@@ -340,8 +340,25 @@
 
     .banner-footer{
         background: $light !important;
+        padding-bottom: 20px;
+      
         &::before {
             background: $light !important;
+        }
+
+       
+
+        .container{
+            background: url(../img/fifth-img.png) !important;
+            background-repeat: no-repeat;
+            background-size: 100% auto !important;
+            background-position: center;
+            color: $light !important;
+            padding: 10px !important;
+            border-radius: 10px;
+            .title-mega{
+                color: #FCC11C !important;
+            }
         }
     }
 
